@@ -1,0 +1,20 @@
+[
+{
+  "modid": "kk",
+  "name": "Kingdom keys",
+  "description": "Adds keyblades from the game series Kingdom Hearts with 3D models",
+  "version": "0.2.0.1.5.2 Alpha",
+  "url": "N/A NOT RELEASED IN ALPHA",
+  "updateUrl": "",
+  "authorList": [
+    "Wehavecookies56"
+  ],
+  "credits": "By Wehavecookies56, Textures and models by Wehavecookies56",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
