@@ -22,6 +22,31 @@ import wehavecookies56.kk.configuration.ConfigurationHandler;
 import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.Reference;
+import wehavecookies56.kk.mob.BatDrops;
+import wehavecookies56.kk.mob.BlazeDrops;
+import wehavecookies56.kk.mob.CaveSpiderDrops;
+import wehavecookies56.kk.mob.ChickenDrops;
+import wehavecookies56.kk.mob.CowDrops;
+import wehavecookies56.kk.mob.CreeperDrops;
+import wehavecookies56.kk.mob.EndermanDrops;
+import wehavecookies56.kk.mob.GhastDrops;
+import wehavecookies56.kk.mob.IronGolemDrops;
+import wehavecookies56.kk.mob.MagmaCubeDrops;
+import wehavecookies56.kk.mob.MooshroomDrops;
+import wehavecookies56.kk.mob.OcelotDrops;
+import wehavecookies56.kk.mob.PigDrops;
+import wehavecookies56.kk.mob.PigZombieDrops;
+import wehavecookies56.kk.mob.SheepDrops;
+import wehavecookies56.kk.mob.SilverfishDrops;
+import wehavecookies56.kk.mob.SkeletonDrops;
+import wehavecookies56.kk.mob.SlimeDrops;
+import wehavecookies56.kk.mob.SnowmanDrops;
+import wehavecookies56.kk.mob.SpiderDrops;
+import wehavecookies56.kk.mob.SquidDrops;
+import wehavecookies56.kk.mob.VillagerDrops;
+import wehavecookies56.kk.mob.WitchDrops;
+import wehavecookies56.kk.mob.WolfDrops;
+import wehavecookies56.kk.mob.ZombieDrops;
 import wehavecookies56.kk.proxies.ClientProxy;
 import wehavecookies56.kk.proxies.CommonProxy;
 
@@ -48,6 +73,31 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new Sounds());
         }
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", Reference.MOD_NAME);
+        MinecraftForge.EVENT_BUS.register(new BatDrops());
+        MinecraftForge.EVENT_BUS.register(new CowDrops());        
+        MinecraftForge.EVENT_BUS.register(new ChickenDrops());
+        MinecraftForge.EVENT_BUS.register(new BlazeDrops());
+        MinecraftForge.EVENT_BUS.register(new SheepDrops());
+        MinecraftForge.EVENT_BUS.register(new SilverfishDrops());
+        MinecraftForge.EVENT_BUS.register(new EndermanDrops());
+        MinecraftForge.EVENT_BUS.register(new SpiderDrops());
+        MinecraftForge.EVENT_BUS.register(new VillagerDrops());
+        MinecraftForge.EVENT_BUS.register(new WitchDrops());
+        MinecraftForge.EVENT_BUS.register(new GhastDrops());
+        MinecraftForge.EVENT_BUS.register(new PigZombieDrops());
+        MinecraftForge.EVENT_BUS.register(new MagmaCubeDrops());
+        MinecraftForge.EVENT_BUS.register(new SkeletonDrops());
+        MinecraftForge.EVENT_BUS.register(new WolfDrops());
+        MinecraftForge.EVENT_BUS.register(new SquidDrops());
+        MinecraftForge.EVENT_BUS.register(new OcelotDrops());
+        MinecraftForge.EVENT_BUS.register(new CreeperDrops());
+        MinecraftForge.EVENT_BUS.register(new SlimeDrops());
+        MinecraftForge.EVENT_BUS.register(new ZombieDrops());
+        MinecraftForge.EVENT_BUS.register(new SnowmanDrops());
+        MinecraftForge.EVENT_BUS.register(new IronGolemDrops());
+        MinecraftForge.EVENT_BUS.register(new MooshroomDrops());
+        MinecraftForge.EVENT_BUS.register(new CaveSpiderDrops());
+        MinecraftForge.EVENT_BUS.register(new PigDrops());
     }
     
     @Init

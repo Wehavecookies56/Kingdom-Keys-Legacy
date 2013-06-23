@@ -1,0 +1,25 @@
+Bat 25% #
+Sheep 25% #
+Cow 25% #
+Chicken 25% #
+Villager 100% #
+Snowman 25% #
+Spider 66.666666666666666% #
+Zombie 66.666666666666666% #
+Skeleton 66.666666666666666% #
+IronGolem 100% 2 Drops #
+Mooshroom 25% #
+Pig 25% #
+CaveSpider 66.666666666666666% #
+Silverfish 66.666666666666666% #
+Creeper 66.666666666666666% #
+Enderman 75% #
+Ghast 100% #
+Blaze 66.666666666666666% #
+Witch 100% #
+MagmaCube 66.666666666666666% #
+Slime 25% #
+PigZombie 66.666666666666666% #
+Ocelot 25% #
+Wolf 25% #
+Squid 25% #

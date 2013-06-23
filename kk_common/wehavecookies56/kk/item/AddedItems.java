@@ -15,14 +15,20 @@ public class AddedItems {
     public static Item Oblivion;
     public static Item SimpleAndClean;
     public static Item Sanctuary;
+    public static Item PureHeart;
+    public static Item DarkHeart;
+    public static Item KingdomHearts;
     
     public static EnumToolMaterial KeyBladeMaterial;
     
     public static void preinit(){
         
-        KeyBladeMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, -1, 6.0F, 10, 30);
+        KeyBladeMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, -1, 6.0F, 12, 30);
         KingdomKey = new ItemKingdomKey(IDs.KingdomKey, KeyBladeMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKey);
         LanguageRegistry.addName(KingdomKey, Strings.KingdomKey);
+        
+        PureHeart = new ItemPureHeart(IDs.PureHeart);
+        LanguageRegistry.addName(PureHeart, Strings.PHeart);
         
         SimpleAndClean = new ItemKingdomRecords(IDs.Disc1, Strings.Disc1).setUnlocalizedName(Strings.Disc1);
         LanguageRegistry.addName(SimpleAndClean, Strings.MusicDisc);
@@ -30,6 +36,11 @@ public class AddedItems {
         Sanctuary = new ItemKingdomRecords(IDs.Disc2, Strings.Disc2).setUnlocalizedName(Strings.Disc2);
         LanguageRegistry.addName(Sanctuary, Strings.MusicDisc);
         
+        DarkHeart = new ItemDarkHeart(IDs.DarkHeart);
+        LanguageRegistry.addName(DarkHeart, Strings.DHeart);
+        
+        KingdomHearts = new ItemKingdomHeartsHeart(IDs.KingdomHearts);
+        LanguageRegistry.addName(KingdomHearts, Strings.KHearts);
     }
     
 }

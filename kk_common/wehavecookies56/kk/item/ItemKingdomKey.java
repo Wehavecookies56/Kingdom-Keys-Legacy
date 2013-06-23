@@ -15,7 +15,6 @@ public class ItemKingdomKey extends ItemSword {
 
     public ItemKingdomKey(int id, EnumToolMaterial enumKeyBladeMaterial) {
         super(id, enumKeyBladeMaterial);
-        this.setCreativeTab(KingdomKeys.KKTAB);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));

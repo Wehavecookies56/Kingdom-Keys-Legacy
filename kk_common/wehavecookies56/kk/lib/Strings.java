@@ -12,5 +12,8 @@ public class Strings {
     public static final String RPBlox = "Rare Prize Blox";
     public static final String BBlox = "Bounce Blox";
     public static final String DBlox = "Danger Blox";
-    
+    public static final String PHeart = "Pure Heart";
+    public static final String DHeart = "Dark Heart";
+    public static final String Heart = "Heart";
+    public static final String KHearts = "Kingdom Hearts";
 }
