@@ -1,5 +1,7 @@
 package wehavecookies56.kk.block;
 
+import java.util.Random;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import wehavecookies56.kk.lib.Reference;
@@ -21,4 +23,6 @@ public class BlockBlox extends Block {
         blockIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
         }
 
+
+    
 }

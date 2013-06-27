@@ -7,6 +7,7 @@ import net.minecraftforge.common.MinecraftForge;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -20,6 +21,10 @@ import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.client.audio.Sounds;
 import wehavecookies56.kk.configuration.ConfigurationHandler;
 import wehavecookies56.kk.creativetab.KKTAB;
+//import wehavecookies56.kk.entity.TileEntityHeartPurify;
+//import wehavecookies56.kk.handlers.ClientPacketHandler;
+//import wehavecookies56.kk.handlers.GuiHandler;
+//import wehavecookies56.kk.handlers.ServerPacketHandler;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.mob.BatDrops;
@@ -49,13 +54,20 @@ import wehavecookies56.kk.mob.WolfDrops;
 import wehavecookies56.kk.mob.ZombieDrops;
 import wehavecookies56.kk.proxies.ClientProxy;
 import wehavecookies56.kk.proxies.CommonProxy;
+import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
-@NetworkMod(clientSideRequired = true, serverSideRequired = false, channels = {Reference.CHANNEL_NAME})
+@NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = Reference.CHANNEL_NAME)
+//clientPacketHandlerSpec = @SidedPacketHandler(channels = {Reference.CHANNEL_NAME }, packetHandler = ClientPacketHandler.class),
+//serverPacketHandlerSpec = @SidedPacketHandler(channels = {Reference.CHANNEL_NAME }, packetHandler = ServerPacketHandler.class))
 
 
 public class KingdomKeys {
+    
+    @Instance
+    public static KingdomKeys instance = new KingdomKeys();
+    //private GuiHandler guiHandler = new GuiHandler();
     
     @SidedProxy(clientSide="wehavecookies56.kk.proxies.ClientProxy", serverSide="wehavecookies56.kk.proxies.CommonProxy")
     public static CommonProxy proxy;
@@ -65,7 +77,11 @@ public class KingdomKeys {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
-        AddedItems.preinit();
+        AddedItems.initHearts();
+        AddedItems.initKeyBlades();
+        AddedItems.initLoot();
+        AddedItems.initOthers();
+        AddedItems.intiArmour();
         AddedBlocks.preinit();
         ClientProxy.initrenders();
         if(FMLCommonHandler.instance().getSide().isClient())
@@ -98,15 +114,16 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new MooshroomDrops());
         MinecraftForge.EVENT_BUS.register(new CaveSpiderDrops());
         MinecraftForge.EVENT_BUS.register(new PigDrops());
+        //GameRegistry.registerTileEntity(TileEntityHeartPurify.class, "tileEntityHeartPurifyer");
     }
     
     @Init
     public void init(FMLInitializationEvent event) {
-        
+        AddedItems.initItemrecipes();
     }
 
     @PostInit
     public void postInit(FMLPostInitializationEvent event) {
-        
+        ThaumcraftAddon.modsLoaded();
     }
 }

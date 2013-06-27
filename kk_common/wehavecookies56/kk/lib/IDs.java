@@ -23,6 +23,21 @@ public class IDs {
     public static final int KINGDOMHEARTS_DEFAULT = 31720;
     public static int KingdomHearts;
     
+    public static final int OHELM_DEFAULT = 31721;
+    public static int OHelm;
+    public static final int OCHEST_DEFAULT = 31722;
+    public static int OChest;
+    public static final int OLEGS_DEFAULT = 31723;
+    public static int OLegs;
+    public static final int OBOOTS_DEFAULT = 31724;
+    public static int OBoots;
+    
+    public static final int OATHKEEPER_DEFAULT = 31725;
+    public static int OathKeeper;
+    
+    public static final int KINGDOMKEYD_DEFAULT = 31726;
+    public static int KingdomKeyD;
+    
     //BLOCKS
     public static final int NORMALBLOX_DEFAULT = 2600;
     public static int NBlox;
@@ -44,4 +59,8 @@ public class IDs {
     
     public static final int DANGERBLOX_DEFAULT = 2606;
     public static int DBlox;
+    
+    public static final int HPURIFY_DEFAULT = 2607;
+    public static int HPurify;
+    
 }

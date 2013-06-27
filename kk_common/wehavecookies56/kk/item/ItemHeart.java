@@ -8,7 +8,7 @@ public class ItemHeart extends ItemKingdomKeys{
 
     public ItemHeart(int id) {
         super(id);       
-        this.setUnlocalizedName(Strings.PHeart);
+        this.setUnlocalizedName(Strings.Heart);
         
     }
     public void registerIcons(IconRegister par1IconRegister) {

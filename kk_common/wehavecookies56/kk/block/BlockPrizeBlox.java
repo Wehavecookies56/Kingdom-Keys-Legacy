@@ -1,5 +1,7 @@
 package wehavecookies56.kk.block;
 
+import java.util.Random;
+
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
@@ -22,4 +24,9 @@ public class BlockPrizeBlox extends BlockBlox {
 
         blockIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + (this.getUnlocalizedName().substring(5)));
     }
+    protected boolean canSilkHarvest()
+    {
+            return true;
+    }
+
 }

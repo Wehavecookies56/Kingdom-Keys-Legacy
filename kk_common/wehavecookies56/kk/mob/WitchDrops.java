@@ -18,7 +18,7 @@ if (event.entityLiving instanceof EntityWitch) {
     //The integer at the end relates to how many Items will be dropped(percentage). 
      if (rand < 1d){
         //The integer at the end relates to how many Items will be dropped(amount). 
-        event.entityLiving.dropItem(AddedItems.PureHeart.itemID, 1);
+        event.entityLiving.dropItem(AddedItems.DarkHeart.itemID, 1);
      
    }
 }

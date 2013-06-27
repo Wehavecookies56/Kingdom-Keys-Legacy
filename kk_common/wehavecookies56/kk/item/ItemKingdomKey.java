@@ -4,6 +4,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.lib.Reference;
+import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumRarity;
@@ -12,9 +13,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
 public class ItemKingdomKey extends ItemSword {
-
-    public ItemKingdomKey(int id, EnumToolMaterial enumKeyBladeMaterial) {
-        super(id, enumKeyBladeMaterial);
+    
+    public ItemKingdomKey(int id, EnumToolMaterial enumKingdomKeyMaterial) {
+        super(id, enumKingdomKeyMaterial);
+        this.setCreativeTab(KingdomKeys.KKTAB);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
@@ -28,5 +30,6 @@ public class ItemKingdomKey extends ItemSword {
     public EnumRarity getRarity(ItemStack par1ItemStack){
         return EnumRarity.epic;
     }
+   
 
 }

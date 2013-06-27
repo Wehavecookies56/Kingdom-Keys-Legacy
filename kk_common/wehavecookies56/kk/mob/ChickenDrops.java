@@ -19,7 +19,7 @@ if (event.entityLiving instanceof EntityChicken) {
     //The integer at the end relates to how many Items will be dropped(percentage). 
      if (rand < 0.25d){
         //The integer at the end relates to how many Items will be dropped(amount). 
-        event.entityLiving.dropItem(AddedItems.PureHeart.itemID, 1);
+        event.entityLiving.dropItem(AddedItems.Heart.itemID, 1);
      
    }
 }

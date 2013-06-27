@@ -1,6 +1,7 @@
 package wehavecookies56.kk.item;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
@@ -49,7 +50,9 @@ public class ItemRenderKingdomKey implements IItemRenderer {
                 GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 0.0F, 0.0F, 1.0F);
                 
-                GL11.glTranslatef(0.0F, -0.7F, 0.0F);
+                GL11.glTranslatef(0.0F, -0.8F, 0.0F);
+                
+                GL11.glScalef(1.2F, 1.2F, 1.2F);
                 
                 modelKingdomKey.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
                 

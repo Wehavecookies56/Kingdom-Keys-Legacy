@@ -16,6 +16,7 @@ public class AddedBlocks {
     public static Block RarePrizeBlox;
     public static Block BounceBlox;
     public static Block DangerBlox;
+    public static Block HeartPurifyer;
     
     public static void preinit(){
         
@@ -26,6 +27,10 @@ public class AddedBlocks {
         HardBlox = new BlockHardBlox(IDs.HBlox, Material.rock);
         GameRegistry.registerBlock(HardBlox, Strings.HBlox);
         LanguageRegistry.addName(HardBlox, Strings.HBlox);
+        
+        //HeartPurifyer = new BlockHeartPurifyer(IDs.HPurify, Material.rock);
+        //GameRegistry.registerBlock(HeartPurifyer, Strings.HPurify);
+        //LanguageRegistry.addName(HeartPurifyer, Strings.HPurify);
         
         MetalBlox = new BlockMetalBlox(IDs.MBlox, Material.iron);
         GameRegistry.registerBlock(MetalBlox, Strings.MBlox);
