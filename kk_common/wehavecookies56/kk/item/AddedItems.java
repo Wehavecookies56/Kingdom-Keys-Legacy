@@ -31,6 +31,7 @@ public class AddedItems {
     public static Item OrganizationCoat;
     public static Item OrganizationLegs;
     public static Item OrganizationBoots;
+    public static Item DarkLeather;
     
     public static EnumToolMaterial KingdomKeyMaterial;
     public static EnumToolMaterial KingdomKeyDMaterial;
@@ -38,7 +39,7 @@ public class AddedItems {
     public static EnumArmorMaterial OrganizationArmourMaterial;
     
     public static void initKeyBlades(){
-        
+
         KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, -1, 6.0F, 12, 30);
         KingdomKey = new ItemKingdomKey(IDs.KingdomKey, KingdomKeyMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKey);
         LanguageRegistry.addName(KingdomKey, Strings.KingdomKey);
@@ -50,6 +51,7 @@ public class AddedItems {
         OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, -1, 6.0F, 13, 30);
         OathKeeper = new ItemOathKeeper(IDs.OathKeeper, OathKeeperMaterial).setFull3D().setUnlocalizedName(Strings.OathKeeper);
         LanguageRegistry.addName(OathKeeper, Strings.OathKeeper);
+
     }
     
     public static void intiArmour(){
@@ -79,6 +81,9 @@ public class AddedItems {
         
         KingdomHearts = new ItemKingdomHearts(IDs.KingdomHearts);
         LanguageRegistry.addName(KingdomHearts, Strings.KHearts);
+        
+        DarkLeather = new ItemDarkLeather(IDs.DarkLeather);
+        LanguageRegistry.addName(DarkLeather, Strings.DLeather);
     }
     
     public static void initLoot(){
@@ -139,6 +144,35 @@ public class AddedItems {
             "IKI",
             "ISI",
             'I', Item.ingotIron, 'K', KingdomHearts, 'R', Item.netherStar, 'S', Item.swordDiamond
+    });
+        GameRegistry.addRecipe(new ItemStack(DarkLeather), new Object[]{
+            "DDD",
+            "DLD",
+            "DDD",
+            'D', DarkHeart, 'L', Item.leather
+    });
+        GameRegistry.addRecipe(new ItemStack(OrganizationHood), new Object[]{
+            "LLL",
+            "LOL",
+            "SIS",
+            'O', Block.obsidian, 'L', DarkLeather, 'S', Item.silk, 'I', new ItemStack(Item.dyePowder, 0)
+    });
+        GameRegistry.addRecipe(new ItemStack(OrganizationCoat), new Object[]{
+            "LIL",
+            "LOL",
+            "LLL",
+            'O', Block.obsidian, 'L', DarkLeather, 'I', new ItemStack(Item.dyePowder, 0)
+    });
+        GameRegistry.addRecipe(new ItemStack(OrganizationLegs), new Object[]{
+            "LLL",
+            "LOL",
+            "LIL",
+            'O', Block.obsidian, 'L', DarkLeather, 'I', new ItemStack(Item.dyePowder, 0)
+    });
+        GameRegistry.addRecipe(new ItemStack(OrganizationBoots), new Object[]{
+            "LOL",
+            "LIL",
+            'O', Block.obsidian, 'L', DarkLeather, 'I', new ItemStack(Item.dyePowder, 0)
     });
         
     }

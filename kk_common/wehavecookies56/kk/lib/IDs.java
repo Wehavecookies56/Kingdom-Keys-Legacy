@@ -38,6 +38,9 @@ public class IDs {
     public static final int KINGDOMKEYD_DEFAULT = 31726;
     public static int KingdomKeyD;
     
+    public static final int DARKLEATHER_DEFAULT = 31727;
+    public static int DarkLeather;
+    
     //BLOCKS
     public static final int NORMALBLOX_DEFAULT = 2600;
     public static int NBlox;

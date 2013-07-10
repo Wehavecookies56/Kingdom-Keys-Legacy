@@ -35,5 +35,6 @@ public class Strings {
     public static final String OBoots = "Boots Of The Organization";
     //Other
     public static final String HPurify = "Heart Purifier";
+    public static final String DLeather = "Leather Of The Darkness";
     
 }

@@ -20,7 +20,7 @@ public class AddedBlocks {
     
     public static void preinit(){
         
-        NormalBlox = new BlockNormalBlox(IDs.NBlox, Material.ground);
+        NormalBlox = new BlockNormalBlox(IDs.NBlox, Material.rock);
         GameRegistry.registerBlock(NormalBlox, Strings.NBlox);
         LanguageRegistry.addName(NormalBlox, Strings.NBlox);
         

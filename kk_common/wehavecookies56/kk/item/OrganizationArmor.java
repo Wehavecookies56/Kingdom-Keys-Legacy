@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.lib.Reference;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -13,6 +14,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class OrganizationArmor extends ItemArmor{
     private String armorFile;
     private String name;
+    
 
     public OrganizationArmor(int par1, EnumArmorMaterial par2EnumArmorMaterial, int par3, int par4, String armorFile, String name) {
       super(par1, par2EnumArmorMaterial, par3, par4);
@@ -25,12 +27,19 @@ public class OrganizationArmor extends ItemArmor{
 
     @Override
     @SideOnly(Side.CLIENT)
-    public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
-      if (armorFile == null)
-        return null; // if the armor file doesn't exist, then skip this
-      // if it does exist then the armor file is here
-      return ("/mods/" + Reference.MOD_ID + "/textures/armor/" + armorFile + ".png");
-    }
+    public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer)
+    {
+
+if (stack.toString().contains("leggings")) 
+{
+return "kk:/textures/armor/ORGANIZATION_2.png";
+}
+if (stack.toString().contains("Leggings")) 
+{
+return "kk:/textures/armor/ORGANIZATION_2.png";
+}
+return "kk:/textures/armor/ORGANIZATION_1.png";
+}
 
     @Override
     @SideOnly(Side.CLIENT)

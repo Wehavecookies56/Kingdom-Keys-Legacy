@@ -2,11 +2,13 @@ package wehavecookies56.kk;
 
 import java.io.File;
 
+import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
@@ -18,7 +20,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import wehavecookies56.kk.block.AddedBlocks;
-import wehavecookies56.kk.client.audio.Sounds;
+//import wehavecookies56.kk.client.audio.Sounds;
 import wehavecookies56.kk.configuration.ConfigurationHandler;
 import wehavecookies56.kk.creativetab.KKTAB;
 //import wehavecookies56.kk.entity.TileEntityHeartPurify;
@@ -54,7 +56,7 @@ import wehavecookies56.kk.mob.WolfDrops;
 import wehavecookies56.kk.mob.ZombieDrops;
 import wehavecookies56.kk.proxies.ClientProxy;
 import wehavecookies56.kk.proxies.CommonProxy;
-import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
+//import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
@@ -74,8 +76,10 @@ public class KingdomKeys {
     
     public static CreativeTabs KKTAB = new KKTAB(CreativeTabs.getNextID(), "KKTAB");
     
-    @PreInit
+    @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+    	
+    	
         ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
         AddedItems.initHearts();
         AddedItems.initKeyBlades();
@@ -83,11 +87,12 @@ public class KingdomKeys {
         AddedItems.initOthers();
         AddedItems.intiArmour();
         AddedBlocks.preinit();
-        ClientProxy.initrenders();
-        if(FMLCommonHandler.instance().getSide().isClient())
-        {
-        MinecraftForge.EVENT_BUS.register(new Sounds());
-        }
+
+       AddedItems.initItemrecipes();
+       // if(FMLCommonHandler.instance().getSide().isClient())
+       // {
+       // MinecraftForge.EVENT_BUS.register(new Sounds());
+      //  }
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", Reference.MOD_NAME);
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
@@ -117,13 +122,14 @@ public class KingdomKeys {
         //GameRegistry.registerTileEntity(TileEntityHeartPurify.class, "tileEntityHeartPurifyer");
     }
     
-    @Init
+    @EventHandler
     public void init(FMLInitializationEvent event) {
-        AddedItems.initItemrecipes();
+
+        ClientProxy.initrenders();
     }
 
-    @PostInit
+    @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        ThaumcraftAddon.modsLoaded();
+        //ThaumcraftAddon.modsLoaded();
     }
 }

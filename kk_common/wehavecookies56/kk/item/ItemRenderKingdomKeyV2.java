@@ -1,26 +1,26 @@
-package wehavecookies56.kk.item;
+/*package wehavecookies56.kk.item;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 
 import wehavecookies56.kk.client.model.ModelKingdomKey;
+import wehavecookies56.kk.client.model.ModelKingdomKeyV2;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
 @SideOnly(Side.CLIENT)
-public class ItemRenderKingdomKeyD implements IItemRenderer {
+public class ItemRenderKingdomKeyV2 implements IItemRenderer {
 
-    protected ModelKingdomKey modelKingdomKeyD;
+    protected ModelKingdomKeyV2 modelKingdomKey;
 
-    public ItemRenderKingdomKeyD() {
+    public ItemRenderKingdomKeyV2() {
 
-        modelKingdomKeyD = new ModelKingdomKey();
+        modelKingdomKey = new ModelKingdomKeyV2();
     }
 
     @Override
@@ -28,7 +28,6 @@ public class ItemRenderKingdomKeyD implements IItemRenderer {
 
         switch(type){
             case EQUIPPED: return true;
-            case EQUIPPED_FIRST_PERSON: return true;
             default: return false;
         }
     }
@@ -47,7 +46,6 @@ public class ItemRenderKingdomKeyD implements IItemRenderer {
             case EQUIPPED: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk:/textures/entities/Kingdom Key D.png"));
                 
                 GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 0.0F, 0.0F, 1.0F);
@@ -56,7 +54,7 @@ public class ItemRenderKingdomKeyD implements IItemRenderer {
                 
                 GL11.glScalef(1.2F, 1.2F, 1.2F);
                 
-                modelKingdomKeyD.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
+                modelKingdomKey.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
                 
                 GL11.glPopMatrix();
 
@@ -66,3 +64,4 @@ public class ItemRenderKingdomKeyD implements IItemRenderer {
         }
     }
 }
+*/

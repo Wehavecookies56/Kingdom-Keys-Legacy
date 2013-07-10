@@ -2,11 +2,11 @@ package wehavecookies56.kk.item;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
-
 import wehavecookies56.kk.client.model.ModelOathKeeper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -22,11 +22,13 @@ public class ItemRenderOathKeeper implements IItemRenderer {
         modelOathKeeper = new ModelOathKeeper();
     }
 
+    
     @Override
     public boolean handleRenderType(ItemStack item, ItemRenderType type) {
 
         switch(type){
-            case EQUIPPED: return true;
+            case EQUIPPED_FIRST_PERSON: return true;
+            case EQUIPPED: return true; 
             default: return false;
         }
     }
@@ -45,7 +47,22 @@ public class ItemRenderOathKeeper implements IItemRenderer {
             case EQUIPPED: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.bindTexture("/mods/kk/textures/models/OathKeeper.png");
+                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk:/textures/entities/OathKeeper.png"));
+                
+                GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
+                GL11.glRotatef(45.0F, 1.0F, 0.0F, 0.0F);
+                
+                GL11.glTranslatef(0.0F, -0.4F, 0.0F);
+                
+                modelOathKeeper.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
+                
+                GL11.glPopMatrix();
+
+            }
+            case EQUIPPED_FIRST_PERSON: {
+                GL11.glPushMatrix();
+                
+                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk:/textures/entities/OathKeeper.png"));
                 
                 GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 1.0F, 0.0F, 0.0F);
