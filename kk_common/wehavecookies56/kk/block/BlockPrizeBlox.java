@@ -1,13 +1,17 @@
 package wehavecookies56.kk.block;
 
+import java.util.ArrayList;
 import java.util.Random;
 
+import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class BlockPrizeBlox extends BlockBlox {
 
@@ -29,4 +33,17 @@ public class BlockPrizeBlox extends BlockBlox {
             return true;
     }
 
+    @Override
+    public ArrayList<ItemStack> getBlockDropped(World world, int x, int y, int z, int metadata, int fortune)
+    {
+            ArrayList<ItemStack> ret = new ArrayList<ItemStack>();
+            for(int i = 0; 0 < world.rand.nextInt(3); i++)
+               ret.add(new ItemStack(AddedItems.HP, 1, damageDropped(metadata)));
+            for(int i = 0; i < world.rand.nextInt(3); i++)
+               ret.add(new ItemStack(AddedItems.Munny, 1, damageDropped(metadata)));
+            
+            return ret;
+
+    }
+    
 }

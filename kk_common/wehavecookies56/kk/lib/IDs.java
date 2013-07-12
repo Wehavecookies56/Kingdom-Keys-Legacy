@@ -5,6 +5,15 @@ public class IDs {
     public static final int KINGDOMKEY_DEFAULT = 31714;
     public static int KingdomKey;
     
+    public static final int HP_DEFAULT = 31728;
+    public static int HP;
+    
+    public static final int MUNNY_DEFAULT = 31729;
+    public static int Munny;
+    
+    public static final int POTION_DEFAULT = 31730;
+    public static int Potion;
+    
     public static final int DISC1_DEFAULT = 31715;
     public static int Disc1;
     

@@ -36,5 +36,8 @@ public class Strings {
     //Other
     public static final String HPurify = "Heart Purifier";
     public static final String DLeather = "Leather Of The Darkness";
+    public static final String HP = "HP Orb";
+    public static final String Munny = "20 Munny";
+    public static final String Potion = "Potion";
     
 }

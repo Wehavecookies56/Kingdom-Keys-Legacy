@@ -60,7 +60,7 @@
 		<jar destfile="${build.dir.release}\${build.release.minecraft.version}\${build.release.mod.version}\KingdomKeys-${build.release.mod.version}-${build_number.build_number}.jar">
 			<fileset dir="${build.dir.development}\mcp\forge\mcp\src\minecraft\" includes="mcmod.info" />
 			<fileset dir="${build.dir.development}\mcp\forge\mcp\reobf\minecraft" />
-			<fileset dir="${build.dir.development}\source\Kingdom-Keys\resources" excludes="**/xcf/**" />
+			<fileset dir="${build.dir.development}\source\Kingdom-Keys\kk_common\assets" excludes="**/xcf/**" />
 		</jar>
 
 		<!-- Clean up the MCP source now that we are done -->

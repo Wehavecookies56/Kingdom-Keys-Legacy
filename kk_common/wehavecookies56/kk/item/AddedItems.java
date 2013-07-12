@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
@@ -32,6 +33,9 @@ public class AddedItems {
     public static Item OrganizationLegs;
     public static Item OrganizationBoots;
     public static Item DarkLeather;
+    public static Item HP;
+    public static Item Munny;
+    public static Item Potion;
     
     public static EnumToolMaterial KingdomKeyMaterial;
     public static EnumToolMaterial KingdomKeyDMaterial;
@@ -40,15 +44,15 @@ public class AddedItems {
     
     public static void initKeyBlades(){
 
-        KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, -1, 6.0F, 12, 30);
+        KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, 1313, 6.0F, 10, 30);
         KingdomKey = new ItemKingdomKey(IDs.KingdomKey, KingdomKeyMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKey);
         LanguageRegistry.addName(KingdomKey, Strings.KingdomKey);
         
-        KingdomKeyDMaterial = EnumHelper.addToolMaterial(Strings.KingdomKeyD, 3, -1, 6.0F, 14, 30);
+        KingdomKeyDMaterial = EnumHelper.addToolMaterial(Strings.KingdomKeyD, 3, 1313, 6.0F, 10, 30);
         KingdomKeyD = new ItemKingdomKeyD(IDs.KingdomKeyD, KingdomKeyDMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKeyD);
         LanguageRegistry.addName(KingdomKeyD, Strings.KingdomKeyD);
         
-        OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, -1, 6.0F, 13, 30);
+        OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, 1313, 6.0F, 16, 30);
         OathKeeper = new ItemOathKeeper(IDs.OathKeeper, OathKeeperMaterial).setFull3D().setUnlocalizedName(Strings.OathKeeper);
         LanguageRegistry.addName(OathKeeper, Strings.OathKeeper);
 
@@ -82,8 +86,7 @@ public class AddedItems {
         KingdomHearts = new ItemKingdomHearts(IDs.KingdomHearts);
         LanguageRegistry.addName(KingdomHearts, Strings.KHearts);
         
-        DarkLeather = new ItemDarkLeather(IDs.DarkLeather);
-        LanguageRegistry.addName(DarkLeather, Strings.DLeather);
+
     }
     
     public static void initLoot(){
@@ -94,6 +97,20 @@ public class AddedItems {
         ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKey),0,1,15));
         ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKey),0,1,5));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKey),0,1,5));
+        
+        ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,5));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,5));
+        ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(KingdomKeyD),0,1,5));
+        
+        ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,5));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,15));
+        ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,5));
+        ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(OathKeeper),0,1,5));
     }
     
     public static void initOthers(){
@@ -104,6 +121,18 @@ public class AddedItems {
         
         Sanctuary = new ItemKingdomRecords(IDs.Disc2, Strings.Disc2).setUnlocalizedName(Strings.Disc2);
         LanguageRegistry.addName(Sanctuary, Strings.MusicDisc);
+        
+        DarkLeather = new ItemDarkLeather(IDs.DarkLeather);
+        LanguageRegistry.addName(DarkLeather, Strings.DLeather);
+        
+        HP = new ItemHP(IDs.HP);
+        LanguageRegistry.addName(HP, Strings.HP);
+        
+        Munny = new ItemMunny(IDs.Munny);
+        LanguageRegistry.addName(Munny, Strings.Munny);
+        
+        Potion = new ItemPotion(IDs.Potion, 0, 0, true);
+        LanguageRegistry.addName(Potion, Strings.Potion);
     }
     
     public static void initItemrecipes(){
@@ -173,6 +202,12 @@ public class AddedItems {
             "LOL",
             "LIL",
             'O', Block.obsidian, 'L', DarkLeather, 'I', new ItemStack(Item.dyePowder, 0)
+    });
+        GameRegistry.addRecipe(new ItemStack(Potion), new Object[]{
+        	"HHH",
+            "HHH",
+            "HPH",
+            'P', Item.glassBottle, 'H', HP
     });
         
     }

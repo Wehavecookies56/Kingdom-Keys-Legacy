@@ -4,7 +4,6 @@ import net.minecraft.entity.Entity;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.lib.Reference;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;

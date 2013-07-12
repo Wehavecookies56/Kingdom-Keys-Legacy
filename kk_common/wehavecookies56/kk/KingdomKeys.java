@@ -2,7 +2,6 @@ package wehavecookies56.kk;
 
 import java.io.File;
 
-import net.minecraft.client.resources.ResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -18,6 +17,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import wehavecookies56.kk.block.AddedBlocks;
 //import wehavecookies56.kk.client.audio.Sounds;
@@ -56,7 +56,8 @@ import wehavecookies56.kk.mob.WolfDrops;
 import wehavecookies56.kk.mob.ZombieDrops;
 import wehavecookies56.kk.proxies.ClientProxy;
 import wehavecookies56.kk.proxies.CommonProxy;
-//import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
+import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
+import wehavecookies56.kk.world.gen.WorldGenBlox;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
@@ -65,8 +66,11 @@ import wehavecookies56.kk.proxies.CommonProxy;
 //serverPacketHandlerSpec = @SidedPacketHandler(channels = {Reference.CHANNEL_NAME }, packetHandler = ServerPacketHandler.class))
 
 
+
 public class KingdomKeys {
-    
+
+	WorldGenBlox worldGen = new WorldGenBlox();
+	
     @Instance
     public static KingdomKeys instance = new KingdomKeys();
     //private GuiHandler guiHandler = new GuiHandler();
@@ -126,10 +130,13 @@ public class KingdomKeys {
     public void init(FMLInitializationEvent event) {
 
         ClientProxy.initrenders();
+        GameRegistry.registerWorldGenerator(worldGen);
+
+        
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        //ThaumcraftAddon.modsLoaded();
+        ThaumcraftAddon.modsLoaded();
     }
 }

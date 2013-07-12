@@ -1,4 +1,4 @@
-/*package wehavecookies56.kk.thaumcraft;
+package wehavecookies56.kk.thaumcraft;
 
 import java.util.logging.Level;
 
@@ -36,4 +36,4 @@ public class ThaumcraftAddon {
            }
     }
 }
-*/
+
