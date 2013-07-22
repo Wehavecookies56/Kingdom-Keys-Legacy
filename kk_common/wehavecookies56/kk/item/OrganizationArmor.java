@@ -31,13 +31,13 @@ public class OrganizationArmor extends ItemArmor{
 
 if (stack.toString().contains("leggings")) 
 {
-return "kk:/textures/armor/ORGANIZATION_2.png";
+return "kk:textures/armor/ORGANIZATION_2.png";
 }
 if (stack.toString().contains("Leggings")) 
 {
-return "kk:/textures/armor/ORGANIZATION_2.png";
+return "kk:textures/armor/ORGANIZATION_2.png";
 }
-return "kk:/textures/armor/ORGANIZATION_1.png";
+return "kk:textures/armor/ORGANIZATION_1.png";
 }
 
     @Override

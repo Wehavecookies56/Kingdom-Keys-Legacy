@@ -47,7 +47,7 @@ public class ItemRenderOathKeeper implements IItemRenderer {
             case EQUIPPED: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk:/textures/entities/OathKeeper.png"));
+                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/OathKeeper.png"));
                 
                 GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 1.0F, 0.0F, 0.0F);
@@ -62,7 +62,7 @@ public class ItemRenderOathKeeper implements IItemRenderer {
             case EQUIPPED_FIRST_PERSON: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk:/textures/entities/OathKeeper.png"));
+                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/OathKeeper.png"));
                 
                 GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 1.0F, 0.0F, 0.0F);
