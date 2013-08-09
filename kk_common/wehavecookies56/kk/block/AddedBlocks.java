@@ -22,11 +22,9 @@ public class AddedBlocks {
         
         NormalBlox = new BlockNormalBlox(IDs.NBlox, Material.rock);
         GameRegistry.registerBlock(NormalBlox, Strings.NBlox);
-        LanguageRegistry.addName(NormalBlox, Strings.NBlox);
         
         HardBlox = new BlockHardBlox(IDs.HBlox, Material.rock);
         GameRegistry.registerBlock(HardBlox, Strings.HBlox);
-        LanguageRegistry.addName(HardBlox, Strings.HBlox);
         
         //HeartPurifyer = new BlockHeartPurifyer(IDs.HPurify, Material.rock);
         //GameRegistry.registerBlock(HeartPurifyer, Strings.HPurify);
@@ -34,23 +32,18 @@ public class AddedBlocks {
         
         MetalBlox = new BlockMetalBlox(IDs.MBlox, Material.iron);
         GameRegistry.registerBlock(MetalBlox, Strings.MBlox);
-        LanguageRegistry.addName(MetalBlox, Strings.MBlox);
         
         PrizeBlox = new BlockPrizeBlox(IDs.PBlox, Material.sand);
         GameRegistry.registerBlock(PrizeBlox, Strings.PBlox);
-        LanguageRegistry.addName(PrizeBlox, Strings.PBlox);
         
         RarePrizeBlox = new BlockRarePrizeBlox(IDs.RPBlox, Material.sand);
         GameRegistry.registerBlock(RarePrizeBlox, Strings.RPBlox);
-        LanguageRegistry.addName(RarePrizeBlox, Strings.RPBlox);
         
         BounceBlox = new BlockBounceBlox(IDs.BBlox, Material.iron);
         GameRegistry.registerBlock(BounceBlox, Strings.BBlox);
-        LanguageRegistry.addName(BounceBlox, Strings.BBlox);
         
         DangerBlox = new BlockDangerBlox(IDs.DBlox, Material.iron);
         GameRegistry.registerBlock(DangerBlox, Strings.DBlox);
-        LanguageRegistry.addName(DangerBlox, Strings.DBlox);
     }
     
     

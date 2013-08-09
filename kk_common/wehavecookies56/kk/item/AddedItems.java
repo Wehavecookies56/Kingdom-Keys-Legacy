@@ -36,25 +36,38 @@ public class AddedItems {
     public static Item HP;
     public static Item Munny;
     public static Item Potion;
+    public static Item KingdomKeyChain;
+    public static Item KingdomKeyDChain;
+    public static Item OathkeeperChain;
+    public static Item OblivionChain;
     
     public static EnumToolMaterial KingdomKeyMaterial;
     public static EnumToolMaterial KingdomKeyDMaterial;
     public static EnumToolMaterial OathKeeperMaterial;
+    public static EnumToolMaterial OblivionMaterial;
     public static EnumArmorMaterial OrganizationArmourMaterial;
     
     public static void initKeyBlades(){
 
-        KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, 1313, 6.0F, 10, 30);
+        KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, 1313, 6.0F, 5, 30);
         KingdomKey = new ItemKingdomKey(IDs.KingdomKey, KingdomKeyMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKey);
-        LanguageRegistry.addName(KingdomKey, Strings.KingdomKey);
         
         KingdomKeyDMaterial = EnumHelper.addToolMaterial(Strings.KingdomKeyD, 3, 1313, 6.0F, 10, 30);
         KingdomKeyD = new ItemKingdomKeyD(IDs.KingdomKeyD, KingdomKeyDMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKeyD);
-        LanguageRegistry.addName(KingdomKeyD, Strings.KingdomKeyD);
         
-        OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, 1313, 6.0F, 16, 30);
+        OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, 1313, 6.0F, 13, 30);
         OathKeeper = new ItemOathKeeper(IDs.OathKeeper, OathKeeperMaterial).setFull3D().setUnlocalizedName(Strings.OathKeeper);
-        LanguageRegistry.addName(OathKeeper, Strings.OathKeeper);
+        
+        OblivionMaterial = EnumHelper.addToolMaterial(Strings.Oblivion, 3, 1313, 6.0F, 15, 30);
+        Oblivion = new ItemOblivion(IDs.Oblivion, OblivionMaterial).setFull3D().setUnlocalizedName(Strings.Oblivion);
+        
+        KingdomKeyChain = new ItemKingdomKeyChain(IDs.KingdomKeyChain);
+        
+        KingdomKeyDChain = new ItemKingdomKeyDChain(IDs.KingdomKeyDChain);
+        
+        OathkeeperChain = new ItemOathkeeperChain(IDs.OathkeeperChain);
+        
+        OblivionChain = new ItemOblivionChain(IDs.OblivionChain);
 
     }
     
@@ -65,26 +78,18 @@ public class AddedItems {
         OrganizationCoat = new OrganizationArmor(IDs.OChest, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 1, "ORGANIZATION_1", "Organization Coat");
         OrganizationLegs = new OrganizationArmor(IDs.OLegs, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 2, "ORGANIZATION_2", "Organization Legs");
         OrganizationBoots = new OrganizationArmor(IDs.OBoots, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 3, "ORGANIZATION_1", "Organization Boots");
-        LanguageRegistry.addName(OrganizationHood, Strings.OHood);
-        LanguageRegistry.addName(OrganizationCoat, Strings.OCoat);
-        LanguageRegistry.addName(OrganizationLegs, Strings.OLegs);
-        LanguageRegistry.addName(OrganizationBoots, Strings.OBoots);
     }
     
    
     public static void initHearts(){
         
         PureHeart = new ItemPureHeart(IDs.PureHeart);
-        LanguageRegistry.addName(PureHeart, Strings.PHeart);
         
         DarkHeart = new ItemDarkHeart(IDs.DarkHeart);
-        LanguageRegistry.addName(DarkHeart, Strings.DHeart);
         
         Heart = new ItemHeart(IDs.Heart);
-        LanguageRegistry.addName(Heart, Strings.Heart);
         
         KingdomHearts = new ItemKingdomHearts(IDs.KingdomHearts);
-        LanguageRegistry.addName(KingdomHearts, Strings.KHearts);
         
 
     }
@@ -116,23 +121,17 @@ public class AddedItems {
     public static void initOthers(){
         
         
-        SimpleAndClean = new ItemKingdomRecords(IDs.Disc1, Strings.Disc1).setUnlocalizedName(Strings.Disc1);
-        LanguageRegistry.addName(SimpleAndClean, Strings.MusicDisc);
+    	SimpleAndClean = new ItemKingdomRecords(IDs.Disc1, Strings.Disc1).setUnlocalizedName(Strings.Disc1);
         
         Sanctuary = new ItemKingdomRecords(IDs.Disc2, Strings.Disc2).setUnlocalizedName(Strings.Disc2);
-        LanguageRegistry.addName(Sanctuary, Strings.MusicDisc);
         
         DarkLeather = new ItemDarkLeather(IDs.DarkLeather);
-        LanguageRegistry.addName(DarkLeather, Strings.DLeather);
         
         HP = new ItemHP(IDs.HP);
-        LanguageRegistry.addName(HP, Strings.HP);
         
         Munny = new ItemMunny(IDs.Munny);
-        LanguageRegistry.addName(Munny, Strings.Munny);
         
         Potion = new ItemPotion(IDs.Potion, 0, 0, true);
-        LanguageRegistry.addName(Potion, Strings.Potion);
     }
     
     public static void initItemrecipes(){
@@ -209,6 +208,35 @@ public class AddedItems {
             "HPH",
             'P', Item.glassBottle, 'H', HP
     });
+        GameRegistry.addRecipe(new ItemStack(KingdomKeyChain), new Object[]{
+        	"IPI",
+            "IPI",
+            "IPI",
+            'P', PureHeart, 'I', Item.ingotIron
+    });
+        GameRegistry.addRecipe(new ItemStack(KingdomKeyDChain), new Object[]{
+        	"GPG",
+            "GPG",
+            "GPG",
+            'P', PureHeart, 'G', Item.ingotGold
+    });
+        GameRegistry.addRecipe(new ItemStack(OathkeeperChain), new Object[]{
+        	"GPG",
+            "GKG",
+            "GPG",
+            'P', PureHeart, 'G', Item.ingotIron, 'K', KingdomHearts
+    });
+        GameRegistry.addRecipe(new ItemStack(OblivionChain), new Object[]{
+        	"OPO",
+            "OKO",
+            "OPO",
+            'P', PureHeart, 'O', Block.obsidian, 'K', KingdomHearts
+    });
+        
+        GameRegistry.addShapelessRecipe(new ItemStack(KingdomKey), new ItemStack(KingdomKeyChain, 1), new ItemStack(Item.swordWood, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(KingdomKeyD), new ItemStack(KingdomKeyDChain, 1), new ItemStack(Item.swordGold, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(OathKeeper), new ItemStack(OathkeeperChain, 1), new ItemStack(Item.swordIron, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(Oblivion), new ItemStack(OblivionChain, 1), new ItemStack(Item.swordIron, 1));
         
     }
     

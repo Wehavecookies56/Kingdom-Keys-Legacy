@@ -10,5 +10,9 @@ public class CommonProxy {
             return 0;
         }
 
+		public void initrenders() {
+			
+		}
+
     }
 

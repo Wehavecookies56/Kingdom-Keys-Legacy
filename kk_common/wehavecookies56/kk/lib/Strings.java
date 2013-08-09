@@ -11,6 +11,11 @@ public class Strings {
     public static final String RainFell = "Rainfell";
     public static final String EarthShaker = "Earthshaker";
     public static final String KyeBlade = "Kye-Blade";
+    //Key Chains
+    public static final String KingdomKeyChain = "Kingdom Key Chain";
+    public static final String KingdomKeyDChain = "Kingdom Key D Chain";
+    public static final String OathkeeperChain = "Oathkeeper Chain";
+    public static final String OblivionChain = "Oblivion Chain";
     //Blox
     public static final String NBlox = "Normal Blox";
     public static final String HBlox = "Hard Blox";

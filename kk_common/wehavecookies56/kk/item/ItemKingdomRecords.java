@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import wehavecookies56.kk.KingdomKeys;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockJukeBox;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -30,7 +32,7 @@ public class ItemKingdomRecords extends Item
         super(par1);
         this.recordName = par2Str;
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabs.tabMisc);
+        this.setCreativeTab(KingdomKeys.KKTAB);
         records.put(par2Str, this);
     }
 

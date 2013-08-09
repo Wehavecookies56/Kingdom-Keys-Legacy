@@ -11,6 +11,7 @@ public class ItemDarkHeart extends ItemKingdomKeys{
         
     }
     public void registerIcons(IconRegister par1IconRegister) {
-        itemIcon = par1IconRegister.registerIcon("kk:Dark Heart");
+        itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
         }
+
 }

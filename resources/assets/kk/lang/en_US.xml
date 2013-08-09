@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>English (en_US) Localization File</comment>
+    <!-- Items -->
+    <entry key="item.Kingdom Key.name">Kingdom Key</entry>
+    <entry key="item.Kingdom Key D.name">Kingdom Key D</entry>
+    <entry key="item.Oathkeeper.name">Oathkeeper</entry>
+    <entry key="item.Oblivion.name">Oblivion</entry>
+    <entry key="item.Kingdom Key Chain.name">Kingdom Key Chain</entry>
+    <entry key="item.Kingdom Key D Chain.name">Kingdom Key D Chain</entry>
+    <entry key="item.Oathkeeper Chain.name">Oathkeeper Chain</entry>
+    <entry key="item.Oblivion Chain.name">Oblivion Chain</entry>
+    <entry key="item.Pure Heart.name">Pure Heart</entry>
+    <entry key="item.Dark Heart.name">Dark Heart</entry>
+    <entry key="item.Heart.name">Heart</entry>
+    <entry key="item.Kingdom Hearts.name">Kingdom Hearts</entry>
+    <entry key="item.Music Disc.name">Music Disc</entry>
+    <entry key="item.Organization Hood.name">Hood Of The Organization</entry>
+    <entry key="item.Organization Coat.name">Coat Of The Organization</entry>
+    <entry key="item.Organization Legs.name">Leggings Of The Organization</entry>
+    <entry key="item.Organization Boots.name">Boots Of The Organization</entry>
+    <entry key="item.HP Orb.name">HP Orb</entry>
+    <entry key="item.20 Munny.name">20 Munny</entry>
+    <entry key="item.Potion.name">Potion</entry>
+    <entry key="item.Leather Of The Darkness.name">Leather Of The Darkness</entry>
+    <!-- Blocks -->
+    <entry key="tile.Normal Blox.name">Normal Blox</entry>
+    <entry key="tile.Hard Blox.name">Hard Blox</entry>
+    <entry key="tile.Hard Blox.name">Hard Blox</entry>
+    <entry key="tile.Metal Blox.name">Metal Blox</entry>
+    <entry key="tile.Prize Blox.name">Prize Blox</entry>
+    <entry key="tile.Rare Prize Blox.name">Rare Prize Blox</entry>
+    <entry key="tile.Danger Blox.name">Danger Blox</entry>
+    <entry key="tile.Bounce Blox.name">Bounce Blox</entry>
+    <!-- Creative Tab -->
+    <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
+</properties>

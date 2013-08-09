@@ -28,13 +28,17 @@ public class WorldGenBlox implements IWorldGenerator
 
 	/**
 	 * 
-	 * This is where you add blocks which you want to spawn in the overworld. See example
+	 * OVERWORLD GENERATION
 	 */
 
 	public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
-		this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 2, 50, 0, 80);
+		this.spawnOres(AddedBlocks.PrizeBlox, Block.stone, world, random, chunkX, chunkZ, 16, 16, 1, 50, 0, 80);
 	}
 
+	/**
+	 * 
+	 * END GENERATION
+	 */
 	public void generateEnd (World world, Random random, int chunkX, int chunkZ){
 		this.spawnOres(AddedBlocks.DangerBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 6, 20, 0, 128);
 		this.spawnOres(AddedBlocks.NormalBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 10, 60, 0, 128);
@@ -45,6 +49,10 @@ public class WorldGenBlox implements IWorldGenerator
 		this.spawnOres(AddedBlocks.HardBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
 	}
 
+	/**
+	 * 
+	 * NETHER GENERATION
+	 */
 	public void generateNether (World world, Random random, int chunkX, int chunkZ){
 
 	}

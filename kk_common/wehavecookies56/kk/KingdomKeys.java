@@ -20,8 +20,12 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.client.sound.SoundManager;
 //import wehavecookies56.kk.client.audio.Sounds;
-import wehavecookies56.kk.configuration.ConfigurationHandler;
+import wehavecookies56.kk.core.handlers.ConfigurationHandler;
+import wehavecookies56.kk.core.handlers.LocalizationHandler;
+import wehavecookies56.kk.core.proxies.ClientProxy;
+import wehavecookies56.kk.core.proxies.CommonProxy;
 import wehavecookies56.kk.creativetab.KKTAB;
 //import wehavecookies56.kk.entity.TileEntityHeartPurify;
 //import wehavecookies56.kk.handlers.ClientPacketHandler;
@@ -54,8 +58,6 @@ import wehavecookies56.kk.mob.VillagerDrops;
 import wehavecookies56.kk.mob.WitchDrops;
 import wehavecookies56.kk.mob.WolfDrops;
 import wehavecookies56.kk.mob.ZombieDrops;
-import wehavecookies56.kk.proxies.ClientProxy;
-import wehavecookies56.kk.proxies.CommonProxy;
 import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
 
@@ -75,8 +77,9 @@ public class KingdomKeys {
     public static KingdomKeys instance = new KingdomKeys();
     //private GuiHandler guiHandler = new GuiHandler();
     
-    @SidedProxy(clientSide="wehavecookies56.kk.proxies.ClientProxy", serverSide="wehavecookies56.kk.proxies.CommonProxy")
+    @SidedProxy(clientSide="wehavecookies56.kk.core.proxies.ClientProxy", serverSide="wehavecookies56.kk.core.proxies.CommonProxy")
     public static CommonProxy proxy;
+    public static ClientProxy cproxy;
     
     public static CreativeTabs KKTAB = new KKTAB(CreativeTabs.getNextID(), "KKTAB");
     
@@ -91,12 +94,10 @@ public class KingdomKeys {
         AddedItems.initOthers();
         AddedItems.intiArmour();
         AddedBlocks.preinit();
+        LocalizationHandler.loadLanguages();
+        MinecraftForge.EVENT_BUS.register(new SoundManager());
 
        AddedItems.initItemrecipes();
-       // if(FMLCommonHandler.instance().getSide().isClient())
-       // {
-       // MinecraftForge.EVENT_BUS.register(new Sounds());
-      //  }
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", Reference.MOD_NAME);
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
@@ -128,10 +129,10 @@ public class KingdomKeys {
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
-
-        ClientProxy.initrenders();
         GameRegistry.registerWorldGenerator(worldGen);
+        proxy.registerRenderers();
 
+        
         
     }
 

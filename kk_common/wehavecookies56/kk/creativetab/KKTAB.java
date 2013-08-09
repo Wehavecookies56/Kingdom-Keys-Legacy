@@ -18,8 +18,5 @@ public class KKTAB extends CreativeTabs {
     {
         return AddedItems.KingdomKey.itemID;
     }
-    public String GetTranslatedTabNameLabel(){
-        return Reference.MOD_NAME;
-    }
 
 }

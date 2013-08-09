@@ -50,6 +50,21 @@ public class IDs {
     public static final int DARKLEATHER_DEFAULT = 31727;
     public static int DarkLeather;
     
+    public static final int OBLIVION_DEFAULT = 31728;
+    public static int Oblivion;
+    
+    public static final int OBLIVIONCHAIN_DEFAULT = 31729;
+    public static int OblivionChain;
+    
+    public static final int OATHKEEPERCHAIN_DEFAULT = 31730;
+    public static int OathkeeperChain;
+    
+    public static final int KINGDOMKEYCHAIN_DEFAULT = 31731;
+    public static int KingdomKeyChain;
+    
+    public static final int KINGDOMKEYDCHAIN_DEFAULT = 31732;
+    public static int KingdomKeyDChain;
+    
     //BLOCKS
     public static final int NORMALBLOX_DEFAULT = 2600;
     public static int NBlox;

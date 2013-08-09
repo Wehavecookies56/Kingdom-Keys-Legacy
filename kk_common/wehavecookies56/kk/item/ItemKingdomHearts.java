@@ -11,7 +11,6 @@ public class ItemKingdomHearts extends ItemKingdomKeys {
     public ItemKingdomHearts(int id) {
         super(id);
         this.setUnlocalizedName(Strings.KHearts);
-        new ResourceLocation("kk", "textures/items/" + this.getUnlocalizedName() + ".png");
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
