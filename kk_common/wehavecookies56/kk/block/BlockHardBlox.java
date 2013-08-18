@@ -20,12 +20,10 @@ public class BlockHardBlox extends BlockBlox{
     }
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister) {
-        
             blockIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + (this.getUnlocalizedName().substring(5)));
         }
     protected boolean canSilkHarvest()
     {
             return true;
     }
-    
 }

@@ -44,5 +44,4 @@ public class BlockBounceBlox extends BlockBlox {
     {
             return true;
     }
-    
 }

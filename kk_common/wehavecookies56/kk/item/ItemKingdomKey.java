@@ -30,6 +30,4 @@ public class ItemKingdomKey extends ItemSword {
     public EnumRarity getRarity(ItemStack par1ItemStack){
         return EnumRarity.epic;
     }
-   
-
 }

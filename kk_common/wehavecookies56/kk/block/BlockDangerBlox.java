@@ -22,8 +22,6 @@ public class BlockDangerBlox extends BlockBlox {
         this.setStepSound(soundMetalFootstep);
         this.setHardness(2.0F);
         this.setResistance(2.0F);
-        
-        
     }
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4)
     {
@@ -40,7 +38,6 @@ public class BlockDangerBlox extends BlockBlox {
         par5Entity.attackEntityFrom(DamageSource.magic, 3);
     }
 
-
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister) {
 
@@ -50,5 +47,4 @@ public class BlockDangerBlox extends BlockBlox {
     {
             return true;
     }
-    
 }

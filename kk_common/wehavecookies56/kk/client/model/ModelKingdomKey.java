@@ -6,7 +6,6 @@ import net.minecraft.entity.Entity;
 
 public class ModelKingdomKey extends ModelBase
 {
-  //fields
     ModelRenderer Handle01;
     ModelRenderer Handle02;
     ModelRenderer Handle03;
@@ -168,5 +167,4 @@ public class ModelKingdomKey extends ModelBase
   {
     super.setRotationAngles(f, f1, f2, f3, f4, f5, ent);
   }
-
 }

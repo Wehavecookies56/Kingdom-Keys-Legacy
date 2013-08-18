@@ -6,7 +6,6 @@ import net.minecraft.entity.Entity;
 
 public class ModelOathKeeper extends ModelBase
 {
-  //fields
     ModelRenderer Shape1;
     ModelRenderer Shape2;
     ModelRenderer Shape3;
@@ -408,5 +407,4 @@ public class ModelOathKeeper extends ModelBase
   {
     super.setRotationAngles(f, f1, f2, f3, f4, f5, ent);
   }
-
 }

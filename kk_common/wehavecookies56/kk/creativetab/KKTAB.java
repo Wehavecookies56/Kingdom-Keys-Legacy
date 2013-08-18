@@ -10,13 +10,11 @@ public class KKTAB extends CreativeTabs {
 
     public KKTAB(int par1, String par2Str) {
         super(par1, par2Str);
-        
-        
     }
+    
     @SideOnly(Side.CLIENT)
     public int getTabIconItemIndex()
     {
         return AddedItems.KingdomKey.itemID;
     }
-
 }

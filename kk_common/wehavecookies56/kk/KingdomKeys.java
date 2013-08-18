@@ -3,6 +3,7 @@ package wehavecookies56.kk;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -17,20 +18,21 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.block.BlockSynthesis;
+import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
 import wehavecookies56.kk.client.sound.SoundManager;
-//import wehavecookies56.kk.client.audio.Sounds;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
+import wehavecookies56.kk.core.handlers.GuiHandler;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
 import wehavecookies56.kk.core.proxies.ClientProxy;
 import wehavecookies56.kk.core.proxies.CommonProxy;
 import wehavecookies56.kk.creativetab.KKTAB;
-//import wehavecookies56.kk.entity.TileEntityHeartPurify;
-//import wehavecookies56.kk.handlers.ClientPacketHandler;
-//import wehavecookies56.kk.handlers.GuiHandler;
-//import wehavecookies56.kk.handlers.ServerPacketHandler;
+import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.mob.BatDrops;
@@ -59,13 +61,12 @@ import wehavecookies56.kk.mob.WitchDrops;
 import wehavecookies56.kk.mob.WolfDrops;
 import wehavecookies56.kk.mob.ZombieDrops;
 import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
+import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
 @NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = Reference.CHANNEL_NAME)
-//clientPacketHandlerSpec = @SidedPacketHandler(channels = {Reference.CHANNEL_NAME }, packetHandler = ClientPacketHandler.class),
-//serverPacketHandlerSpec = @SidedPacketHandler(channels = {Reference.CHANNEL_NAME }, packetHandler = ServerPacketHandler.class))
 
 
 
@@ -73,9 +74,8 @@ public class KingdomKeys {
 
 	WorldGenBlox worldGen = new WorldGenBlox();
 	
-    @Instance
-    public static KingdomKeys instance = new KingdomKeys();
-    //private GuiHandler guiHandler = new GuiHandler();
+    @Instance(Reference.MOD_ID)
+    public static KingdomKeys instance;
     
     @SidedProxy(clientSide="wehavecookies56.kk.core.proxies.ClientProxy", serverSide="wehavecookies56.kk.core.proxies.CommonProxy")
     public static CommonProxy proxy;
@@ -90,14 +90,14 @@ public class KingdomKeys {
         ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
         AddedItems.initHearts();
         AddedItems.initKeyBlades();
-        AddedItems.initLoot();
         AddedItems.initOthers();
         AddedItems.intiArmour();
         AddedBlocks.preinit();
+        AddedItems.initLoot();
         LocalizationHandler.loadLanguages();
         MinecraftForge.EVENT_BUS.register(new SoundManager());
-
-       AddedItems.initItemrecipes();
+        AddedItems.initItemrecipes();
+        AddedBlocks.initBlockRecipes();
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", Reference.MOD_NAME);
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
@@ -124,15 +124,16 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new MooshroomDrops());
         MinecraftForge.EVENT_BUS.register(new CaveSpiderDrops());
         MinecraftForge.EVENT_BUS.register(new PigDrops());
-        //GameRegistry.registerTileEntity(TileEntityHeartPurify.class, "tileEntityHeartPurifyer");
     }
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
         GameRegistry.registerWorldGenerator(worldGen);
         proxy.registerRenderers();
-
-        
+        EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
+        new GuiHandler();
+        BlockSynthesis.registerTileEntities();
+        NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", "0.4.0", "https://github.com/Wehavecookies56/Kingdom-Keys/raw/master/Releases/Latest/KingdomKeys.jar"));
         
     }
 

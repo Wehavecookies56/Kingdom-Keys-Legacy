@@ -8,11 +8,9 @@ public class ItemDarkLeather extends ItemKingdomKeys{
 
     public ItemDarkLeather(int id) {
         super(id);       
-        this.setUnlocalizedName(Strings.DLeather);
-        
+        this.setUnlocalizedName(Strings.DLeather);  
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
         }
-
 }
