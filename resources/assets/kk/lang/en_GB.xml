@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>English (en_GB) Localization File</comment>
+    <!-- Items -->
+    <entry key="item.kingdomKey.name">Kingdom Key</entry>
+    <entry key="item.kingdomKeyD.name">Kingdom Key D</entry>
+    <entry key="item.oathkeeper.name">Oathkeeper</entry>
+    <entry key="item.oblivion.name">Oblivion</entry>
+	<entry key="item.waywardWind.name">Wayward Wind</entry>
+    <entry key="item.kingdomKeyChain.name">Kingdom Key Chain</entry>
+    <entry key="item.kingdomKeyDChain.name">Kingdom Key D Chain</entry>
+    <entry key="item.oathkeeperChain.name">Oathkeeper Chain</entry>
+    <entry key="item.oblivionChain.name">Oblivion Chain</entry>
+    <entry key="item.pureHeart.name">Pure Heart</entry>
+    <entry key="item.darkHeart.name">Dark Heart</entry>
+    <entry key="item.heart.name">Heart</entry>
+    <entry key="item.kingdomHearts.name">Kingdom Hearts</entry>
+	<entry key="item.Sanctuary.name">Music Disc</entry>
+	<entry key="item.Simple And Clean PLANITb Remix.name">Music Disc</entry>
+	<entry key="item.Musique pour la tristesse de Xion.name">Music Disc</entry>
+	<entry key="item.Birth by Sleep -A Link to the Future-.name">Music Disc</entry>
+	<entry key="item.Dream Drop Distance -The Next Awakening-.name">Music Disc</entry>
+	<entry key="item.Hikari -KINGDOM Instrumental Version-.name">Music Disc</entry>
+	<entry key="item.Organization XIII.name">Music Disc</entry>
+	<entry key="item.No More Bugs -Bug Version-.name">Music Disc</entry>
+	<entry key="item.Sinister Sundown.name">Music Disc</entry>
+    <entry key="item.organizationHood.name">Hood Of The Organisation</entry>
+    <entry key="item.organizationCoat.name">Coat Of The Organisation</entry>
+    <entry key="item.organizationLegs.name">Leggings Of The Organisation</entry>
+    <entry key="item.organizationBoots.name">Boots Of The Organisation</entry>
+    <entry key="item.hPOrb.name">HP Orb</entry>
+    <entry key="item.20Munny.name">20 Munny</entry>
+    <entry key="item.potion.name">Potion</entry>
+    <entry key="item.leatherDarkness.name">Leather Of The Darkness</entry>
+    <entry key="item.keybladeAHelm.name">Keyblade Armour Helmet</entry>
+    <entry key="item.keybladeAChest.name">Keyblade Armour Chestplate</entry>
+    <entry key="item.keybladeALegs.name">Keyblade Armour Leggings</entry>
+    <entry key="item.keybladeABoots.name">Keyblade Armour Boots</entry>
+    <entry key="item.keybladeTHelm.name">Keyblade Armour Helmet</entry>
+    <entry key="item.keybladeTChest.name">Keyblade Armour Chestplate</entry>
+    <entry key="item.keybladeTLegs.name">Keyblade Armour Leggings</entry>
+    <entry key="item.keybladeTBoots.name">Keyblade Armour Boots</entry>
+    <entry key="item.keybladeVHelm.name">Keyblade Armour Helmet</entry>
+    <entry key="item.keybladeVChest.name">Keyblade Armour Chestplate</entry>
+    <entry key="item.keybladeVLegs.name">Keyblade Armour Leggings</entry>
+    <entry key="item.keybladeVBoots.name">Keyblade Armour Boots</entry>
+    <entry key="item.waywardWindChain.name">Wayward Wind Chain</entry>
+    <entry key="item.rainFellChain.name">Rainfell Chain</entry>
+    <entry key="item.earthShakerChain.name">Earthshaker Chain</entry>
+    <entry key="item.rainFell.name">Rainfell</entry>
+    <entry key="item.earthShaker.name">Earthshaker</entry>
+    <!-- Blocks -->
+    <entry key="tile.normalBlox.name">Normal Blox</entry>
+    <entry key="tile.hardBlox.name">Hard Blox</entry>
+    <entry key="tile.metalBlox.name">Metal Blox</entry>
+    <entry key="tile.prizeBlox.name">Prize Blox</entry>
+    <entry key="tile.rarePrizeBlox.name">Rare Prize Blox</entry>
+    <entry key="tile.dangerBlox.name">Danger Blox</entry>
+    <entry key="tile.bounceBlox.name">Bounce Blox</entry>
+	<entry key="tile.blastBlox.name">Blast Blox</entry>
+    <!-- Creative Tab -->
+    <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
+</properties>
