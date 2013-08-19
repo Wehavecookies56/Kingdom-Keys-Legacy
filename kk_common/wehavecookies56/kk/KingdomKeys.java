@@ -100,6 +100,7 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new SoundManager());
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
+        LanguageRegistry.instance().addStringLocalization("itemGroup.Kingdom Keys", "en_US", "Kingdom Keys");
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
         MinecraftForge.EVENT_BUS.register(new ChickenDrops());
