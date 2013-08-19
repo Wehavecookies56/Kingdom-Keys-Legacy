@@ -133,7 +133,7 @@ public class KingdomKeys {
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         new GuiHandler();
         BlockSynthesis.registerTileEntities();
-        NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", "0.4.0", "https://github.com/Wehavecookies56/Kingdom-Keys/raw/master/Releases/Latest/KingdomKeys.jar"));
+        NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_ID, "https://github.com/Wehavecookies56/Kingdom-Keys/raw/master/Releases/Latest/KingdomKeys.jar"));
         
     }
 
