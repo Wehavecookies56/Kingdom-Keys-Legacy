@@ -1,0 +1,8 @@
+kkdeveloper=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/DEV_CAPE.png
+kkdeveloper=wehavecookies56
+kkcontributor=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/CONTRIB_CAPE.png
+kkcontributor=EnderFurry
+kkcontributor1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/CONTRIB_CAPE.png
+kkcontributor1=Abelatox
+kkdebug1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/DEBUG_CAPE.png
+kkdebug1=hiiiii

@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 import wehavecookies56.kk.lib.PrintToPlayer;
+import wehavecookies56.kk.lib.Reference;
 
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.NetLoginHandler;
@@ -23,7 +24,7 @@ public class Update implements IConnectionHandler
 	public Update(String modName, String currentVersion, String url)
 	{
 		this.modName = modName;
-		this.currentVersion = currentVersion;
+		this.currentVersion = Reference.MOD_VER;
 		this.url = url;
 	}
 	
@@ -38,12 +39,13 @@ public class Update implements IConnectionHandler
 			
 			if(currentVersion.equals(newVersion))
 			{
-				System.out.println(modName + " is up to date");
+				System.out.println(modName + " " + currentVersion + " is up to date");
+				PrintToPlayer.printText((modName + " " + currentVersion + " is up to date"));
 			}
 			else
 			{
-				System.out.println("Version " + newVersion + " is available for " + modName);
-				PrintToPlayer.printText(("Version " + newVersion + " is available for " + modName));
+				System.out.println("A new version " + newVersion + " is available for " + modName);
+				PrintToPlayer.printText(("A new version " + newVersion + " is available for " + modName));
 			}	
 		}
 	}

@@ -2,6 +2,8 @@ package wehavecookies56.kk;
 
 import java.io.File;
 
+import com.jadarstudios.developercapes.DevCapesUtil;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
@@ -98,7 +100,6 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new SoundManager());
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
-        LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", Reference.MOD_NAME);
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
         MinecraftForge.EVENT_BUS.register(new ChickenDrops());
@@ -133,7 +134,8 @@ public class KingdomKeys {
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         new GuiHandler();
         BlockSynthesis.registerTileEntities();
-        NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_ID, "https://github.com/Wehavecookies56/Kingdom-Keys/raw/master/Releases/Latest/KingdomKeys.jar"));
+        NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
+    	DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
         
     }
 
