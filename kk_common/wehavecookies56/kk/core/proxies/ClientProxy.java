@@ -1,5 +1,7 @@
 package wehavecookies56.kk.core.proxies;
 
+import com.jadarstudios.developercapes.DevCapesUtil;
+
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -32,8 +34,13 @@ public class ClientProxy extends CommonProxy {
          MinecraftForgeClient.registerItemRenderer(AddedItems.WaywardWind.itemID, new ItemRenderWaywardWind());
          MinecraftForgeClient.registerItemRenderer(AddedItems.EarthShaker.itemID, new ItemRenderEarthShaker());
          MinecraftForgeClient.registerItemRenderer(AddedItems.RainFell.itemID, new ItemRenderRainFell());
+         
+         
          //Entities
          RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new RenderBlastBlox());
+         
+         //Capes
+         DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
     }
     
     @Override

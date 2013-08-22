@@ -70,49 +70,6 @@ public class Update implements IConnectionHandler
     	return newVersion;
     }
 	
-	public static void downloadNewVersion()
-	  {
-		//TODO: Allow player to download file from web and have it parse it into the mods folder
-	     /*try
-	     {
-	        long startTime = System.currentTimeMillis();
-	 
-	        System.out.println("Connecting to Mediafire...\n");
-	 
-	        URL url = new URL("http://www.mediafire.com/?d4wvcev647251kb");
-	        url.openConnection();
-	        InputStream reader = url.openStream();
-	 
-	        FileOutputStream writer = new FileOutputStream("mods/");
-	        byte[] buffer = new byte[153600];
-	        int totalBytesRead = 0;
-	        int bytesRead = 0;
-	 
-	        System.out.println("Reading ZIP file 150KB blocks at a time.\n");
-	 
-	        while ((bytesRead = reader.read(buffer)) > 0)
-	        {  
-	           writer.write(buffer, 0, bytesRead);
-	           buffer = new byte[153600];
-	           totalBytesRead += bytesRead;
-	        }
-	 
-	        long endTime = System.currentTimeMillis();
-	 
-	        System.out.println("Done. " + (new Integer(totalBytesRead).toString()) + " bytes read (" + (new Long(endTime - startTime).toString()) + " millseconds).\n");
-	        writer.close();
-	        reader.close();
-	     }
-	     catch (MalformedURLException e)
-	     {
-	        e.printStackTrace();
-	     }
-	     catch (IOException e)
-	     {
-	        e.printStackTrace();
-	     }*/
-	  }
-
 	@Override
 	public void playerLoggedIn(Player player, NetHandler netHandler, INetworkManager manager)
 	{

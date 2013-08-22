@@ -9,12 +9,14 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
+import wehavecookies56.kk.api.KeyBlade;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemOblivion extends ItemSword {
-    public ItemOblivion(int id, EnumToolMaterial enumOblivionMaterial) {
+public class ItemOblivion extends KeyBlade {
+    public ItemOblivion(int id, EnumKeyBladeMaterial enumOblivionMaterial) {
         super(id, enumOblivionMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
     }

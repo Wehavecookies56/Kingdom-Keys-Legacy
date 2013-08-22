@@ -3,6 +3,8 @@ package wehavecookies56.kk.item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
+import wehavecookies56.kk.api.KeyBlade;
 import wehavecookies56.kk.lib.Reference;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -12,10 +14,10 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
-public class ItemKingdomKeyD extends ItemSword {
+public class ItemKingdomKeyD extends KeyBlade {
     
-    public ItemKingdomKeyD(int id, EnumToolMaterial enumKingdomKeyDMaterial) {
-        super(id, enumKingdomKeyDMaterial);
+    public ItemKingdomKeyD(int id, EnumKeyBladeMaterial kingdomkeyd) {
+        super(id, kingdomkeyd);
         this.setCreativeTab(KingdomKeys.KKTAB);
     }
     public void registerIcons(IconRegister par1IconRegister) {

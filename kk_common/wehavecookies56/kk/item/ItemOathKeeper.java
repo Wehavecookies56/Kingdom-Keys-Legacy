@@ -9,12 +9,14 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
+import wehavecookies56.kk.api.KeyBlade;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemOathKeeper extends ItemSword {
-    public ItemOathKeeper(int id, EnumToolMaterial enumOathKeeperMaterial) {
+public class ItemOathKeeper extends KeyBlade {
+    public ItemOathKeeper(int id, EnumKeyBladeMaterial enumOathKeeperMaterial) {
         super(id, enumOathKeeperMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
     }

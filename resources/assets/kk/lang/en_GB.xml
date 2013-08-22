@@ -60,5 +60,5 @@
     <entry key="tile.bounceBlox.name">Bounce Blox</entry>
 	<entry key="tile.blastBlox.name">Blast Blox</entry>
     <!-- Creative Tab -->
-    <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
+    <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
 </properties>

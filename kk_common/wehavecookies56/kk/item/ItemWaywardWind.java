@@ -9,12 +9,14 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
+import wehavecookies56.kk.api.KeyBlade;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemWaywardWind extends ItemSword {
-    public ItemWaywardWind(int id, EnumToolMaterial enumWaywardWindMaterial) {
+public class ItemWaywardWind extends KeyBlade {
+    public ItemWaywardWind(int id, EnumKeyBladeMaterial enumWaywardWindMaterial) {
         super(id, enumWaywardWindMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
         this.setContainerItem(AddedItems.WaywardWind);

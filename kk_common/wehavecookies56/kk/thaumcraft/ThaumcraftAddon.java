@@ -33,7 +33,12 @@ public class ThaumcraftAddon {
                    FMLLog.log(Level.SEVERE, "Could not load TC3 addon");
                    e.printStackTrace(System.err);
                }
+               
+
            }
+        else {
+     	   FMLLog.log(Level.SEVERE, "Could not load TC3 addon, most likely because TC3 is not installed");
+        }
     }
 }
 

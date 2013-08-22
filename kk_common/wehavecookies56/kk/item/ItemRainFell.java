@@ -9,12 +9,14 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
+import wehavecookies56.kk.api.KeyBlade;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemRainFell extends ItemSword {
-    public ItemRainFell(int id, EnumToolMaterial enumRainFellMaterial) {
+public class ItemRainFell extends KeyBlade {
+    public ItemRainFell(int id, EnumKeyBladeMaterial enumRainFellMaterial) {
         super(id, enumRainFellMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
         this.setContainerItem(AddedItems.RainFell);

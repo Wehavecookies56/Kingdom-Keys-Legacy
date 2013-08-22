@@ -24,6 +24,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
 import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.block.BlockSynthesis;
 import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
@@ -100,7 +101,7 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new SoundManager());
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
-        LanguageRegistry.instance().addStringLocalization("itemGroup.Kingdom Keys", "en_US", "Kingdom Keys");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", "Kingdom Keys");
         MinecraftForge.EVENT_BUS.register(new BatDrops());
         MinecraftForge.EVENT_BUS.register(new CowDrops());        
         MinecraftForge.EVENT_BUS.register(new ChickenDrops());
@@ -136,7 +137,7 @@ public class KingdomKeys {
         new GuiHandler();
         BlockSynthesis.registerTileEntities();
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
-    	DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
+
         
     }
 

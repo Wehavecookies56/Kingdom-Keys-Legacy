@@ -1,8 +1,13 @@
 package wehavecookies56.kk.item;
 
+import com.jadarstudios.developercapes.DevCapesUtil;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.api.EnumKeyBladeMaterial;
 import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
@@ -20,17 +25,16 @@ import net.minecraftforge.common.EnumHelper;
 public class AddedItems {
 
     public static Item KingdomKey, OathKeeper, Oblivion, KingdomKeyD, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, KingdomKeyChain, KingdomKeyDChain, OathkeeperChain, OblivionChain, WaywardWind, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, EarthShaker, EarthShakerChain, RainFell, RainFellChain;
-    public static EnumToolMaterial KingdomKeyMaterial, KingdomKeyDMaterial, OathKeeperMaterial, OblivionMaterial, WaywardWindMaterial, EarthShakerMaterial, RainFellMaterial;
     public static EnumArmorMaterial OrganizationArmourMaterial, KeybladeAArmourMaterial, KeybladeTArmourMaterial, KeybladeVArmourMaterial;
     
     public static void initKeyBlades(){
-    	KingdomKeyMaterial = EnumHelper.addToolMaterial(Strings.KingdomKey, 3, -1, 6.0F, 5, 25); KingdomKey = new ItemKingdomKey(IDs.KingdomKey, KingdomKeyMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKey); 
-    	KingdomKeyDMaterial = EnumHelper.addToolMaterial(Strings.KingdomKeyD, 3, -1, 6.0F, 8, 30); KingdomKeyD = new ItemKingdomKeyD(IDs.KingdomKeyD, KingdomKeyDMaterial).setFull3D().setUnlocalizedName(Strings.KingdomKeyD); 
-        OathKeeperMaterial = EnumHelper.addToolMaterial(Strings.OathKeeper, 3, -1, 6.0F, 10, 30); OathKeeper = new ItemOathKeeper(IDs.OathKeeper, OathKeeperMaterial).setFull3D().setUnlocalizedName(Strings.OathKeeper);
-        OblivionMaterial = EnumHelper.addToolMaterial(Strings.Oblivion, 3, -1, 6.0F, 15, 12); Oblivion = new ItemOblivion(IDs.Oblivion, OblivionMaterial).setFull3D().setUnlocalizedName(Strings.Oblivion);
-        WaywardWindMaterial = EnumHelper.addToolMaterial(Strings.WaywardWind, 3, -1, 6.0F, 8, 20); WaywardWind = new ItemWaywardWind(IDs.WaywardWind, WaywardWindMaterial).setFull3D().setUnlocalizedName(Strings.WaywardWind);
-        EarthShakerMaterial = EnumHelper.addToolMaterial(Strings.EarthShaker, 3, -1, 6.0F, 10, 10); EarthShaker = new ItemEarthShaker(IDs.EarthShaker, EarthShakerMaterial).setFull3D().setUnlocalizedName(Strings.EarthShaker);
-        RainFellMaterial = EnumHelper.addToolMaterial(Strings.RainFell, 3, -1, 6.0F, 6, 30); RainFell = new ItemRainFell(IDs.RainFell, RainFellMaterial).setFull3D().setUnlocalizedName(Strings.RainFell);
+    	KingdomKey = new ItemKingdomKey(IDs.KingdomKey, EnumKeyBladeMaterial.KINGDOMKEY).setFull3D().setUnlocalizedName(Strings.KingdomKey); 
+    	KingdomKeyD = new ItemKingdomKeyD(IDs.KingdomKeyD, EnumKeyBladeMaterial.KINGDOMKEYD).setFull3D().setUnlocalizedName(Strings.KingdomKeyD); 
+        OathKeeper = new ItemOathKeeper(IDs.OathKeeper, EnumKeyBladeMaterial.OATHKEEPER).setFull3D().setUnlocalizedName(Strings.OathKeeper);
+        Oblivion = new ItemOblivion(IDs.Oblivion, EnumKeyBladeMaterial.OBLIVION).setFull3D().setUnlocalizedName(Strings.Oblivion);
+        WaywardWind = new ItemWaywardWind(IDs.WaywardWind, EnumKeyBladeMaterial.WAYWARDWIND).setFull3D().setUnlocalizedName(Strings.WaywardWind);
+        EarthShaker = new ItemEarthShaker(IDs.EarthShaker, EnumKeyBladeMaterial.EARTHSHAKER).setFull3D().setUnlocalizedName(Strings.EarthShaker);
+        RainFell = new ItemRainFell(IDs.RainFell, EnumKeyBladeMaterial.RAINFELL).setFull3D().setUnlocalizedName(Strings.RainFell);
         KingdomKeyChain = new ItemKingdomKeyChain(IDs.KingdomKeyChain);
         KingdomKeyDChain = new ItemKingdomKeyDChain(IDs.KingdomKeyDChain);
         OathkeeperChain = new ItemOathkeeperChain(IDs.OathkeeperChain);
