@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>Simplified Chinese (zh_CN) Localization File</comment>
+    <!-- Items -->
+    <entry key="item.kingdomKey.name">王国钥匙</entry>
+    <entry key="item.kingdomKeyD.name">王国钥匙D</entry>
+    <entry key="item.oathkeeper.name">许诺之誓言</entry>
+    <entry key="item.oblivion.name">湮没之回忆</entry>
+    <entry key="item.waywardWind.name">任性之风</entry>
+    <entry key="item.kingdomKeyChain.name">王国钥匙链</entry>
+    <entry key="item.kingdomKeyDChain.name">王国钥匙D链</entry>
+    <entry key="item.oathkeeperChain.name">许诺之誓言链</entry>
+    <entry key="item.oblivionChain.name">王国钥匙链</entry>
+    <entry key="item.pureHeart.name">纯洁之心</entry>
+    <entry key="item.darkHeart.name">黑暗之心</entry>
+    <entry key="item.heart.name">心</entry>
+    <entry key="item.kingdomHearts.name">王国之心</entry>
+    <entry key="item.Sanctuary.name">音乐唱片</entry>
+    <entry key="item.Simple And Clean PLANITb Remix.name">音乐唱片:Simple And Clean(PLANITb Remix)</entry>
+    <entry key="item.Musique pour la tristesse de Xion.name">音乐唱片:Musique pour la tristesse de Xion</entry>
+    <entry key="item.Birth by Sleep -A Link to the Future-.name">音乐唱片:Birth by Sleep</entry>
+    <entry key="item.Dream Drop Distance -The Next Awakening-.name">音乐唱片:Dream Drop Distance</entry>
+    <entry key="item.Hikari -KINGDOM Instrumental Version-.name">音乐唱片:Hikari</entry>
+    <entry key="item.Organization XIII.name">音乐唱片:Organization XIII</entry>
+    <entry key="item.No More Bugs -Bug Version-.name">音乐唱片:No More Bugs</entry>
+    <entry key="item.Sinister Sundown.name">音乐唱片:Sinister Sundown</entry>
+    <entry key="item.organizationHood.name">神秘组织头巾</entry>
+    <entry key="item.organizationCoat.name">神秘组织大衣</entry>
+    <entry key="item.organizationLegs.name">神秘组织袍子</entry>
+    <entry key="item.organizationBoots.name">神秘组织靴子</entry>
+    <entry key="item.hPOrb.name">HP球</entry>
+    <entry key="item.20Munny.name">20Munny</entry>
+    <entry key="item.potion.name">恢复剂</entry>
+    <entry key="item.leatherDarkness.name">黑暗皮革</entry>
+    <entry key="item.keybladeAHelm.name">键刃使头盔</entry>
+    <entry key="item.keybladeAChest.name">键刃使胸甲</entry>
+    <entry key="item.keybladeALegs.name">键刃使护腿</entry>
+    <entry key="item.keybladeABoots.name">键刃使靴子</entry>
+    <entry key="item.keybladeTHelm.name">键刃使头盔</entry>
+    <entry key="item.keybladeTChest.name">键刃使胸甲</entry>
+    <entry key="item.keybladeTLegs.name">键刃使护腿</entry>
+    <entry key="item.keybladeTBoots.name">键刃使靴子</entry>
+    <entry key="item.keybladeVHelm.name">键刃使头盔</entry>
+    <entry key="item.keybladeVChest.name">键刃使胸甲</entry>
+    <entry key="item.keybladeVLegs.name">键刃使护腿</entry>
+    <entry key="item.keybladeVBoots.name">键刃使靴子</entry>
+    <entry key="item.waywardWindChain.name">任性之风链</entry>
+    <entry key="item.rainFellChain.name">落雨链</entry>
+    <entry key="item.earthShakerChain.name">地震链</entry>
+    <entry key="item.rainFell.name">落雨</entry>
+    <entry key="item.earthShaker.name">地震</entry>
+    <!-- Blocks -->
+    <entry key="tile.normalBlox.name">标准方块</entry>
+    <entry key="tile.hardBlox.name">坚固方块</entry>
+    <entry key="tile.metalBlox.name">金属方块</entry>
+    <entry key="tile.prizeBlox.name">奖励方块</entry>
+    <entry key="tile.rarePrizeBlox.name">稀有奖励方块</entry>
+    <entry key="tile.dangerBlox.name">危险方块</entry>
+    <entry key="tile.bounceBlox.name">弹性方块</entry>
+    <entry key="tile.blastBlox.name">冲击方块</entry>
+    <!-- Creative Tab -->
+    <entry key="itemgroup.KKTAB">王国钥匙</entry>
+</properties>
