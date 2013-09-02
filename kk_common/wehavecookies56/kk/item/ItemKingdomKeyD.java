@@ -9,10 +9,12 @@ import wehavecookies56.kk.lib.Reference;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.world.World;
 
 public class ItemKingdomKeyD extends KeyBlade {
     
@@ -31,5 +33,13 @@ public class ItemKingdomKeyD extends KeyBlade {
     @SideOnly(Side.CLIENT)
     public EnumRarity getRarity(ItemStack par1ItemStack){
         return EnumRarity.epic;
+    }
+    
+    public void onUpdate(ItemStack itemstack, World par2World, Entity par3Entity, int par4, boolean par5)
+    {
+    if(itemstack.isItemEnchanted() == false)
+    {
+    itemstack.addEnchantment(KingdomKeys.HarvestHearts, 2);
+    }
     }
 }

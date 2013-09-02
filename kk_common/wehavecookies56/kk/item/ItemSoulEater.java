@@ -17,11 +17,11 @@ import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemEarthShaker extends KeyBlade {
-    public ItemEarthShaker(int id, EnumKeyBladeMaterial enumEarthShakerMaterial) {
-        super(id, enumEarthShakerMaterial);
+public class ItemSoulEater extends KeyBlade {
+    public ItemSoulEater(int id, EnumKeyBladeMaterial enumSoulEaterMaterial) {
+        super(id, enumSoulEaterMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
-        this.setContainerItem(AddedItems.EarthShaker);
+        this.setContainerItem(AddedItems.SoulEater);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
@@ -40,7 +40,7 @@ public class ItemEarthShaker extends KeyBlade {
     {
     if(itemstack.isItemEnchanted() == false)
     {
-    itemstack.addEnchantment(KingdomKeys.HarvestHearts, 2);
+    itemstack.addEnchantment(KingdomKeys.HarvestHearts, 3);
     }
     }
 }

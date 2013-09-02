@@ -1,11 +1,15 @@
 package wehavecookies56.kk.api;
 
+import wehavecookies56.kk.KingdomKeys;
+
 import com.google.common.collect.Multimap;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -27,7 +31,7 @@ public class KeyBlade extends Item
         this.toolMaterial = kingdomkey;
         this.maxStackSize = 1;
         this.setMaxDamage(kingdomkey.getMaxUses());
-        this.setCreativeTab(CreativeTabs.tabCombat);
+        this.setCreativeTab(KingdomKeys.KKTAB);
         this.weaponDamage = 4.0F + kingdomkey.getDamageVsEntity();
     }
 
@@ -60,7 +64,8 @@ public class KeyBlade extends Item
     public boolean hitEntity(ItemStack par1ItemStack, EntityLivingBase par2EntityLivingBase, EntityLivingBase par3EntityLivingBase)
     {
         par1ItemStack.damageItem(1, par3EntityLivingBase);
-        return true;
+            return true;
+    
     }
 
     public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLivingBase par7EntityLivingBase)
@@ -139,4 +144,5 @@ public class KeyBlade extends Item
         multimap.put(SharedMonsterAttributes.field_111264_e.func_111108_a(), new AttributeModifier(field_111210_e, "Weapon modifier", (double)this.weaponDamage, 0));
         return multimap;
     }
+    
 }

@@ -10,7 +10,7 @@ public class TileEntitySynthesiser extends TileEntity implements IInventory{
 	private ItemStack[] inventory;
 
 	public TileEntitySynthesiser() {
-		inventory = new ItemStack[3];
+		inventory = new ItemStack[9];
 		}
 	
 	@Override

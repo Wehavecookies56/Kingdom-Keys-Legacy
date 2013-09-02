@@ -2,8 +2,10 @@ package wehavecookies56.kk.lib;
 
 public class IDs {
     //ITEMS
-    public static int KingdomKey, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, OathKeeper, KingdomKeyD, DarkLeather, Oblivion, OblivionChain, OathkeeperChain, KingdomKeyDChain, KingdomKeyChain, WaywardWind, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, EarthShaker, EarthShakerChain, RainFell, RainFellChain;
+    public static int KingdomKey, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, OathKeeper, KingdomKeyD, DarkLeather, Oblivion, OblivionChain, OathkeeperChain, KingdomKeyDChain, KingdomKeyChain, WaywardWind, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, EarthShaker, EarthShakerChain, RainFell, RainFellChain, StarLight, SoulEater;
     
+    public static final int SOULEATER_DEFAULT = 31695;
+    public static final int STARLIGHT_DEFAULT = 31696;
     public static final int RAINFELLCHAIN_DEFAULT = 31697;
     public static final int RAINFELL_DEFAULT = 31698;
     public static final int EARTHSHAKERCHAIN_DEFAULT = 31699;

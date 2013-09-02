@@ -5,13 +5,15 @@ import net.minecraft.item.Item;
 
 public enum EnumKeyBladeMaterial
 {
-    KINGDOMKEY(3, -1, 6.0F, 5, 25),
+    KINGDOMKEY(3, -1, 6.0F, 5, 20),
     KINGDOMKEYD(3, -1, 6.0F, 8, 30),
     OATHKEEPER(3, -1, 6.0F, 10, 30),
     OBLIVION(3, -1, 6.0F, 15, 12),
     EARTHSHAKER(3, -1, 6.0F, 10, 10),
     WAYWARDWIND(3, -1, 6.0F, 8, 20),
-    RAINFELL(3, -1, 6.0F, 6, 30);
+    RAINFELL(3, -1, 6.0F, 6, 30),
+    STARLIGHT(3, -1, 6.0F, 6, 20),
+    SOULEATER(3, -1, 6.0F, 12, 18);
 
     /**
      * The level of material this tool can harvest (3 = DIAMOND, 2 = IRON, 1 = STONE, 0 = IRON/GOLD)

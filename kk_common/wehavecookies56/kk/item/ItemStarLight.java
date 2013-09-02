@@ -1,6 +1,7 @@
 package wehavecookies56.kk.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.item.EnumRarity;
@@ -17,11 +18,11 @@ import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemEarthShaker extends KeyBlade {
-    public ItemEarthShaker(int id, EnumKeyBladeMaterial enumEarthShakerMaterial) {
-        super(id, enumEarthShakerMaterial);
+public class ItemStarLight extends KeyBlade {
+    public ItemStarLight(int id, EnumKeyBladeMaterial enumStarLightMaterial) {
+        super(id, enumStarLightMaterial);
         this.setCreativeTab(KingdomKeys.KKTAB);
-        this.setContainerItem(AddedItems.EarthShaker);
+        this.setContainerItem(AddedItems.StarLight);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
@@ -35,12 +36,11 @@ public class ItemEarthShaker extends KeyBlade {
     public EnumRarity getRarity(ItemStack par1ItemStack){
         return EnumRarity.epic;
     }
-    
     public void onUpdate(ItemStack itemstack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
     if(itemstack.isItemEnchanted() == false)
     {
-    itemstack.addEnchantment(KingdomKeys.HarvestHearts, 2);
+    itemstack.addEnchantment(KingdomKeys.HarvestHearts, 1);
     }
     }
 }

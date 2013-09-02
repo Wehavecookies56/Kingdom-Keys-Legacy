@@ -1,26 +1,20 @@
 package wehavecookies56.kk.core.proxies;
 
-import com.jadarstudios.developercapes.DevCapesUtil;
-
-import cpw.mods.fml.client.registry.ClientRegistry;
-import cpw.mods.fml.client.registry.RenderingRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.client.MinecraftForgeClient;
 import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKey;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKeyD;
 import wehavecookies56.kk.client.render.ItemRenderOathKeeper;
 import wehavecookies56.kk.client.render.ItemRenderOblivion;
 import wehavecookies56.kk.client.render.ItemRenderRainFell;
+import wehavecookies56.kk.client.render.ItemRenderSoulEater;
+import wehavecookies56.kk.client.render.ItemRenderStarLight;
 import wehavecookies56.kk.client.render.ItemRenderWaywardWind;
 import wehavecookies56.kk.client.render.RenderBlastBlox;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
-//import wehavecookies56.kk.item.ItemRenderKingdomKey;
-//import wehavecookies56.kk.item.ItemRenderKingdomKeyD;
-//import wehavecookies56.kk.item.ItemRenderOathKeeper;
-import net.minecraftforge.client.IItemRenderer;
-import net.minecraftforge.client.MinecraftForgeClient;
+import com.jadarstudios.developercapes.DevCapesUtil;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends CommonProxy {
 	
@@ -34,7 +28,8 @@ public class ClientProxy extends CommonProxy {
          MinecraftForgeClient.registerItemRenderer(AddedItems.WaywardWind.itemID, new ItemRenderWaywardWind());
          MinecraftForgeClient.registerItemRenderer(AddedItems.EarthShaker.itemID, new ItemRenderEarthShaker());
          MinecraftForgeClient.registerItemRenderer(AddedItems.RainFell.itemID, new ItemRenderRainFell());
-         
+         MinecraftForgeClient.registerItemRenderer(AddedItems.StarLight.itemID, new ItemRenderStarLight());
+         MinecraftForgeClient.registerItemRenderer(AddedItems.SoulEater.itemID, new ItemRenderSoulEater());
          
          //Entities
          RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new RenderBlastBlox());

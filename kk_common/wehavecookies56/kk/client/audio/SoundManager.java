@@ -1,4 +1,4 @@
-package wehavecookies56.kk.client.sound;
+package wehavecookies56.kk.client.audio;
 
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;

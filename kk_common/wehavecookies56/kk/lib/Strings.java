@@ -10,6 +10,8 @@ public class Strings {
     public static final String RainFell = "rainFell";
     public static final String EarthShaker = "earthShaker";
     public static final String KyeBlade = "kyeBlade";
+    public static final String StarLight = "starLight";
+    public static final String SoulEater = "soulEater";
     //Key Chains
     public static final String KingdomKeyChain = "kingdomKeyChain";
     public static final String KingdomKeyDChain = "kingdomKeyDChain";

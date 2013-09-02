@@ -24,7 +24,7 @@ import net.minecraftforge.common.EnumHelper;
 
 public class AddedItems {
 
-    public static Item KingdomKey, OathKeeper, Oblivion, KingdomKeyD, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, KingdomKeyChain, KingdomKeyDChain, OathkeeperChain, OblivionChain, WaywardWind, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, EarthShaker, EarthShakerChain, RainFell, RainFellChain;
+    public static Item KingdomKey, OathKeeper, Oblivion, KingdomKeyD, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, KingdomKeyChain, KingdomKeyDChain, OathkeeperChain, OblivionChain, WaywardWind, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, EarthShaker, EarthShakerChain, RainFell, RainFellChain, StarLight, StarLightChain, SoulEater, SoulEaterChain, StarSeeker, StarSeekerChain;
     public static EnumArmorMaterial OrganizationArmourMaterial, KeybladeAArmourMaterial, KeybladeTArmourMaterial, KeybladeVArmourMaterial;
     
     public static void initKeyBlades(){
@@ -35,6 +35,8 @@ public class AddedItems {
         WaywardWind = new ItemWaywardWind(IDs.WaywardWind, EnumKeyBladeMaterial.WAYWARDWIND).setFull3D().setUnlocalizedName(Strings.WaywardWind);
         EarthShaker = new ItemEarthShaker(IDs.EarthShaker, EnumKeyBladeMaterial.EARTHSHAKER).setFull3D().setUnlocalizedName(Strings.EarthShaker);
         RainFell = new ItemRainFell(IDs.RainFell, EnumKeyBladeMaterial.RAINFELL).setFull3D().setUnlocalizedName(Strings.RainFell);
+        StarLight = new ItemStarLight(IDs.StarLight, EnumKeyBladeMaterial.STARLIGHT).setFull3D().setUnlocalizedName(Strings.StarLight);
+        SoulEater = new ItemSoulEater(IDs.SoulEater, EnumKeyBladeMaterial.SOULEATER).setFull3D().setUnlocalizedName(Strings.SoulEater);
         KingdomKeyChain = new ItemKingdomKeyChain(IDs.KingdomKeyChain);
         KingdomKeyDChain = new ItemKingdomKeyDChain(IDs.KingdomKeyDChain);
         OathkeeperChain = new ItemOathkeeperChain(IDs.OathkeeperChain);

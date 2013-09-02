@@ -65,6 +65,8 @@ public class ConfigurationHandler {
             IDs.EarthShakerChain = config.getItem(Strings.EarthShakerChain  + " ID", IDs.EARTHSHAKERCHAIN_DEFAULT).getInt(IDs.EARTHSHAKERCHAIN_DEFAULT);
             IDs.RainFell = config.getItem(Strings.RainFell  + " ID", IDs.RAINFELL_DEFAULT).getInt(IDs.RAINFELL_DEFAULT);
             IDs.RainFellChain = config.getItem(Strings.RainFellChain  + " ID", IDs.RAINFELLCHAIN_DEFAULT).getInt(IDs.RAINFELLCHAIN_DEFAULT);
+            IDs.StarLight = config.getItem(Strings.StarLight  + " ID", IDs.STARLIGHT_DEFAULT).getInt(IDs.STARLIGHT_DEFAULT);
+            IDs.SoulEater = config.getItem(Strings.SoulEater  + " ID", IDs.SOULEATER_DEFAULT).getInt(IDs.SOULEATER_DEFAULT);
             
             //BLOCKS
             IDs.NBlox = config.getBlock(Strings.NBlox  + " ID", IDs.NORMALBLOX_DEFAULT).getInt(IDs.NORMALBLOX_DEFAULT);
