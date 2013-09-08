@@ -2,26 +2,142 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
     <comment>Spanish (es_ES) Localization File</comment>
-    <!-- Items -->
+    <!-- Llaves Espada -->
     <entry key="item.kingdomKey.name">Cadena del Reino</entry>
     <entry key="item.kingdomKeyD.name">Cadena del Reino D</entry>
     <entry key="item.oathkeeper.name">Prometida</entry>
     <entry key="item.oblivion.name">Recuerdos Lejanos</entry>
 	<entry key="item.waywardWind.name">Brisa Descarada</entry>
+	<entry key="item.rainFell.name">Aguacero</entry>
+    <entry key="item.earthShaker.name">Teluria</entry>
 	<entry key="item.starLight.name">Luz Estelar</entry>
 	<entry key="item.soulEater.name">Devora Almas</entry>
-	<entry key="item.soulEaterChain.name">Llavero de Devora Almas</entry>
-	<entry key="item.starLightChain.name">Llavero de Luz Estelar</entry>
+	
+	<entry key="item.vulpeusForetellersKeyblade.name">Pronosticador Vulpeus</entry>
+	<entry key="item.ursusForetellersKeyblade.name">Pronosticador Ursus</entry>
+	<entry key="item.unicornisForetellersKeyblade.name">Pronosticador Unicornis</entry>
+	<entry key="item.leopardosForetellersKeyblade.name">Pronosticador Leopardos</entry>
+	<entry key="item.anguisForetellersKeyblade.name">Pronosticador Anguis</entry>
+	<entry key="item.leasKeyblade.name">Llave Espada de Lea</entry>
+	<entry key="item.youngXehanortsKeyblade.name">Llave Espada de Joven Xehanort</entry>
+	<entry key="item.oceanRage.name">Rabia del Océano</entry>
+	<entry key="item.endofPain.name">Fin del Dolor</entry>
+	<entry key="item.unbound.name">Sin Límite</entry>
+	<entry key="item.sweetDreams.name">Dulces Sueños</entry>
+	<entry key="item.divewing.name">Ala de Inmersión</entry>
+	<entry key="item.counterpoint.name">Contrapunto</entry>
+	<entry key="item.allforOne.name">Todos para Uno</entry>
+	<entry key="item.knockoutPunch.name">Golpe de Gracia</entry>
+	<entry key="item.ferrisGear.name">Engranaje de Noria</entry>
+	<entry key="item.dualDisc.name">Disco Doble</entry>
+	<entry key="item.guardianBell.name">Guardián de la Campana</entry>
+	<entry key="item.skullNoise.name">Ruido de Calavera</entry>
+	<entry key="item.woodenKeyblade.name">Llave Espada de Madera</entry>
+	<entry key="item.incompletekyeblade.name">Llave Espada X Incompleta </entry>
+	<entry key="item.kyeblade.name">Llave Espada X</entry>
+	<entry key="item.lightSeeker.name">Buscador de Luz</entry>
+	<entry key="item.lostMemory.name">Recuerdo Perdido</entry>
+	<entry key="item.frolicFlame.name">Llama Crepitante</entry>
+	<entry key="item.masterKeeper.name">Guardián del Maestro</entry>
+	<entry key="item.brightcrest.name">Fulgor Impasible</entry>
+	<entry key="item.crownUnlimit.name">Corona Ilimitada</entry>
+	<entry key="item.noName.name">Innómita</entry>
+	<entry key="item.voidGear.name">Quid Vacuo</entry>
+	<entry key="item.sweetstack.name">Dulce Sorpresa</entry>
+	<entry key="item.pixiePetal.name">Pétalo de Hada</entry>
+	<entry key="item.hyperdrive.name">Hiperpropulsor</entry>
+	<entry key="item.markofaHero.name">Galón de Héroe</entry>
+	<entry key="item.victoryLine.name">Línea de Meta</entry>
+	<entry key="item.fairyStars.name">Lucero feérrico</entry>
+	<entry key="item.strokeofMidnight.name">Último Tañido</entry>
+	<entry key="item.chaosRipper.name">Caótica</entry>
+	<entry key="item.masterXehanortsKeyblade.name">Llave Espada del Maestro Xehanort</entry>
+	<entry key="item.darkgnaw.name">Mella Sombría</entry>
+	<entry key="item.zeroOne.name">Cero y Uno</entry>
+	<entry key="item.dreamSword.name">Espada de Ensueño</entry>
+<!-- Traducir -->	<entry key="item.aubade.name">Aublade</entry>
+	<entry key="item.umbrella.name">Paraguas</entry>
+	<entry key="item.omegaWeapon.name">Arma Omega</entry>
+	<entry key="item.twilightBlaze.name">Llamarada Ocaso</entry>
+	<entry key="item.maverickFlare.name">Destelleante</entry>
+	<entry key="item.astralBlast.name">Explosión Astral</entry>
+	<entry key="item.darkerThanDark.name">Oscuridad Total</entry>
+	<entry key="item.lunarEclipse.name">Eclipse Lunar</entry>
+	<entry key="item.silentDirge.name">Encecha Muda</entry>
+	<entry key="item.totalEclipse.name">Eclipse Total</entry>
+	<entry key="item.glimpseofDarkness.name">Atisbo Oscuro</entry>
+	<entry key="item.midnightRoar.name">Rugido Nocturno</entry>
+	<entry key="item.rejectionofFate.name">Negar el Destino</entry>
+	<entry key="item.trueLightsFlight.name">Vuelo a la Luz</entry>
+	<entry key="item.leviathan.name">Leviatán</entry>
+	<entry key="item.abyssalTide.name">Marea Abisal</entry>
+	<entry key="item.crownofGuilt.name">Corona de Culpa</entry>
+	<entry key="item.signofInnocence.name">Signo de Pureza</entry>
+	<entry key="item.painofSolitude.name">Dolor de Soledad</entry>
+	<entry key="item.abaddonPlasma.name">Plasma de Abadón</entry>
+	<entry key="item.ominousBlight.name">Plaga Ominosa</entry>
+	<entry key="item.missingAche.name">Dolor Pasado</entry>
+	<!-- Kingdom Hearts II -->
+	<entry key="item.winnersProof.name">Prueba de Victoria</entry>
+	<entry key="item.fatalCrest.name">Emblema Fatal</entry>
+	<entry key="item.twoBecomeOne.name">Dos Será Uno</entry>
+	<entry key="item.bondofFlame.name">Lazo de Llamas</entry>
+	<entry key="item.fenrir.name">Fenrir</entry>
+	<entry key="item.sleepingLion.name">León Durmiente</entry>
+	<entry key="item.guardianSoul.name">Guardián del Alma</entry>
+	<entry key="item.gullWing.name">Ala de Gaviota</entry>
+	<entry key="item.photonDebugger.name">Depurador Fotonico</entry>
+	<entry key="item.sweetMemories.name">Dulces Recuerdos</entry>
+	<entry key="item.circleofLife.name">Círculo de la Vida</entry>
+	<entry key="item.decisivePumpkin.name">Calabaza Decisiva</entry>
+	<entry key="item.wishingLamp.name">Lámpara Mágica</entry>
+	<entry key="item.followtheWind.name">Sigue al Viento</entry>
+	<entry key="item.mysteriousAbyss.name">Abismo Misterioso</entry>
+	<entry key="item.monochrome.name">Monocromo</entry>
+	<entry key="item.herosCrest.name">Emblema de Héroe</entry>
+	<entry key="item.rumblingRose.name">Rosa del Estruendo</entry>
+	<entry key="item.hiddenDragon.name">Dragón Oculto</entry>
+	<!-- Kingdom Hearts BBS -->
+	<entry key="item.endsoftheEarth.name">Postrimería</entry>
+	<entry key="item.stormfall.name">Argavieso</entry>
+	<entry key="item.destinysEmbrace.name">Abrazo del Destino</entry>
+	<entry key="item.waytotheDawn.name">Camino al Alba</entry>
+	<entry key="item.oneWingedAngel.name">Fulgor Seráfico</entry>
+	<entry key="item.diamondDust.name">Polvo de Diamante</entry>
+	<entry key="item.lionheart.name">Lionheart</entry>
+	<entry key="item.metalChocobo.name">Acero Chocobo</entry>
+	<entry key="item.spellbinder.name">Examinadora</entry>
+	<entry key="item.divineRose.name">La Rosa</entry>
+	<entry key="item.fairyHarp.name">Arpa de Hada</entry>
+	<entry key="item.crabClaw.name">Joya del Mar</entry>
+	<entry key="item.wishingStar.name">Estrella Fugaz</entry>
+	<entry key="item.pumpkinHead.name">Calabaza Macabra</entry>
+	<entry key="item.threeWishes.name">Tres Deseos</entry>
+	<entry key="item.jungleKing.name">Artesana</entry>
+	<entry key="item.olympia.name">Heroica</entry>
+	<entry key="item.ladyLuck.name">Último Recurso</entry>
+	<entry key="item.keybladeofPeoplesHearts.name">Llave Espada del Corazón</entry>
+	<entry key="item.ultimaWeapon.name">Arma Artema</entry>
+	<entry key="item.treasureTrove.name">Tesoro Oculto</entry>
+	<entry key="item.starSeeker.name">Explorador Estelar</entry>
+	 <!-- Org XIII -->
 	<entry key="item.eternalFlames.name">Llamas Eternas</entry>
-
+    <!-- Llaveros -->
     <entry key="item.kingdomKeyChain.name">Llavero de Cadena del Reino</entry>
     <entry key="item.kingdomKeyDChain.name">Llavero de Cadena del Reino D</entry>
     <entry key="item.oathkeeperChain.name">Llavero de Prometida</entry>
     <entry key="item.oblivionChain.name">Llavero de Recuerdos Lejanos</entry>
+    <entry key="item.waywardWindChain.name">Llavero de Brisa Descarada</entry>
+    <entry key="item.rainFellChain.name">Llavero de Aguacero</entry>
+    <entry key="item.earthShakerChain.name">Llavero de Teluria</entry>
+	<entry key="item.soulEaterChain.name">Llavero de Devora Almas</entry>
+	<entry key="item.starLightChain.name">Llavero de Luz Estelar</entry>
+	 <!-- Corazones -->
     <entry key="item.pureHeart.name">Corazón Puro</entry>
     <entry key="item.darkHeart.name">Corazón Oscuro</entry>
     <entry key="item.heart.name">Corazón</entry>
     <entry key="item.kingdomHearts.name">Kingdom Hearts</entry>
+	 <!-- Discos -->
 	<entry key="item.Sanctuary.name">Disco de Música</entry>
 	<entry key="item.Simple And Clean PLANITb Remix.name">Disco de Música</entry>
 	<entry key="item.Musique pour la tristesse de Xion.name">Disco de Música</entry>
@@ -31,32 +147,33 @@
 	<entry key="item.Organization XIII.name">Disco de Música</entry>
 	<entry key="item.No More Bugs -Bug Version-.name">Disco de Música</entry>
 	<entry key="item.Sinister Sundown.name">Disco de Música</entry>
+	 <!-- Armaduras -->
     <entry key="item.organizationHood.name">Capucha de la Organización</entry>
     <entry key="item.organizationCoat.name">Gabardina de la Organization</entry>
     <entry key="item.organizationLegs.name">Pantalones de la Organización</entry>
     <entry key="item.organizationBoots.name">Botas de la Organización</entry>
-    <entry key="item.hPOrb.name">Orbe de HP</entry>
-    <entry key="item.20Munny.name">20 Platines</entry>
-    <entry key="item.potion.name">Poción</entry>
-    <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
-    <entry key="item.keybladeAHelm.name">Casco de Llave Espada</entry>
+		<!-- Aqua -->
+	<entry key="item.keybladeAHelm.name">Casco de Llave Espada</entry>
     <entry key="item.keybladeAChest.name">Pechera de Llave Espada</entry>
     <entry key="item.keybladeALegs.name">Grebas de Llave Espada</entry>
     <entry key="item.keybladeABoots.name">Botas de Llave Espada</entry>
+		<!-- Terra -->
     <entry key="item.keybladeTHelm.name">Casco de Llave Espada</entry>
     <entry key="item.keybladeTChest.name">Pechera de Llave Espada</entry>
     <entry key="item.keybladeTLegs.name">Grebas de Llave Espada</entry>
     <entry key="item.keybladeTBoots.name">Botas de Llave Espada</entry>
+		<!-- Ventus -->
     <entry key="item.keybladeVHelm.name">Casco de Llave Espada</entry>
     <entry key="item.keybladeVChest.name">Pechera de Llave Espada</entry>
     <entry key="item.keybladeVLegs.name">Grebas de Llave Espada</entry>
     <entry key="item.keybladeVBoots.name">Botas de Llave Espada</entry>
-    <entry key="item.waywardWindChain.name">Llavero de Brisa Descarada</entry>
-    <entry key="item.rainFellChain.name">Llavero de Aguacero</entry>
-    <entry key="item.earthShakerChain.name">Llavero de Teluria</entry>
-    <entry key="item.rainFell.name">Aguacero</entry>
-    <entry key="item.earthShaker.name">Teluria</entry>
-    <!-- Blocks -->
+	 <!-- Otros -->
+    <entry key="item.hPOrb.name">Orbe de HP</entry>
+    <entry key="item.20Munny.name">20 Platines</entry>
+    <entry key="item.potion.name">Poción</entry>
+    <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
+
+    <!-- Bloques -->
     <entry key="tile.normalBlox.name">Bloque de Error</entry>
     <entry key="tile.hardBlox.name">Bloque de Error Duro</entry>
     <entry key="tile.metalBlox.name">Bloque de Error Metálico</entry>
