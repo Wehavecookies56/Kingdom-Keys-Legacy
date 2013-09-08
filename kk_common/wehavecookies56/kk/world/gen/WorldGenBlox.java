@@ -2,16 +2,13 @@ package wehavecookies56.kk.world.gen;
 
 import java.util.Random;
 
-import cpw.mods.fml.common.IWorldGenerator;
-
-import wehavecookies56.kk.block.AddedBlocks;
-
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.feature.WorldGenFlowers;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenerator;
+import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.lib.ConfigBooleans;
+import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGenBlox implements IWorldGenerator
 {
@@ -31,15 +28,20 @@ public class WorldGenBlox implements IWorldGenerator
 	 * OVERWORLD GENERATION
 	 */
 
-	public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
-		this.spawnOres(AddedBlocks.PrizeBlox, Block.stone, world, random, chunkX, chunkZ, 16, 16, 1, 50, 0, 80);
-	}
+		public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
+			if(ConfigBooleans.enableOverworld){
+			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 40, 0, 80);
+			}
+		}
+	
+	
 
 	/**
 	 * 
 	 * END GENERATION
 	 */
 	public void generateEnd (World world, Random random, int chunkX, int chunkZ){
+		if(ConfigBooleans.enableGenerate){
 		this.spawnOres(AddedBlocks.DangerBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 6, 20, 0, 128);
 		this.spawnOres(AddedBlocks.NormalBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 10, 60, 0, 128);
 		this.spawnOres(AddedBlocks.HardBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 9, 40, 0, 128);
@@ -47,6 +49,8 @@ public class WorldGenBlox implements IWorldGenerator
 		this.spawnOres(AddedBlocks.MetalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
 		this.spawnOres(AddedBlocks.NormalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 15, 89, 0, 128);
 		this.spawnOres(AddedBlocks.HardBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
+		this.spawnOres(AddedBlocks.RarePrizeBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 128);
+		}
 	}
 
 	/**

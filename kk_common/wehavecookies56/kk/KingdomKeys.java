@@ -5,8 +5,6 @@ import java.util.logging.Level;
 
 import org.lwjgl.input.Keyboard;
 
-import com.jadarstudios.developercapes.DevCapesUtil;
-
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
@@ -48,32 +46,13 @@ import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.enchantments.EnchantHeartHarvest;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
+import wehavecookies56.kk.lib.ConfigBooleans;
+import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.mob.BatDrops;
-import wehavecookies56.kk.mob.BlazeDrops;
-import wehavecookies56.kk.mob.CaveSpiderDrops;
-import wehavecookies56.kk.mob.ChickenDrops;
-import wehavecookies56.kk.mob.CowDrops;
-import wehavecookies56.kk.mob.CreeperDrops;
-import wehavecookies56.kk.mob.EndermanDrops;
-import wehavecookies56.kk.mob.GhastDrops;
-import wehavecookies56.kk.mob.IronGolemDrops;
-import wehavecookies56.kk.mob.MagmaCubeDrops;
-import wehavecookies56.kk.mob.MooshroomDrops;
-import wehavecookies56.kk.mob.OcelotDrops;
-import wehavecookies56.kk.mob.PigDrops;
-import wehavecookies56.kk.mob.PigZombieDrops;
-import wehavecookies56.kk.mob.SheepDrops;
-import wehavecookies56.kk.mob.SilverfishDrops;
-import wehavecookies56.kk.mob.SkeletonDrops;
-import wehavecookies56.kk.mob.SlimeDrops;
-import wehavecookies56.kk.mob.SnowmanDrops;
-import wehavecookies56.kk.mob.SpiderDrops;
-import wehavecookies56.kk.mob.SquidDrops;
-import wehavecookies56.kk.mob.VillagerDrops;
-import wehavecookies56.kk.mob.WitchDrops;
-import wehavecookies56.kk.mob.WolfDrops;
-import wehavecookies56.kk.mob.ZombieDrops;
+import wehavecookies56.kk.mob.DarkHeartDrops;
+import wehavecookies56.kk.mob.HeartDrops;
+import wehavecookies56.kk.mob.KingdomHeartsDrops;
+import wehavecookies56.kk.mob.PureHeartDrops;
 import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
@@ -103,9 +82,10 @@ public class KingdomKeys {
     	LogHelper.init();
         LogHelper.log(Level.INFO, "Preparing configuration file");
         ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
+        LogHelper.log(Level.INFO, "Preparing keyblades");
+        AddedItems.initKeyBlades();
         LogHelper.log(Level.INFO, "Preparing items");
         AddedItems.initHearts();
-        AddedItems.initKeyBlades();
         AddedItems.initOthers();
         AddedItems.intiArmour();
         LogHelper.log(Level.INFO, "Preparing dungeon loot");
@@ -120,32 +100,12 @@ public class KingdomKeys {
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", "Kingdom Keys");
-        LogHelper.log(Level.INFO, "Preparing mob drop events");
-        MinecraftForge.EVENT_BUS.register(new BatDrops());
-        MinecraftForge.EVENT_BUS.register(new CowDrops());        
-        MinecraftForge.EVENT_BUS.register(new ChickenDrops());
-        MinecraftForge.EVENT_BUS.register(new BlazeDrops());
-        MinecraftForge.EVENT_BUS.register(new SheepDrops());
-        MinecraftForge.EVENT_BUS.register(new SilverfishDrops());
-        MinecraftForge.EVENT_BUS.register(new EndermanDrops());
-        MinecraftForge.EVENT_BUS.register(new SpiderDrops());
-        MinecraftForge.EVENT_BUS.register(new VillagerDrops());
-        MinecraftForge.EVENT_BUS.register(new WitchDrops());
-        MinecraftForge.EVENT_BUS.register(new GhastDrops());
-        MinecraftForge.EVENT_BUS.register(new PigZombieDrops());
-        MinecraftForge.EVENT_BUS.register(new MagmaCubeDrops());
-        MinecraftForge.EVENT_BUS.register(new SkeletonDrops());
-        MinecraftForge.EVENT_BUS.register(new WolfDrops());
-        MinecraftForge.EVENT_BUS.register(new SquidDrops());
-        MinecraftForge.EVENT_BUS.register(new OcelotDrops());
-        MinecraftForge.EVENT_BUS.register(new CreeperDrops());
-        MinecraftForge.EVENT_BUS.register(new SlimeDrops());
-        MinecraftForge.EVENT_BUS.register(new ZombieDrops());
-        MinecraftForge.EVENT_BUS.register(new SnowmanDrops());
-        MinecraftForge.EVENT_BUS.register(new IronGolemDrops());
-        MinecraftForge.EVENT_BUS.register(new MooshroomDrops());
-        MinecraftForge.EVENT_BUS.register(new CaveSpiderDrops());
-        MinecraftForge.EVENT_BUS.register(new PigDrops());
+        LogHelper.log(Level.INFO, "Preparing mob drop events");   
+        MinecraftForge.EVENT_BUS.register(new HeartDrops());
+        MinecraftForge.EVENT_BUS.register(new PureHeartDrops());
+        MinecraftForge.EVENT_BUS.register(new DarkHeartDrops());
+        MinecraftForge.EVENT_BUS.register(new KingdomHeartsDrops());
+
     }
     
     @EventHandler
@@ -158,12 +118,10 @@ public class KingdomKeys {
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         new GuiHandler();
         BlockSynthesis.registerTileEntities();
+        if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
-        LogHelper.log(Level.INFO, "Preparing key bindings");
-        KeyBinding[] key = {new KeyBinding("Open Keyblade Gui", Keyboard.KEY_G)};
-        boolean[] repeat = {false};
-        KeyBindingRegistry.registerKeyBinding(new KeyBind(key, repeat));
+        }
         
         
     }

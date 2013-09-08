@@ -33,5 +33,11 @@ public class AddedBlocks {
             "NHN",
             'N', NormalBlox, 'L', Item.bucketLava , 'H', HardBlox, 'T', Block.tnt  
     });
+    	GameRegistry.addRecipe(new ItemStack(BounceBlox), new Object[]{
+        	"MMM",
+            "HPH",
+            "NNN",
+            'N', NormalBlox, 'P', Block.pistonBase , 'H', HardBlox, 'M', MetalBlox  
+    });
     }
 }

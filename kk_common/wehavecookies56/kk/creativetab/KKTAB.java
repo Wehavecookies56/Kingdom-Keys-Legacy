@@ -15,6 +15,6 @@ public class KKTAB extends CreativeTabs {
     @SideOnly(Side.CLIENT)
     public int getTabIconItemIndex()
     {
-        return AddedItems.KingdomKey.itemID;
+        return AddedItems.K111.itemID;
     }
 }

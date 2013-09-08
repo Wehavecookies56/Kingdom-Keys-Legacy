@@ -25,14 +25,14 @@ public class KeyBlade extends Item
     private float weaponDamage;
     private final EnumKeyBladeMaterial toolMaterial;
 
-    public KeyBlade(int par1, EnumKeyBladeMaterial kingdomkey)
+    public KeyBlade(int par1, EnumKeyBladeMaterial keyblade)
     {
         super(par1);
-        this.toolMaterial = kingdomkey;
+        this.toolMaterial = keyblade;
         this.maxStackSize = 1;
-        this.setMaxDamage(kingdomkey.getMaxUses());
+        this.setMaxDamage(keyblade.getMaxUses());
         this.setCreativeTab(KingdomKeys.KKTAB);
-        this.weaponDamage = 4.0F + kingdomkey.getDamageVsEntity();
+        this.weaponDamage = 4.0F + keyblade.getDamageVsEntity();
     }
 
     public float func_82803_g()

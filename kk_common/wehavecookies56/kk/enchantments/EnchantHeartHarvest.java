@@ -13,31 +13,26 @@ super(par1, par2, EnumEnchantmentType.weapon);
 this.setName("Vanquish");
 }
 
-//overides enchantments constructor makes it public
 public EnchantHeartHarvest(int par1, int par2, EnumEnchantmentType par3EnumEnchantmentType)
 {
 super(par1, par2, par3EnumEnchantmentType);
 }
 
-//Returns the minimal value of enchantability needed on the enchantment level passed.
 public int getMinEnchantability(int par1)
 {
 return 1;
 }
 
-//Returns the maximum value of enchantability needed on the enchantment level passed.
 public int getMaxEnchantability(int par1)
 {
 return 60;
 }
 
-//Returns the maximum level that the enchantment can have.
 public int getMaxLevel()
 {
 return 10;
 }
 
-//sets the visual name of our enchantment
 public String getTranslatedName(int par1)
 {
 String enchantmentName = "Vanquish";

@@ -12,7 +12,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
 public class ThaumcraftAddon {
     public static void modsLoaded() {
-        if (Loader.isModLoaded("Thaumcraft")) {
+        if (Loader.isModLoaded("thaumcraft")) {
                try {
                    ObjectTags tags = new ObjectTags().add(EnumTag.LIFE, 1).add(EnumTag.LIFE, 1).add(EnumTag.DEATH, 4).add(EnumTag.EVIL, 1).add(EnumTag.DARK, 3);
                    ThaumcraftApi.registerObjectTag(AddedItems.DarkHeart.itemID, -1, tags);
