@@ -44,4 +44,8 @@ public class BlockBounceBlox extends BlockBlox {
     {
             return true;
     }
+    public void onFallenUpon(World par1World,int par2,int par3,int par4,Entity par5Entity,float par6)
+    {
+    par5Entity.fallDistance = 0.0F;
+    }
 }
