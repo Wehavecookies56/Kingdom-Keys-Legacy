@@ -8,12 +8,16 @@
     <entry key="item.oathkeeper.name">Prometida</entry>
     <entry key="item.oblivion.name">Recuerdos Lejanos</entry>
 	<entry key="item.waywardWind.name">Brisa Descarada</entry>
-		<entry key="item.starLight.name">Luz Estelar</entry>
+	<entry key="item.starLight.name">Luz Estelar</entry>
 	<entry key="item.soulEater.name">Devora Almas</entry>
-    <entry key="item.kingdomKeyChain.name">Llavero de la Cadena del Reino</entry>
-    <entry key="item.kingdomKeyDChain.name">Llavero de la Cadena del Reino D</entry>
-    <entry key="item.oathkeeperChain.name">Llavero de la Prometida</entry>
-    <entry key="item.oblivionChain.name">Llavero de la Recuerdos Lejanos</entry>
+	<entry key="item.soulEaterChain.name">Llavero de Devora Almas</entry>
+	<entry key="item.starLightChain.name">Llavero de Luz Estelar</entry>
+	<entry key="item.eternalFlames.name">Llamas Eternas</entry>
+
+    <entry key="item.kingdomKeyChain.name">Llavero de Cadena del Reino</entry>
+    <entry key="item.kingdomKeyDChain.name">Llavero de Cadena del Reino D</entry>
+    <entry key="item.oathkeeperChain.name">Llavero de Prometida</entry>
+    <entry key="item.oblivionChain.name">Llavero de Recuerdos Lejanos</entry>
     <entry key="item.pureHeart.name">Corazón Puro</entry>
     <entry key="item.darkHeart.name">Corazón Oscuro</entry>
     <entry key="item.heart.name">Corazón</entry>
@@ -32,7 +36,7 @@
     <entry key="item.organizationLegs.name">Pantalones de la Organización</entry>
     <entry key="item.organizationBoots.name">Botas de la Organización</entry>
     <entry key="item.hPOrb.name">Orbe de HP</entry>
-    <entry key="item.20Munny.name">20 Platinos</entry>
+    <entry key="item.20Munny.name">20 Platines</entry>
     <entry key="item.potion.name">Poción</entry>
     <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
     <entry key="item.keybladeAHelm.name">Casco de Llave Espada</entry>
@@ -59,7 +63,7 @@
     <entry key="tile.prizeBlox.name">Bloque de Premio</entry>
     <entry key="tile.rarePrizeBlox.name">Bloque de Premio Raro</entry>
     <entry key="tile.dangerBlox.name">Bloque de Error Peligroso</entry>
-    <entry key="tile.bounceBlox.name">Bloque de Rebote</entry>
+    <entry key="tile.bounceBlox.name">Bloque de Error Blando</entry>
 	<entry key="tile.blastBlox.name">Bloque Bomba</entry>
     <!-- Creative Tab -->
     <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
