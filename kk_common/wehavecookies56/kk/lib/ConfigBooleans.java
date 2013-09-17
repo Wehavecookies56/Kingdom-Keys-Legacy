@@ -28,4 +28,8 @@ public class ConfigBooleans {
 	public static boolean heartRecipe;
 	public static final boolean heartRecipe_default = false;
 	public static final String heartRecipe_name = "Enable expensive heart recipes";
+	
+	public static boolean bloxRecipe;
+	public static final boolean bloxRecipe_default = false;
+	public static final String bloxRecipe_name = "Enable recipes for all the bug blox";
 }

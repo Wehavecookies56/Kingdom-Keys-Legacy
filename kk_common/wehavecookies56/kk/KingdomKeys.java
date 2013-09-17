@@ -3,51 +3,30 @@ package wehavecookies56.kk;
 import java.io.File;
 import java.util.logging.Level;
 
-import org.lwjgl.input.Keyboard;
-
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
-
-import cpw.mods.fml.client.registry.KeyBindingRegistry;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.ITickHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.Mod.Init;
-import cpw.mods.fml.common.Mod.PostInit;
-import cpw.mods.fml.common.Mod.PreInit;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import cpw.mods.fml.common.registry.TickRegistry;
-import cpw.mods.fml.relauncher.Side;
 import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.block.BlockSynthesis;
-import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.client.audio.SoundManager;
-import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
 import wehavecookies56.kk.core.handlers.GuiHandler;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
 import wehavecookies56.kk.core.helper.LogHelper;
 import wehavecookies56.kk.core.proxies.ClientProxy;
 import wehavecookies56.kk.core.proxies.CommonProxy;
+import wehavecookies56.kk.creativetab.KHBBSTAB;
+import wehavecookies56.kk.creativetab.KHCHITAB;
+import wehavecookies56.kk.creativetab.KHDAYSTAB;
+import wehavecookies56.kk.creativetab.KHDDDTAB;
+import wehavecookies56.kk.creativetab.KHIITAB;
+import wehavecookies56.kk.creativetab.KHRECODEDTAB;
+import wehavecookies56.kk.creativetab.KHTAB;
 import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.enchantments.EnchantHeartHarvest;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
-import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.mob.DarkHeartDrops;
 import wehavecookies56.kk.mob.HeartDrops;
@@ -56,6 +35,18 @@ import wehavecookies56.kk.mob.PureHeartDrops;
 import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
@@ -65,18 +56,31 @@ import wehavecookies56.kk.world.gen.WorldGenBlox;
 
 public class KingdomKeys {
 
+	//World gen
 	WorldGenBlox worldGen = new WorldGenBlox();
 	
     @Instance(Reference.MOD_ID)
     public static KingdomKeys instance;
     
+    //Proxies
     @SidedProxy(clientSide="wehavecookies56.kk.core.proxies.ClientProxy", serverSide="wehavecookies56.kk.core.proxies.CommonProxy")
     public static CommonProxy proxy;
     public static ClientProxy cproxy;
     
+    //Creative tabs
     public static CreativeTabs KKTAB = new KKTAB(CreativeTabs.getNextID(), "KKTAB");
+    public static CreativeTabs KHTAB = new KHTAB(CreativeTabs.getNextID(), "KHTAB");
+    public static CreativeTabs KHIITAB = new KHIITAB(CreativeTabs.getNextID(), "KHIITAB");
+    public static CreativeTabs KHBBSTAB = new KHBBSTAB(CreativeTabs.getNextID(), "KHBBSTAB");
+    public static CreativeTabs KHCHITAB = new KHCHITAB(CreativeTabs.getNextID(), "KHCHITAB");
+    public static CreativeTabs KHDAYSTAB = new KHDAYSTAB(CreativeTabs.getNextID(), "KHDAYSTAB");
+    public static CreativeTabs KHRECODEDTAB = new KHRECODEDTAB(CreativeTabs.getNextID(), "KHRECODEDTAB");
+    public static CreativeTabs KHDDDTAB = new KHDDDTAB(CreativeTabs.getNextID(), "KHDDDTAB");
+    
+    //Enchanment
     public static final Enchantment HarvestHearts = new EnchantHeartHarvest(52, 1);
     
+    //Pre initialisation
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	LogHelper.init();
@@ -100,6 +104,13 @@ public class KingdomKeys {
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", "Kingdom Keys");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHTAB", "en_US", "Kingdom Keys: Kingdom Hearts");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHIITAB", "en_US", "Kingdom Keys: Kingdom Hearts II");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHCHITAB", "en_US", "Kingdom Keys: Kingdom Hearts Chi");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHRECODEDTAB", "en_US", "Kingdom Keys: Kingdom Hearts Re:Coded");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHDAYSTAB", "en_US", "Kingdom Keys: Kingdom Hearts 358/2 Days");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHDDDTAB", "en_US", "Kingdom Keys: Kingdom Hearts Dream Drop Distance");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KHBBSTAB", "en_US", "Kingdom Keys: Kingdom Hearts Birth By Sleep");
         LogHelper.log(Level.INFO, "Preparing mob drop events");   
         MinecraftForge.EVENT_BUS.register(new HeartDrops());
         MinecraftForge.EVENT_BUS.register(new PureHeartDrops());
@@ -108,6 +119,7 @@ public class KingdomKeys {
 
     }
     
+    //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
         LogHelper.log(Level.INFO, "Preparing world generation");
@@ -116,6 +128,7 @@ public class KingdomKeys {
         proxy.registerRenderers();
         LogHelper.log(Level.INFO, "Preparing entities");
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
+        //EntityRegistry.registerModEntity(EntityEternalFlames.class, "EternalFlames", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         new GuiHandler();
         BlockSynthesis.registerTileEntities();
         if(ConfigBooleans.enableUpdateCheck){
@@ -126,6 +139,7 @@ public class KingdomKeys {
         
     }
 
+    //Post Initialisation
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         LogHelper.log(Level.INFO, "Loading thaumcraft 3 addon");

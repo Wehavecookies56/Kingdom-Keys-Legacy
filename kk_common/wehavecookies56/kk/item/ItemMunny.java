@@ -1,8 +1,8 @@
 package wehavecookies56.kk.item;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
-import net.minecraft.client.renderer.texture.IconRegister;
 
 public class ItemMunny extends ItemKingdomKeys{
 

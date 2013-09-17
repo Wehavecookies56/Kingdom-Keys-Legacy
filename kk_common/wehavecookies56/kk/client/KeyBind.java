@@ -2,8 +2,10 @@ package wehavecookies56.kk.client;
 
 import java.util.EnumSet;
 
-import net.minecraft.client.settings.KeyBinding;
+import wehavecookies56.kk.item.keyblades.ItemKingdomKey;
+import wehavecookies56.kk.item.keychains.ItemKingdomKeyChain;
 
+import net.minecraft.client.settings.KeyBinding;
 import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler;
 import cpw.mods.fml.common.TickType;
 
@@ -21,6 +23,7 @@ public class KeyBind extends KeyHandler{
 	public void keyDown(EnumSet<TickType> types, KeyBinding kb, boolean tickEnd, boolean isRepeat)
 	{
 		keyHasBeenPressed = true;
+
 	}
 	@Override
 	public void keyUp(EnumSet<TickType> types, KeyBinding kb, boolean tickEnd)
@@ -28,8 +31,9 @@ public class KeyBind extends KeyHandler{
 		if (keyHasBeenPressed) {
 			keyHasBeenPressed = false;
 			keyPressed = true;
-			}
+		}
 	}
+
 
 	@Override
 	public EnumSet<TickType> ticks()

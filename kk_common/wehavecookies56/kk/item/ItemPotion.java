@@ -1,11 +1,11 @@
 package wehavecookies56.kk.item;
 
-import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.lib.Strings;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.ItemFood;
 import net.minecraft.potion.Potion;
+import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.lib.Reference;
+import wehavecookies56.kk.lib.Strings;
 
 public class ItemPotion extends ItemFood{
 

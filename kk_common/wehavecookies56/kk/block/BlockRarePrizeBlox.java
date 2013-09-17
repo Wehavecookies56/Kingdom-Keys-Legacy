@@ -1,17 +1,16 @@
 package wehavecookies56.kk.block;
 
 import java.util.ArrayList;
-import java.util.Random;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 
 public class BlockRarePrizeBlox extends BlockBlox {
 

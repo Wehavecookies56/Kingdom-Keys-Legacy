@@ -1,13 +1,12 @@
 package wehavecookies56.kk.block;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import wehavecookies56.kk.lib.IDs;
-import wehavecookies56.kk.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import wehavecookies56.kk.lib.IDs;
+import wehavecookies56.kk.lib.Strings;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class AddedBlocks {
 
@@ -26,18 +25,27 @@ public class AddedBlocks {
         Synthesiser = new BlockSynthesis(IDs.Synthesis, Material.wood); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);
     } 
     
+
     public static void initBlockRecipes(){
+        //Blast blox recipe
     	GameRegistry.addRecipe(new ItemStack(BlastBlox), new Object[]{
         	"NLN",
             "HTH",
             "NHN",
             'N', NormalBlox, 'L', Item.bucketLava , 'H', HardBlox, 'T', Block.tnt  
     });
+    	//Bounce blox recipe
     	GameRegistry.addRecipe(new ItemStack(BounceBlox), new Object[]{
         	"MMM",
             "HPH",
             "NNN",
             'N', NormalBlox, 'P', Block.pistonBase , 'H', HardBlox, 'M', MetalBlox  
     });
+    	GameRegistry.addRecipe(new ItemStack(NormalBlox), new Object[]{
+        	"ED",
+            "DE",
+            'E', Block.whiteStone, 'D', Block.dirt
+    });
+
     }
 }

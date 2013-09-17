@@ -1,13 +1,5 @@
 package wehavecookies56.kk.block;
 
-import cpw.mods.fml.common.network.FMLNetworkHandler;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.entities.tileentities.TileEntitySynthesiser;
-import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -19,6 +11,14 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.entities.tileentities.TileEntitySynthesiser;
+import wehavecookies56.kk.lib.Reference;
+import wehavecookies56.kk.lib.Strings;
+import cpw.mods.fml.common.network.FMLNetworkHandler;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockSynthesis extends BlockContainer {
 

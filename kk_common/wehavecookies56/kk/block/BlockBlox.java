@@ -1,14 +1,12 @@
 package wehavecookies56.kk.block;
 
-import java.util.Random;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.KingdomKeys;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.lib.Reference;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockBlox extends Block {
     

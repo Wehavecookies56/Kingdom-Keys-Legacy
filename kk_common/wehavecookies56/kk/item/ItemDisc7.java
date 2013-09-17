@@ -1,12 +1,12 @@
 package wehavecookies56.kk.item;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemRecord;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.ItemRecord;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemDisc7 extends ItemRecord {
 

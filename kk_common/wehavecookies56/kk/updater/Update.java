@@ -4,14 +4,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
 
-import wehavecookies56.kk.lib.PrintToPlayer;
-import wehavecookies56.kk.lib.Reference;
-
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.NetLoginHandler;
 import net.minecraft.network.packet.NetHandler;
 import net.minecraft.network.packet.Packet1Login;
 import net.minecraft.server.MinecraftServer;
+import wehavecookies56.kk.lib.PrintToPlayer;
+import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.common.network.IConnectionHandler;
 import cpw.mods.fml.common.network.Player;
 

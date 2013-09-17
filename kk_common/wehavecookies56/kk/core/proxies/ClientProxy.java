@@ -1,9 +1,10 @@
 package wehavecookies56.kk.core.proxies;
 
-import org.lwjgl.input.Keyboard;
-
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.client.MinecraftForgeClient;
+
+import org.lwjgl.input.Keyboard;
+
 import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKey;
@@ -48,7 +49,7 @@ public class ClientProxy extends CommonProxy {
          //Capes
          DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
     
-         KeyBinding[] key = {new KeyBinding("Open Keyblade Gui", Keyboard.KEY_G)};
+         KeyBinding[] key = {new KeyBinding("Summon Keyblade", Keyboard.KEY_G)};
          boolean[] repeat = {false};
          KeyBindingRegistry.registerKeyBinding(new KeyBind(key, repeat));
 	}

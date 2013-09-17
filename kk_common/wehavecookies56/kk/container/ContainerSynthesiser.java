@@ -1,10 +1,10 @@
 package wehavecookies56.kk.container;
 
-import wehavecookies56.kk.entities.tileentities.TileEntitySynthesiser;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import wehavecookies56.kk.entities.tileentities.TileEntitySynthesiser;
 
 public class ContainerSynthesiser extends Container {
 

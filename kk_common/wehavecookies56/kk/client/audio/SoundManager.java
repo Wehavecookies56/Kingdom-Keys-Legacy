@@ -1,11 +1,11 @@
 package wehavecookies56.kk.client.audio;
 
+import net.minecraftforge.client.event.sound.SoundLoadEvent;
+import net.minecraftforge.event.ForgeSubscribe;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraftforge.client.event.sound.SoundLoadEvent;
-import net.minecraftforge.event.ForgeSubscribe;
 
 public class SoundManager {
 	

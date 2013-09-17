@@ -1,10 +1,8 @@
 package wehavecookies56.kk.item;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 
 public class ItemKingdomHearts extends ItemKingdomKeys {
 

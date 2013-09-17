@@ -1,9 +1,8 @@
 package wehavecookies56.kk.core.handlers;
 import java.util.EnumSet;
 
-import wehavecookies56.kk.client.KeyBind;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
+import wehavecookies56.kk.client.KeyBind;
 import cpw.mods.fml.common.ITickHandler;
 import cpw.mods.fml.common.TickType;
 public class PlayerTickHandler implements ITickHandler

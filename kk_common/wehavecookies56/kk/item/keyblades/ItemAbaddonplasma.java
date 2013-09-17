@@ -2,19 +2,15 @@ package wehavecookies56.kk.item.keyblades;
 
 import java.util.List;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.src.ModLoader;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
@@ -23,7 +19,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemAbaddonplasma extends ItemSword{
     public ItemAbaddonplasma(int id, EnumToolMaterial abaddonPlasmaMaterial) {
         super(id, abaddonPlasmaMaterial);
-        this.setCreativeTab(KingdomKeys.KKTAB);
+        this.setCreativeTab(KingdomKeys.KHDAYSTAB);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));

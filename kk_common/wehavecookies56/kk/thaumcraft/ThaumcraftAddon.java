@@ -8,7 +8,6 @@ import thaumcraft.api.ThaumcraftApi;
 import wehavecookies56.kk.item.AddedItems;
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
 public class ThaumcraftAddon {
     public static void modsLoaded() {

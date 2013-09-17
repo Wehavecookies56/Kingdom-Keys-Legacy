@@ -1,27 +1,24 @@
 package wehavecookies56.kk.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import java.util.Random;
-
-import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.entities.EntityBlastBlox;
-import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.lib.Strings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.Item;
 import net.minecraft.util.Icon;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
+import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.entities.EntityBlastBlox;
+import wehavecookies56.kk.lib.Reference;
+import wehavecookies56.kk.lib.Strings;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockBlastBlox extends Block
 {

@@ -1,10 +1,9 @@
 package wehavecookies56.kk.creativetab;
 
+import net.minecraft.creativetab.CreativeTabs;
 import wehavecookies56.kk.item.AddedItems;
-import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class KKTAB extends CreativeTabs {
 

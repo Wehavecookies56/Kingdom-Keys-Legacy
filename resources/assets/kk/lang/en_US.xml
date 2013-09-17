@@ -8,6 +8,125 @@
     <entry key="item.oathkeeper.name">Oathkeeper</entry>
     <entry key="item.oblivion.name">Oblivion</entry>
 	<entry key="item.waywardWind.name">Wayward Wind</entry>
+	<entry key="item.rainFell.name">Rainfell</entry>
+    <entry key="item.earthShaker.name">Earth Shaker</entry>
+	<entry key="item.soulEater.name">Soul Eater</entry>
+    <!-- Kingdom Hearts Chi -->
+    <entry key="item.starLight.name">Starlight</entry>
+	<entry key="item.vulpeusForetellersKeyblade.name">Vulpeus Forteller's Keyblade</entry>
+	<entry key="item.ursusForetellersKeyblade.name">Ursus Forteleller's Keyblade</entry>
+	<entry key="item.unicornisForetellersKeyblade.name">Unicornis Forteller's Keyblade</entry>
+	<entry key="item.leopardosForetellersKeyblade.name">Leopardos Forteller's Keyblade</entry>
+	<entry key="item.anguisForetellersKeyblade.name">Anguis Forteller's Keyblade</entry>
+    <!-- Kingdom Hearts Dream Drop Distance -->
+	<entry key="item.leasKeyblade.name">Lea's Keyblade</entry>
+	<entry key="item.youngXehanortsKeyblade.name">Young Xehanort's Keyblade</entry>
+	<entry key="item.oceanRage.name">Ocean Rage</entry>
+	<entry key="item.endofPain.name">End Of Pain</entry>
+	<entry key="item.unbound.name">Unbound</entry>
+	<entry key="item.sweetDreams.name">Sweet Dreams</entry>
+	<entry key="item.divewing.name">Divewing</entry>
+	<entry key="item.counterpoint.name">Counterpoint</entry>
+	<entry key="item.allforOne.name">All For One</entry>
+	<entry key="item.knockoutPunch.name">Knockout Punch</entry>
+	<entry key="item.ferrisGear.name">Ferris Gear</entry>
+	<entry key="item.dualDisc.name">Dual Disc</entry>
+	<entry key="item.guardianBell.name">Guardian Bell</entry>
+	<entry key="item.skullNoise.name">Skull Noise</entry>
+	<entry key="item.woodenKeyblade.name">Wooden Keyblade</entry>
+    <!-- Kingdom Hearts Birth By Sleep -->
+	<entry key="item.incompletekyeblade.name">Incomplete X-blade</entry>
+	<entry key="item.kyeblade.name">X-blade</entry>
+	<entry key="item.lightSeeker.name">Light Seeker</entry>
+	<entry key="item.lostMemory.name">Lost Memory</entry>
+	<entry key="item.frolicFlame.name">Frolic Flame</entry>
+	<entry key="item.masterKeeper.name">Master Keeper</entry>
+	<entry key="item.brightcrest.name">Brightcrest</entry>
+	<entry key="item.crownUnlimit.name">Crown Unlimit</entry>
+	<entry key="item.noName.name">No Name</entry>
+	<entry key="item.voidGear.name">Void Gear</entry>
+	<entry key="item.sweetstack.name">Sweetstack</entry>
+	<entry key="item.pixiePetal.name">Pixie Petal</entry>
+	<entry key="item.hyperdrive.name">Hyperdrive</entry>
+	<entry key="item.markofaHero.name">Mark Of A Hero</entry>
+	<entry key="item.victoryLine.name">Victory Line</entry>
+	<entry key="item.fairyStars.name">Fairy Stars</entry>
+	<entry key="item.strokeofMidnight.name">Stroke Of Midnight</entry>
+	<entry key="item.chaosRipper.name">Chaos Ripper</entry>
+	<entry key="item.masterXehanortsKeyblade.name">Master Xehanort's Keyblade</entry>
+	<entry key="item.darkgnaw.name">Darkgnaw</entry>
+    <!-- Kingdom Hearts Re: Coded -->
+	<entry key="item.zeroOne.name">Zero/One</entry>
+    <!-- Kingdom Hearts 358/2 Days -->
+	<entry key="item.dreamSword.name">Dream Sword</entry>
+    <entry key="item.aubade.name">Aubade</entry>
+	<entry key="item.umbrella.name">Umbrella</entry>
+	<entry key="item.omegaWeapon.name">Omega Weapon</entry>
+	<entry key="item.twilightBlaze.name">Twilight Blaze</entry>
+	<entry key="item.maverickFlare.name">Maverick Flare</entry>
+	<entry key="item.astralBlast.name">Astral Blast</entry>
+	<entry key="item.darkerThanDark.name">Darker Than Dark</entry>
+	<entry key="item.lunarEclipse.name">Lunar Eclipse</entry>
+	<entry key="item.silentDirge.name">SIlent Dirge</entry>
+	<entry key="item.totalEclipse.name">Total Eclipse</entry>
+	<entry key="item.glimpseofDarkness.name">Glimpse Of Darkness</entry>
+	<entry key="item.midnightRoar.name">Midnight Roar</entry>
+	<entry key="item.rejectionofFate.name">Rejection Of Fate</entry>
+	<entry key="item.trueLightsFlight.name">True Light's Flight</entry>
+	<entry key="item.leviathan.name">Leviathan</entry>
+	<entry key="item.abyssalTide.name">Abyssal Tide</entry>
+	<entry key="item.crownofGuilt.name">Crown Of Guilt</entry>
+	<entry key="item.signofInnocence.name">Sign Of Innocence</entry>
+	<entry key="item.painofSolitude.name">Pain Of Solitude</entry>
+	<entry key="item.abaddonPlasma.name">Abaddon Plasma</entry>
+	<entry key="item.ominousBlight.name">Ominous Blight</entry>
+	<entry key="item.missingAche.name">Missing Ache</entry>
+	<!-- Kingdom Hearts II -->
+	<entry key="item.winnersProof.name">Winners Proof</entry>
+	<entry key="item.fatalCrest.name">Fatal Crest</entry>
+	<entry key="item.twoBecomeOne.name">Two Become One</entry>
+	<entry key="item.bondofFlame.name">Bond Of Flame</entry>
+	<entry key="item.fenrir.name">Fenrir</entry>
+	<entry key="item.sleepingLion.name">Sleeping Lion</entry>
+	<entry key="item.guardianSoul.name">Guarian Soul</entry>
+	<entry key="item.gullWing.name">Gull Wing</entry>
+	<entry key="item.photonDebugger.name">Photon Debugger</entry>
+	<entry key="item.sweetMemories.name">Sweet Memories</entry>
+	<entry key="item.circleofLife.name">Circle Of Life</entry>
+	<entry key="item.decisivePumpkin.name">Decisive Pumpkin</entry>
+	<entry key="item.wishingLamp.name">Wishing Lamp</entry>
+	<entry key="item.followtheWind.name">Follow The Wind</entry>
+	<entry key="item.mysteriousAbyss.name">Mysterious Abyss</entry>
+	<entry key="item.monochrome.name">Monochrome</entry>
+	<entry key="item.herosCrest.name">Hero's Crest</entry>
+	<entry key="item.rumblingRose.name">Rumbling Rose</entry>
+	<entry key="item.hiddenDragon.name">Hidden Dragon</entry>
+    <entry key="item.endsoftheEarth.name">Ends Of The Earth</entry>
+	<entry key="item.stormfall.name">Storm Fall</entry>
+	<!-- Kingdom Hearts -->
+	<entry key="item.destinysEmbrace.name">Destiny's Embrace</entry>
+	<entry key="item.waytotheDawn.name">Way To The Dawn</entry>
+	<entry key="item.oneWingedAngel.name">One Winged Angel</entry>
+	<entry key="item.diamondDust.name">Diamond Dust</entry>
+	<entry key="item.lionheart.name">Lion Heart</entry>
+	<entry key="item.metalChocobo.name">Metal Chocobo</entry>
+	<entry key="item.spellbinder.name">Spell Binder</entry>
+	<entry key="item.divineRose.name">Divine Rose</entry>
+	<entry key="item.fairyHarp.name">Fairy Harp</entry>
+	<entry key="item.crabClaw.name">Crab Claw</entry>
+	<entry key="item.wishingStar.name">Wishing Star</entry>
+	<entry key="item.pumpkinHead.name">Pumpkin Head</entry>
+	<entry key="item.threeWishes.name">Three Wishes</entry>
+	<entry key="item.jungleKing.name">Jungle King</entry>
+	<entry key="item.olympia.name">Olympia</entry>
+	<entry key="item.ladyLuck.name">Ultima Weapon</entry>
+	<entry key="item.keybladeofPeoplesHearts.name">Keyblade Of People's Hearts</entry>
+	<entry key="item.ultimaWeapon.name">Ultima Weapon</entry>
+	<entry key="item.treasureTrove.name">Treasure Trove</entry>
+	<entry key="item.starSeeker.name">Star Seeker</entry>
+	 <!-- Org XIII -->
+	<entry key="item.eternalFlames.name">Eternal Flames</entry>
+    <!-- Other -->
     <entry key="item.kingdomKeyChain.name">Kingdom Key Chain</entry>
     <entry key="item.kingdomKeyDChain.name">Kingdom Key D Chain</entry>
     <entry key="item.oathkeeperChain.name">Oathkeeper Chain</entry>
@@ -48,8 +167,6 @@
     <entry key="item.waywardWindChain.name">Wayward Wind Chain</entry>
     <entry key="item.rainFellChain.name">Rainfell Chain</entry>
     <entry key="item.earthShakerChain.name">Earthshaker Chain</entry>
-    <entry key="item.rainFell.name">Rainfell</entry>
-    <entry key="item.earthShaker.name">Earthshaker</entry>
     <!-- Blocks -->
     <entry key="tile.normalBlox.name">Normal Blox</entry>
     <entry key="tile.hardBlox.name">Hard Blox</entry>
@@ -61,4 +178,11 @@
 	<entry key="tile.blastBlox.name">Blast Blox</entry>
     <!-- Creative Tab -->
     <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
+    <entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>
+    <entry key="itemgroup.KHIITAB">Kingdom Keys: Kingdom Hearts II</entry>
+    <entry key="itemgroup.KHCHITAB">Kingdom Keys: Kingdom Hearts Chi</entry>
+    <entry key="itemgroup.KHRECODEDTAB">Kingdom Keys: Kingdom Hearts Re:Coded</entry>
+    <entry key="itemgroup.KHBBSTAB">Kingdom Keys: Kingdom Hearts Birth By Sleep</entry>
+    <entry key="itemgroup.KHDDDTAB">Kingdom Keys: Kingdom Hearts Dream Drop Distance</entry>
+    <entry key="itemgroup.KHDAYSTAB">Kingdom Keys: Kingdom Hearts 358/2 Days</entry>
 </properties>

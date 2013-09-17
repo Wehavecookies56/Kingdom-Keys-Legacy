@@ -3,9 +3,8 @@ package wehavecookies56.kk.core.helper;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cpw.mods.fml.common.FMLLog;
-
 import wehavecookies56.kk.lib.Reference;
+import cpw.mods.fml.common.FMLLog;
 
 public class LogHelper {
 
