@@ -11,12 +11,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemMidnightRoar extends ItemSword {
+	public static boolean keyPressed = false;
+	public static boolean keyHasBeenPressed = false;
     public ItemMidnightRoar(int id, EnumToolMaterial kingdomkey444) {
         super(id, kingdomkey444);
         this.setCreativeTab(KingdomKeys.KHDAYSTAB);
@@ -48,5 +51,14 @@ public class ItemMidnightRoar extends ItemSword {
     {
     itemstack.addEnchantment(KingdomKeys.HarvestHearts, 3);
     }
+	EntityPlayer player = (EntityPlayer)par3Entity;
+	if (this.keyPressed)
+	{
+		this.keyPressed = false;
+		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K54.itemID)
+		{
+			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K54c));
+		}
+	}
     }
 }

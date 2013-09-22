@@ -10,7 +10,7 @@ import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.block.BlockSynthesis;
 import wehavecookies56.kk.client.audio.SoundManager;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
-import wehavecookies56.kk.core.handlers.GuiHandler;
+import wehavecookies56.kk.core.handlers.GuiHandlerSynth;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
 import wehavecookies56.kk.core.helper.LogHelper;
 import wehavecookies56.kk.core.proxies.ClientProxy;
@@ -80,6 +80,8 @@ public class KingdomKeys {
     //Enchanment
     public static final Enchantment HarvestHearts = new EnchantHeartHarvest(52, 1);
     
+    private GuiHandlerSynth guiHandlerSynth = new GuiHandlerSynth();
+    
     //Pre initialisation
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -122,6 +124,7 @@ public class KingdomKeys {
     //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
+    	NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
         LogHelper.log(Level.INFO, "Preparing world generation");
         GameRegistry.registerWorldGenerator(worldGen);
         LogHelper.log(Level.INFO, "Preparing renders");
@@ -129,8 +132,7 @@ public class KingdomKeys {
         LogHelper.log(Level.INFO, "Preparing entities");
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         //EntityRegistry.registerModEntity(EntityEternalFlames.class, "EternalFlames", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
-        new GuiHandler();
-        BlockSynthesis.registerTileEntities();
+        //BlockSynthesis.registerTileEntities();
         if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));

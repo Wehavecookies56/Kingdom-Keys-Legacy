@@ -19,14 +19,5 @@ public class ItemKingdomKeyChain extends ItemKingdomKeys{
 	}
 	public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
 	{
-		EntityPlayer player = (EntityPlayer)par3Entity;
-		if (KeyBind.keyPressed)
-		{
-			KeyBind.keyPressed = false;
-			if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K111c.itemID)
-			{
-				player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K111));
-			}
-		}
 	}
 }

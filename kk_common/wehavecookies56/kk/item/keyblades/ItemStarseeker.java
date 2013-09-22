@@ -11,12 +11,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemStarseeker extends ItemSword {
+	public static boolean keyPressed = false;
+	public static boolean keyHasBeenPressed = false;
     public ItemStarseeker(int id, EnumToolMaterial kingdomkey12345678) {
         super(id, kingdomkey12345678);
         this.setCreativeTab(KingdomKeys.KHIITAB);
@@ -48,5 +51,14 @@ public class ItemStarseeker extends ItemSword {
     {
     itemstack.addEnchantment(KingdomKeys.HarvestHearts, 3);
     }
+	EntityPlayer player = (EntityPlayer)par3Entity;
+	if (this.keyPressed)
+	{
+		this.keyPressed = false;
+		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K105.itemID)
+		{
+			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K105c));
+		}
+	}
     }
 }

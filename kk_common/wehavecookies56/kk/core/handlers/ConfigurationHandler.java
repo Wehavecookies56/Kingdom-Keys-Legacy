@@ -20,30 +20,17 @@ public class ConfigurationHandler {
             config.load();
             //ITEMS
             //IDs.EternalFlames = config.getItem(Strings.EternalFlames  + " ID", IDs.ETERNALFLAMES_DEFAULT).getInt(IDs.ETERNALFLAMES_DEFAULT);
-            IDs.K111 = config.getItem(Strings.KingdomKey  + " ID", IDs.KINGDOMKEY_DEFAULT).getInt(IDs.KINGDOMKEY_DEFAULT);
             IDs.DarkLeather = config.getItem(Strings.DLeather  + " ID", IDs.DARKLEATHER_DEFAULT).getInt(IDs.DARKLEATHER_DEFAULT);
-            IDs.OBoots = config.getItem(Strings.OBoots  + " ID", IDs.OBOOTS_DEFAULT).getInt(IDs.OBOOTS_DEFAULT);
-            IDs.OHelm = config.getItem(Strings.OHood  + " ID", IDs.OHELM_DEFAULT).getInt(IDs.OHELM_DEFAULT);
-            IDs.OChest = config.getItem(Strings.OCoat  + " ID", IDs.OCHEST_DEFAULT).getInt(IDs.OCHEST_DEFAULT);
-            IDs.OLegs = config.getItem(Strings.OLegs  + " ID", IDs.OLEGS_DEFAULT).getInt(IDs.OLEGS_DEFAULT);
-            IDs.Disc1 = config.getItem(Strings.Disc1  + " ID", IDs.DISC1_DEFAULT).getInt(IDs.DISC1_DEFAULT);
-            IDs.Disc2 = config.getItem(Strings.Disc2  + " ID", IDs.DISC2_DEFAULT).getInt(IDs.DISC2_DEFAULT);
             IDs.PureHeart = config.getItem(Strings.PHeart  + " ID", IDs.PUREHEART_DEFAULT).getInt(IDs.PUREHEART_DEFAULT);
             IDs.DarkHeart = config.getItem(Strings.DHeart  + " ID", IDs.DARKHEART_DEFAULT).getInt(IDs.DARKHEART_DEFAULT);
             IDs.Heart = config.getItem(Strings.Heart  + " ID", IDs.HEART_DEFAULT).getInt(IDs.HEART_DEFAULT);
             IDs.KingdomHearts = config.getItem(Strings.KHearts  + " ID", IDs.KINGDOMHEARTS_DEFAULT).getInt(IDs.KINGDOMHEARTS_DEFAULT);
-            IDs.K112 = config.getItem(Strings.Oathkeeper  + " ID", IDs.OATHKEEPER_DEFAULT).getInt(IDs.OATHKEEPER_DEFAULT);
-            IDs.K113 = config.getItem(Strings.KingdomKeyD  + " ID", IDs.KINGDOMKEYD_DEFAULT).getInt(IDs.KINGDOMKEYD_DEFAULT);
             IDs.HP = config.getItem(Strings.HP  + " ID", IDs.HP_DEFAULT).getInt(IDs.HP_DEFAULT);
             IDs.Munny = config.getItem(Strings.Munny  + " ID", IDs.MUNNY_DEFAULT).getInt(IDs.MUNNY_DEFAULT);
             IDs.Potion = config.getItem(Strings.Potion  + " ID", IDs.POTION_DEFAULT).getInt(IDs.POTION_DEFAULT);
-            IDs.K114 = config.getItem(Strings.Oblivion  + " ID", IDs.OBLIVION_DEFAULT).getInt(IDs.OBLIVION_DEFAULT);
-            IDs.OblivionChain = config.getItem(Strings.OblivionChain  + " ID", IDs.OBLIVIONCHAIN_DEFAULT).getInt(IDs.OBLIVIONCHAIN_DEFAULT);
-            IDs.OathkeeperChain = config.getItem(Strings.OathkeeperChain  + " ID", IDs.OATHKEEPERCHAIN_DEFAULT).getInt(IDs.OATHKEEPERCHAIN_DEFAULT);
-            IDs.KingdomKeyChain = config.getItem(Strings.KingdomKeyChain  + " ID", IDs.KINGDOMKEYCHAIN_DEFAULT).getInt(IDs.KINGDOMKEYCHAIN_DEFAULT);
-            IDs.KingdomKeyDChain = config.getItem(Strings.KingdomKeyDChain  + " ID", IDs.KINGDOMKEYDCHAIN_DEFAULT).getInt(IDs.KINGDOMKEYDCHAIN_DEFAULT);
-            IDs.K110 = config.getItem(Strings.Waywardwind  + " ID", IDs.WAYWARDWIND_DEFAULT).getInt(IDs.WAYWARDWIND_DEFAULT);
-            IDs.WaywardWindChain = config.getItem(Strings.WaywardwindChain  + " ID", IDs.WAYWARDWINDCHAIN_DEFAULT).getInt(IDs.WAYWARDWINDCHAIN_DEFAULT);
+            //Music discs
+            IDs.Disc1 = config.getItem(Strings.Disc1  + " ID", IDs.DISC1_DEFAULT).getInt(IDs.DISC1_DEFAULT);
+            IDs.Disc2 = config.getItem(Strings.Disc2  + " ID", IDs.DISC2_DEFAULT).getInt(IDs.DISC2_DEFAULT);
             IDs.Disc3 = config.getItem(Strings.Disc3  + " ID", IDs.DISC3_DEFAULT).getInt(IDs.DISC3_DEFAULT);
             IDs.Disc4 = config.getItem(Strings.Disc4  + " ID", IDs.DISC4_DEFAULT).getInt(IDs.DISC4_DEFAULT);
             IDs.Disc5 = config.getItem(Strings.Disc5  + " ID", IDs.DISC5_DEFAULT).getInt(IDs.DISC5_DEFAULT);
@@ -51,6 +38,7 @@ public class ConfigurationHandler {
             IDs.Disc7 = config.getItem(Strings.Disc7  + " ID", IDs.DISC7_DEFAULT).getInt(IDs.DISC7_DEFAULT);
             IDs.Disc8 = config.getItem(Strings.Disc8  + " ID", IDs.DISC8_DEFAULT).getInt(IDs.DISC8_DEFAULT);
             IDs.Disc9 = config.getItem(Strings.Disc9  + " ID", IDs.DISC9_DEFAULT).getInt(IDs.DISC9_DEFAULT);
+            //Armour
             IDs.KABoots = config.getItem(Strings.KABoots  + " ID", IDs.KABOOTS_DEFAULT).getInt(IDs.KABOOTS_DEFAULT);
             IDs.KAHelm = config.getItem(Strings.KAHelm  + " ID", IDs.KAHELM_DEFAULT).getInt(IDs.KAHELM_DEFAULT);
             IDs.KAChest = config.getItem(Strings.KAChest  + " ID", IDs.KACHEST_DEFAULT).getInt(IDs.KACHEST_DEFAULT);
@@ -63,12 +51,11 @@ public class ConfigurationHandler {
             IDs.KVHelm = config.getItem(Strings.KVHelm  + " ID", IDs.KVHELM_DEFAULT).getInt(IDs.KVHELM_DEFAULT);
             IDs.KVChest = config.getItem(Strings.KVChest  + " ID", IDs.KVCHEST_DEFAULT).getInt(IDs.KVCHEST_DEFAULT);
             IDs.KVLegs = config.getItem(Strings.KVLegs  + " ID", IDs.KVLEGS_DEFAULT).getInt(IDs.KVLEGS_DEFAULT);
-            IDs.K109 = config.getItem(Strings.Earthshaker  + " ID", IDs.EARTHSHAKER_DEFAULT).getInt(IDs.EARTHSHAKER_DEFAULT);
-            IDs.EarthShakerChain = config.getItem(Strings.EarthshakerChain  + " ID", IDs.EARTHSHAKERCHAIN_DEFAULT).getInt(IDs.EARTHSHAKERCHAIN_DEFAULT);
-            IDs.K108 = config.getItem(Strings.Rainfell  + " ID", IDs.RAINFELL_DEFAULT).getInt(IDs.RAINFELL_DEFAULT);
-            IDs.RainFellChain = config.getItem(Strings.RainfellChain  + " ID", IDs.RAINFELLCHAIN_DEFAULT).getInt(IDs.RAINFELLCHAIN_DEFAULT);
-            IDs.K107 = config.getItem(Strings.Starlight  + " ID", IDs.STARLIGHT_DEFAULT).getInt(IDs.STARLIGHT_DEFAULT);
-            IDs.K106 = config.getItem(Strings.Souleater  + " ID", IDs.SOULEATER_DEFAULT).getInt(IDs.SOULEATER_DEFAULT);
+            IDs.OBoots = config.getItem(Strings.OBoots  + " ID", IDs.OBOOTS_DEFAULT).getInt(IDs.OBOOTS_DEFAULT);
+            IDs.OHelm = config.getItem(Strings.OHood  + " ID", IDs.OHELM_DEFAULT).getInt(IDs.OHELM_DEFAULT);
+            IDs.OChest = config.getItem(Strings.OCoat  + " ID", IDs.OCHEST_DEFAULT).getInt(IDs.OCHEST_DEFAULT);
+            IDs.OLegs = config.getItem(Strings.OLegs  + " ID", IDs.OLEGS_DEFAULT).getInt(IDs.OLEGS_DEFAULT);
+            //Keyblades
             IDs.Vulpeus = config.getItem(Strings.Vulpeus  + " ID", IDs.VULPEUS_DEFAULT).getInt(IDs.VULPEUS_DEFAULT);
             IDs.Ursus = config.getItem(Strings.Ursus  + " ID", IDs.URSUS_DEFAULT).getInt(IDs.URSUS_DEFAULT);
             IDs.Unicornis = config.getItem(Strings.Unicornis  + " ID", IDs.UNICORNIS_DEFAULT).getInt(IDs.UNICORNIS_DEFAULT);
@@ -174,6 +161,16 @@ public class ConfigurationHandler {
             IDs.K103 = config.getItem(Strings.Ultimaweapon  + " ID", IDs.ULTIMAWEAPON_DEFAULT).getInt(IDs.ULTIMAWEAPON_DEFAULT);
             IDs.K104 = config.getItem(Strings.Treasuretrove  + " ID", IDs.TREASURETROVE_DEFAULT).getInt(IDs.TREASURETROVE_DEFAULT);
             IDs.K105 = config.getItem(Strings.Starseeker  + " ID", IDs.STARSEEKER_DEFAULT).getInt(IDs.STARSEEKER_DEFAULT);
+            IDs.K106 = config.getItem(Strings.Souleater  + " ID", IDs.SOULEATER_DEFAULT).getInt(IDs.SOULEATER_DEFAULT); 
+            IDs.K107 = config.getItem(Strings.Starlight  + " ID", IDs.STARLIGHT_DEFAULT).getInt(IDs.STARLIGHT_DEFAULT);
+            IDs.K108 = config.getItem(Strings.Rainfell  + " ID", IDs.RAINFELL_DEFAULT).getInt(IDs.RAINFELL_DEFAULT);
+            IDs.K109 = config.getItem(Strings.Earthshaker  + " ID", IDs.EARTHSHAKER_DEFAULT).getInt(IDs.EARTHSHAKER_DEFAULT);
+            IDs.K110 = config.getItem(Strings.Waywardwind  + " ID", IDs.WAYWARDWIND_DEFAULT).getInt(IDs.WAYWARDWIND_DEFAULT);
+            IDs.K111 = config.getItem(Strings.KingdomKey  + " ID", IDs.KINGDOMKEY_DEFAULT).getInt(IDs.KINGDOMKEY_DEFAULT);
+            IDs.K112 = config.getItem(Strings.Oathkeeper  + " ID", IDs.OATHKEEPER_DEFAULT).getInt(IDs.OATHKEEPER_DEFAULT);
+            IDs.K113 = config.getItem(Strings.KingdomKeyD  + " ID", IDs.KINGDOMKEYD_DEFAULT).getInt(IDs.KINGDOMKEYD_DEFAULT);
+            IDs.K114 = config.getItem(Strings.Oblivion  + " ID", IDs.OBLIVION_DEFAULT).getInt(IDs.OBLIVION_DEFAULT);
+            //Keychains
             IDs.K1c = config.getItem(Strings.VulpeusChain  + " ID", IDs.VULPEUSCHAIN_DEFAULT).getInt(IDs.VULPEUSCHAIN_DEFAULT);
             IDs.K2c = config.getItem(Strings.UrsusChain  + " ID", IDs.URSUSCHAIN_DEFAULT).getInt(IDs.URSUSCHAIN_DEFAULT);
             IDs.K3c = config.getItem(Strings.UnicornisChain  + " ID", IDs.UNICORNISCHAIN_DEFAULT).getInt(IDs.UNICORNISCHAIN_DEFAULT);
@@ -279,6 +276,15 @@ public class ConfigurationHandler {
             IDs.K103c = config.getItem(Strings.UltimaweaponChain  + " ID", IDs.ULTIMAWEAPONCHAIN_DEFAULT).getInt(IDs.ULTIMAWEAPONCHAIN_DEFAULT);
             IDs.K104c = config.getItem(Strings.TreasuretroveChain  + " ID", IDs.TREASURETROVECHAIN_DEFAULT).getInt(IDs.TREASURETROVECHAIN_DEFAULT);
             IDs.K105c = config.getItem(Strings.StarseekerChain  + " ID", IDs.STARSEEKERCHAIN_DEFAULT).getInt(IDs.STARSEEKERCHAIN_DEFAULT); 
+            IDs.K106c = config.getItem(Strings.SouleaterChain  + " ID", IDs.SOULEATERCHAIN_DEFAULT).getInt(IDs.SOULEATERCHAIN_DEFAULT); 
+            IDs.K107c = config.getItem(Strings.StarlightChain  + " ID", IDs.STARLIGHTCHAIN_DEFAULT).getInt(IDs.STARLIGHTCHAIN_DEFAULT);
+            IDs.K108c = config.getItem(Strings.RainfellChain  + " ID", IDs.RAINFELLCHAIN_DEFAULT).getInt(IDs.RAINFELLCHAIN_DEFAULT);
+            IDs.K109c = config.getItem(Strings.EarthshakerChain  + " ID", IDs.EARTHSHAKERCHAIN_DEFAULT).getInt(IDs.EARTHSHAKERCHAIN_DEFAULT);
+            IDs.K110c = config.getItem(Strings.WaywardwindChain  + " ID", IDs.WAYWARDWINDCHAIN_DEFAULT).getInt(IDs.WAYWARDWINDCHAIN_DEFAULT);
+            IDs.K111c = config.getItem(Strings.KingdomKeyChain  + " ID", IDs.KINGDOMKEYCHAIN_DEFAULT).getInt(IDs.KINGDOMKEYCHAIN_DEFAULT);
+            IDs.K112c = config.getItem(Strings.OathkeeperChain  + " ID", IDs.OATHKEEPERCHAIN_DEFAULT).getInt(IDs.OATHKEEPERCHAIN_DEFAULT);
+            IDs.K113c = config.getItem(Strings.KingdomKeyDChain  + " ID", IDs.KINGDOMKEYDCHAIN_DEFAULT).getInt(IDs.KINGDOMKEYDCHAIN_DEFAULT);
+            IDs.K114c = config.getItem(Strings.OblivionChain  + " ID", IDs.OBLIVIONCHAIN_DEFAULT).getInt(IDs.OBLIVIONCHAIN_DEFAULT);
             //BLOCKS
             IDs.NBlox = config.getBlock(Strings.NBlox  + " ID", IDs.NORMALBLOX_DEFAULT).getInt(IDs.NORMALBLOX_DEFAULT);
             IDs.HBlox = config.getBlock(Strings.HBlox  + " ID", IDs.HARDBLOX_DEFAULT).getInt(IDs.HARDBLOX_DEFAULT);

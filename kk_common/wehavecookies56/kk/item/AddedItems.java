@@ -81,7 +81,7 @@ public class AddedItems {
 		K53m = EnumHelper.addToolMaterial(Strings.Glimpseofdarkness, 3, -1, 6.0F, 6, 30); K53 = new ItemGlimpseOfDarkness(IDs.K53, K53m).setFull3D().setUnlocalizedName(Strings.Glimpseofdarkness);
 		K54m = EnumHelper.addToolMaterial(Strings.Midnightroar, 3, -1, 6.0F, 6, 30); K54 = new ItemMidnightRoar(IDs.K54, K54m).setFull3D().setUnlocalizedName(Strings.Midnightroar);
 		K55m = EnumHelper.addToolMaterial(Strings.Rejectionoffate, 3, -1, 6.0F, 8, 30); K55 = new ItemRejectionOfFate(IDs.K55, K55m).setFull3D().setUnlocalizedName(Strings.Rejectionoffate);
-		K56m = EnumHelper.addToolMaterial(Strings.Twilightblaze, 3, -1, 6.0F, 8, 30); K56 = new ItemTrueLightsFlight(IDs.K56, K56m).setFull3D().setUnlocalizedName(Strings.Truelightsflight);
+		K56m = EnumHelper.addToolMaterial(Strings.Truelightsflight, 3, -1, 6.0F, 8, 30); K56 = new ItemTrueLightsFlight(IDs.K56, K56m).setFull3D().setUnlocalizedName(Strings.Truelightsflight);
 		K57m = EnumHelper.addToolMaterial(Strings.Leviathan, 3, -1, 6.0F, 9, 30); K57 = new ItemLeviathan(IDs.K57, K57m).setFull3D().setUnlocalizedName(Strings.Leviathan);
 		K58m = EnumHelper.addToolMaterial(Strings.Abyssaltide, 3, -1, 6.0F, 7, 30); K58 = new ItemAbyssalTide(IDs.K58, K58m).setFull3D().setUnlocalizedName(Strings.Abyssaltide);
 		K59m = EnumHelper.addToolMaterial(Strings.Crownofguilt, 3, -1, 6.0F, 9, 30); K59 = new ItemCrownOfGuilt(IDs.K59, K59m).setFull3D().setUnlocalizedName(Strings.Crownofguilt);
@@ -246,14 +246,14 @@ public class AddedItems {
 		K104c = new ItemTreasureTroveChain(IDs.K104c).setUnlocalizedName(Strings.TreasuretroveChain);
 		K105c = new ItemStarSeekerChain(IDs.K105c).setUnlocalizedName(Strings.StarseekerChain);
 		K106c = new ItemSoulEaterChain(IDs.K106c).setUnlocalizedName(Strings.SouleaterChain);
-		K107c = new ItemStarlightChain(IDs.KingdomKeyChain).setUnlocalizedName(Strings.StarlightChain);
-		K111c = new ItemKingdomKeyChain(IDs.KingdomKeyChain).setUnlocalizedName(Strings.KingdomKeyChain);
-		K113c = new ItemKingdomKeyDChain(IDs.KingdomKeyDChain).setUnlocalizedName(Strings.KingdomKeyDChain);
-		K112c = new ItemOathkeeperChain(IDs.OathkeeperChain).setUnlocalizedName(Strings.OathkeeperChain);
-		K114c = new ItemOblivionChain(IDs.OblivionChain).setUnlocalizedName(Strings.OblivionChain);
-		K110c = new ItemWaywardWindChain(IDs.WaywardWindChain).setUnlocalizedName(Strings.WaywardwindChain);
-		K109c = new ItemEarthShakerChain(IDs.EarthShakerChain).setUnlocalizedName(Strings.EarthshakerChain);
-		K108c = new ItemRainFellChain(IDs.RainFellChain).setUnlocalizedName(Strings.RainfellChain);
+		K107c = new ItemStarlightChain(IDs.K107c).setUnlocalizedName(Strings.StarlightChain);
+		K111c = new ItemKingdomKeyChain(IDs.K111c).setUnlocalizedName(Strings.KingdomKeyChain);
+		K113c = new ItemKingdomKeyDChain(IDs.K113c).setUnlocalizedName(Strings.KingdomKeyDChain);
+		K112c = new ItemOathkeeperChain(IDs.K112c).setUnlocalizedName(Strings.OathkeeperChain);
+		//K114c = new ItemOblivionChain(IDs.K114c).setUnlocalizedName(Strings.OblivionChain);
+		K110c = new ItemWaywardWindChain(IDs.K110c).setUnlocalizedName(Strings.WaywardwindChain);
+		K109c = new ItemEarthShakerChain(IDs.K109c).setUnlocalizedName(Strings.EarthshakerChain);
+		K108c = new ItemRainFellChain(IDs.K108c).setUnlocalizedName(Strings.RainfellChain);
 	}
 
 	public static void intiArmour(){
@@ -541,12 +541,6 @@ public class AddedItems {
 			"GPG",
 			'P', PureHeart, 'G', Item.ingotIron, 'K', KingdomHearts
 		});
-		GameRegistry.addRecipe(new ItemStack(K114c), new Object[]{
-			"OPO",
-			"OKO",
-			"OPO",
-			'P', PureHeart, 'O', Block.obsidian, 'K', KingdomHearts
-		});
 		GameRegistry.addRecipe(new ItemStack(K110c), new Object[]{
 			"IPI",
 			"GKG",
@@ -635,7 +629,7 @@ public class AddedItems {
 		GameRegistry.addShapelessRecipe(new ItemStack(K111), new ItemStack(K111c, 1), new ItemStack(Item.swordWood, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(K113), new ItemStack(K113c, 1), new ItemStack(Item.swordGold, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(K112), new ItemStack(K112c, 1), new ItemStack(Item.swordIron, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(K114), new ItemStack(K114c, 1), new ItemStack(Item.swordIron, 1));
+		//GameRegistry.addShapelessRecipe(new ItemStack(K114), new ItemStack(K114c, 1), new ItemStack(Item.swordIron, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(K110), new ItemStack(K110c, 1), new ItemStack(Item.swordWood, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(K109), new ItemStack(K109c, 1), new ItemStack(Item.swordIron, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(K108), new ItemStack(K108c, 1), new ItemStack(Item.swordStone, 1));

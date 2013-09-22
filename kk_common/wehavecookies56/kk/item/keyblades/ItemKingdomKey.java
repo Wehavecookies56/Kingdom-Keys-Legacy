@@ -19,6 +19,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemKingdomKey extends ItemSword {
+	public static boolean keyPressed = false;
+	public static boolean keyHasBeenPressed = false;
 	public ItemKingdomKey(int id, EnumToolMaterial kingdomkey36) {
 		super(id, kingdomkey36);
 		this.setCreativeTab(KingdomKeys.KHTAB);
@@ -50,15 +52,15 @@ public class ItemKingdomKey extends ItemSword {
 		{
 			itemstack.addEnchantment(KingdomKeys.HarvestHearts, 1);
 		}
-		EntityPlayer player = (EntityPlayer)par3Entity;
-		if (KeyBind.keyPressed)
-		{
-			KeyBind.keyPressed = false;
-			if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K111.itemID)
-			{
-				player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K111c));
-			}
-		}
+    	EntityPlayer player = (EntityPlayer)par3Entity;
+    	if (this.keyPressed)
+    	{
+    		this.keyPressed = false;
+    		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K111.itemID)
+    		{
+    			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K111c));
+    		}
+    	}
 	}
 
 	{

@@ -1,131 +1,58 @@
 package wehavecookies56.kk.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.Icon;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.entities.tileentities.TileEntitySynthesiser;
-import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
-import cpw.mods.fml.common.network.FMLNetworkHandler;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.Icon;
+import net.minecraft.world.World;
 
-public class BlockSynthesis extends BlockContainer {
-
-	public BlockSynthesis(int id, Material material) {
-		super(id, material);
-		this.setUnlocalizedName(Strings.Synthesiser);
-		this.setCreativeTab(KingdomKeys.KKTAB);
-		this.setResistance(2.0F);
-		this.setHardness(4.0F);
-	}
-
-	
-	@Override
-	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
-		if(!world.isRemote) {
-			FMLNetworkHandler.openGui(player, KingdomKeys.instance, 0, world, x, y, z);
-		}
-		return true;
-	}
-	
-	public static void registerTileEntities() {
-		GameRegistry.registerTileEntity(TileEntitySynthesiser.class, "SynthesiserKK");
-	}
+public class BlockSynthesis extends Block{
 	
 	@SideOnly(Side.CLIENT)
-	public static Icon topIcon;
+	private Icon workbenchIconTop;
 	@SideOnly(Side.CLIENT)
-	public static Icon sideIcon;
+	private Icon workbenchIconFront;
+
+	public BlockSynthesis(int i)
+	{
+	         super(i, Material.iron);
+	         this.setCreativeTab(KingdomKeys.KKTAB);
+	         this.setUnlocalizedName(Strings.Synthesiser);
+	}
+
 	@SideOnly(Side.CLIENT)
-	public static Icon frontIcon;
-	
-	@Override
+	public Icon getIcon(int par1, int par2)
+	{
+	         return par1 == 1 ? this.workbenchIconTop : (par1 == 0 ? Block.planks.getBlockTextureFromSide(par1) : (par1 != 2 && par1 != 4 ? this.blockIcon : this.workbenchIconFront));
+	}
+
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-	topIcon = icon.registerIcon(Reference.MOD_ID + ":" + "synthesiser_top");
-	sideIcon = icon.registerIcon(Reference.MOD_ID + ":" + "synthesiser_side");
-	frontIcon = icon.registerIcon(Reference.MOD_ID + ":" + "synthesiser_front");
+	public void registerIcons(IconRegister par1IconRegister)
+	{
+	this.blockIcon = par1IconRegister.registerIcon("kk:synth_side");
+	this.workbenchIconTop = par1IconRegister.registerIcon("kk:synth_top");
+	this.workbenchIconFront = par1IconRegister.registerIcon("kk:synth_front");
 	}
+
 	
-	@Override
-	public Icon getIcon(int side, int meta) {
-	if(side == 0 || side == 1) {
-	return topIcon;
-	} else if(side == 2) {
-	return frontIcon;
-	} else {
-	return sideIcon;
+	public boolean onBlockActivated(World world, int var2, int var3, int var4, EntityPlayer player, int var6, float var7, float var8, float var9)
+	{
+	         if (!player.isSneaking())
+	{
+	player.openGui(KingdomKeys.instance, 0, world, var2, var3, var4);
+	return true;
 	}
-	}
-	
-	@Override
-	public void onBlockAdded(World world, int x, int y, int z) {
-	super.onBlockAdded(world, x, y, z);
-	setDefaultDirection(world, x, y, z);
-	}
-	
-	private void setDefaultDirection(World world, int x, int y, int z) {
-		if(!world.isRemote) {
-		int zNeg = world.getBlockId(x, y, z - 1);
-		int zPos = world.getBlockId(x, y, z + 1);
-		int xNeg = world.getBlockId(x - 1, y, z);
-		int xPos = world.getBlockId(x + 1, y, z);
-		byte meta = 3;
-		
-		if(Block.opaqueCubeLookup[xNeg] && !Block.opaqueCubeLookup[xPos]) {
-			meta = 5;
-			}
-
-			if(Block.opaqueCubeLookup[xPos] && !Block.opaqueCubeLookup[xNeg]) {
-			meta = 4;
-			}
-
-			if(Block.opaqueCubeLookup[zNeg] && !Block.opaqueCubeLookup[zPos]) {
-			meta = 3;
-			}
-
-			if(Block.opaqueCubeLookup[zPos] && !Block.opaqueCubeLookup[zNeg]) {
-			meta = 2;
-			}
-			
-			world.setBlockMetadataWithNotify(x, y, z, meta, 2);
-		}
-		}
-	@Override
-	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack itemstack) {
-	int rotation = MathHelper.floor_double((double)(entity.rotationYaw * 4F / 360F) + 0.5D) & 3;
-
-	if(rotation == 0) {
-	world.setBlockMetadataWithNotify(x, y, z, 2, 2);
-	}
-
-	if(rotation == 1) {
-	world.setBlockMetadataWithNotify(x, y, z, 5, 2);
-	}
-
-	if(rotation == 2) {
-	world.setBlockMetadataWithNotify(x, y, z, 3, 2);
-	}
-
-	if(rotation == 3) {
-	world.setBlockMetadataWithNotify(x, y, z, 4, 2);
+	else
+	{
+	return false;
 	}
 	}
 	
-	@Override
-	public TileEntity createNewTileEntity(World world) {
-	return new TileEntitySynthesiser();
-	}
+	
 	
 }

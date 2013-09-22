@@ -2,18 +2,22 @@ package wehavecookies56.kk.item.keyblades;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemLeasKeyblade extends ItemSword {
+	public static boolean keyPressed = false;
+	public static boolean keyHasBeenPressed = false;
     public ItemLeasKeyblade(int id, EnumToolMaterial kingdomkeyf) {
         super(id, kingdomkeyf);
         this.setCreativeTab(KingdomKeys.KHDDDTAB);
@@ -40,5 +44,14 @@ public class ItemLeasKeyblade extends ItemSword {
     {
     itemstack.addEnchantment(KingdomKeys.HarvestHearts, 3);
     }
+	EntityPlayer player = (EntityPlayer)par3Entity;
+	if (this.keyPressed)
+	{
+		this.keyPressed = false;
+		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K6.itemID)
+		{
+			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K6c));
+		}
+	}
     }
 }

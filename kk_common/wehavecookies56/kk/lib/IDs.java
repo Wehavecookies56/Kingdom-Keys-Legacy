@@ -2,7 +2,7 @@ package wehavecookies56.kk.lib;
 
 public class IDs {
     //ITEMS
-	public static int EternalFlames, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, DarkLeather, OblivionChain, OathkeeperChain, KingdomKeyDChain, KingdomKeyChain, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, EarthShakerChain, RainFellChain, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c;
+	public static int EternalFlames, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, DarkLeather, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c;
 
 	//Keyblades
     public static final int ETERNALFLAMES_DEFAULT = 29999;
@@ -236,39 +236,39 @@ public class IDs {
     public static final int EARTHSHAKERCHAIN_DEFAULT = 30228;
     public static final int WAYWARDWINDCHAIN_DEFAULT = 30229;
     //Others
-    public static final int KAHELM_DEFAULT = 31701;
-    public static final int KACHEST_DEFAULT = 31702;
-    public static final int KALEGS_DEFAULT = 31703;
-    public static final int KABOOTS_DEFAULT = 31704;
-    public static final int KTHELM_DEFAULT = 31705;
-    public static final int KTCHEST_DEFAULT = 31706;
-    public static final int KTLEGS_DEFAULT = 31707;
-    public static final int KTBOOTS_DEFAULT = 31708;
-    public static final int KVHELM_DEFAULT = 31709;
-    public static final int KVCHEST_DEFAULT = 31710;
-    public static final int KVLEGS_DEFAULT = 31711;
-    public static final int KVBOOTS_DEFAULT = 31712;
-    public static final int DISC1_DEFAULT = 31715; 
-    public static final int DISC2_DEFAULT = 31716; 
-    public static final int PUREHEART_DEFAULT = 31717;    
-    public static final int DARKHEART_DEFAULT = 31718;    
-    public static final int HEART_DEFAULT = 31719;   
-    public static final int KINGDOMHEARTS_DEFAULT = 31720;    
-    public static final int OHELM_DEFAULT = 31721;
-    public static final int OCHEST_DEFAULT = 31722;
-    public static final int OLEGS_DEFAULT = 31723;
-    public static final int OBOOTS_DEFAULT = 31724;
-    public static final int DARKLEATHER_DEFAULT = 31727;
-    public static final int HP_DEFAULT = 31733;  
-    public static final int MUNNY_DEFAULT = 31734;  
-    public static final int POTION_DEFAULT = 31735;
-    public static final int DISC3_DEFAULT = 31737;
-    public static final int DISC4_DEFAULT = 31738; 
-    public static final int DISC5_DEFAULT = 31739; 
-    public static final int DISC6_DEFAULT = 31740; 
-    public static final int DISC7_DEFAULT = 31741; 
-    public static final int DISC8_DEFAULT = 31742; 
-    public static final int DISC9_DEFAULT = 31743; 
+    public static final int KAHELM_DEFAULT = 30300;
+    public static final int KACHEST_DEFAULT = 30301;
+    public static final int KALEGS_DEFAULT = 30302;
+    public static final int KABOOTS_DEFAULT = 30303;
+    public static final int KTHELM_DEFAULT = 30310;
+    public static final int KTCHEST_DEFAULT = 30311;
+    public static final int KTLEGS_DEFAULT = 30312;
+    public static final int KTBOOTS_DEFAULT = 30313;
+    public static final int KVHELM_DEFAULT = 30320;
+    public static final int KVCHEST_DEFAULT = 30321;
+    public static final int KVLEGS_DEFAULT = 30322;
+    public static final int KVBOOTS_DEFAULT = 30323;
+    public static final int OHELM_DEFAULT = 30330;
+    public static final int OCHEST_DEFAULT = 30331;
+    public static final int OLEGS_DEFAULT = 30332;
+    public static final int OBOOTS_DEFAULT = 30333;    
+    public static final int DARKHEART_DEFAULT = 30334;    
+    public static final int HEART_DEFAULT = 30335;   
+    public static final int PUREHEART_DEFAULT = 30336;
+    public static final int KINGDOMHEARTS_DEFAULT = 30337;    
+    public static final int DARKLEATHER_DEFAULT = 30338;
+    public static final int HP_DEFAULT = 30339;  
+    public static final int MUNNY_DEFAULT = 30340;  
+    public static final int POTION_DEFAULT = 30341;
+    public static final int DISC1_DEFAULT = 30350; 
+    public static final int DISC2_DEFAULT = 30351; 
+    public static final int DISC3_DEFAULT = 30352;
+    public static final int DISC4_DEFAULT = 30353; 
+    public static final int DISC5_DEFAULT = 30354; 
+    public static final int DISC6_DEFAULT = 30355; 
+    public static final int DISC7_DEFAULT = 30356; 
+    public static final int DISC8_DEFAULT = 30357; 
+    public static final int DISC9_DEFAULT = 30358; 
 
     //BLOCKS
     public static int NBlox, HBlox, MBlox, PBlox, RPBlox, BBlox, DBlox, BLBlox, Synthesis;

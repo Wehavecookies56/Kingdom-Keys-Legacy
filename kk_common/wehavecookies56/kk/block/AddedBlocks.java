@@ -22,7 +22,7 @@ public class AddedBlocks {
         BounceBlox = new BlockBounceBlox(IDs.BBlox, Material.iron); GameRegistry.registerBlock(BounceBlox, Strings.BBlox);
         DangerBlox = new BlockDangerBlox(IDs.DBlox, Material.iron); GameRegistry.registerBlock(DangerBlox, Strings.DBlox);
         BlastBlox = new BlockBlastBlox(IDs.BLBlox); GameRegistry.registerBlock(BlastBlox, Strings.BLBlox);
-        Synthesiser = new BlockSynthesis(IDs.Synthesis, Material.wood); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);
+        Synthesiser = new BlockSynthesis(IDs.Synthesis); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);
     } 
     
 

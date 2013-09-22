@@ -124,13 +124,131 @@
 	<entry key="item.ultimaWeapon.name">Ultima Weapon</entry>
 	<entry key="item.treasureTrove.name">Treasure Trove</entry>
 	<entry key="item.starSeeker.name">Star Seeker</entry>
-	 <!-- Org XIII -->
-	<entry key="item.eternalFlames.name">Eternal Flames</entry>
-    <!-- Other -->
+   <!-- Chains -->
     <entry key="item.kingdomKeyChain.name">Kingdom Key Chain</entry>
     <entry key="item.kingdomKeyDChain.name">Kingdom Key D Chain</entry>
     <entry key="item.oathkeeperChain.name">Oathkeeper Chain</entry>
     <entry key="item.oblivionChain.name">Oblivion Chain</entry>
+	<entry key="item.waywardWindChain.name">Wayward Wind Chain</entry>
+	<entry key="item.rainFellChain.name">Rainfell Chain</entry>
+    <entry key="item.earthShakerChain.name">Earth Shaker Chain</entry>
+	<entry key="item.soulEaterChain.name">Soul Eater Chain</entry>
+    <!-- Kingdom Hearts Chi -->
+    <entry key="item.starLightChain.name">Starlight Chain</entry>
+	<entry key="item.vulpeusForetellersKeybladeChain.name">Vulpeus Forteller's Keyblade Chain</entry>
+	<entry key="item.ursusForetellersKeybladeChain.name">Ursus Forteleller's Keyblade Chain</entry>
+	<entry key="item.unicornisForetellersKeybladeChain.name">Unicornis Forteller's Keyblade Chain</entry>
+	<entry key="item.leopardosForetellersKeybladeChain.name">Leopardos Forteller's Keyblade Chain</entry>
+	<entry key="item.anguisForetellersKeybladeChain.name">Anguis Forteller's Keyblade Chain</entry>
+    <!-- Kingdom Hearts Dream Drop Distance -->
+	<entry key="item.leasKeybladeChain.name">Lea's Keyblade Chain</entry>
+	<entry key="item.youngXehanortsKeybladeChain.name">Young Xehanort's Keyblade Chain</entry>
+	<entry key="item.oceanRageChain.name">Ocean Rage Chain</entry>
+	<entry key="item.endofPainChain.name">End Of Pain Chain</entry>
+	<entry key="item.unboundChain.name">Unbound Chain</entry>
+	<entry key="item.sweetDreamsChain.name">Sweet Dreams Chain</entry>
+	<entry key="item.divewingChain.name">Divewing Chain</entry>
+	<entry key="item.counterpointChain.name">Summon Counterpoint</entry>
+	<entry key="item.allforOneChain.name">Summon All For One</entry>
+	<entry key="item.knockoutPunchChain.name">Summon Knockout Punch</entry>
+	<entry key="item.ferrisGearChain.name">Summon Ferris Gear</entry>
+	<entry key="item.dualDiscChain.name">Summon Dual Disc</entry>
+	<entry key="item.guardianBellChain.name">Summon Guardian Bell</entry>
+	<entry key="item.skullNoiseChain.name">Skull Noise Chain</entry>
+	<entry key="item.woodenKeybladeChain.name">Summon Wooden Keyblade</entry>
+    <!-- Kingdom Hearts Birth By Sleep -->
+	<entry key="item.incompletekyebladeChain.name">Incomplete X(Kye)-blade Chain</entry>
+	<entry key="item.kyebladeChain.name">X(Kye)-blade Chain</entry>
+	<entry key="item.lightSeekerChain.name">Light Seeker Chain</entry>
+	<entry key="item.lostMemoryChain.name">Lost Memory Chain</entry>
+	<entry key="item.frolicFlameChain.name">Frolic Flame Chain</entry>
+	<entry key="item.masterKeeperChain.name">Master Keeper Chain</entry>
+	<entry key="item.brightcrestChain.name">Brightcrest Chain</entry>
+	<entry key="item.crownUnlimitChain.name">Crown Unlimit Chain</entry>
+	<entry key="item.noNameChain.name">No Name Chain</entry>
+	<entry key="item.voidGearChain.name">Void Gear Chain</entry>
+	<entry key="item.sweetstackChain.name">Sweetstack Chain</entry>
+	<entry key="item.pixiePetalChain.name">Pixie Petal Chain</entry>
+	<entry key="item.hyperdriveChain.name">Hyperdrive Chain</entry>
+	<entry key="item.markofaHeroChain.name">Mark Of A Hero Chain</entry>
+	<entry key="item.victoryLineChain.name">Victory Line Chain</entry>
+	<entry key="item.fairyStarsChain.name">Fairy Stars Chain</entry>
+	<entry key="item.strokeofMidnightChain.name">Stroke Of Midnight Chain</entry>
+	<entry key="item.chaosRipperChain.name">Chaos Ripper Chain</entry>
+	<entry key="item.masterXehanortsKeybladeChain.name">Master Xehanort's Keyblade Chain</entry>
+	<entry key="item.darkgnawChain.name">Darkgnaw Chain</entry>
+    <!-- Kingdom Hearts Re: Coded -->
+	<entry key="item.zeroOneChain.name">Zero/One Chain</entry>
+    <!-- Kingdom Hearts 358/2 Days -->
+	<entry key="item.dreamSwordChain.name">Summon Dream Sword</entry>
+    <entry key="item.aubadeChain.name">Aubade Chain</entry>
+	<entry key="item.umbrellaChain.name">Umbrella Chain</entry>
+	<entry key="item.omegaWeaponChain.name">Omega Weapon Chain</entry>
+	<entry key="item.twilightBlazeChain.name">Twilight Blaze Chain</entry>
+	<entry key="item.maverickFlareChain.name">Maverick Flare Chain</entry>
+	<entry key="item.astralBlastChain.name">Astral Blast Chain</entry>
+	<entry key="item.darkerThanDarkChain.name">Darker Than Dark Chain</entry>
+	<entry key="item.lunarEclipseChain.name">Lunar Eclipse Chain</entry>
+	<entry key="item.silentDirgeChain.name">SIlent Dirge Chain</entry>
+	<entry key="item.totalEclipseChain.name">Total Eclipse Chain</entry>
+	<entry key="item.glimpseofDarknessChain.name">Glimpse Of Darkness Chain</entry>
+	<entry key="item.midnightRoarChain.name">Midnight Roar Chain</entry>
+	<entry key="item.rejectionofFateChain.name">Rejection Of Fate Chain</entry>
+	<entry key="item.trueLightsFlightChain.name">True Light's Flight Chain</entry>
+	<entry key="item.leviathanChain.name">Leviathan Chain</entry>
+	<entry key="item.abyssalTideChain.name">Abyssal Tide Chain</entry>
+	<entry key="item.crownofGuiltChain.name">Crown Of Guilt Chain</entry>
+	<entry key="item.signofInnocenceChain.name">Sign Of Innocence Chain</entry>
+	<entry key="item.painofSolitudeChain.name">Pain Of Solitude Chain</entry>
+	<entry key="item.abaddonPlasmaChain.name">Abaddon Plasma Chain</entry>
+	<entry key="item.ominousBlightChain.name">Ominous Blight Chain</entry>
+	<entry key="item.missingAcheChain.name">Missing Ache Chain</entry>
+	<!-- Kingdom Hearts II -->
+	<entry key="item.winnersProofChain.name">Winners Proof Chain</entry>
+	<entry key="item.fatalCrestChain.name">Fatal Crest Chain</entry>
+	<entry key="item.twoBecomeOneChain.name">Two Become One Chain</entry>
+	<entry key="item.bondofFlameChain.name">Bond Of Flame Chain</entry>
+	<entry key="item.fenrirChain.name">Fenrir Chain</entry>
+	<entry key="item.sleepingLionChain.name">Sleeping Lion Chain</entry>
+	<entry key="item.guardianSoulChain.name">Guarian Soul Chain</entry>
+	<entry key="item.gullWingChain.name">Gull Wing Chain</entry>
+	<entry key="item.photonDebuggerChain.name">Photon Debugger Chain</entry>
+	<entry key="item.sweetMemoriesChain.name">Sweet Memories Chain</entry>
+	<entry key="item.circleofLifeChain.name">Circle Of Life Chain</entry>
+	<entry key="item.decisivePumpkinChain.name">Decisive Pumpkin Chain</entry>
+	<entry key="item.wishingLampChain.name">Wishing Lamp Chain</entry>
+	<entry key="item.followtheWindChain.name">Follow The Wind Chain</entry>
+	<entry key="item.mysteriousAbyssChain.name">Mysterious Abyss Chain</entry>
+	<entry key="item.monochromeChain.name">Monochrome Chain</entry>
+	<entry key="item.herosCrestChain.name">Hero's Crest Chain</entry>
+	<entry key="item.rumblingRoseChain.name">Rumbling Rose Chain</entry>
+	<entry key="item.hiddenDragonChain.name">Hidden Dragon Chain</entry>
+    <entry key="item.endsoftheEarthChain.name">Ends Of The Earth Chain</entry>
+	<entry key="item.stormfallChain.name">Storm Fall Chain</entry>
+	<!-- Kingdom Hearts -->
+	<entry key="item.destinysEmbrace.name">Destiny's Embrace Chain</entry>
+	<entry key="item.waytotheDawn.name">Way To The Dawn Chain</entry>
+	<entry key="item.oneWingedAngel.name">One Winged Angel Chain</entry>
+	<entry key="item.diamondDust.name">Diamond Dust Chain</entry>
+	<entry key="item.lionheart.name">Lion Heart Chain</entry>
+	<entry key="item.metalChocobo.name">Metal Chocobo Chain</entry>
+	<entry key="item.spellbinder.name">Spell Binder Chain</entry>
+	<entry key="item.divineRose.name">Divine Rose Chain</entry>
+	<entry key="item.fairyHarp.name">Fairy Harp Chain</entry>
+	<entry key="item.crabClaw.name">Crab Claw Chain</entry>
+	<entry key="item.wishingStar.name">Wishing Star Chain</entry>
+	<entry key="item.pumpkinHead.name">Pumpkin Head Chain</entry>
+	<entry key="item.threeWishes.name">Three Wishes Chain</entry>
+	<entry key="item.jungleKing.name">Jungle King Chain</entry>
+	<entry key="item.olympia.name">Olympia Chain</entry>
+	<entry key="item.ladyLuck.name">Ultima Weapon Chain</entry>
+	<entry key="item.keybladeofPeoplesHearts.name">Keyblade Of People's Hearts Chain</entry>
+	<entry key="item.ultimaWeapon.name">Ultima Weapon Chain</entry>
+	<entry key="item.treasureTrove.name">Treasure Trove Chain</entry>
+	<entry key="item.starSeeker.name">Star Seeker Chain</entry>
+	 <!-- Org XIII -->
+	<entry key="item.eternalFlames.name">Eternal Flames</entry>
+    <!-- Other -->
     <entry key="item.pureHeart.name">Pure Heart</entry>
     <entry key="item.darkHeart.name">Dark Heart</entry>
     <entry key="item.heart.name">Heart</entry>
@@ -164,9 +282,6 @@
     <entry key="item.keybladeVChest.name">Keyblade Armor Chestplate</entry>
     <entry key="item.keybladeVLegs.name">Keyblade Armor Leggings</entry>
     <entry key="item.keybladeVBoots.name">Keyblade Armor Boots</entry>
-    <entry key="item.waywardWindChain.name">Wayward Wind Chain</entry>
-    <entry key="item.rainFellChain.name">Rainfell Chain</entry>
-    <entry key="item.earthShakerChain.name">Earthshaker Chain</entry>
     <!-- Blocks -->
     <entry key="tile.normalBlox.name">Normal Blox</entry>
     <entry key="tile.hardBlox.name">Hard Blox</entry>
