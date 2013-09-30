@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
     <comment>Spanish (es_ES) Localization File</comment>
-    <!-- Llaves Espada -->
+<!-- Llaves Espada -->
     <entry key="item.kingdomKey.name">Cadena del Reino</entry>
     <entry key="item.kingdomKeyD.name">Cadena del Reino D</entry>
     <entry key="item.oathkeeper.name">Prometida</entry>
@@ -12,7 +12,6 @@
     <entry key="item.earthShaker.name">Teluria</entry>
 	<entry key="item.starLight.name">Luz Estelar</entry>
 	<entry key="item.soulEater.name">Devora Almas</entry>
-	
 	<entry key="item.vulpeusForetellersKeyblade.name">Pronosticador Vulpeus</entry>
 	<entry key="item.ursusForetellersKeyblade.name">Pronosticador Ursus</entry>
 	<entry key="item.unicornisForetellersKeyblade.name">Pronosticador Unicornis</entry>
@@ -48,14 +47,14 @@
 	<entry key="item.hyperdrive.name">Hiperpropulsor</entry>
 	<entry key="item.markofaHero.name">Galón de Héroe</entry>
 	<entry key="item.victoryLine.name">Línea de Meta</entry>
-	<entry key="item.fairyStars.name">Lucero feérrico</entry>
+	<entry key="item.fairyStars.name">Lucero Feérrico</entry>
 	<entry key="item.strokeofMidnight.name">Último Tañido</entry>
 	<entry key="item.chaosRipper.name">Caótica</entry>
 	<entry key="item.masterXehanortsKeyblade.name">Llave Espada del Maestro Xehanort</entry>
 	<entry key="item.darkgnaw.name">Mella Sombría</entry>
 	<entry key="item.zeroOne.name">Cero y Uno</entry>
 	<entry key="item.dreamSword.name">Espada de Ensueño</entry>
-<!-- Traducir -->	<entry key="item.aubade.name">Aublade</entry>
+	<entry key="item.aubade.name">Aublade</entry>
 	<entry key="item.umbrella.name">Paraguas</entry>
 	<entry key="item.omegaWeapon.name">Arma Omega</entry>
 	<entry key="item.twilightBlaze.name">Llamarada Ocaso</entry>
@@ -80,13 +79,13 @@
 	<!-- Kingdom Hearts II -->
 	<entry key="item.winnersProof.name">Prueba de Victoria</entry>
 	<entry key="item.fatalCrest.name">Emblema Fatal</entry>
-	<entry key="item.twoBecomeOne.name">Dos Será Uno</entry>
+	<entry key="item.twoBecomeOne.name">Dos Serán Uno</entry>
 	<entry key="item.bondofFlame.name">Lazo de Llamas</entry>
 	<entry key="item.fenrir.name">Fenrir</entry>
 	<entry key="item.sleepingLion.name">León Durmiente</entry>
 	<entry key="item.guardianSoul.name">Guardián del Alma</entry>
 	<entry key="item.gullWing.name">Ala de Gaviota</entry>
-	<entry key="item.photonDebugger.name">Depurador Fotonico</entry>
+	<entry key="item.photonDebugger.name">Depurador Fotónico</entry>
 	<entry key="item.sweetMemories.name">Dulces Recuerdos</entry>
 	<entry key="item.circleofLife.name">Círculo de la Vida</entry>
 	<entry key="item.decisivePumpkin.name">Calabaza Decisiva</entry>
@@ -120,9 +119,7 @@
 	<entry key="item.ultimaWeapon.name">Arma Artema</entry>
 	<entry key="item.treasureTrove.name">Tesoro Oculto</entry>
 	<entry key="item.starSeeker.name">Explorador Estelar</entry>
-	 <!-- Org XIII -->
-	<entry key="item.eternalFlames.name">Llamas Eternas</entry>
-    <!-- Llaveros -->
+<!-- Chains -->
     <entry key="item.kingdomKeyChain.name">Llavero de Cadena del Reino</entry>
     <entry key="item.kingdomKeyDChain.name">Llavero de Cadena del Reino D</entry>
     <entry key="item.oathkeeperChain.name">Llavero de Prometida</entry>
@@ -132,12 +129,131 @@
     <entry key="item.earthShakerChain.name">Llavero de Teluria</entry>
 	<entry key="item.soulEaterChain.name">Llavero de Devora Almas</entry>
 	<entry key="item.starLightChain.name">Llavero de Luz Estelar</entry>
-	 <!-- Corazones -->
+    <!-- Kingdom Hearts Chi -->
+    <entry key="item.starLightChain.name">Starlight Chain</entry>
+	<entry key="item.vulpeusForetellersKeybladeChain.name">Llavero de Pronosticador Vulpeus</entry>
+	<entry key="item.ursusForetellersKeybladeChain.name">Llavero de Pronosticador Ursus</entry>
+	<entry key="item.unicornisForetellersKeybladeChain.name">Llavero de Pronosticador Unicornis</entry>
+	<entry key="item.leopardosForetellersKeybladeChain.name">Llavero de Pronosticador Leopardos</entry>
+	<entry key="item.anguisForetellersKeybladeChain.name">Llavero de Pronosticador Anguis</entry>
+    <!-- Kingdom Hearts Dream Drop Distance -->
+	<entry key="item.leasKeybladeChain.name">Llavero de Llave Espada de Lea</entry>
+	<entry key="item.youngXehanortsKeybladeChain.name">Llavero de Llave Espada de Joven Xehanort</entry>
+	<entry key="item.oceanRageChain.name">Llavero de Rabia del Océano</entry>
+	<entry key="item.endofPainChain.name">Llavero de Fin del Dolor</entry>
+	<entry key="item.unboundChain.name">Llavero de Sin Límite</entry>
+	<entry key="item.sweetDreamsChain.name">Llavero de Dulces Sueños</entry>
+	<entry key="item.divewingChain.name">Llavero de Ala de Inmersión</entry>
+	<entry key="item.counterpointChain.name">Invocar Contrapunto</entry>
+	<entry key="item.allforOneChain.name">Invocar Todos para Uno</entry>
+	<entry key="item.knockoutPunchChain.name">Invocar Golpe de Gracia</entry>
+	<entry key="item.ferrisGearChain.name">Invocar Engranaje de Noria</entry>
+	<entry key="item.dualDiscChain.name">Invocar Disco Doble</entry>
+	<entry key="item.guardianBellChain.name">Invocar Guardian de la Campana</entry>
+	<entry key="item.skullNoiseChain.name">Invocar Ruido de Calavera</entry>
+	<entry key="item.woodenKeybladeChain.name">Invocar Llave Espada de Madera</entry>
+    <!-- Kingdom Hearts Birth By Sleep -->
+	<entry key="item.incompletekyebladeChain.name">Llavero de llave Espada X Incompleta</entry>
+	<entry key="item.kyebladeChain.name">Llavero de Llave Espada X</entry>
+	<entry key="item.lightSeekerChain.name">Llavero de Buscador de Luz</entry>
+	<entry key="item.lostMemoryChain.name">Llavero de Recuerdo Perdido</entry>
+	<entry key="item.frolicFlameChain.name">Llavero de Llama Crepitante</entry>
+	<entry key="item.masterKeeperChain.name">Llavero de Guardián del Maestro</entry>
+	<entry key="item.brightcrestChain.name">Llavero de Fulgor Impasible</entry>
+	<entry key="item.crownUnlimitChain.name">Llavero de Corona Ilimitada</entry>
+	<entry key="item.noNameChain.name">Llavero de Innómita</entry>
+	<entry key="item.voidGearChain.name">Llavero de Quid Vacuo</entry>
+	<entry key="item.sweetstackChain.name">Llavero de Dulce Sorpresa</entry>
+	<entry key="item.pixiePetalChain.name">Llavero de Pétalo de Hada</entry>
+	<entry key="item.hyperdriveChain.name">Llavero de Hiperpropulsor</entry>
+	<entry key="item.markofaHeroChain.name">Llavero de Galón de Héroe</entry>
+	<entry key="item.victoryLineChain.name">Llavero de Línea de Meta</entry>
+	<entry key="item.fairyStarsChain.name">Llavero de Lucero Feérrico</entry>
+	<entry key="item.strokeofMidnightChain.name">Llavero de Último Tañido</entry>
+	<entry key="item.chaosRipperChain.name">Llavero de Caótica</entry>
+	<entry key="item.masterXehanortsKeybladeChain.name">Llavero de Llave espada del Maestro Xehanort</entry>
+	<entry key="item.darkgnawChain.name">Llavero de Mella Sombría</entry>
+    <!-- Kingdom Hearts Re: Coded -->
+	<entry key="item.zeroOneChain.name">Llavero de Cero y Uno</entry>
+    <!-- Kingdom Hearts 358/2 Days -->
+	<entry key="item.dreamSwordChain.name">Invocar Espada de Ensueño</entry>
+    <entry key="item.aubadeChain.name">Llavero de Aublade</entry>
+	<entry key="item.umbrellaChain.name">Llavero de Paraguas</entry>
+	<entry key="item.omegaWeaponChain.name">Llavero de Arma Omega</entry>
+	<entry key="item.twilightBlazeChain.name">Llavero de Llamarada Ocaso</entry>
+	<entry key="item.maverickFlareChain.name">Llavero de Destellante</entry>
+	<entry key="item.astralBlastChain.name">Llavero de Explosión Astral</entry>
+	<entry key="item.darkerThanDarkChain.name">Llavero de Oscuridad Total</entry>
+	<entry key="item.lunarEclipseChain.name">Llavero de Eclipse Lunar</entry>
+	<entry key="item.silentDirgeChain.name">Llavero de Encecha Muda</entry>
+	<entry key="item.totalEclipseChain.name">Llavero de Eclipse Total</entry>
+	<entry key="item.glimpseofDarknessChain.name">Llavero de Atisbo Oscuro</entry>
+	<entry key="item.midnightRoarChain.name">Llavero de Rugido Nocturno</entry>
+	<entry key="item.rejectionofFateChain.name">Llavero de Negar del Destino</entry>
+	<entry key="item.trueLightsFlightChain.name">Llavero de Vuelo a la Luz</entry>
+	<entry key="item.leviathanChain.name">Llavero de Leviatán</entry>
+	<entry key="item.abyssalTideChain.name">Llavero de Marea Abisal</entry>
+	<entry key="item.crownofGuiltChain.name">Llavero de Corona de Culpa</entry>
+	<entry key="item.signofInnocenceChain.name">Llavero de Signo de Pureza</entry>
+	<entry key="item.painofSolitudeChain.name">Llavero de Dolor de Soledad</entry>
+	<entry key="item.abaddonPlasmaChain.name">Llavero de Plasma de Abadón</entry>
+	<entry key="item.ominousBlightChain.name">Llavero de Plaga Omniosa</entry>
+	<entry key="item.missingAcheChain.name">Llavero de Dolor Pasado</entry>
+	<!-- Kingdom Hearts II -->
+	<entry key="item.winnersProofChain.name">Llavero de Prueba de Victoria</entry>
+	<entry key="item.fatalCrestChain.name">Llavero de Emblema Fatal</entry>
+	<entry key="item.twoBecomeOneChain.name">Llavero de Dos Serán Uno</entry>
+	<entry key="item.bondofFlameChain.name">Llavero de Lazo de Llamas</entry>
+	<entry key="item.fenrirChain.name">Llavero de Fenrir</entry>
+	<entry key="item.sleepingLionChain.name">Llavero de León Durmiente</entry>
+	<entry key="item.guardianSoulChain.name">Llavero de Guardián del Alma</entry>
+	<entry key="item.gullWingChain.name">Llavero de Ala de Gaviota</entry>
+	<entry key="item.photonDebuggerChain.name">Llavero de Depurador Fotónico</entry>
+	<entry key="item.sweetMemoriesChain.name">Llavero de Dulces Recuerdos</entry>
+	<entry key="item.circleofLifeChain.name">Llavero de Círculo de la Vida</entry>
+	<entry key="item.decisivePumpkinChain.name">Llavero de Calabaza Decisiva</entry>
+	<entry key="item.wishingLampChain.name">Llavero de Lámpara Mágica</entry>
+	<entry key="item.followtheWindChain.name">Llavero de Sigue al Viento</entry>
+	<entry key="item.mysteriousAbyssChain.name">Llavero de Abismo Misterioso</entry>
+	<entry key="item.monochromeChain.name">Llavero de Monocromo</entry>
+	<entry key="item.herosCrestChain.name">Llavero de Emblema de Héroe</entry>
+	<entry key="item.rumblingRoseChain.name">Llavero de Rosa del Estruendo</entry>
+	<entry key="item.hiddenDragonChain.name">Llavero de Dragón Oculto</entry>
+
+    <entry key="item.endsoftheEarthChain.name">Llavero de Postrimería</entry>
+	<entry key="item.stormfallChain.name">Llavero de Argavieso</entry>
+	<!-- Kingdom Hearts -->
+	<entry key="item.destinysEmbrace.name">Llavero de Abrazo del Destino</entry>
+	<entry key="item.waytotheDawn.name">Llavero de Camino al Alba</entry>
+	<entry key="item.oneWingedAngel.name">Llavero de Fulgor Sefárico</entry>
+	<entry key="item.diamondDust.name">Llavero de Polvo de Diamante</entry>
+	<entry key="item.lionheart.name">Llavero de Lionheart</entry>
+	<entry key="item.metalChocobo.name">Llavero de Acero Chocobo</entry>
+	<entry key="item.spellbinder.name">Llavero de Examinadora</entry>
+	<entry key="item.divineRose.name">Llavero de La Rosa</entry>
+	<entry key="item.fairyHarp.name">Llavero de Arpa de Hada</entry>
+	<entry key="item.crabClaw.name">Llavero de Joya del Mar</entry>
+	<entry key="item.wishingStar.name">Llavero de Estrella Fugaz</entry>
+	<entry key="item.pumpkinHead.name">Llavero de Calabaza Macabra</entry>
+	<entry key="item.threeWishes.name">Llavero de Tres Deseos</entry>
+	<entry key="item.jungleKing.name">Llavero de Artesana</entry>
+	<entry key="item.olympia.name">Llavero de Heroica</entry>
+	<entry key="item.ladyLuck.name">Llavero de Último Recurso</entry>
+	<entry key="item.keybladeofPeoplesHearts.name">Llavero de Llave de los Corazones</entry>
+	<entry key="item.ultimaWeapon.name">Llavero de Arma Artema</entry>
+	<entry key="item.treasureTrove.name">Llavero de Tesoro Oculto</entry>
+	<entry key="item.starSeeker.name">Llavero de Buscador Estelar</entry>
+	
+<!-- Org XIII -->
+	<entry key="item.eternalFlames.name">Eternal Flames</entry>
+	
+<!-- Corazones -->
     <entry key="item.pureHeart.name">Corazón Puro</entry>
     <entry key="item.darkHeart.name">Corazón Oscuro</entry>
     <entry key="item.heart.name">Corazón</entry>
     <entry key="item.kingdomHearts.name">Kingdom Hearts</entry>
-	 <!-- Discos -->
+	
+<!-- Discos -->
 	<entry key="item.Sanctuary.name">Disco de Música</entry>
 	<entry key="item.Simple And Clean PLANITb Remix.name">Disco de Música</entry>
 	<entry key="item.Musique pour la tristesse de Xion.name">Disco de Música</entry>
@@ -147,7 +263,8 @@
 	<entry key="item.Organization XIII.name">Disco de Música</entry>
 	<entry key="item.No More Bugs -Bug Version-.name">Disco de Música</entry>
 	<entry key="item.Sinister Sundown.name">Disco de Música</entry>
-	 <!-- Armaduras -->
+	
+<!-- Armaduras -->
     <entry key="item.organizationHood.name">Capucha de la Organización</entry>
     <entry key="item.organizationCoat.name">Gabardina de la Organization</entry>
     <entry key="item.organizationLegs.name">Pantalones de la Organización</entry>
@@ -167,13 +284,14 @@
     <entry key="item.keybladeVChest.name">Pechera de Llave Espada</entry>
     <entry key="item.keybladeVLegs.name">Grebas de Llave Espada</entry>
     <entry key="item.keybladeVBoots.name">Botas de Llave Espada</entry>
-	 <!-- Otros -->
+	
+<!-- Otros -->
     <entry key="item.hPOrb.name">Orbe de HP</entry>
     <entry key="item.20Munny.name">20 Platines</entry>
     <entry key="item.potion.name">Poción</entry>
     <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
 
-    <!-- Bloques -->
+<!-- Bloques -->
     <entry key="tile.normalBlox.name">Bloque de Error</entry>
     <entry key="tile.hardBlox.name">Bloque de Error Duro</entry>
     <entry key="tile.metalBlox.name">Bloque de Error Metálico</entry>
@@ -182,6 +300,14 @@
     <entry key="tile.dangerBlox.name">Bloque de Error Peligroso</entry>
     <entry key="tile.bounceBlox.name">Bloque de Error Blando</entry>
 	<entry key="tile.blastBlox.name">Bloque Bomba</entry>
+	<entry key="tile.synthesiser.name">Sintetizador</entry>
     <!-- Creative Tab -->
+	<entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>
+    <entry key="itemgroup.KHIITAB">Kingdom Keys: Kingdom Hearts II</entry>
+    <entry key="itemgroup.KHCHITAB">Kingdom Keys: Kingdom Hearts Chi</entry>
+    <entry key="itemgroup.KHRECODEDTAB">Kingdom Keys: Kingdom Hearts Re:Coded</entry>
+    <entry key="itemgroup.KHBBSTAB">Kingdom Keys: Kingdom Hearts Birth By Sleep</entry>
+    <entry key="itemgroup.KHDDDTAB">Kingdom Keys: Kingdom Hearts Dream Drop Distance</entry>
+    <entry key="itemgroup.KHDAYSTAB">Kingdom Keys: Kingdom Hearts 358/2 Days</entry>
     <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
 </properties>
