@@ -6,3 +6,5 @@ kkcontributor1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/
 kkcontributor1=Abelatox
 kkdebug1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/DEBUG_CAPE.png
 kkdebug1=hiiiii
+kkmodel1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/MODEL_CAPE.png
+kkmodel1=AxusSpark

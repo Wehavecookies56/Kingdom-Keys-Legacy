@@ -2,10 +2,8 @@ package wehavecookies56.kk.client;
 
 import java.util.EnumSet;
 
-import wehavecookies56.kk.item.keyblades.*;
-import wehavecookies56.kk.item.keychains.*;
-
 import net.minecraft.client.settings.KeyBinding;
+import wehavecookies56.kk.item.keyblades.*;
 import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler;
 import cpw.mods.fml.common.TickType;
 

@@ -7,7 +7,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraftforge.common.MinecraftForge;
 import wehavecookies56.kk.block.AddedBlocks;
-import wehavecookies56.kk.block.BlockSynthesis;
 import wehavecookies56.kk.client.audio.SoundManager;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
 import wehavecookies56.kk.core.handlers.GuiHandlerSynth;
@@ -22,6 +21,7 @@ import wehavecookies56.kk.creativetab.KHDDDTAB;
 import wehavecookies56.kk.creativetab.KHIITAB;
 import wehavecookies56.kk.creativetab.KHRECODEDTAB;
 import wehavecookies56.kk.creativetab.KHTAB;
+import wehavecookies56.kk.creativetab.KKSMTAB;
 import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.enchantments.EnchantHeartHarvest;
 import wehavecookies56.kk.entities.EntityBlastBlox;
@@ -31,6 +31,12 @@ import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.mob.DarkHeartDrops;
 import wehavecookies56.kk.mob.HeartDrops;
 import wehavecookies56.kk.mob.KingdomHeartsDrops;
+import wehavecookies56.kk.mob.Munny1000Drops;
+import wehavecookies56.kk.mob.Munny10Drops;
+import wehavecookies56.kk.mob.Munny1Drops;
+import wehavecookies56.kk.mob.Munny20Drops;
+import wehavecookies56.kk.mob.Munny50Drops;
+import wehavecookies56.kk.mob.Munny5Drops;
 import wehavecookies56.kk.mob.PureHeartDrops;
 import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 import wehavecookies56.kk.updater.Update;
@@ -69,6 +75,7 @@ public class KingdomKeys {
     
     //Creative tabs
     public static CreativeTabs KKTAB = new KKTAB(CreativeTabs.getNextID(), "KKTAB");
+    public static CreativeTabs KKSMTAB = new KKSMTAB(CreativeTabs.getNextID(), "KKSMTAB");
     public static CreativeTabs KHTAB = new KHTAB(CreativeTabs.getNextID(), "KHTAB");
     public static CreativeTabs KHIITAB = new KHIITAB(CreativeTabs.getNextID(), "KHIITAB");
     public static CreativeTabs KHBBSTAB = new KHBBSTAB(CreativeTabs.getNextID(), "KHBBSTAB");
@@ -100,8 +107,6 @@ public class KingdomKeys {
         AddedBlocks.preinit();
         LogHelper.log(Level.INFO, "Preparing language files");
         LocalizationHandler.loadLanguages();
-        LogHelper.log(Level.INFO, "Preparing sounds");
-        MinecraftForge.EVENT_BUS.register(new SoundManager());
         LogHelper.log(Level.INFO, "Preparing recipes");
         AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
@@ -113,11 +118,19 @@ public class KingdomKeys {
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHDAYSTAB", "en_US", "Kingdom Keys: Kingdom Hearts 358/2 Days");
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHDDDTAB", "en_US", "Kingdom Keys: Kingdom Hearts Dream Drop Distance");
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHBBSTAB", "en_US", "Kingdom Keys: Kingdom Hearts Birth By Sleep");
+        LanguageRegistry.instance().addStringLocalization("itemGroup.KKSMTAB", "en_US", "Kingdom Keys: Synthesis Materials");
         LogHelper.log(Level.INFO, "Preparing mob drop events");   
         MinecraftForge.EVENT_BUS.register(new HeartDrops());
         MinecraftForge.EVENT_BUS.register(new PureHeartDrops());
         MinecraftForge.EVENT_BUS.register(new DarkHeartDrops());
         MinecraftForge.EVENT_BUS.register(new KingdomHeartsDrops());
+        MinecraftForge.EVENT_BUS.register(new Munny1Drops());
+        MinecraftForge.EVENT_BUS.register(new Munny5Drops());
+        MinecraftForge.EVENT_BUS.register(new Munny10Drops());
+        MinecraftForge.EVENT_BUS.register(new Munny20Drops());
+        MinecraftForge.EVENT_BUS.register(new Munny50Drops());
+        MinecraftForge.EVENT_BUS.register(new Munny1000Drops());
+        MinecraftForge.EVENT_BUS.register(new SoundManager());
 
     }
     
@@ -132,7 +145,6 @@ public class KingdomKeys {
         LogHelper.log(Level.INFO, "Preparing entities");
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         //EntityRegistry.registerModEntity(EntityEternalFlames.class, "EternalFlames", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
-        //BlockSynthesis.registerTileEntities();
         if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));

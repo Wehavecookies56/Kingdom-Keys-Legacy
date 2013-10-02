@@ -1,11 +1,11 @@
 package wehavecookies56.kk.core.handlers;
 
-import wehavecookies56.kk.block.AddedBlocks;
-import wehavecookies56.kk.client.gui.SynthGui;
-import wehavecookies56.kk.container.ContainerSynth;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.client.gui.SynthGui;
+import wehavecookies56.kk.container.ContainerSynth;
 import cpw.mods.fml.common.network.IGuiHandler;
 
 public class GuiHandlerSynth implements IGuiHandler{

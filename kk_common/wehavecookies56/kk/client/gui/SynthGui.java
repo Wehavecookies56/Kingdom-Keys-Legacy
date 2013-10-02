@@ -1,17 +1,14 @@
 package wehavecookies56.kk.client.gui;
 
-import org.lwjgl.opengl.GL11;
-
-import wehavecookies56.kk.container.ContainerSynth;
-
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+
+import org.lwjgl.opengl.GL11;
+
+import wehavecookies56.kk.container.ContainerSynth;
 
 public class SynthGui extends GuiContainer{
 	private ResourceLocation better = new ResourceLocation("kk", "textures/gui/SynthGui.png");

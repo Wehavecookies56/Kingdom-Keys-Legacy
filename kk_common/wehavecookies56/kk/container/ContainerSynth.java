@@ -1,7 +1,5 @@
 package wehavecookies56.kk.container;
 
-import wehavecookies56.kk.block.AddedBlocks;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -11,8 +9,9 @@ import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
-import wehavecookies56.kk.core.handlers.SynthCraftingManager;
 import net.minecraft.world.World;
+import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.core.handlers.SynthCraftingManager;
 
 public class ContainerSynth extends Container{
 	public InventoryCrafting craftMatrix;

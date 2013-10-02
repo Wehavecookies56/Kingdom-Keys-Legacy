@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;

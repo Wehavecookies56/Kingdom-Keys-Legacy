@@ -3,8 +3,6 @@ package wehavecookies56.kk.core.handlers;
 import java.util.Comparator;
 
 import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.item.crafting.ShapedRecipes;
-import net.minecraft.item.crafting.ShapelessRecipes;
 
 public class SynthRecipeSorter implements Comparator{
 	final SynthCraftingManager betterCraftingManager;

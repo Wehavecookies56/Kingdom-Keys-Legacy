@@ -1,6 +1,5 @@
 package wehavecookies56.kk.client.gui;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -10,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.stats.AchievementList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class SlotSynth extends Slot {
 	/** The craft matrix inventory linked to this result slot. */

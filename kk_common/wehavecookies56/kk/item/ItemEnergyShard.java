@@ -1,12 +1,10 @@
-package wehavecookies56.kk.item.keychains;
+package wehavecookies56.kk.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
-import wehavecookies56.kk.item.ItemKingdomKeys;
 import wehavecookies56.kk.lib.Reference;
 
-public class ItemThreeWishingStarCHain extends ItemKingdomKeys{
-	
-    public ItemThreeWishingStarCHain(int id) {
+public class ItemEnergyShard extends ItemKingdomKeys{
+    public ItemEnergyShard(int id) {
         super(id);       
     }
     public void registerIcons(IconRegister par1IconRegister) {

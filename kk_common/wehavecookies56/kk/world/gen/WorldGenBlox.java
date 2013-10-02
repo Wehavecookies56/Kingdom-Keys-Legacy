@@ -30,7 +30,8 @@ public class WorldGenBlox implements IWorldGenerator
 
 		public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
 			if(ConfigBooleans.enableOverworld){
-			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 40, 0, 80);
+			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 80);
+			this.spawnOres(AddedBlocks.RarePrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 40, 0, 80);
 			}
 		}
 	
@@ -73,7 +74,7 @@ public class WorldGenBlox implements IWorldGenerator
 	 * @param Start of the Chunk in Z-Direction
 	 * @param Max X-Size where the block can spawn, normal = 16
 	 * @param Max Z-Size where the block can spawn, normal = 16
-	 * @param The vain size
+	 * @param The vein size
 	 * @param The chance to spawn a block
 	 * @param Minimum Y-level to spawn block
 	 * @param Maximum Y-level to spawn block

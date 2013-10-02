@@ -21,10 +21,11 @@ import wehavecookies56.kk.client.render.RenderBlastBlox;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
 
-//import com.jadarstudios.developercapes.DevCapesUtil;
+import com.jadarstudios.developercapes.DevCapesUtil;
 
 import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+//import com.jadarstudios.developercapes.DevCapesUtil;
 
 public class ClientProxy extends CommonProxy {
 	
@@ -47,11 +48,14 @@ public class ClientProxy extends CommonProxy {
          RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new RenderBlastBlox());
          
          //Capes
-         //DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
+         DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
     
          KeyBinding[] key = {new KeyBinding("Summon Keyblade", Keyboard.KEY_G)};
          boolean[] repeat = {false};
          KeyBindingRegistry.registerKeyBinding(new KeyBind(key, repeat));
+         
+
+
 	}
     
     @Override

@@ -87,9 +87,6 @@ public class DarkHeartDrops {
 			if(ev.entityLiving instanceof EntitySilverfish){
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 0.5F);
 			}
-			else{
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 0.5F);
-			}
 		}
 		if (EnchantmentHelper.getEnchantmentLevel(KingdomKeys.HarvestHearts.effectId, wpn) == 2){
 			if(ev.entityLiving instanceof EntityCaveSpider){
@@ -132,9 +129,6 @@ public class DarkHeartDrops {
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 0.8F);
 			}
 			if(ev.entityLiving instanceof EntitySilverfish){
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 0.8F);
-			}
-			else{
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 0.8F);
 			}
 		}
@@ -181,9 +175,6 @@ public class DarkHeartDrops {
 			if(ev.entityLiving instanceof EntitySilverfish){
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 1.0F);
 			}
-			else{
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 1, 0), 1.0F);
-			}
 		}
 		if (EnchantmentHelper.getEnchantmentLevel(KingdomKeys.HarvestHearts.effectId, wpn) == 4){
 			if(ev.entityLiving instanceof EntityCaveSpider){
@@ -226,9 +217,6 @@ public class DarkHeartDrops {
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 0.5F);
 			}
 			if(ev.entityLiving instanceof EntitySilverfish){
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 0.5F);
-			}
-			else{
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 0.5F);
 			}
 		}
@@ -275,9 +263,6 @@ public class DarkHeartDrops {
 			if(ev.entityLiving instanceof EntitySilverfish){
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 0.8F);
 			}
-			else{
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 0.8F);
-			}
 		}
 		if (EnchantmentHelper.getEnchantmentLevel(KingdomKeys.HarvestHearts.effectId, wpn) == 6){
 			if(ev.entityLiving instanceof EntityCaveSpider){
@@ -320,9 +305,6 @@ public class DarkHeartDrops {
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 1.0F);
 			}
 			if(ev.entityLiving instanceof EntitySilverfish){
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 1.0F);
-			}
-			else{
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 2, 0), 1.0F);
 			}
 		}
@@ -369,9 +351,6 @@ public class DarkHeartDrops {
 			if(ev.entityLiving instanceof EntitySilverfish){
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 0.5F);
 			}
-			else{
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 0.5F);
-			}
 		}
 		if (EnchantmentHelper.getEnchantmentLevel(KingdomKeys.HarvestHearts.effectId, wpn) == 8){
 			if(ev.entityLiving instanceof EntityCaveSpider){
@@ -414,9 +393,6 @@ public class DarkHeartDrops {
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 0.8F);
 			}
 			if(ev.entityLiving instanceof EntitySilverfish){
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 0.8F);
-			}
-			else{
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 0.8F);
 			}
 		}
@@ -463,9 +439,6 @@ public class DarkHeartDrops {
 			if(ev.entityLiving instanceof EntitySilverfish){
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 1.0F);
 			}
-			else{
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 3, 0), 1.0F);
-			}
 		}
 		if (EnchantmentHelper.getEnchantmentLevel(KingdomKeys.HarvestHearts.effectId, wpn) == 10){
 			if(ev.entityLiving instanceof EntityCaveSpider){
@@ -508,9 +481,6 @@ public class DarkHeartDrops {
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 4, 0), 0.5F);
 			}
 			if(ev.entityLiving instanceof EntitySilverfish){
-				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 4, 0), 0.5F);
-			}
-			else{
 				ev.entityLiving.entityDropItem(new ItemStack(AddedItems.DarkHeart.itemID, 4, 0), 0.5F);
 			}
 		}

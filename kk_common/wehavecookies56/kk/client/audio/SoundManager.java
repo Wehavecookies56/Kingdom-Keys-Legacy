@@ -21,5 +21,5 @@ public class SoundManager {
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc7 + ".ogg");
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc8 + ".ogg");
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc9 + ".ogg");
-         }
+	}
 }

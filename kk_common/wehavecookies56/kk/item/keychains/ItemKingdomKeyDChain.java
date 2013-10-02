@@ -5,9 +5,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.item.ItemKingdomKeys;
+import wehavecookies56.kk.item.keyblades.ItemKingdomKeyD;
 import wehavecookies56.kk.lib.Reference;
 
 public class ItemKingdomKeyDChain extends ItemKingdomKeys{
@@ -18,6 +18,15 @@ public class ItemKingdomKeyDChain extends ItemKingdomKeys{
 		itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
 	}
 	public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
-	{
-	}
+    {
+    EntityPlayer player = (EntityPlayer)par3Entity;
+    if (ItemKingdomKeyD.keyPressed)
+    {
+    	ItemKingdomKeyD.keyPressed = false;
+            if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K113c.itemID)
+            {
+      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K113));
+    }
+    }
+    }
 }

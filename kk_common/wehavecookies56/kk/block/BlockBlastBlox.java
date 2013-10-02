@@ -5,11 +5,10 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.Item;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.Icon;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -33,6 +32,25 @@ public class BlockBlastBlox extends Block
         this.setCreativeTab(KingdomKeys.KKTAB);
         this.setUnlocalizedName(Strings.BLBlox);
     }
+    
+    public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4)
+    {
+        float f = 0.0625F;
+        return AxisAlignedBB.getAABBPool().getAABB((double)((float)par2 + f), (double)par3, (double)((float)par4 + f), (double)((float)(par2 + 1) - f), (double)((float)(par3 + 1) - f), (double)((float)(par4 + 1) - f));
+    }
+    
+    public AxisAlignedBB getSelectedBoundingBoxFromPool(World world, int i, int j, int k)
+    {
+        float f = 0.0625F;
+        return AxisAlignedBB.getBoundingBox((float)i + f, j, (float)k + f, (float)(i + 1) - f, j + 1, (float)(k + 1) - f);
+    }
+    
+    public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, EntityPlayer par5Entity)
+    {
+    	this.func_94391_a(par1World, par2, par3, par4, 1, par5Entity);
+        par1World.setBlockToAir(par2, par3, par4);
+    }
+    
     /**
      * Called whenever the block is added into the world. Args: world, x, y, z
      */
@@ -84,9 +102,10 @@ public class BlockBlastBlox extends Block
     /**
      * Called right before the block is destroyed by a player.  Args: world, x, y, z, metaData
      */
-    public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5)
+    public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5, EntityPlayer par6)
     {
-        this.func_94391_a(par1World, par2, par3, par4, par5, (EntityLivingBase)null);
+    	this.func_94391_a(par1World, par2, par3, par4, 1, par6);
+        par1World.setBlockToAir(par2, par3, par4);
     }
 
     public void func_94391_a(World par1World, int par2, int par3, int par4, int par5, EntityLivingBase par6EntityLivingBase)
@@ -123,19 +142,19 @@ public class BlockBlastBlox extends Block
     /**
      * Triggered whenever an entity collides with this block (enters into the block). Args: world, x, y, z, entity
      */
-    public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
-    {
-        if (par5Entity instanceof EntityArrow && !par1World.isRemote)
-        {
-            EntityArrow entityarrow = (EntityArrow)par5Entity;
+    public void onBlockClicked(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer) {
 
-            if (entityarrow.isBurning())
-            {
-                this.func_94391_a(par1World, par2, par3, par4, 1, entityarrow.shootingEntity instanceof EntityLivingBase ? (EntityLivingBase)entityarrow.shootingEntity : null);
-                par1World.setBlockToAir(par2, par3, par4);
-            }
+    	if(par5EntityPlayer.getCurrentEquippedItem() == null){
+    		this.func_94391_a(par1World, par2, par3, par4, 1, par5EntityPlayer);
+            par1World.setBlockToAir(par2, par3, par4);
+    	}
+        if (par5EntityPlayer.getCurrentEquippedItem() != null && par5EntityPlayer.getCurrentEquippedItem().itemID != Item.feather.itemID)
+        {
+        	this.func_94391_a(par1World, par2, par3, par4, 1, par5EntityPlayer);
+            par1World.setBlockToAir(par2, par3, par4);
         }
     }
+    
 
     /**
      * Return whether this block can drop from an explosion.

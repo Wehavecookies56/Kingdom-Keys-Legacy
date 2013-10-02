@@ -33,10 +33,10 @@
 	<entry key="item.dualDisc.name">Dual Disc</entry>
 	<entry key="item.guardianBell.name">Guardian Bell</entry>
 	<entry key="item.skullNoise.name">Skull Noise</entry>
-	<entry key="item.woodenKeyblade.name">Wooden Keyblade</entry>
     <!-- Kingdom Hearts Birth By Sleep -->
-	<entry key="item.incompletekyeblade.name">Incomplete X-blade</entry>
-	<entry key="item.kyeblade.name">X-blade</entry>
+    <entry key="item.woodenKeyblade.name">Wooden Keyblade</entry>
+	<entry key="item.incompletekyeblade.name">Incomplete X(Kye)-blade</entry>
+	<entry key="item.kyeblade.name">X(Kye)-blade</entry>
 	<entry key="item.lightSeeker.name">Light Seeker</entry>
 	<entry key="item.lostMemory.name">Lost Memory</entry>
 	<entry key="item.frolicFlame.name">Frolic Flame</entry>
@@ -84,11 +84,11 @@
 	<!-- Kingdom Hearts II -->
 	<entry key="item.winnersProof.name">Winners Proof</entry>
 	<entry key="item.fatalCrest.name">Fatal Crest</entry>
-	<entry key="item.twoBecomeOne.name">Two Become One</entry>
+	<entry key="item.twoBecomeOne.name">Two Becomes One</entry>
 	<entry key="item.bondofFlame.name">Bond Of Flame</entry>
 	<entry key="item.fenrir.name">Fenrir</entry>
 	<entry key="item.sleepingLion.name">Sleeping Lion</entry>
-	<entry key="item.guardianSoul.name">Guarian Soul</entry>
+	<entry key="item.guardianSoul.name">Guardian Soul</entry>
 	<entry key="item.gullWing.name">Gull Wing</entry>
 	<entry key="item.photonDebugger.name">Photon Debugger</entry>
 	<entry key="item.sweetMemories.name">Sweet Memories</entry>
@@ -119,7 +119,7 @@
 	<entry key="item.threeWishes.name">Three Wishes</entry>
 	<entry key="item.jungleKing.name">Jungle King</entry>
 	<entry key="item.olympia.name">Olympia</entry>
-	<entry key="item.ladyLuck.name">Ultima Weapon</entry>
+	<entry key="item.ladyLuck.name">Lady Luck</entry>
 	<entry key="item.keybladeofPeoplesHearts.name">Keyblade Of People's Hearts</entry>
 	<entry key="item.ultimaWeapon.name">Ultima Weapon</entry>
 	<entry key="item.treasureTrove.name">Treasure Trove</entry>
@@ -155,7 +155,6 @@
 	<entry key="item.dualDiscChain.name">Summon Dual Disc</entry>
 	<entry key="item.guardianBellChain.name">Summon Guardian Bell</entry>
 	<entry key="item.skullNoiseChain.name">Skull Noise Chain</entry>
-	<entry key="item.woodenKeybladeChain.name">Summon Wooden Keyblade</entry>
     <!-- Kingdom Hearts Birth By Sleep -->
 	<entry key="item.incompletekyebladeChain.name">Incomplete X(Kye)-blade Chain</entry>
 	<entry key="item.kyebladeChain.name">X(Kye)-blade Chain</entry>
@@ -177,6 +176,7 @@
 	<entry key="item.chaosRipperChain.name">Chaos Ripper Chain</entry>
 	<entry key="item.masterXehanortsKeybladeChain.name">Master Xehanort's Keyblade Chain</entry>
 	<entry key="item.darkgnawChain.name">Darkgnaw Chain</entry>
+    <entry key="item.woodenKeybladeChain.name">Summon Wooden Keyblade</entry>
     <!-- Kingdom Hearts Re: Coded -->
 	<entry key="item.zeroOneChain.name">Zero/One Chain</entry>
     <!-- Kingdom Hearts 358/2 Days -->
@@ -206,11 +206,11 @@
 	<!-- Kingdom Hearts II -->
 	<entry key="item.winnersProofChain.name">Winners Proof Chain</entry>
 	<entry key="item.fatalCrestChain.name">Fatal Crest Chain</entry>
-	<entry key="item.twoBecomeOneChain.name">Two Become One Chain</entry>
+	<entry key="item.twoBecomeOneChain.name">Two Becomes One Chain</entry>
 	<entry key="item.bondofFlameChain.name">Bond Of Flame Chain</entry>
 	<entry key="item.fenrirChain.name">Fenrir Chain</entry>
 	<entry key="item.sleepingLionChain.name">Sleeping Lion Chain</entry>
-	<entry key="item.guardianSoulChain.name">Guarian Soul Chain</entry>
+	<entry key="item.guardianSoulChain.name">Guardian Soul Chain</entry>
 	<entry key="item.gullWingChain.name">Gull Wing Chain</entry>
 	<entry key="item.photonDebuggerChain.name">Photon Debugger Chain</entry>
 	<entry key="item.sweetMemoriesChain.name">Sweet Memories Chain</entry>
@@ -226,26 +226,26 @@
     <entry key="item.endsoftheEarthChain.name">Ends Of The Earth Chain</entry>
 	<entry key="item.stormfallChain.name">Storm Fall Chain</entry>
 	<!-- Kingdom Hearts -->
-	<entry key="item.destinysEmbrace.name">Destiny's Embrace Chain</entry>
-	<entry key="item.waytotheDawn.name">Way To The Dawn Chain</entry>
-	<entry key="item.oneWingedAngel.name">One Winged Angel Chain</entry>
-	<entry key="item.diamondDust.name">Diamond Dust Chain</entry>
-	<entry key="item.lionheart.name">Lion Heart Chain</entry>
-	<entry key="item.metalChocobo.name">Metal Chocobo Chain</entry>
-	<entry key="item.spellbinder.name">Spell Binder Chain</entry>
-	<entry key="item.divineRose.name">Divine Rose Chain</entry>
-	<entry key="item.fairyHarp.name">Fairy Harp Chain</entry>
-	<entry key="item.crabClaw.name">Crab Claw Chain</entry>
-	<entry key="item.wishingStar.name">Wishing Star Chain</entry>
-	<entry key="item.pumpkinHead.name">Pumpkin Head Chain</entry>
-	<entry key="item.threeWishes.name">Three Wishes Chain</entry>
-	<entry key="item.jungleKing.name">Jungle King Chain</entry>
-	<entry key="item.olympia.name">Olympia Chain</entry>
-	<entry key="item.ladyLuck.name">Ultima Weapon Chain</entry>
-	<entry key="item.keybladeofPeoplesHearts.name">Keyblade Of People's Hearts Chain</entry>
-	<entry key="item.ultimaWeapon.name">Ultima Weapon Chain</entry>
-	<entry key="item.treasureTrove.name">Treasure Trove Chain</entry>
-	<entry key="item.starSeeker.name">Star Seeker Chain</entry>
+	<entry key="item.destinysEmbraceChain.name">Destiny's Embrace Chain</entry>
+	<entry key="item.waytotheDawnChain.name">Way To The Dawn Chain</entry>
+	<entry key="item.oneWingedAngelChain.name">One Winged Angel Chain</entry>
+	<entry key="item.diamondDustChain.name">Diamond Dust Chain</entry>
+	<entry key="item.lionheartChain.name">Lion Heart Chain</entry>
+	<entry key="item.metalChocoboChain.name">Metal Chocobo Chain</entry>
+	<entry key="item.spellbinderChain.name">Spell Binder Chain</entry>
+	<entry key="item.divineRoseChain.name">Divine Rose Chain</entry>
+	<entry key="item.fairyHarpChain.name">Fairy Harp Chain</entry>
+	<entry key="item.crabClawChain.name">Crab Claw Chain</entry>
+	<entry key="item.wishingStarChain.name">Wishing Star Chain</entry>
+	<entry key="item.pumpkinHeadChain.name">Pumpkin Head Chain</entry>
+	<entry key="item.threeWishesChain.name">Three Wishes Chain</entry>
+	<entry key="item.jungleKingChain.name">Jungle King Chain</entry>
+	<entry key="item.olympiaChain.name">Olympia Chain</entry>
+	<entry key="item.ladyLuckChain.name">Lady Luck Chain</entry>
+	<entry key="item.keybladeofPeoplesHeartsChain.name">Keyblade Of People's Hearts Chain</entry>
+	<entry key="item.ultimaWeaponChain.name">Ultima Weapon Chain</entry>
+	<entry key="item.treasureTroveChain.name">Treasure Trove Chain</entry>
+	<entry key="item.starSeekerChain.name">Star Seeker Chain</entry>
 	 <!-- Org XIII -->
 	<entry key="item.eternalFlames.name">Eternal Flames</entry>
     <!-- Other -->
@@ -267,7 +267,24 @@
     <entry key="item.organizationLegs.name">Leggings Of The Organization</entry>
     <entry key="item.organizationBoots.name">Boots Of The Organization</entry>
     <entry key="item.hPOrb.name">HP Orb</entry>
+    <entry key="item.1Munny.name">1 Munny</entry>
+    <entry key="item.5Munny.name">5 Munny</entry>
+    <entry key="item.10Munny.name">10 Munny</entry>
     <entry key="item.20Munny.name">20 Munny</entry>
+    <entry key="item.50Munny.name">50 Munny</entry>
+    <entry key="item.100Munny.name">100 Munny</entry>
+    <entry key="item.200Munny.name">200 Munny</entry>
+    <entry key="item.500Munny.name">500 Munny</entry>
+    <entry key="item.800Munny.name">800 Munny</entry>
+    <entry key="item.1000Munny.name">1000 Munny</entry>
+    <entry key="item.1200Munny.name">1200 Munny</entry>
+    <entry key="item.1500Munny.name">1500 Munny</entry>
+    <entry key="item.1800Munny.name">1800 Munny</entry>
+    <entry key="item.2000Munny.name">2000 Munny</entry>
+    <entry key="item.3000Munny.name">3000 Munny</entry>
+    <entry key="item.4000Munny.name">4000 Munny</entry>
+    <entry key="item.5000Munny.name">5000 Munny</entry>
+    <entry key="item.6000Munny.name">6000 Munny</entry>
     <entry key="item.potion.name">Potion</entry>
     <entry key="item.leatherDarkness.name">Leather Of The Darkness</entry>
     <entry key="item.keybladeAHelm.name">Keyblade Armor Helmet</entry>
@@ -282,6 +299,66 @@
     <entry key="item.keybladeVChest.name">Keyblade Armor Chestplate</entry>
     <entry key="item.keybladeVLegs.name">Keyblade Armor Leggings</entry>
     <entry key="item.keybladeVBoots.name">Keyblade Armor Boots</entry>
+    <entry key="item.blazingShard.name">Blazing Shard</entry>
+    <entry key="item.frostShard.name">Frost Shard</entry>
+    <entry key="item.lightningShard.name">Lightning Shard</entry>
+    <entry key="item.lucidShard.name">Lucid Shard</entry>
+    <entry key="item.powerShard.name">Power Shard</entry>
+    <entry key="item.darkShard.name">Dark Shard</entry>
+    <entry key="item.denseShard.name">Dense Shard</entry>
+    <entry key="item.twilightShard.name">Twilight Shard</entry>
+    <entry key="item.mythrilShard.name">Mythril Shard</entry>
+    <entry key="item.brightShard.name">Bright Shard</entry>
+    <entry key="item.energyShard.name">Energy Shard</entry>
+    <entry key="item.serenityShard.name">Serenity Shard</entry>
+    <entry key="item.remembranceShard.name">Remembrance Shard</entry>
+    <entry key="item.tranquilShard.name">Tranquil Shard</entry>
+    <entry key="item.blazingStone.name">Blazing Stone</entry>
+    <entry key="item.frostStone.name">Frost Stone</entry>
+    <entry key="item.lightningStone.name">Lightning Stone</entry>
+    <entry key="item.lucidStone.name">Lucid Stone</entry>
+    <entry key="item.powerStone.name">Power Stone</entry>
+    <entry key="item.darkStone.name">Dark Stone</entry>
+    <entry key="item.denseStone.name">Dense Stone</entry>
+    <entry key="item.twilightStone.name">Twilight Stone</entry>
+    <entry key="item.mythrilStone.name">Mythril Stone</entry>
+    <entry key="item.brightStone.name">Bright Stone</entry>
+    <entry key="item.energyStone.name">Energy Stone</entry>
+    <entry key="item.serenityStone.name">Serenity Stone</entry>
+    <entry key="item.remembranceStone.name">Remembrance Stone</entry>
+    <entry key="item.tranquilStone.name">Tranquil Stone</entry>
+    <entry key="item.blazingGem.name">Blazing Gem</entry>
+    <entry key="item.frostGem.name">Frost Gem</entry>
+    <entry key="item.lightningGem.name">Lightning Gem</entry>
+    <entry key="item.lucidGem.name">Lucid Gem</entry>
+    <entry key="item.powerGem.name">Power Gem</entry>
+    <entry key="item.darkGem.name">Dark Gem</entry>
+    <entry key="item.denseGem.name">Dense Gem</entry>
+    <entry key="item.twilightGem.name">Twilight Gem</entry>
+    <entry key="item.mythrilGem.name">Mythril Gem</entry>
+    <entry key="item.brightGem.name">Bright Gem</entry>
+    <entry key="item.energyGem.name">Energy Gem</entry>
+    <entry key="item.serenityGem.name">Serenity Gem</entry>
+    <entry key="item.remembranceGem.name">Remembrance Gem</entry>
+    <entry key="item.tranquilGem.name">Tranquil Gem</entry>
+    <entry key="item.blazingCrystal.name">Blazing Crystal</entry>
+    <entry key="item.frostCrystal.name">Frost Crystal</entry>
+    <entry key="item.lightningCrystal.name">Lightning Crystal</entry>
+    <entry key="item.lucidCrystal.name">Lucid Crystal</entry>
+    <entry key="item.powerCrystal.name">Power Crystal</entry>
+    <entry key="item.darkCrystal.name">Dark Crystal</entry>
+    <entry key="item.denseCrystal.name">Dense Crystal</entry>
+    <entry key="item.twilightCrystal.name">Twilight Crystal</entry>
+    <entry key="item.mythrilCrystal.name">Mythril Crystal</entry>
+    <entry key="item.brightCrystal.name">Bright Crystal</entry>
+    <entry key="item.energyCrystal.name">Energy Crystal</entry>
+    <entry key="item.serenityCrystal.name">Serenity Crystal</entry>
+    <entry key="item.remembranceCrystal.name">Remembrance Crystal</entry>
+    <entry key="item.tranquilCrystal.name">Tranquil Crystal</entry>
+    <entry key="item.shimmeringCrystal.name">Shimmering Crystal</entry>
+    <entry key="item.orichalcum.name">Orichalcum</entry>
+    <entry key="item.orichalcum+.name">Orichalcum+</entry>
+    <entry key="item.darkMatter.name">Dark Matter</entry>
     <!-- Blocks -->
     <entry key="tile.normalBlox.name">Normal Blox</entry>
     <entry key="tile.hardBlox.name">Hard Blox</entry>
@@ -291,6 +368,7 @@
     <entry key="tile.dangerBlox.name">Danger Blox</entry>
     <entry key="tile.bounceBlox.name">Bounce Blox</entry>
 	<entry key="tile.blastBlox.name">Blast Blox</entry>
+    <entry key="tile.synthesiser.name">Synthesis Table</entry>
     <!-- Creative Tab -->
     <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
     <entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>

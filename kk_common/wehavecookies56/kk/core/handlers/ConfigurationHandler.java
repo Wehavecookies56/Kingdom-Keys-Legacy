@@ -27,6 +27,23 @@ public class ConfigurationHandler {
             IDs.KingdomHearts = config.getItem(Strings.KHearts  + " ID", IDs.KINGDOMHEARTS_DEFAULT).getInt(IDs.KINGDOMHEARTS_DEFAULT);
             IDs.HP = config.getItem(Strings.HP  + " ID", IDs.HP_DEFAULT).getInt(IDs.HP_DEFAULT);
             IDs.Munny = config.getItem(Strings.Munny  + " ID", IDs.MUNNY_DEFAULT).getInt(IDs.MUNNY_DEFAULT);
+            IDs.Munny5 = config.getItem(Strings.Munny5  + " ID", IDs.MUNNY5_DEFAULT).getInt(IDs.MUNNY5_DEFAULT);
+            IDs.Munny1 = config.getItem(Strings.Munny1  + " ID", IDs.MUNNY1_DEFAULT).getInt(IDs.MUNNY1_DEFAULT);
+            IDs.Munny10 = config.getItem(Strings.Munny10  + " ID", IDs.MUNNY10_DEFAULT).getInt(IDs.MUNNY10_DEFAULT);
+            IDs.Munny50 = config.getItem(Strings.Munny50  + " ID", IDs.MUNNY50_DEFAULT).getInt(IDs.MUNNY50_DEFAULT);
+            IDs.Munny100 = config.getItem(Strings.Munny100  + " ID", IDs.MUNNY100_DEFAULT).getInt(IDs.MUNNY100_DEFAULT);
+            IDs.Munny200 = config.getItem(Strings.Munny200  + " ID", IDs.MUNNY200_DEFAULT).getInt(IDs.MUNNY200_DEFAULT);
+            IDs.Munny500 = config.getItem(Strings.Munny500  + " ID", IDs.MUNNY500_DEFAULT).getInt(IDs.MUNNY500_DEFAULT);
+            IDs.Munny800 = config.getItem(Strings.Munny800  + " ID", IDs.MUNNY800_DEFAULT).getInt(IDs.MUNNY800_DEFAULT);
+            IDs.Munny1000 = config.getItem(Strings.Munny1000  + " ID", IDs.MUNNY1000_DEFAULT).getInt(IDs.MUNNY1000_DEFAULT);
+            IDs.Munny1200 = config.getItem(Strings.Munny1200  + " ID", IDs.MUNNY1200_DEFAULT).getInt(IDs.MUNNY1200_DEFAULT);
+            IDs.Munny1500 = config.getItem(Strings.Munny1500  + " ID", IDs.MUNNY1500_DEFAULT).getInt(IDs.MUNNY1500_DEFAULT);
+            IDs.Munny1800 = config.getItem(Strings.Munny1800  + " ID", IDs.MUNNY1800_DEFAULT).getInt(IDs.MUNNY1800_DEFAULT);
+            IDs.Munny2000 = config.getItem(Strings.Munny2000  + " ID", IDs.MUNNY2000_DEFAULT).getInt(IDs.MUNNY2000_DEFAULT);
+            IDs.Munny3000 = config.getItem(Strings.Munny3000  + " ID", IDs.MUNNY3000_DEFAULT).getInt(IDs.MUNNY3000_DEFAULT);
+            IDs.Munny4000 = config.getItem(Strings.Munny4000  + " ID", IDs.MUNNY4000_DEFAULT).getInt(IDs.MUNNY4000_DEFAULT);
+            IDs.Munny5000 = config.getItem(Strings.Munny5000  + " ID", IDs.MUNNY5000_DEFAULT).getInt(IDs.MUNNY5000_DEFAULT);
+            IDs.Munny6000 = config.getItem(Strings.Munny6000  + " ID", IDs.MUNNY6000_DEFAULT).getInt(IDs.MUNNY6000_DEFAULT);
             IDs.Potion = config.getItem(Strings.Potion  + " ID", IDs.POTION_DEFAULT).getInt(IDs.POTION_DEFAULT);
             //Music discs
             IDs.Disc1 = config.getItem(Strings.Disc1  + " ID", IDs.DISC1_DEFAULT).getInt(IDs.DISC1_DEFAULT);
@@ -198,7 +215,7 @@ public class ConfigurationHandler {
             IDs.K25c = config.getItem(Strings.FrolicflameChain  + " ID", IDs.FROLICFLAMECHAIN_DEFAULT).getInt(IDs.FROLICFLAMECHAIN_DEFAULT);
             IDs.K26c = config.getItem(Strings.MasterkeeperChain  + " ID", IDs.MASTERKEEPERCHAIN_DEFAULT).getInt(IDs.MASTERKEEPERCHAIN_DEFAULT);
             IDs.K27c = config.getItem(Strings.BrigthcrestChain  + " ID", IDs.BRIGTHCRESTCHAIN_DEFAULT).getInt(IDs.BRIGTHCRESTCHAIN_DEFAULT);
-            IDs.K28c = config.getItem(Strings.CrownunlimitChain  + " ID", IDs.CROWNUNLIMIT_DEFAULT).getInt(IDs.CROWNUNLIMITCHAIN_DEFAULT);
+            IDs.K28c = config.getItem(Strings.CrownunlimitChain  + " ID", IDs.CROWNUNLIMITCHAIN_DEFAULT).getInt(IDs.CROWNUNLIMITCHAIN_DEFAULT);
             IDs.K29c = config.getItem(Strings.NonameChain  + " ID", IDs.NONAMECHAIN_DEFAULT).getInt(IDs.NONAMECHAIN_DEFAULT);
             IDs.K30c= config.getItem(Strings.VoidgearChain  + " ID", IDs.VOIDGEARCHAIN_DEFAULT).getInt(IDs.VOIDGEARCHAIN_DEFAULT);
             IDs.K31c = config.getItem(Strings.SweetstackChain  + " ID", IDs.SWEETSTACKCHAIN_DEFAULT).getInt(IDs.SWEETSTACKCHAIN_DEFAULT);
@@ -285,6 +302,82 @@ public class ConfigurationHandler {
             IDs.K112c = config.getItem(Strings.OathkeeperChain  + " ID", IDs.OATHKEEPERCHAIN_DEFAULT).getInt(IDs.OATHKEEPERCHAIN_DEFAULT);
             IDs.K113c = config.getItem(Strings.KingdomKeyDChain  + " ID", IDs.KINGDOMKEYDCHAIN_DEFAULT).getInt(IDs.KINGDOMKEYDCHAIN_DEFAULT);
             IDs.K114c = config.getItem(Strings.OblivionChain  + " ID", IDs.OBLIVIONCHAIN_DEFAULT).getInt(IDs.OBLIVIONCHAIN_DEFAULT);
+            
+            IDs.BlazingShard = config.getItem(Strings.BlazingShard  + " ID", IDs.BLAZINGSHARD_DEFAULT).getInt(IDs.BLAZINGSHARD_DEFAULT);
+            IDs.BlazingStone = config.getItem(Strings.BlazingStone  + " ID", IDs.BLAZINGSTONE_DEFAULT).getInt(IDs.BLAZINGSTONE_DEFAULT);
+            IDs.BlazingGem = config.getItem(Strings.BlazingGem  + " ID", IDs.BLAZINGGEM_DEFAULT).getInt(IDs.BLAZINGGEM_DEFAULT);
+            IDs.BlazingCrystal = config.getItem(Strings.BlazingCrystal  + " ID", IDs.BLAZINGCRYSTAL_DEFAULT).getInt(IDs.BLAZINGSHARD_DEFAULT);
+            
+            IDs.FrostShard = config.getItem(Strings.FrostShard  + " ID", IDs.FROSTSHARD_DEFAULT).getInt(IDs.FROSTSHARD_DEFAULT);
+            IDs.FrostStone = config.getItem(Strings.FrostStone  + " ID", IDs.FROSTSTONE_DEFAULT).getInt(IDs.FROSTSTONE_DEFAULT);
+            IDs.FrostGem = config.getItem(Strings.FrostGem  + " ID", IDs.FROSTGEM_DEFAULT).getInt(IDs.FROSTGEM_DEFAULT);
+            IDs.FrostCrystal = config.getItem(Strings.FrostCrystal  + " ID", IDs.FROSTCRYSTAL_DEFAULT).getInt(IDs.FROSTCRYSTAL_DEFAULT);
+            
+            IDs.LightningShard = config.getItem(Strings.LightningShard  + " ID", IDs.LIGHTNINGSHARD_DEFAULT).getInt(IDs.LIGHTNINGSHARD_DEFAULT);
+            IDs.LightningStone = config.getItem(Strings.LightningStone  + " ID", IDs.LIGHTNINGSTONE_DEFAULT).getInt(IDs.LIGHTNINGSTONE_DEFAULT);
+            IDs.LightningGem = config.getItem(Strings.LightningGem  + " ID", IDs.LIGHTNINGGEM_DEFAULT).getInt(IDs.LIGHTNINGGEM_DEFAULT);
+            IDs.LightningCrystal = config.getItem(Strings.LightningCrystal  + " ID", IDs.LIGHTNINGCRYSTAL_DEFAULT).getInt(IDs.LIGHTNINGCRYSTAL_DEFAULT);
+            
+            IDs.LucidShard = config.getItem(Strings.LucidShard  + " ID", IDs.LUCIDSHARD_DEFAULT).getInt(IDs.LUCIDSHARD_DEFAULT);
+            IDs.LucidStone = config.getItem(Strings.LucidStone  + " ID", IDs.LUCIDSHARD_DEFAULT).getInt(IDs.LUCIDSHARD_DEFAULT);
+            IDs.LucidGem = config.getItem(Strings.LucidGem  + " ID", IDs.LUCIDGEM_DEFAULT).getInt(IDs.LUCIDGEM_DEFAULT);
+            IDs.LucidCrystal = config.getItem(Strings.LucidCrystal  + " ID", IDs.LUCIDCRYSTAL_DEFAULT).getInt(IDs.LUCIDCRYSTAL_DEFAULT);
+            
+            IDs.PowerShard = config.getItem(Strings.PowerShard  + " ID", IDs.POWERSHARD_DEFAULT).getInt(IDs.POWERSHARD_DEFAULT);
+            IDs.PowerStone = config.getItem(Strings.PowerStone  + " ID", IDs.POWERSHARD_DEFAULT).getInt(IDs.POWERSHARD_DEFAULT);
+            IDs.PowerGem = config.getItem(Strings.PowerGem  + " ID", IDs.POWERGEM_DEFAULT).getInt(IDs.POWERGEM_DEFAULT);
+            IDs.PowerCrystal = config.getItem(Strings.PowerCrystal  + " ID", IDs.POWERCRYSTAL_DEFAULT).getInt(IDs.POWERCRYSTAL_DEFAULT);
+            
+            IDs.DarkShard = config.getItem(Strings.DarkShard  + " ID", IDs.DARKSHARD_DEFAULT).getInt(IDs.DARKSHARD_DEFAULT);
+            IDs.DarkStone = config.getItem(Strings.DarkStone  + " ID", IDs.DARKSHARD_DEFAULT).getInt(IDs.DARKSHARD_DEFAULT);
+            IDs.DarkGem = config.getItem(Strings.DarkGem  + " ID", IDs.DARKGEM_DEFAULT).getInt(IDs.DARKGEM_DEFAULT);
+            IDs.DarkCrystal = config.getItem(Strings.DarkCrystal  + " ID", IDs.DARKCRYSTAL_DEFAULT).getInt(IDs.DARKCRYSTAL_DEFAULT);
+            IDs.DarkMatter = config.getItem(Strings.DarkMatter  + " ID", IDs.DARKMATTER_DEFAULT).getInt(IDs.DARKMATTER_DEFAULT);
+            
+            IDs.DenseShard = config.getItem(Strings.DenseShard  + " ID", IDs.DENSESHARD_DEFAULT).getInt(IDs.DENSESHARD_DEFAULT);
+            IDs.DenseStone = config.getItem(Strings.DenseStone  + " ID", IDs.DENSESHARD_DEFAULT).getInt(IDs.DENSESHARD_DEFAULT);
+            IDs.DenseGem = config.getItem(Strings.DenseGem  + " ID", IDs.DENSEGEM_DEFAULT).getInt(IDs.DENSEGEM_DEFAULT);
+            IDs.DenseCrystal = config.getItem(Strings.DenseCrystal  + " ID", IDs.DENSECRYSTAL_DEFAULT).getInt(IDs.DENSECRYSTAL_DEFAULT);
+            
+            IDs.TwilightShard = config.getItem(Strings.TwilightShard  + " ID", IDs.TWILIGHTSHARD_DEFAULT).getInt(IDs.TWILIGHTSHARD_DEFAULT);
+            IDs.TwilightStone = config.getItem(Strings.TwilightStone  + " ID", IDs.TWILIGHTSHARD_DEFAULT).getInt(IDs.TWILIGHTSHARD_DEFAULT);
+            IDs.TwilightGem = config.getItem(Strings.TwilightGem  + " ID", IDs.TWILIGHTGEM_DEFAULT).getInt(IDs.TWILIGHTGEM_DEFAULT);
+            IDs.TwilightCrystal = config.getItem(Strings.TwilightCrystal  + " ID", IDs.TWILIGHTCRYSTAL_DEFAULT).getInt(IDs.TWILIGHTCRYSTAL_DEFAULT);
+            
+            IDs.MythrilShard = config.getItem(Strings.MythrilShard  + " ID", IDs.MYTHRILSHARD_DEFAULT).getInt(IDs.MYTHRILSHARD_DEFAULT);
+            IDs.MythrilStone = config.getItem(Strings.MythrilStone  + " ID", IDs.MYTHRILSHARD_DEFAULT).getInt(IDs.MYTHRILSHARD_DEFAULT);
+            IDs.MythrilGem = config.getItem(Strings.MythrilGem  + " ID", IDs.MYTHRILGEM_DEFAULT).getInt(IDs.MYTHRILGEM_DEFAULT);
+            IDs.MythrilCrystal = config.getItem(Strings.MythrilCrystal  + " ID", IDs.MYTHRILCRYSTAL_DEFAULT).getInt(IDs.MYTHRILCRYSTAL_DEFAULT);
+            
+            IDs.BrightShard = config.getItem(Strings.BrightShard  + " ID", IDs.BRIGHTSHARD_DEFAULT).getInt(IDs.BRIGHTSHARD_DEFAULT);
+            IDs.BrightStone = config.getItem(Strings.BrightStone  + " ID", IDs.BRIGHTSHARD_DEFAULT).getInt(IDs.BRIGHTSHARD_DEFAULT);
+            IDs.BrightGem = config.getItem(Strings.BrightGem  + " ID", IDs.BRIGHTGEM_DEFAULT).getInt(IDs.BRIGHTGEM_DEFAULT);
+            IDs.BrightCrystal = config.getItem(Strings.BrightCrystal  + " ID", IDs.BRIGHTCRYSTAL_DEFAULT).getInt(IDs.BRIGHTCRYSTAL_DEFAULT);
+            
+            IDs.EnergyShard = config.getItem(Strings.EnergyShard  + " ID", IDs.ENERGYSHARD_DEFAULT).getInt(IDs.ENERGYSHARD_DEFAULT);
+            IDs.EnergyStone = config.getItem(Strings.EnergyStone  + " ID", IDs.ENERGYSHARD_DEFAULT).getInt(IDs.ENERGYSHARD_DEFAULT);
+            IDs.EnergyGem = config.getItem(Strings.EnergyGem  + " ID", IDs.ENERGYGEM_DEFAULT).getInt(IDs.ENERGYGEM_DEFAULT);
+            IDs.EnergyCrystal = config.getItem(Strings.EnergyCrystal  + " ID", IDs.ENERGYCRYSTAL_DEFAULT).getInt(IDs.ENERGYCRYSTAL_DEFAULT);
+            
+            IDs.SerenityShard = config.getItem(Strings.SerenityShard  + " ID", IDs.SERENITYSHARD_DEFAULT).getInt(IDs.SERENITYSHARD_DEFAULT);
+            IDs.SerenityStone = config.getItem(Strings.SerenityStone  + " ID", IDs.SERENITYSHARD_DEFAULT).getInt(IDs.SERENITYSHARD_DEFAULT);
+            IDs.SerenityGem = config.getItem(Strings.SerenityGem  + " ID", IDs.SERENITYGEM_DEFAULT).getInt(IDs.SERENITYGEM_DEFAULT);
+            IDs.SerenityCrystal = config.getItem(Strings.SerenityCrystal  + " ID", IDs.SERENITYCRYSTAL_DEFAULT).getInt(IDs.SERENITYCRYSTAL_DEFAULT);
+            
+            IDs.Orichalcum = config.getItem(Strings.Orichalcum  + " ID", IDs.ORICHALCUM_DEFAULT).getInt(IDs.ORICHALCUM_DEFAULT);
+            IDs.OrichalcumPlus = config.getItem(Strings.OrichalcumPlus  + " ID", IDs.ORICHALCUMPLUS_DEFAULT).getInt(IDs.ORICHALCUMPLUS_DEFAULT);
+            
+            IDs.RemembranceShard = config.getItem(Strings.RemembranceShard  + " ID", IDs.REMEMBRANCESHARD_DEFAULT).getInt(IDs.REMEMBRANCESHARD_DEFAULT);
+            IDs.RemembranceStone = config.getItem(Strings.RemembranceStone  + " ID", IDs.REMEMBRANCESHARD_DEFAULT).getInt(IDs.REMEMBRANCESHARD_DEFAULT);
+            IDs.RemembranceGem = config.getItem(Strings.RemembranceGem  + " ID", IDs.REMEMBRANCEGEM_DEFAULT).getInt(IDs.REMEMBRANCEGEM_DEFAULT);
+            IDs.RemembranceCrystal = config.getItem(Strings.RemembranceCrystal  + " ID", IDs.REMEMBRANCECRYSTAL_DEFAULT).getInt(IDs.REMEMBRANCECRYSTAL_DEFAULT);
+            
+            IDs.TranquilShard = config.getItem(Strings.TranquilShard  + " ID", IDs.TRANQUILSHARD_DEFAULT).getInt(IDs.TRANQUILSHARD_DEFAULT);
+            IDs.TranquilStone = config.getItem(Strings.TranquilStone  + " ID", IDs.TRANQUILSHARD_DEFAULT).getInt(IDs.TRANQUILSHARD_DEFAULT);
+            IDs.TranquilGem = config.getItem(Strings.TranquilGem  + " ID", IDs.TRANQUILGEM_DEFAULT).getInt(IDs.TRANQUILGEM_DEFAULT);
+            IDs.TranquilCrystal = config.getItem(Strings.TranquilCrystal  + " ID", IDs.TRANQUILCRYSTAL_DEFAULT).getInt(IDs.TRANQUILCRYSTAL_DEFAULT);
+            
+            IDs.ShinyCrystal = config.getItem(Strings.ShinyCrystal  + " ID", IDs.SHINYCRYSTAL_DEFAULT).getInt(IDs.SHINYCRYSTAL_DEFAULT);
             //BLOCKS
             IDs.NBlox = config.getBlock(Strings.NBlox  + " ID", IDs.NORMALBLOX_DEFAULT).getInt(IDs.NORMALBLOX_DEFAULT);
             IDs.HBlox = config.getBlock(Strings.HBlox  + " ID", IDs.HARDBLOX_DEFAULT).getInt(IDs.HARDBLOX_DEFAULT);

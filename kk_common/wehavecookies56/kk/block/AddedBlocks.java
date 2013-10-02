@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -46,6 +47,27 @@ public class AddedBlocks {
             "DE",
             'E', Block.whiteStone, 'D', Block.dirt
     });
-
+    	GameRegistry.addRecipe(new ItemStack(HardBlox), new Object[]{
+        	"ES",
+            "SE",
+            'E', Block.whiteStone, 'S', Block.stone
+    });
+    	GameRegistry.addRecipe(new ItemStack(MetalBlox), new Object[]{
+        	"EI",
+            "IE",
+            'E', Block.whiteStone, 'I', Item.ingotIron
+    });
+    	GameRegistry.addRecipe(new ItemStack(NormalBlox), new Object[]{
+        	"ED",
+            "DE",
+            'E', Block.whiteStone, 'D', Block.dirt
+    });
+    	GameRegistry.addRecipe(new ItemStack(Synthesiser), new Object[]{
+        	"MCM",
+            "H5N",
+            "OHO",
+            'M', MetalBlox, 'C', Block.workbench, 'H', HardBlox, '5', AddedItems.Munny500, 'N', NormalBlox, 'O', AddedItems.HP
+    });
+    	
     }
 }

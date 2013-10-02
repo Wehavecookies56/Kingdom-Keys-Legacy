@@ -230,9 +230,21 @@ public class Strings {
 	public static final String KingdomKeyChain = "kingdomKeyChain";
 	public static final String OathkeeperChain = "oathkeeperChain";
 	public static final String KingdomKeyDChain = "kingdomKeyDChain";
-	public static final String OblivionChain = "oblivion";
+	public static final String OblivionChain = "oblivionChain";
     //Organization XIII weapons
+	public static final String Interdiction = "interdiction";
+	public static final String SharpShooter = "sharpShooter";
+	public static final String LindWorm = "lindWorm";
+	public static final String FrozenPride = "frozenPride";
+	public static final String Skysplitter = "skysplitter";
+	public static final String BookOfRetribution = "bookOfRetribution";
+	public static final String Lunatic = "lunatic";
     public static final String EternalFlames = "eternalFlames";
+	public static final String Appregio = "appregio";
+	public static final String FairGame = "fairGame";
+	public static final String GracefulDahlia = "gracefulDahlia";
+	public static final String Foudre = "foudre";
+
     //Blox
     public static final String NBlox = "normalBlox";
     public static final String HBlox = "hardBlox";
@@ -257,7 +269,6 @@ public class Strings {
     public static final String Disc7 = "Organization XIII";
     public static final String Disc8 = "No More Bugs -Bug Version-";
     public static final String Disc9 = "Sinister Sundown";
-    
     //Armour
      //Organization
     public static final String OHood = "organizationHood";
@@ -283,6 +294,104 @@ public class Strings {
     public static final String DLeather = "leatherDarkness";
     public static final String HP = "hPOrb";
     public static final String Munny = "20Munny";
+    public static final String Munny1 = "1Munny";
+    public static final String Munny5 = "5Munny";
+    public static final String Munny10 = "10Munny";
+    public static final String Munny50 = "50Munny";
+    public static final String Munny100 = "100Munny";
+    public static final String Munny200 = "200Munny";
+    public static final String Munny500 = "500Munny";
+    public static final String Munny800 = "800Munny";
+    public static final String Munny1000 = "1000Munny";
+    public static final String Munny1200 = "1200Munny";
+    public static final String Munny1500 = "1500Munny";
+    public static final String Munny1800 = "1800Munny";
+    public static final String Munny2000 = "2000Munny";
+    public static final String Munny3000 = "3000Munny";
+    public static final String Munny4000 = "4000Munny";
+    public static final String Munny5000 = "5000Munny";
+    public static final String Munny6000 = "6000Munny";
     public static final String Potion = "potion";
     public static final String Synthesiser = "synthesiser";
+    //Synthesis Materials
+    //Blazing
+    public static final String BlazingShard = "blazingShard";
+    public static final String BlazingStone = "blazingStone";
+    public static final String BlazingGem = "blazingGem";
+    public static final String BlazingCrystal = "blazingCrystal";
+    //Frost
+    public static final String FrostShard = "frostShard";
+    public static final String FrostStone = "frostStone";
+    public static final String FrostGem = "frostGem";
+    public static final String FrostCrystal = "frostCrystal";
+    //Lightning
+    public static final String LightningShard = "lightningShard";
+    public static final String LightningStone = "lightningStone";
+    public static final String LightningGem = "lightningGem";
+    public static final String LightningCrystal = "lightningCrystal";
+    //Lucid
+    public static final String LucidShard = "lucidShard";
+    public static final String LucidStone = "lucidStone";
+    public static final String LucidGem = "lucidGem";
+    public static final String LucidCrystal = "lucidCrystal";
+    //Power
+    public static final String PowerShard = "powerShard";
+    public static final String PowerStone = "powerStone";
+    public static final String PowerGem = "powerGem";
+    public static final String PowerCrystal = "powerCrystal";
+    //Dark
+    public static final String DarkShard = "darkShard";
+    public static final String DarkStone = "darkStone";
+    public static final String DarkGem = "darkGem";
+    public static final String DarkCrystal = "darkCrystal";
+    public static final String DarkMatter = "darkMatter";
+    //Dense
+    public static final String DenseShard = "denseShard";
+    public static final String DenseStone = "denseStone";
+    public static final String DenseGem = "denseGem";
+    public static final String DenseCrystal = "denseCrystal";
+    //Twilight
+    public static final String TwilightShard = "twilightShard";
+    public static final String TwilightStone = "twilightStone";
+    public static final String TwilightGem = "twilightGem";
+    public static final String TwilightCrystal = "twilightCrystal";
+    //Mythril
+    public static final String MythrilShard = "mythrilShard";
+    public static final String MythrilStone = "mythrilStone";
+    public static final String MythrilGem = "mythrilGem";
+    public static final String MythrilCrystal = "mythrilCrystal";
+    //Bright
+    public static final String BrightShard = "brightShard";
+    public static final String BrightStone = "brightStone";
+    public static final String BrightGem = "brightGem";
+    public static final String BrightCrystal = "brightCrystal";
+    //Energy
+    public static final String EnergyShard = "energyShard";
+    public static final String EnergyStone = "energyStone";
+    public static final String EnergyGem = "energyGem";
+    public static final String EnergyCrystal = "energyCrystal";
+    //Serenity
+    public static final String SerenityShard = "serenityShard";
+    public static final String SerenityStone = "serenityStone";
+    public static final String SerenityGem = "serenityGem";
+    public static final String SerenityCrystal = "serenityCrystal";
+    //Orichalcum
+    public static final String Orichalcum = "orichalcum";
+    public static final String OrichalcumPlus = "orichalcum+";
+    //Remembrance
+    public static final String RemembranceShard = "remembranceShard";
+    public static final String RemembranceStone = "remembranceStone";
+    public static final String RemembranceGem = "remembranceGem";
+    public static final String RemembranceCrystal = "remembranceCrystal";
+    //Tranquil
+    public static final String TranquilShard = "tranquilShard";
+    public static final String TranquilStone = "tranquilStone";
+    public static final String TranquilGem = "tranquilGem";
+    public static final String TranquilCrystal = "tranquilCrystal";
+    //Shiny
+    public static final String ShinyCrystal = "shimmeringCrystal";
+    
+    //SoundNames
+    public static final String Summon = "keyblade_summon";
+    
 }
