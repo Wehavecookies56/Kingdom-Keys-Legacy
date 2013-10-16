@@ -57,7 +57,6 @@ public class ItemAbyssalTide extends ItemSword {
 		this.keyPressed = false;
 		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K58.itemID)
 		{
-			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K58c));
 		}
 	}
     }

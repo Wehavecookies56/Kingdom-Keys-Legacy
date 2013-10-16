@@ -11,6 +11,7 @@ import wehavecookies56.kk.client.audio.SoundManager;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
 import wehavecookies56.kk.core.handlers.GuiHandlerSynth;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
+import wehavecookies56.kk.core.handlers.PacketHandler;
 import wehavecookies56.kk.core.helper.LogHelper;
 import wehavecookies56.kk.core.proxies.ClientProxy;
 import wehavecookies56.kk.core.proxies.CommonProxy;
@@ -38,9 +39,9 @@ import wehavecookies56.kk.mob.Munny20Drops;
 import wehavecookies56.kk.mob.Munny50Drops;
 import wehavecookies56.kk.mob.Munny5Drops;
 import wehavecookies56.kk.mob.PureHeartDrops;
-import wehavecookies56.kk.thaumcraft.ThaumcraftAddon;
 import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -56,7 +57,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
-@NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = Reference.CHANNEL_NAME)
+@NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = (Reference.CHANNEL_NAME), packetHandler = PacketHandler.class)
 
 
 
@@ -64,6 +65,8 @@ public class KingdomKeys {
 
 	//World gen
 	WorldGenBlox worldGen = new WorldGenBlox();
+	
+	public static boolean battlegearInstalled = false;
 	
     @Instance(Reference.MOD_ID)
     public static KingdomKeys instance;
@@ -156,7 +159,9 @@ public class KingdomKeys {
     //Post Initialisation
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        LogHelper.log(Level.INFO, "Loading thaumcraft 3 addon");
-        ThaumcraftAddon.modsLoaded();
+    	battlegearInstalled = Loader.isModLoaded("battlegear2");
+    	if(battlegearInstalled){
+    		LogHelper.log(Level.INFO, "Battlegear 2 support loaded");
+    	}
     }
 }

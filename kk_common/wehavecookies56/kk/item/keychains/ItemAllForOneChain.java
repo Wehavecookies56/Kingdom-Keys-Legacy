@@ -34,7 +34,6 @@ public class ItemAllForOneChain extends ItemKingdomKeys{
     	ItemAllForOne.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K14c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K14));
     }
     }
     }

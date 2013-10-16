@@ -34,7 +34,6 @@ public class ItemChaosRipperChain extends ItemKingdomKeys{
     	ItemChaosRipper.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K38c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K38));
     }
     }
     }

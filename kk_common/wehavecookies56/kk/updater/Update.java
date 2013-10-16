@@ -43,8 +43,8 @@ public class Update implements IConnectionHandler
 			}
 			else
 			{
-				System.out.println("A new version " + newVersion + " is available for " + modName);
-				PrintToPlayer.printText(("A new version " + newVersion + " is available for " + modName));
+				System.out.println("A new version " + newVersion + " is available for " + modName + "." + " You are running version " + currentVersion);
+				PrintToPlayer.printText(("A new version " + newVersion + " is available for " + modName + "." + " You are running version " + currentVersion));
 			}	
 		}
 	}

@@ -49,7 +49,7 @@ public class ItemRenderWaywardWind implements IItemRenderer {
 		case EQUIPPED: {
 			GL11.glPushMatrix();
 
-			Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/WaywardWind.png"));
+			Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("kk", "textures/entities/WaywardWind.png"));
 
 			if(ConfigBooleans.altWaywardWind == false){
 				GL11.glRotatef(90.0F, 0.0F, 0.0F, 1.0F);
@@ -77,7 +77,7 @@ public class ItemRenderWaywardWind implements IItemRenderer {
 		case EQUIPPED_FIRST_PERSON: {
 			GL11.glPushMatrix();
 
-			Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/WaywardWind.png"));
+			Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("kk", "textures/entities/WaywardWind.png"));
 
 			if(ConfigBooleans.altWaywardWind == false){
 				GL11.glRotatef(90.0F, 0.0F, 0.0F, 1.0F);

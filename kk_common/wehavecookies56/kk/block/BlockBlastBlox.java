@@ -93,7 +93,7 @@ public class BlockBlastBlox extends Block
     {
         if (!par1World.isRemote)
         {
-            EntityBlastBlox entitytntprimed = new EntityBlastBlox(par1World, (double)((float)par2 + 0.5F), (double)((float)par3 + 0.5F), (double)((float)par4 + 0.5F), par5Explosion.func_94613_c());
+            EntityBlastBlox entitytntprimed = new EntityBlastBlox(par1World, (double)((float)par2 + 0.5F), (double)((float)par3 + 0.5F), (double)((float)par4 + 0.5F), par5Explosion.getExplosivePlacedBy());
             entitytntprimed.fuse = par1World.rand.nextInt(entitytntprimed.fuse / 4) + entitytntprimed.fuse / 8;
             par1World.spawnEntityInWorld(entitytntprimed);
         }

@@ -51,7 +51,7 @@ public class RenderBlastBlox extends Render
         }
 
         f2 = (1.0F - ((float)par1EntityTNTPrimed.fuse - par9 + 1.0F) / 100.0F) * 0.8F;
-        this.func_110777_b(par1EntityTNTPrimed);
+        this.bindEntityTexture(par1EntityTNTPrimed);
         this.blockRenderer.renderBlockAsItem(AddedBlocks.BlastBlox, 0, par1EntityTNTPrimed.getBrightness(par9));
 
         if (par1EntityTNTPrimed.fuse / 5 % 2 == 0)
@@ -73,10 +73,10 @@ public class RenderBlastBlox extends Render
 
     protected ResourceLocation func_110808_a(EntityBlastBlox par1EntityTNTPrimed)
     {
-        return TextureMap.field_110575_b;
+        return TextureMap.locationBlocksTexture;
     }
 
-    protected ResourceLocation func_110775_a(Entity par1Entity)
+    protected ResourceLocation getEntityTexture(Entity par1Entity)
     {
         return this.func_110808_a((EntityBlastBlox)par1Entity);
     }

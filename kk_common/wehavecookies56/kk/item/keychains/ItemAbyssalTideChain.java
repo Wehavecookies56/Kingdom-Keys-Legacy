@@ -34,7 +34,6 @@ public class ItemAbyssalTideChain extends ItemKingdomKeys{
     	ItemAbyssalTide.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K58c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K58));
     }
     }
     }

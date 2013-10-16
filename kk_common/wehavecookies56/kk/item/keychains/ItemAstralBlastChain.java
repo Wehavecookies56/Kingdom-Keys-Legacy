@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.item.ItemKingdomKeys;
 import wehavecookies56.kk.item.keyblades.ItemAstralBlast;
@@ -29,12 +30,11 @@ public class ItemAstralBlastChain extends ItemKingdomKeys{
     public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
     EntityPlayer player = (EntityPlayer)par3Entity;
-    if (ItemAstralBlast.keyPressed)
+    if (KeyBind.keyPressed)
     {
-    	ItemAstralBlast.keyPressed = false;
+    	KeyBind.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K48c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K48));
     }
     }
     }

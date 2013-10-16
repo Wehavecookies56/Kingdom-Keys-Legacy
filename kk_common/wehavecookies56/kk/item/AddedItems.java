@@ -5,12 +5,74 @@ import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.nbt.NBTTagString;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.EnumHelper;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.item.keyblades.*;
 import wehavecookies56.kk.item.keychains.*;
+import wehavecookies56.kk.item.synthesis.ItemBlazingCrystal;
+import wehavecookies56.kk.item.synthesis.ItemBlazingGem;
+import wehavecookies56.kk.item.synthesis.ItemBlazingShard;
+import wehavecookies56.kk.item.synthesis.ItemBlazingStone;
+import wehavecookies56.kk.item.synthesis.ItemBrightCrystal;
+import wehavecookies56.kk.item.synthesis.ItemBrightGem;
+import wehavecookies56.kk.item.synthesis.ItemBrightShard;
+import wehavecookies56.kk.item.synthesis.ItemBrightStone;
+import wehavecookies56.kk.item.synthesis.ItemDarkCrystal;
+import wehavecookies56.kk.item.synthesis.ItemDarkGem;
+import wehavecookies56.kk.item.synthesis.ItemDarkMatter;
+import wehavecookies56.kk.item.synthesis.ItemDarkShard;
+import wehavecookies56.kk.item.synthesis.ItemDarkStone;
+import wehavecookies56.kk.item.synthesis.ItemDenseCrystal;
+import wehavecookies56.kk.item.synthesis.ItemDenseGem;
+import wehavecookies56.kk.item.synthesis.ItemDenseShard;
+import wehavecookies56.kk.item.synthesis.ItemDenseStone;
+import wehavecookies56.kk.item.synthesis.ItemEnergyCrystal;
+import wehavecookies56.kk.item.synthesis.ItemEnergyGem;
+import wehavecookies56.kk.item.synthesis.ItemEnergyShard;
+import wehavecookies56.kk.item.synthesis.ItemEnergyStone;
+import wehavecookies56.kk.item.synthesis.ItemFrostCrystal;
+import wehavecookies56.kk.item.synthesis.ItemFrostGem;
+import wehavecookies56.kk.item.synthesis.ItemFrostShard;
+import wehavecookies56.kk.item.synthesis.ItemFrostStone;
+import wehavecookies56.kk.item.synthesis.ItemLightningCrystal;
+import wehavecookies56.kk.item.synthesis.ItemLightningGem;
+import wehavecookies56.kk.item.synthesis.ItemLightningShard;
+import wehavecookies56.kk.item.synthesis.ItemLightningStone;
+import wehavecookies56.kk.item.synthesis.ItemLucidCrystal;
+import wehavecookies56.kk.item.synthesis.ItemLucidGem;
+import wehavecookies56.kk.item.synthesis.ItemLucidShard;
+import wehavecookies56.kk.item.synthesis.ItemLucidStone;
+import wehavecookies56.kk.item.synthesis.ItemMythrilCrystal;
+import wehavecookies56.kk.item.synthesis.ItemMythrilGem;
+import wehavecookies56.kk.item.synthesis.ItemMythrilShard;
+import wehavecookies56.kk.item.synthesis.ItemMythrilStone;
+import wehavecookies56.kk.item.synthesis.ItemOrichalcum;
+import wehavecookies56.kk.item.synthesis.ItemOrichalcumPlus;
+import wehavecookies56.kk.item.synthesis.ItemPowerCrystal;
+import wehavecookies56.kk.item.synthesis.ItemPowerGem;
+import wehavecookies56.kk.item.synthesis.ItemPowerShard;
+import wehavecookies56.kk.item.synthesis.ItemPowerStone;
+import wehavecookies56.kk.item.synthesis.ItemRemembranceCrystal;
+import wehavecookies56.kk.item.synthesis.ItemRemembranceGem;
+import wehavecookies56.kk.item.synthesis.ItemRemembranceShard;
+import wehavecookies56.kk.item.synthesis.ItemRemembranceStone;
+import wehavecookies56.kk.item.synthesis.ItemSerenityCrystal;
+import wehavecookies56.kk.item.synthesis.ItemSerenityGem;
+import wehavecookies56.kk.item.synthesis.ItemSerenityShard;
+import wehavecookies56.kk.item.synthesis.ItemSerenityStone;
+import wehavecookies56.kk.item.synthesis.ItemShinyCrystal;
+import wehavecookies56.kk.item.synthesis.ItemTranquilCrystal;
+import wehavecookies56.kk.item.synthesis.ItemTranquilGem;
+import wehavecookies56.kk.item.synthesis.ItemTranquilShard;
+import wehavecookies56.kk.item.synthesis.ItemTranquilStone;
+import wehavecookies56.kk.item.synthesis.ItemTwilightCrystal;
+import wehavecookies56.kk.item.synthesis.ItemTwilightGem;
+import wehavecookies56.kk.item.synthesis.ItemTwilightShard;
+import wehavecookies56.kk.item.synthesis.ItemTwilightStone;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Reference;
@@ -50,7 +112,7 @@ public class AddedItems {
 		K23m = EnumHelper.addToolMaterial(Strings.Lightseeker, 3, -1, 6.0F, 9, 30); K23 = new ItemLightSeeker(IDs.K23, K23m).setFull3D().setUnlocalizedName(Strings.Lightseeker);
 		K24m = EnumHelper.addToolMaterial(Strings.Lostmemory, 3, -1, 6.0F, 12, 30); K24 = new ItemLostMemory(IDs.K24, K24m).setFull3D().setUnlocalizedName(Strings.Lostmemory);
 		K25m = EnumHelper.addToolMaterial(Strings.Frolicflame, 3, -1, 6.0F, 6, 30); K25 = new ItemFrolicFlame(IDs.K25, K25m).setFull3D().setUnlocalizedName(Strings.Frolicflame);
-		K26m = EnumHelper.addToolMaterial(Strings.Masterkeeper, 3, -1, 6.0F, 8, 30); K26 = new ItemMasterKeeper(IDs.K26, K26m).setFull3D().setUnlocalizedName(Strings.Masterkeeper);
+		K26m = EnumHelper.addToolMaterial(Strings.Masterkeeper, 3, -1, 6.0F, 13, 30); K26 = new ItemMasterKeeper(IDs.K26, K26m).setFull3D().setUnlocalizedName(Strings.Masterkeeper);
 		K27m = EnumHelper.addToolMaterial(Strings.Brigthcrest, 3, -1, 6.0F, 7, 30); K27 = new ItemBrightCrest(IDs.K27, K27m).setFull3D().setUnlocalizedName(Strings.Brigthcrest);
 		K28m = EnumHelper.addToolMaterial(Strings.Crownunlimit, 3, -1, 6.0F, 10, 30); K28 = new ItemCrownUnLimit(IDs.K28, K28m).setFull3D().setUnlocalizedName(Strings.Crownunlimit);
 		K29m = EnumHelper.addToolMaterial(Strings.Noname, 3, -1, 6.0F, 12, 30); K29 = new ItemNoName(IDs.K29, K29m).setFull3D().setUnlocalizedName(Strings.Noname);
@@ -253,6 +315,10 @@ public class AddedItems {
 		K110c = new ItemWaywardWindChain(IDs.K110c).setUnlocalizedName(Strings.WaywardwindChain).setCreativeTab(KingdomKeys.KHBBSTAB);
 		K109c = new ItemEarthShakerChain(IDs.K109c).setUnlocalizedName(Strings.EarthshakerChain).setCreativeTab(KingdomKeys.KHBBSTAB);
 		K108c = new ItemRainFellChain(IDs.K108c).setUnlocalizedName(Strings.RainfellChain).setCreativeTab(KingdomKeys.KHBBSTAB);
+	}
+	
+	public static void initBooks(){
+
 	}
 
 	public static void intiArmour(){
@@ -467,6 +533,15 @@ public class AddedItems {
 	}
 
 	public static void initItemrecipes(){
+		ItemStack kkGuide = new ItemStack(Item.writableBook);
+		NBTTagList bookPages = new NBTTagList("pages");
+		bookPages.appendTag(new NBTTagString("1", "Insert text here."));
+		bookPages.appendTag(new NBTTagString("2", "Insert moar text here."));
+		kkGuide.setTagInfo("pages", bookPages);
+		kkGuide.setTagInfo("author", new NBTTagString("author", "Wehavecookies56"));
+		kkGuide.setTagInfo("title", new NBTTagString("title", "Kingdom Keys"));
+		kkGuide.itemID = Item.writtenBook.itemID;
+		
 		ItemStack greenDye = new ItemStack(Item.dyePowder, 1, 2);
 		ItemStack blueDye = new ItemStack(Item.dyePowder, 1, 4);
 		ItemStack blackDye = new ItemStack(Item.dyePowder, 1, 0);
@@ -739,6 +814,7 @@ public class AddedItems {
 		});
 		
 
+		GameRegistry.addShapelessRecipe(kkGuide = new ItemStack(Item.writableBook), new ItemStack(Item.book, 1), new ItemStack(Heart, 1), new ItemStack(DarkHeart, 1));
 		//GameRegistry.addShapelessRecipe(new ItemStack(K114), new ItemStack(K114c, 1), new ItemStack(Item.swordIron, 1));
 		//GameRegistry.addSmelting(K111.itemID, new ItemStack(Disc1), 0.1f);
 

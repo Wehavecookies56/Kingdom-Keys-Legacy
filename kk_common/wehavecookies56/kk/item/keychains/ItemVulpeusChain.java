@@ -26,7 +26,6 @@ public class ItemVulpeusChain extends ItemKingdomKeys{
     	ItemVulpeus.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K1c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.Vulpeus));
     }
     }
     }

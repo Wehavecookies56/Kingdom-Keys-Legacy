@@ -7,6 +7,7 @@ import org.lwjgl.input.Keyboard;
 
 import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
+import wehavecookies56.kk.client.render.ItemRenderFenrir;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKey;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKeyD;
 import wehavecookies56.kk.client.render.ItemRenderLunarEclipse;
@@ -17,6 +18,7 @@ import wehavecookies56.kk.client.render.ItemRenderSoulEater;
 import wehavecookies56.kk.client.render.ItemRenderStarLight;
 import wehavecookies56.kk.client.render.ItemRenderTotalEclipse;
 import wehavecookies56.kk.client.render.ItemRenderWaywardWind;
+import wehavecookies56.kk.client.render.ItemRenderZeroOne;
 import wehavecookies56.kk.client.render.RenderBlastBlox;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.item.AddedItems;
@@ -43,6 +45,8 @@ public class ClientProxy extends CommonProxy {
          MinecraftForgeClient.registerItemRenderer(AddedItems.K106.itemID, new ItemRenderSoulEater());
          MinecraftForgeClient.registerItemRenderer(AddedItems.K50.itemID, new ItemRenderLunarEclipse());
          MinecraftForgeClient.registerItemRenderer(AddedItems.K52.itemID, new ItemRenderTotalEclipse());
+         MinecraftForgeClient.registerItemRenderer(AddedItems.K69.itemID, new ItemRenderFenrir());
+         MinecraftForgeClient.registerItemRenderer(AddedItems.K41.itemID, new ItemRenderZeroOne());
          
          //Entities
          RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new RenderBlastBlox());

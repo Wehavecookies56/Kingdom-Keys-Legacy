@@ -26,7 +26,6 @@ public class ItemCircleOfLifeChain extends ItemKingdomKeys{
     	ItemCircleOfLife.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K75c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K75));
     }
     }
     }

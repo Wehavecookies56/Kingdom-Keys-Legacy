@@ -47,7 +47,7 @@ public class ItemRenderStarLight implements IItemRenderer {
             case EQUIPPED: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/Starlight.png"));
+                Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("kk", "textures/entities/Starlight.png"));
                 
                 GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 0.0F, 0.0F, 1.0F);
@@ -65,7 +65,7 @@ public class ItemRenderStarLight implements IItemRenderer {
             case EQUIPPED_FIRST_PERSON: {
                 GL11.glPushMatrix();
                 
-                Minecraft.getMinecraft().renderEngine.func_110577_a(new ResourceLocation("kk", "textures/entities/Starlight.png"));
+                Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("kk", "textures/entities/Starlight.png"));
                 
                 GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(45.0F, 0.0F, 0.0F, 1.0F);

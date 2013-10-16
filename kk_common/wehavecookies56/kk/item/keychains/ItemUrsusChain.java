@@ -26,7 +26,6 @@ public class ItemUrsusChain extends ItemKingdomKeys{
     	ItemUrsus.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K2c.itemID)
             {
-      player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.Ursus));
     }
     }
     }
