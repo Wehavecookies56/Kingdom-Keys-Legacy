@@ -15,7 +15,6 @@ import net.minecraft.network.packet.Packet250CustomPayload;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import wehavecookies56.kk.KingdomKeys;
-import wehavecookies56.kk.battlegear.OneHandedWeapon;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;

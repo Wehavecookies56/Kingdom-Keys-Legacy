@@ -30,9 +30,9 @@ public class ItemBrightCrestChain extends ItemKingdomKeys{
     public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
     EntityPlayer player = (EntityPlayer)par3Entity;
-    if (KeyBind.keyPressed)
+    if (ItemBrightCrest.keyPressed)
     {
-    	KeyBind.keyPressed = false;
+    	ItemBrightCrest.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K27c.itemID)
             {
     }

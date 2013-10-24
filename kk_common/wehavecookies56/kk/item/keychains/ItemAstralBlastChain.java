@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.item.ItemKingdomKeys;
+import wehavecookies56.kk.item.keyblades.ItemAnguis;
 import wehavecookies56.kk.item.keyblades.ItemAstralBlast;
 import wehavecookies56.kk.lib.Reference;
 
@@ -30,9 +31,9 @@ public class ItemAstralBlastChain extends ItemKingdomKeys{
     public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
     EntityPlayer player = (EntityPlayer)par3Entity;
-    if (KeyBind.keyPressed)
+    if (ItemAstralBlast.keyPressed)
     {
-    	KeyBind.keyPressed = false;
+    	ItemAstralBlast.keyPressed = false;
             if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K48c.itemID)
             {
     }

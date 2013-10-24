@@ -454,6 +454,7 @@ public class AddedItems {
 		Munny6000 = new ItemMunny6000(IDs.Munny6000).setCreativeTab(KingdomKeys.KKSMTAB);
 		Potion = new ItemPotion(IDs.Potion, 0, 0, true);
 		
+		
 		//Synthesis
 		BlazingShard = new ItemBlazingShard(IDs.BlazingShard).setUnlocalizedName(Strings.BlazingShard).setCreativeTab(KingdomKeys.KKSMTAB);
 		BlazingStone = new ItemBlazingStone(IDs.BlazingStone).setUnlocalizedName(Strings.BlazingStone).setCreativeTab(KingdomKeys.KKSMTAB);
@@ -533,7 +534,7 @@ public class AddedItems {
 	}
 
 	public static void initItemrecipes(){
-		ItemStack kkGuide = new ItemStack(Item.writableBook);
+		/*ItemStack kkGuide = new ItemStack(Item.writableBook);
 		NBTTagList bookPages = new NBTTagList("pages");
 		bookPages.appendTag(new NBTTagString("1", "Insert text here."));
 		bookPages.appendTag(new NBTTagString("2", "Insert moar text here."));
@@ -541,7 +542,7 @@ public class AddedItems {
 		kkGuide.setTagInfo("author", new NBTTagString("author", "Wehavecookies56"));
 		kkGuide.setTagInfo("title", new NBTTagString("title", "Kingdom Keys"));
 		kkGuide.itemID = Item.writtenBook.itemID;
-		
+		*/
 		ItemStack greenDye = new ItemStack(Item.dyePowder, 1, 2);
 		ItemStack blueDye = new ItemStack(Item.dyePowder, 1, 4);
 		ItemStack blackDye = new ItemStack(Item.dyePowder, 1, 0);
@@ -629,42 +630,6 @@ public class AddedItems {
 			"HPH",
 			'P', Item.glassBottle, 'H', HP
 		});
-		GameRegistry.addRecipe(new ItemStack(K111c), new Object[]{
-			"IPI",
-			"IPI",
-			"IPI",
-			'P', PureHeart, 'I', Item.ingotIron
-		});
-		GameRegistry.addRecipe(new ItemStack(K113c), new Object[]{
-			"GPG",
-			"GPG",
-			"GPG",
-			'P', PureHeart, 'G', Item.ingotGold
-		});
-		GameRegistry.addRecipe(new ItemStack(K112c), new Object[]{
-			"GPG",
-			"GKG",
-			"GPG",
-			'P', PureHeart, 'G', Item.ingotIron, 'K', KingdomHearts
-		});
-		GameRegistry.addRecipe(new ItemStack(K110c), new Object[]{
-			"IPI",
-			"GKG",
-			"IPI",
-			'P', PureHeart, 'I', Item.ingotIron, 'K', KingdomHearts, 'G', greenDye 
-		});
-		GameRegistry.addRecipe(new ItemStack(K109c), new Object[]{
-			"GPG",
-			"IKI",
-			"IPI",
-			'P', PureHeart, 'I', Item.ingotIron, 'K', KingdomHearts, 'G', Item.ingotGold
-		});
-		GameRegistry.addRecipe(new ItemStack(K108c), new Object[]{
-			"IPI",
-			"LKW",
-			"IPI",
-			'P', PureHeart, 'I', Item.ingotIron, 'K', KingdomHearts, 'L', blueDye, 'W', Item.bucketWater 
-		});
 		GameRegistry.addRecipe(new ItemStack(KeybladeTHelm), new Object[]{
 			"DED",
 			"PKP",
@@ -732,89 +697,26 @@ public class AddedItems {
 			'P', PureHeart, 'K', KingdomHearts, 'W', K110, 'H', Heart
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(BlazingShard), new Object[]{
-			"F F",
-			"NRN",
-			'F', Item.flint, 'R', Item.blazeRod, 'N', Block.netherrack
-		});
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny5), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny), new ItemStack(Munny5), new ItemStack(Munny5), new ItemStack(Munny5), new ItemStack(Munny5));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny50), new ItemStack(Munny10), new ItemStack(Munny10), new ItemStack(Munny10, 1), new ItemStack(Munny10, 1), new ItemStack(Munny10, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny10), new ItemStack(Munny5), new ItemStack(Munny5));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny100), new ItemStack(Munny50), new ItemStack(Munny50));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny100), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny200), new ItemStack(Munny100), new ItemStack(Munny100));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny500), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny800), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny1000), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny1200), new ItemStack(Munny1000), new ItemStack(Munny200));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny1500), new ItemStack(Munny1000), new ItemStack(Munny500));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny1800), new ItemStack(Munny1000), new ItemStack(Munny800));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny2000), new ItemStack(Munny2000), new ItemStack(Munny2000));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny3000), new ItemStack(Munny2000), new ItemStack(Munny1000));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny4000), new ItemStack(Munny3000), new ItemStack(Munny1000));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny5000), new ItemStack(Munny4000), new ItemStack(Munny1000));
+		GameRegistry.addShapelessRecipe(new ItemStack(Munny6000), new ItemStack(Munny5000), new ItemStack(Munny1000));
 		
-		GameRegistry.addRecipe(new ItemStack(BlazingStone), new Object[]{
-			"FGF",
-			"NRN",
-			"&  ",
-			'F', Item.flint, 'R', Item.blazeRod, 'N', Block.netherrack, '&', Item.flintAndSteel, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(BlazingGem), new Object[]{
-			"DGD",
-			"NRN",
-			"&  ",
-			'D', Item.redstone, 'R', Item.blazeRod, 'N', Block.netherrack, '&', Item.flintAndSteel, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(BlazingCrystal), new Object[]{
-			"DGD",
-			"NRN",
-			"&  ",
-			'D', Item.redstone, 'R', Item.blazeRod, 'N', Block.netherrack, '&', Item.flintAndSteel, 'G', Item.diamond
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(FrostShard), new Object[]{
-			"B B",
-			"SWS",
-			'B', Item.snowball, 'S', Block.snow, 'W', Item.bucketWater
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(FrostStone), new Object[]{
-			"BGB",
-			"SWS",
-			"&  ",
-			'B', Item.snowball, 'W', Item.bucketWater, 'S', Block.snow, '&', Block.ice, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(FrostGem), new Object[]{
-			"LGL",
-			"SWS",
-			"&  ",
-			'L', blueDye, 'W', Item.bucketWater, 'S', Block.snow, '&', Block.ice, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(FrostCrystal), new Object[]{
-			"LGL",
-			"NRN",
-			"&  ",
-			'L', blueDye, 'W', Item.bucketWater, 'S', Block.snow, '&', Block.ice, 'G', Item.diamond
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(LightningShard), new Object[]{
-			"B B",
-			"SYS",
-			'B', Item.redstone, 'S', Block.stone, 'Y', yellowDye
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(LightningStone), new Object[]{
-			"BGB",
-			"SYS",
-			"&  ",
-			'B', Item.redstone, 'Y', yellowDye, 'S', Block.stone, '&', Block.blockRedstone, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(LightningGem), new Object[]{
-			"LGL",
-			"SWS",
-			"&  ",
-			'L', Item.blazePowder, 'W', yellowDye, 'S', Block.stone, '&', Block.blockRedstone, 'G', Item.gunpowder
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(LightningCrystal), new Object[]{
-			"DGD",
-			"NRN",
-			"&  ",
-			'D', Item.blazePowder, 'W', yellowDye, 'S', Block.stone, '&', Block.blockRedstone, 'G', Item.diamond
-		});
-		
-
-		GameRegistry.addShapelessRecipe(kkGuide = new ItemStack(Item.writableBook), new ItemStack(Item.book, 1), new ItemStack(Heart, 1), new ItemStack(DarkHeart, 1));
+		//GameRegistry.addShapelessRecipe(kkGuide = new ItemStack(Item.writableBook), new ItemStack(Item.book, 1), new ItemStack(Heart, 1), new ItemStack(DarkHeart, 1));
 		//GameRegistry.addShapelessRecipe(new ItemStack(K114), new ItemStack(K114c, 1), new ItemStack(Item.swordIron, 1));
 		//GameRegistry.addSmelting(K111.itemID, new ItemStack(Disc1), 0.1f);
 

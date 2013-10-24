@@ -369,6 +369,26 @@
     <entry key="tile.bounceBlox.name">Bounce Blox</entry>
 	<entry key="tile.blastBlox.name">Blast Blox</entry>
     <entry key="tile.synthesiser.name">Synthesis Table</entry>
+    <entry key="tile.blazingOre.name">Blazing Ore</entry>
+    <entry key="tile.blazingOreN.name">Blazing Ore</entry>
+    <entry key="tile.lightningOre.name">Lightning Ore</entry>
+    <entry key="tile.frostOre.name">Frost Ore</entry>
+    <entry key="tile.denseOre.name">Dense Ore</entry>
+    <entry key="tile.powerOre.name">Power Ore</entry>
+    <entry key="tile.powerOreE.name">Power Ore</entry>
+    <entry key="tile.energyOre.name">Energy Ore</entry>
+    <entry key="tile.energyOreN.name">Energy Ore</entry>
+    <entry key="tile.remembranceOre.name">Remembrance Ore</entry>
+    <entry key="tile.remembranceOreN.name">Remembrance Ore</entry>
+	<entry key="tile.serenityOre.name">Serenity Ore</entry>
+    <entry key="tile.twilightOre.name">Twilight Ore</entry>
+    <entry key="tile.twilightOreN.name">Twilight Ore</entry>
+    <entry key="tile.tranquilOre.name">Tranquil Ore</entry>
+    <entry key="tile.brightOre.name">Bright Ore</entry>
+    <entry key="tile.darkOre.name">Dark Ore</entry>
+    <entry key="tile.darkOreN.name">Dark Ore</entry>
+    <entry key="tile.darkOreE.name">Dark Ore</entry>
+    <entry key="tile.lucidOre.name">Lucid Ore</entry>
     <!-- Creative Tab -->
     <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
     <entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>

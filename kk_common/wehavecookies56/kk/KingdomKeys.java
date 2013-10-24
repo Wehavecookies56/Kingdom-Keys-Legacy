@@ -110,8 +110,6 @@ public class KingdomKeys {
         AddedBlocks.preinit();
         LogHelper.log(Level.INFO, "Preparing language files");
         LocalizationHandler.loadLanguages();
-        LogHelper.log(Level.INFO, "Preparing recipes");
-        AddedItems.initItemrecipes();
         AddedBlocks.initBlockRecipes();
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", "Kingdom Keys");
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHTAB", "en_US", "Kingdom Keys: Kingdom Hearts");
@@ -140,6 +138,8 @@ public class KingdomKeys {
     //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        LogHelper.log(Level.INFO, "Preparing recipes");
+        AddedItems.initItemrecipes();
     	NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
         LogHelper.log(Level.INFO, "Preparing world generation");
         GameRegistry.registerWorldGenerator(worldGen);
@@ -162,6 +162,9 @@ public class KingdomKeys {
     	battlegearInstalled = Loader.isModLoaded("battlegear2");
     	if(battlegearInstalled){
     		LogHelper.log(Level.INFO, "Battlegear 2 support loaded");
+    	}
+    	if(!battlegearInstalled){
+    		LogHelper.log(Level.WARNING, "Battlegear 2 is not installed, this means keyblades cannot be dual wielded");
     	}
     }
 }

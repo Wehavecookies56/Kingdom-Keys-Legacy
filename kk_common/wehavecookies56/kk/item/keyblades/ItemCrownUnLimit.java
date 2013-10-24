@@ -57,7 +57,6 @@ public class ItemCrownUnLimit extends ItemSword {
 		this.keyPressed = false;
 		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K28.itemID)
 		{
-			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K28c));
 		}
 	}
     }

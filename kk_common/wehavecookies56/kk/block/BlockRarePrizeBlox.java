@@ -93,17 +93,17 @@ public class BlockRarePrizeBlox extends BlockBlox {
         	// Choose what will be on the list
         	if (luckDraw == 0) { 
         		idDropped = AddedItems.Orichalcum.itemID;
-        		metaDropped = 1;
+        		metaDropped = 0;
         		
         	}
         	if (luckDraw == 1) { 
         		idDropped = AddedItems.Orichalcum.itemID;
-        		metaDropped = 3;
+        		metaDropped = 0;
         		
         	}
         	if (luckDraw == 2) { 
         		idDropped = AddedItems.OrichalcumPlus.itemID;
-        		metaDropped = 2;
+        		metaDropped = 0;
         		
         	}
         	if (luckDraw == 3) { 

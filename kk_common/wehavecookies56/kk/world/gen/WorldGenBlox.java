@@ -30,11 +30,41 @@ public class WorldGenBlox implements IWorldGenerator
 
 		public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
 			if(ConfigBooleans.enableOverworld){
-			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 80);
-			this.spawnOres(AddedBlocks.RarePrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 40, 0, 80);
+		    String s = world.getBiomeGenForCoords(chunkX + 8, chunkZ + 8).biomeName;
+			this.spawnOres(AddedBlocks.LucidOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 0, 70);
+			this.spawnOres(AddedBlocks.SerenityOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 15, 60, 128);
+			this.spawnOres(AddedBlocks.TranquilOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 50, 70, 128);
+			this.spawnOres(AddedBlocks.BrightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 20, 40, 128);
+			this.spawnOres(AddedBlocks.DarkOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, 30, 0, 12);
+			this.spawnOres(AddedBlocks.DenseOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 40, 0, 15);
+			this.spawnOres(AddedBlocks.LightningOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 40, 60);
+			this.spawnOres(AddedBlocks.BlazingOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 20);
+			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 50, 0, 80);
+			this.spawnOres(AddedBlocks.RarePrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 80);
+			if (s.startsWith("Taiga")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			if (s.startsWith("Ice Plains")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			if (s.startsWith("Ice Mountains")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			if (s.startsWith("Frozen Ocean")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			if (s.startsWith("Frozen River")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			if (s.startsWith("TaigaHills")){
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+			}
+			this.spawnOres(AddedBlocks.EnergyOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 30, 0, 128);
+			this.spawnOres(AddedBlocks.RemembranceOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, 30, 0, 128);
+			this.spawnOres(AddedBlocks.TwilightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 8, 30, 0, 128);
 			}
 		}
-	
+
 	
 
 	/**
@@ -47,10 +77,13 @@ public class WorldGenBlox implements IWorldGenerator
 		this.spawnOres(AddedBlocks.NormalBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 10, 60, 0, 128);
 		this.spawnOres(AddedBlocks.HardBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 9, 40, 0, 128);
 		this.spawnOres(AddedBlocks.MetalBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 8, 30, 0, 128);
-		this.spawnOres(AddedBlocks.MetalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
-		this.spawnOres(AddedBlocks.NormalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 15, 89, 0, 128);
-		this.spawnOres(AddedBlocks.HardBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
+		//this.spawnOres(AddedBlocks.MetalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
+		//this.spawnOres(AddedBlocks.NormalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 15, 89, 0, 128);
+		//this.spawnOres(AddedBlocks.HardBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
 		this.spawnOres(AddedBlocks.RarePrizeBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 128);
+		this.spawnOres(AddedBlocks.DarkOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 6, 60, 0, 128);
+		this.spawnOres(AddedBlocks.PowerOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 7, 60, 0, 128);
+		
 		}
 	}
 
@@ -59,6 +92,8 @@ public class WorldGenBlox implements IWorldGenerator
 	 * NETHER GENERATION
 	 */
 	public void generateNether (World world, Random random, int chunkX, int chunkZ){
+
+
 
 	}
 

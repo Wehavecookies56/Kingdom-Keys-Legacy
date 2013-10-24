@@ -391,6 +391,28 @@ public class Strings {
     //Shiny
     public static final String ShinyCrystal = "shimmeringCrystal";
     
+    //Synthesis Ores
+    public static final String BlazingOre = "blazingOre";
+    public static final String BlazingOreN = "blazingOreN";
+    public static final String LightningOre = "lightningOre";
+    public static final String FrostOre = "frostOre";
+    public static final String DenseOre = "denseOre";
+    public static final String PowerOre = "powerOre";
+    public static final String PowerOreE = "powerOreE";
+    public static final String EnergyOre = "energyOre";
+    public static final String EnergyOreN = "energyOreN";
+    public static final String RemembranceOre = "remembranceOre";
+    public static final String RemembranceOreN = "remembranceOreN";
+    public static final String SerenityOre = "serenityOre";
+    public static final String TwilightOre = "twilightOre";
+    public static final String TwilightOreN = "twilightOreN";
+    public static final String TranquilOre = "tranquilOre";
+    public static final String BrightOre = "brightOre";
+    public static final String DarkOre = "darkOre";
+    public static final String DarkOreN = "darkOreN";
+    public static final String DarkOreE = "darkOreE";
+    public static final String LucidOre = "lucidOre";
+    
     //SoundNames
     public static final String Summon = "keyblade_summon";
     

@@ -388,7 +388,27 @@ public class ConfigurationHandler {
             IDs.DBlox = config.getBlock(Strings.DBlox  + " ID", IDs.DANGERBLOX_DEFAULT).getInt(IDs.DANGERBLOX_DEFAULT);
             IDs.BLBlox = config.getBlock(Strings.BLBlox  + " ID", IDs.BLBLOX_DEFAULT).getInt(IDs.BLBLOX_DEFAULT);
             IDs.Synthesis = config.getBlock(Strings.Synthesiser  + " ID", IDs.SYNTHESIS_DEFAULT).getInt(IDs.SYNTHESIS_DEFAULT);
-            
+            IDs.BlazingOre = config.getBlock(Strings.BlazingOre  + " ID", IDs.BLAZINGORE_DEFAULT).getInt(IDs.BLAZINGORE_DEFAULT);
+            //IDs.BlazingOreN = config.getBlock(Strings.BlazingOreN  + " ID", IDs.BLAZINGOREN_DEFAULT).getInt(IDs.BLAZINGOREN_DEFAULT);
+            IDs.LightningOre = config.getBlock(Strings.LightningOre  + " ID", IDs.LIGHTNINGORE_DEFAULT).getInt(IDs.LIGHTNINGORE_DEFAULT);
+            IDs.FrostOre = config.getBlock(Strings.FrostOre  + " ID", IDs.FROSTORE_DEFAULT).getInt(IDs.FROSTORE_DEFAULT);
+            IDs.DenseOre = config.getBlock(Strings.DenseOre  + " ID", IDs.DENSEORE_DEFAULT).getInt(IDs.DENSEORE_DEFAULT);
+            IDs.PowerOre = config.getBlock(Strings.PowerOre  + " ID", IDs.POWERORE_DEFAULT).getInt(IDs.POWERORE_DEFAULT);
+            IDs.PowerOreE = config.getBlock(Strings.PowerOreE  + " ID", IDs.POWEROREE_DEFAULT).getInt(IDs.POWEROREE_DEFAULT);
+            IDs.EnergyOre = config.getBlock(Strings.EnergyOre  + " ID", IDs.ENERGYORE_DEFAULT).getInt(IDs.ENERGYORE_DEFAULT);
+            //IDs.EnergyOreN = config.getBlock(Strings.EnergyOreN  + " ID", IDs.ENERGYOREN_DEFAULT).getInt(IDs.ENERGYOREN_DEFAULT);
+            IDs.RemembranceOre = config.getBlock(Strings.RemembranceOre  + " ID", IDs.REMEMBRANCEORE_DEFAULT).getInt(IDs.REMEMBRANCEORE_DEFAULT);
+            //IDs.RemembranceOreN = config.getBlock(Strings.RemembranceOreN  + " ID", IDs.REMEMBRANCEOREN_DEFAULT).getInt(IDs.REMEMBRANCEOREN_DEFAULT);
+            IDs.SerenityOre = config.getBlock(Strings.SerenityOre  + " ID", IDs.SERENITYORE_DEFAULT).getInt(IDs.SERENITYORE_DEFAULT);
+            IDs.TwilightOre = config.getBlock(Strings.TwilightOre  + " ID", IDs.TWILIGHTORE_DEFAULT).getInt(IDs.TWILIGHTORE_DEFAULT);
+            //IDs.TwilightOreN = config.getBlock(Strings.TwilightOreN  + " ID", IDs.TWILIGHTOREN_DEFAULT).getInt(IDs.TWILIGHTOREN_DEFAULT);
+            IDs.TranquilOre = config.getBlock(Strings.TranquilOre  + " ID", IDs.TRANQUILORE_DEFAULT).getInt(IDs.TRANQUILORE_DEFAULT);
+            IDs.BrightOre = config.getBlock(Strings.BrightOre  + " ID", IDs.BRIGHTORE_DEFAULT).getInt(IDs.BRIGHTORE_DEFAULT);
+            IDs.DarkOre = config.getBlock(Strings.DarkOre  + " ID", IDs.DARKORE_DEFAULT).getInt(IDs.DARKORE_DEFAULT);
+            //IDs.DarkOreN = config.getBlock(Strings.DarkOreN  + " ID", IDs.DARKOREN_DEFAULT).getInt(IDs.DARKOREN_DEFAULT);
+            IDs.DarkOreE = config.getBlock(Strings.DarkOreE + " ID", IDs.DARKOREE_DEFAULT).getInt(IDs.DARKOREE_DEFAULT);
+            IDs.LucidOre = config.getBlock(Strings.LucidOre  + " ID", IDs.LUCIDORE_DEFAULT).getInt(IDs.LUCIDORE_DEFAULT);
+
             //BOOLEANS
             final String GENERATE = config.CATEGORY_GENERAL + config.CATEGORY_SPLITTER + "World Generation";
             ConfigBooleans.enableGenerate = config.get(GENERATE, ConfigBooleans.enableGenerate_name, ConfigBooleans.enableGenerate_default).getBoolean(ConfigBooleans.enableGenerate_default);
