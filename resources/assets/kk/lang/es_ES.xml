@@ -223,26 +223,26 @@
     <entry key="item.endsoftheEarthChain.name">Llavero de Postrimería</entry>
 	<entry key="item.stormfallChain.name">Llavero de Argavieso</entry>
 	<!-- Kingdom Hearts -->
-	<entry key="item.destinysEmbrace.name">Llavero de Abrazo del Destino</entry>
-	<entry key="item.waytotheDawn.name">Llavero de Camino al Alba</entry>
-	<entry key="item.oneWingedAngel.name">Llavero de Fulgor Sefárico</entry>
-	<entry key="item.diamondDust.name">Llavero de Polvo de Diamante</entry>
-	<entry key="item.lionheart.name">Llavero de Lionheart</entry>
-	<entry key="item.metalChocobo.name">Llavero de Acero Chocobo</entry>
-	<entry key="item.spellbinder.name">Llavero de Examinadora</entry>
-	<entry key="item.divineRose.name">Llavero de La Rosa</entry>
-	<entry key="item.fairyHarp.name">Llavero de Arpa de Hada</entry>
-	<entry key="item.crabClaw.name">Llavero de Joya del Mar</entry>
-	<entry key="item.wishingStar.name">Llavero de Estrella Fugaz</entry>
-	<entry key="item.pumpkinHead.name">Llavero de Calabaza Macabra</entry>
-	<entry key="item.threeWishes.name">Llavero de Tres Deseos</entry>
-	<entry key="item.jungleKing.name">Llavero de Artesana</entry>
-	<entry key="item.olympia.name">Llavero de Heroica</entry>
-	<entry key="item.ladyLuck.name">Llavero de Último Recurso</entry>
-	<entry key="item.keybladeofPeoplesHearts.name">Llavero de Llave de los Corazones</entry>
-	<entry key="item.ultimaWeapon.name">Llavero de Arma Artema</entry>
-	<entry key="item.treasureTrove.name">Llavero de Tesoro Oculto</entry>
-	<entry key="item.starSeeker.name">Llavero de Buscador Estelar</entry>
+	<entry key="item.destinysEmbrace.name">Abrazo del Destino</entry>
+	<entry key="item.waytotheDawn.name">Camino al Alba</entry>
+	<entry key="item.oneWingedAngel.name">Fulgor Sefárico</entry>
+	<entry key="item.diamondDust.name">Polvo de Diamante</entry>
+	<entry key="item.lionheart.name">Lionheart</entry>
+	<entry key="item.metalChocobo.name">Acero Chocobo</entry>
+	<entry key="item.spellbinder.name">Examinadora</entry>
+	<entry key="item.divineRose.name">La Rosa</entry>
+	<entry key="item.fairyHarp.name">Arpa de Hada</entry>
+	<entry key="item.crabClaw.name">Joya del Mar</entry>
+	<entry key="item.wishingStar.name">Estrella Fugaz</entry>
+	<entry key="item.pumpkinHead.name">Calabaza Macabra</entry>
+	<entry key="item.threeWishes.name">Tres Deseos</entry>
+	<entry key="item.jungleKing.name">Artesana</entry>
+	<entry key="item.olympia.name">Heroica</entry>
+	<entry key="item.ladyLuck.name">Último Recurso</entry>
+	<entry key="item.keybladeofPeoplesHearts.name">Llave de los Corazones</entry>
+	<entry key="item.ultimaWeapon.name">Arma Artema</entry>
+	<entry key="item.treasureTrove.name">Tesoro Oculto</entry>
+	<entry key="item.starSeeker.name">Buscador Estelar</entry>
 	
 <!-- Org XIII -->
 	<entry key="item.eternalFlames.name">Eternal Flames</entry>
@@ -287,7 +287,24 @@
 	
 <!-- Otros -->
     <entry key="item.hPOrb.name">Orbe de HP</entry>
+    <entry key="item.1Munny.name">1 Platín</entry>
+    <entry key="item.5Munny.name">5 Platines</entry>
+    <entry key="item.10Munny.name">10 Platines</entry>
     <entry key="item.20Munny.name">20 Platines</entry>
+    <entry key="item.50Munny.name">50 Platines</entry>
+    <entry key="item.100Munny.name">100 Platines</entry>
+    <entry key="item.200Munny.name">200 Platines</entry>
+    <entry key="item.500Munny.name">500 Platines</entry>
+    <entry key="item.800Munny.name">800 Platines</entry>
+    <entry key="item.1000Munny.name">1000 Platines</entry>
+    <entry key="item.1200Munny.name">1200 Platines</entry>
+    <entry key="item.1500Munny.name">1500 Platines</entry>
+    <entry key="item.1800Munny.name">1800 Platines</entry>
+    <entry key="item.2000Munny.name">2000 Platines</entry>
+    <entry key="item.3000Munny.name">3000 Platines</entry>
+    <entry key="item.4000Munny.name">4000 Platines</entry>
+    <entry key="item.5000Munny.name">5000 Platines</entry>
+    <entry key="item.6000Munny.name">¡6000 Platines!</entry>
     <entry key="item.potion.name">Poción</entry>
     <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
 
@@ -321,12 +338,12 @@
     <entry key="tile.darkOre.name">Mena Oscura</entry>
     <entry key="tile.darkOreN.name">Mena Oscura</entry>
     <entry key="tile.darkOreE.name">Mena Oscura</entry>
-    <entry key="tile.lucidOre.name">¿Mena de Ocaso?</entry>
+    <entry key="tile.lucidOre.name">Mena de Ocaso</entry>
 <!-- Materiales -->
-	 <entry key="item.blazingShard.name">Guijarro Ígneo</entry>
+	<entry key="item.blazingShard.name">Guijarro Ígneo</entry>
     <entry key="item.frostShard.name">Guijarro Frío</entry>
     <entry key="item.lightningShard.name">Guijarro Luminoso</entry>
-    <entry key="item.lucidShard.name">¿Guijarro Ocaso?</entry>
+    <!-- Traduccion --><entry key="item.lucidShard.name">Guijarro de Ocaso</entry>
     <entry key="item.powerShard.name">Guijarro de Poder</entry>
     <entry key="item.darkShard.name">Guijarro Oscuro</entry>
     <entry key="item.denseShard.name">Guijarro Denso</entry>
@@ -340,7 +357,7 @@
     <entry key="item.blazingStone.name">Piedra Ígnea</entry>
     <entry key="item.frostStone.name">Piedra Fría</entry>
     <entry key="item.lightningStone.name">Piedra Luminosa</entry>
-    <entry key="item.lucidStone.name">Piedra de Ocaso</entry>
+    <!-- Traduccion --><entry key="item.lucidStone.name">Piedra de Ocaso</entry>
     <entry key="item.powerStone.name">Piedra de Poder</entry>
     <entry key="item.darkStone.name">Piedra Oscura</entry>
     <entry key="item.denseStone.name">Piedra Densa</entry>
@@ -354,7 +371,7 @@
     <entry key="item.blazingGem.name">Gema Ígnea</entry>
     <entry key="item.frostGem.name">Gema Fría</entry>
     <entry key="item.lightningGem.name">Gema Luminosa</entry>
-    <entry key="item.lucidGem.name">Gema de Ocaso</entry>
+    <!-- Traduccion --><entry key="item.lucidGem.name">Gema de Ocaso</entry>
     <entry key="item.powerGem.name">Gema de Poder</entry>
     <entry key="item.darkGem.name">Gema Oscura</entry>
     <entry key="item.denseGem.name">Gema Densa</entry>
@@ -368,7 +385,7 @@
     <entry key="item.blazingCrystal.name">Cristal Ígneo</entry>
     <entry key="item.frostCrystal.name">Cristal Frío</entry>
     <entry key="item.lightningCrystal.name">Cristal Luminosa</entry>
-    <entry key="item.lucidCrystal.name">Cristal de Ocaso</entry>
+    <!-- Traduccion --><entry key="item.lucidCrystal.name">Cristal de Ocaso</entry>
     <entry key="item.powerCrystal.name">Cristal de Poder</entry>
     <entry key="item.darkCrystal.name">Cristal Oscuro</entry>
     <entry key="item.denseCrystal.name">Cristal Denso</entry>
