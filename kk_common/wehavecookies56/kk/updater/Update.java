@@ -41,6 +41,11 @@ public class Update implements IConnectionHandler
 				System.out.println(modName + " " + currentVersion + " is up to date");
 				PrintToPlayer.printText((modName + " " + currentVersion + " is up to date"));
 			}
+			else if(newVersion == null)
+			{
+				System.out.println(modName + " could not check for updates");
+				PrintToPlayer.printText((modName + " could not check for updates"));
+			}
 			else
 			{
 				System.out.println("A new version " + newVersion + " is available for " + modName + "." + " You are running version " + currentVersion);
