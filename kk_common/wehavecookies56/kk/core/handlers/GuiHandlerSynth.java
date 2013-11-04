@@ -5,7 +5,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.client.gui.SynthGui;
+import wehavecookies56.kk.client.gui.SynthMGui;
 import wehavecookies56.kk.container.ContainerSynth;
+import wehavecookies56.kk.container.ContainerSynthM;
 import cpw.mods.fml.common.network.IGuiHandler;
 
 public class GuiHandlerSynth implements IGuiHandler{
@@ -16,6 +18,7 @@ public class GuiHandlerSynth implements IGuiHandler{
 		switch(id)
 		{
 		case 0: return id == 0 && world.getBlockId(x, y, z) == AddedBlocks.Synthesiser.blockID ? new ContainerSynth(player.inventory, world, x, y, z) : null;
+		case 1: return id == 1 && world.getBlockId(x, y, z) == AddedBlocks.SynthesiserMini.blockID ? new ContainerSynthM(player.inventory, world, x, y, z) : null;
 		}
 		return null;
 	}
@@ -26,6 +29,7 @@ public class GuiHandlerSynth implements IGuiHandler{
 		switch(id)
 		{
 		case 0: return id == 0 && world.getBlockId(x, y, z) == AddedBlocks.Synthesiser.blockID ? new SynthGui(player.inventory, world, x, y, z) : null;
+		case 1: return id == 1 && world.getBlockId(x, y, z) == AddedBlocks.SynthesiserMini.blockID ? new SynthMGui(player.inventory, world, x, y, z) : null;
 		}
 		return null;
 	}

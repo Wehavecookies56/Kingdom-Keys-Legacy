@@ -6,6 +6,10 @@ import net.minecraftforge.client.MinecraftForgeClient;
 import org.lwjgl.input.Keyboard;
 
 import wehavecookies56.kk.client.KeyBind;
+import wehavecookies56.kk.client.audio.SoundManager;
+import wehavecookies56.kk.client.model.ModelRedNocturne;
+import wehavecookies56.kk.client.render.BlockRenderBlastBlox;
+import wehavecookies56.kk.client.render.EntityRenderRedNocturne;
 import wehavecookies56.kk.client.render.ItemRenderEarthShaker;
 import wehavecookies56.kk.client.render.ItemRenderFenrir;
 import wehavecookies56.kk.client.render.ItemRenderKingdomKey;
@@ -19,15 +23,20 @@ import wehavecookies56.kk.client.render.ItemRenderStarLight;
 import wehavecookies56.kk.client.render.ItemRenderTotalEclipse;
 import wehavecookies56.kk.client.render.ItemRenderWaywardWind;
 import wehavecookies56.kk.client.render.ItemRenderZeroOne;
-import wehavecookies56.kk.client.render.RenderBlastBlox;
+import wehavecookies56.kk.core.handlers.KeyTickHandler;
+//import wehavecookies56.kk.core.handlers.ServerTickHandler;
 import wehavecookies56.kk.entities.EntityBlastBlox;
+import wehavecookies56.kk.entities.mob.EntityRedNocturne;
 import wehavecookies56.kk.item.AddedItems;
 
 import com.jadarstudios.developercapes.DevCapesUtil;
 
 import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
-//import com.jadarstudios.developercapes.DevCapesUtil;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.TickRegistry;
+import cpw.mods.fml.relauncher.Side;
+
 
 public class ClientProxy extends CommonProxy {
 	
@@ -49,10 +58,15 @@ public class ClientProxy extends CommonProxy {
          MinecraftForgeClient.registerItemRenderer(AddedItems.K41.itemID, new ItemRenderZeroOne());
          
          //Entities
-         RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new RenderBlastBlox());
+         RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new BlockRenderBlastBlox());
+         RenderingRegistry.registerEntityRenderingHandler(EntityRedNocturne.class, new EntityRenderRedNocturne(new ModelRedNocturne(), 0.5F));
+         EntityRegistry.registerGlobalEntityID(EntityRedNocturne.class, "Red Nocturne", EntityRegistry.findGlobalUniqueEntityId(), 3515848, 12102);
          
+         new SoundManager();
+         
+       
          //Capes
-         DevCapesUtil.getInstance().addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
+         DevCapesUtil.addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
     
          KeyBinding[] key = {new KeyBinding("Summon Keyblade", Keyboard.KEY_G)};
          boolean[] repeat = {false};

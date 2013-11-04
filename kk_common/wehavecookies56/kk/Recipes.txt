@@ -1,0 +1,118 @@
+Darkmatter = Lucidshard, Lucidshard, Lucidshard, Lucidshard, Lucidshard, Lucidshard, Lucidshard, Lucidshard, Lucidshard, Darkgem, Mythrilshard, Mythrilshard
+Mythrilshard = Densestone, Denseshard, Denseshard, Denseshard, Twilightstone, Twilightshard, Twilightshard, Twilightshard
+Mythrilstone = Densestone, Denseshard, Denseshard, Denseshard, Twilightstone, Twilightshard, Twilightshard, Twilightshard, Serenityshard
+Mythrilgem, Densecrystal, Densegem, Densegem, Densegem, Twilightgem, Twilightgem, Twilightgem, Twilightcrystal
+Mythrilcrystal = Densecrystal, Densegem, Densegem, Densegem, Twilightcrystal, Twilightgem, Twilightgem, Twilightgem, Serenitystone
+Serenitycrystal = Tranquilcrystal, Remembrancecrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal, Brightcrystal
+K1c = Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Energystone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K2c = Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Powerstone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K3c = Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Twilightstone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K4c = Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Darkstone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K5c = Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K6c = Blazingcrystal, Darkshard, Darkshard, Mythrilshard, Brightgem, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K7c = Orichalcumplus, Twilightcrystal, Mythrilcrystal, Darkgem, Darkgem, Lucidstone, Lucidstone, Lucidstone, Lucidstone, Brightshard, Brightshard, Frostgem, Munny1000
+K8c = Frostgem, Frostgem, Frostshard, Mythrilstone, Mythrilstone, Darkshard, Lucidstone, Powershard, Powershard, Munny1000
+K9c = Densegem, Denseshard, Denseshard, Darkcrystal, Darkgem, Twilightstone, Twilightshard, Twilightshard, Darkshard, Munny1000
+K10c = Shimmeringcrystal, Tranquilgem, Lightningshard, Lightningshard, Lightningshard, Brightstone, Munny1000
+K11c = Shimmeringcrystal, Serenitycrystal, Remembrancestone, Tranquilshard, Tranquilshard, Munny1000
+K12c = Lucidshard, Energycrystal, Powershard, Mythrilgem, Frostgem, Brightstone, Blazingshard, Blazingshard, Lightningshard, Munny1000
+K13c = Orichalcum, Darkcrystal, Twilightcrystal, Brightcrystal, Frostshard, Lucidstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K14c = Densecrystal, Mythrilshard, Mythrilgem, Mythrilgem, Brightshard, Brightstone, Brightshard, Frostshard, Lightningshard, Munny1000
+K15c = Powershard, Energyshard, Mythrilcrystal, Denseshard, Densestone, Darkstone, Lucidgem, Densecrystal, Blazingshard, Munny1000
+K16c = Powercrystal, Brightshard, Brightshard, Lucidgem, Tranquilstone, Tranquilgem, Mythrilshard, Munny1000
+K17c = Energygem, Powergem, Densestone, Denseshard, Denseshard, Brightstone, Brightgem, Energycrystal,  Munny1000
+K18c = Darkcrystal, Shimmeringcrystal, Mythrilshard, Mythrilshard, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K19c = Orichalcum, Darkmatter, Lucidgem, Mythrilgem, Blazingshard, Darkshard, Darkshard, Darkshard, Blazingstone, Darkstone, Munny1000
+K20c = Tranquilgem, Stick, Plank, Plank, Denseshard, Munny500
+K23c, Serenitycrystal, Brightcrystal, Mythrilgem, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny3000
+K24c, Orichalcumplus, Remembrancecrystal, Remembranceshard, Remembranceshard, Remembranceshard, Remembranceshard, Remembranceshard, Darkstone, Brightstone, Twilightstone, Munny1000
+K25c, Orichalcum, Blazingcrystal, Blazinggem, Mythrilgem, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Blazingstone, Blazingstone, Densestone, Twilightgem, Munny1000
+K26c, Orichalcumplus, Mythrilgem, Mythrilgem, Powershard, Powershard, Brightstone, Brightshard, Brightshard, Brightshard, Brightshard, Munny1000
+K27c, Serenitycrystal, Mythrilcrystal, Mythrilshard, Brightgem, Brightstone, Brightshard, Serenityshard, Serenityshard, Munny1000
+K28c, Orichalcumplus, Orichalcum, Mythrilcrystal, Brightstone, Brightstone, Brightstone, Powershard, Powershard, Energygem, Energyshard, Munny2000
+K29c, Darkmatter, Darkcrystal, Darkcrystal, Darkshard, Darkshard, Energystone, Energystone, Powerstone, Powershard, Energyshard, Powercrystal, Munny3000
+K30c, Orichalcum, Darkmatter, Darkmatter, Darkcrystal, Darkgem, Darkstone, Darkstone, Darkstone, Darkstone, Darkshard, Darkshard, Darkshard, Munny3000
+K31c, Shimmeringcrystal, Serenitycrystal, Serenityshard, Frostgem, Frostshard, Frostshard, Frostshard, Tranquilstone, Tranquilstone, Brightgem, Munny1000
+K32c, Mythrilcrystal, Serenitystone, Tranquilstone, Tranquilstone, Mythrilshard, Mythrilshard, Mythrilshard, Tranquilshard, Tranquilshard, Brightcrystal, Munny1000
+K33c, Powercrystal, Energycrystal, Mythrilgem, Densestone, Densestone, Lightningshard, Lightningshard, Lightningshard, Lightningshard, Lightningstone,  Munny1000
+K34c, Brightcrystal, Serenitycrystal, Lucidgem, Lucidshard, Lucidshard, Brightstone, Brightstone, Lucidstone, Serenitygem, Munny1000
+K35c, Orichalcum, Darkcrystal, Brightcrystal, Lightninggem, Brightstone, Lucidshard, Lightningstone, Darkshard, Munny1000
+K36c, Mythrilcrystal, Shimmeringcrystal, Densegem, Densestone, Brightstone, Brightshard, Brightshard, Denseshard, Denseshard, Denseshard, Munny1000
+K37c, Frostcrystal, Froststone, Froststone, Frostshard, Mythrilstone, Mythrilstone, Frostshard, Frostshard, Frostshard, Frostshard, Frostshard, Munny1000
+K38c, Lucidcrystal, Lucidshard, Lucidshard, Darkcrystal, Darkmatter, Darkstone, Darkstone, Darkshard, Densegem, Densestone, Densestone, Munny2000
+K39c, Orichalcumplus, Darkcrystal, Mythrilcrystal, Densecrystal, Darkgem, Darkstone, Darkstone, Densestone, Mythrilshard, Mythrilshard, Denseshard, Denseshard, Denseshard, Darkshard, Darkshard, Darkshard, Darkmatter, Munny1000
+K40c, Lucidcrystal, Lucidcrystal, Darkgem, Lucidgem, Darkshard, Darkshard, Darkshard, Darkshard, Darkshard, Darkshard, Munny1000
+K41c, Orichalcum, Energycrystal, Energygem, Energygem, Energystone, Energyshard, Powercrystal, Powergem, Powerstone, Powershard, Munny3000
+K42c, Remembrancecrystal, Tranquilcrystal, Mythrilgem, Tranquilgem, Remembrancestone, Remembrancestone, Tranquilstone, Tranquilstone, Tranquilshard, Tranquilshard, Tranquilshard, Remembranceshard, Munny1000
+K43c, Brightcrystal, Powercrystal, Shimmeringcrystal, Brightgem, Brightstone, Brightstone, Brightstone, Brightshard, Brightshard, Brightshard, Powershard, Munny2000
+K44c, Frostcrystal, Frostcrystal, Frostshard, Frostshard, Frostshard, Frostshard, Lightninggem, Lightningshard, Munny1000
+K45c, Orichalcumplus, Orichalcum, Mythrilshard, Mythrilshard, Denseshard, Denseshard, Densestone, Munny1000
+K46c, Twilightcrystal, Blazingcrystal, Twilightgem, Blazingstone, Blazingstone, Twilightshard, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K47c, Darkcrystal, Blazinggem, Blazinggem, Darkstone, Darkstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K48c, Orichalcum, Mythrilcrystal, Blazingshard, Blazingshard, Blazingstone, Blazingstone, Blazingstone, Blazingshard, Blazingshard, Munny1000
+K49c, Darkmatter, Darkmatter, Darkcrystal, Lucidgem, Lucidshard, Darkshard, Darkshard, Munny1000
+K50c, Orichalcum, Remembrancecrystal, Darkgem, Brightgem, Brightstone, Darkstone, Remembranceshard, Munny1000
+K51c, Serenitycrystal, Tranquilcrystal, Froststone, Froststone, Tranquilshard, Serenityshard, Serenityshard, Frostgem, Munny1000
+K52c, Orichalcum, Twilightcrystal, Darkgem, Brightgem, Brightstone, Darkstone, Twilightshard, Munny1000
+K53c, Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K54c, Darkgem, Serenitycrystal, Mythrilcrystal, Brightgem, Densestone, Brightstone, Brightshard, Brightshard, Munny1000
+K55c, Remembrancecrystal, Darkcrystal, Denseshard, Denseshard, Denseshard, Denseshard, Denseshard, Denseshard, Denseshard, Munny1000
+K56c, Orichalcum, Brightcrystal, Brightcrystal, Brightstone, Brightshard, Brightshard, Munny1000
+K57c, Mythrilcrystal, Mythrilcrystal, Mythrilgem, Mythrilgem, Mythrilstone, Mythrilstone, Mythrilshard, Mythrilshard, Munny1000
+K58c, Frostcrystal, Frostgem, Mythrilgem, Frostshard, Densestone, Frostshard, Frostgem, Munny1000
+K59c, Orichalcum, Orichalcum, Orichalcum, Darkgem, Densestone, Denseshard, Denseshard, Munny1000
+K60c, Brightcrystal, Serenitycrystal, Brightstone, Brightstone, Brightstone, Brightstone, Brightstone, Serenityshard, Munny1000
+K61c, Densecrystal, Lucidgem, Lucidgem, Mythrilgem, Densestone, Densestone, Lucidshard, Munny1000
+K62c, Orichalcum, Darkcrystal, Darkgem, Lucidgem, Darkshard, Darkshard, Munny1000
+K63c, Mythrilcrystal, Mythrilgem, Mythrilgem, Blazingshard, Blazingshard, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K64c, Remembrancecrystal, Shimmeringcrystal, Remembrancegem, Remembrancestone, Brightstone, Brightstone, Munny1000
+K65c, Orichalcumplus, Orichalcum, Mythrilgem, Mythrilgem, Blazinggem, Frostgem, Lightninggem, Munny3000
+K66c, Darkcrystal, Lucidcrystal, Darkgem, Densegem, Densestone, Densestone, Darkshard, Denseshard, Denseshard, Denseshard, Denseshard, Munny1000
+K67c, Powercrystal, Energycrystal, Powerstone, Energystone, Powerstone, Energystone, Powerstone, Energystone, Powershard, Energyshard, Munny1000
+K68c, Darkcrystal, Blazingcrystal, Blazingstone, Blazingstone, Blazingstone, Blazingshard, Blazingshard, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K69c, Lightningcrystal, Mythrilcrystal, Lightninggem, Lightninggem, Densestone, Densestone, Densestone, Densestone, Lightningshard, Lightningshard, Lightningshard, Lightningshard, Munny1000
+K70c, Tranquilcrystal, Serenitycrystal, Serenitygem, Tranquilstone, Tranquilstone, Serenityshard, Munny1000
+K71c, Orichalcum, Densecrystal, Mythrilgem, Mythrilgem, Brightstone, Brightstone, Brightstone, Denseshard, Denseshard, Denseshard, Denseshard, Denseshard, Munny1000
+K72c, Lightningcrystal, Lightninggem, Lightninggem, Lightningstone, Lightningshard, Serenitystone, Serenitystone, Serenitystone, Serenitystone, Munny1000
+K73c, Powercrystal, Powergem, Powergem, Mythrilgem, Powergem, Powerstone, Powershard, Energyshard, Energyshard, Energyshard, Energyshard, Munny1000
+K74c, Shimmeringcrystal, Tranquilgem, Frostgem, Frostgem, Froststone, Frostshard, Frostshard, Frostshard, Munny2000
+K75c, Remembrancecrystal, Serenitycrystal, Mythrilgem, Serenitystone, Serenityshard, Tranquilshard, Tranquilshard, Tranquilshard, Munny1000
+K76c, Remembrancecrystal, Serenitycrystal, Darkcrystal, Lucidstone, Lucidstone, Brightshard, Brightshard, Brightshard, Darkshard, Munny1000
+K77c, Shimmeringcrystal, Serenitycrystal, Brightgem, Mythrilgem, Brightstone, Brightshard, Brightshard, Munny1000
+K78c, Orichalcum, Serenitycrystal, Lightninggem, Lightningstone, Lightningstone, Lightningshard, Lightningshard, Lightningshard, Lightningshard, Munny1000
+K79c, Frostcrystal, Powercrystal, Mythrilgem, Mythrilshard, Mythrilshard, Mythrilshard, Frostshard, Munny1000
+K80c, Orichalcum, Lucidcrystal, Twilightgem, Mythrilgem, Twilightstone, Lucidstone, Lucidshard, Twilightshard, Munny1000
+K81c, Brightcrystal, Twilightcrystal, Brightstone, Densestone, Brightstone, Denseshard, Munny1000
+K82c, Orichalcum, Serenitycrystal, Mythrilgem, Mythrilgem, Energystone, Energystone, Powershard, Mythrilshard, Mythrilshard, Munny1000
+K83c, Orichalcumplus, Blazingcrystal, Darkgem, Blazingstone, Darkstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K84c, Densecrystal, Densegem, Densegem, Densegem, Densestone, Darkstone, Darkshard, Denseshard, Darkshard, Munny1000
+K85c, Frostcrystal, Frostgem, Frostgem, Frostgem, Froststone, Brightstone, Brightshard, Frostshard, Brightshard, Munny1000
+K86c, Serenitycrystal, Serenitycrystal, Shimmeringcrystal, Mythrilgem, Mythrilstone, Tranquilstone, Brightshard, Munny1000
+K87c, Orichalcum, Darkcrystal, Lightninggem, Twilightgem, Darkstone, Darkstone, Lightningshard, Lightningshard, Twilightshard, Twilightshard, Twilightshard, Twilightshard, Munny1000
+K88c, Orichalcumplus, Orichalcumplus, Orichalcum, Blazinggem, Blazingstone, Blazingstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K89c, Orichalcum, Frostcrystal, Frostgem, Frostgem, Froststone, Froststone, Frostshard, Frostshard, Frostshard, Frostshard, Frostshard, Munny1000
+K90c, Blazingcrystal, Blazingcrystal, Powercrystal, Powerstone, Powerstone, Blazingstone, Blazingshard, Blazingshard, Powershard, Powershard, Powershard, Munny1000
+K91c, Serenitycrystal, Serenitycrystal, Lightninggem, Lightninggem, Serenitystone, Serenitystone, Lightningshard, Lightningshard, Munny1000
+K92c, Orichalcum, Mythrilcrystal, Mythrilgem, Mythrilgem, Mythrilstone, Mythrilstone, Mythrilshard, Mythrilshard, Mythrilshard, Mythrilshard, Mythrilshard, Munny1000
+K93c, Brightcrystal, Brightgem, Brightgem, Brightgem, Brightgem, Densestone, Brightshard, Brightshard, Munny1000
+K94c, Twilightcrystal, Tranquilcrystal, Mythrilcrystal, Tranquilgem, Densestone, Twilightstone, Tranquilshard, Tranquilshard, Tranquilshard, Tranquilshard, Tranquilshard, Tranquilshard, Munny1000
+K95c, Frostcrystal, Frostcrystal, Mythrilgem, Frostgem, Froststone, Mythrilstone, Frostshard, Frostshard, Munny1000
+K96c, Densecrystal, Remembrancecrystal, Densegem, Remembrancegem, Remembrancestone, Remembranceshard, Remembranceshard, Munny1000
+K97c, Darkcrystal, Lucidcrystal, Darkgem, Lucidgem, Darkstone, Darkstone, Lucidshard, Lucidshard, Munny1000
+K98c, Densecrystal, Serenitycrystal, Mythrilcrystal, Mythrilgem, Densegem, Serenitygem, Mythrilstone, Densestone, Serenitystone, Mythrilshard, Denseshard, Serenityshard, Munny1000
+K99c, Energycrystal, Energystone, Energystone, Energystone, Energystone, Energyshard, Energyshard, Energyshard, Munny1000
+K100c, Orichalcumplus, Orichalcum, Mythrilgem, Mythrilgem, Serenitygem, Serenityshard, Munny1000
+K101c, Tranquilgem, Serenitygem, Tranquilshard, Tranquilshard, Tranquilshard, Serenitystone, Munny1000
+K102c, Orichalcumplus, Darkmatter, Darkcrystal, Lucidgem, Lucidstone, Darkstone, Darkshard, Munny1000
+K103c, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcumplus, Orichalcum, Mythrilcrystal, Densecrystal, Twilightcrystal, Serenitycrystal, Serenitycrystal, Serenitycrystal, Serenitycrystal, Serenitycrystal, Serenitycrystal, Serenitycrystal
+K104c, Orichalcum, Blazinggem, Lightninggem, Frostgem, Mythrilgem, Brightgem, Densegem, Munny2000
+K105c, Orichalcum, Serenitycrystal, Mythrilgem, Brightcrystal, Brightstone, Brightstone, Serenityshard, Brightshard, Munny1000
+K106c, Darkcrystal, Energygem, Mythrilstone, Lucidgem, Darkstone, Darkstone, Darkshard, Lucidshard, Munny1000
+K107c, Brightcrystal, Brightstone, Brightstone, Brightstone, Blazingshard, Lightningshard, Frostshard, Munny1000
+K108c, Frostcrystal, Brightcrystal, Serenitygem, Frostgem, Brightstone, Frostshard, Frostshard, Frostshard, Munny1000
+K109c, Orichalcum, Powercrystal, Darkgem, Lucidshard, Lucidshard, Lucidshard, Densestone, Munny1000
+K110c, Lightningcrystal, Lightningstone, Lightningstone, Lightningstone, Denseshard, Denseshard, Munny1000
+K111c, Serenitycrystal, Brightgem, Densestone, Brightstone, Brightshard, Brightshard, Munny1000
+K112c, Orichalcum, Brightcrystal, Mythrilgem, Mythrilgem, Densestone, Brightstone, Denseshard, Denseshard, Denseshard, Munny1000
+K113c, Serenitycrystal, Brightcrystal, Mythrilgem, Densestone, Brightstone, Blazingshard, Blazingshard, Blazingshard, Munny1000
+K114c, Orichalcum, Darkcrystal, Darkmatter, Mythrilgem, Densestone, Densestone, Powershard, Energyshard, Twilightshard, Munny1000

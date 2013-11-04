@@ -17,6 +17,7 @@ import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
+import wehavecookies56.kk.lib.UsefulArrays;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -26,6 +27,7 @@ public class ItemRainFell extends ItemSword implements IBattlegearWeapon{
     public ItemRainFell(int id, EnumToolMaterial rainFell) {
         super(id, rainFell);
         this.setCreativeTab(KingdomKeys.KHBBSTAB);
+        this.setContainerItem(AddedItems.K108c);
     }
     public void registerIcons(IconRegister par1IconRegister) {
         itemIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));

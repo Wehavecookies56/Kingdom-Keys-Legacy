@@ -2,7 +2,7 @@ package wehavecookies56.kk.lib;
 
 public class IDs {
     //ITEMS
-	public static int DarkOreN, DarkOreE, RemembranceOreN, PowerOreE, EnergyOreN, TwilightOreN, BlazingOreN, Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, ShinyCrystal, EternalFlames, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, DarkLeather, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, BlazingOre, LightningOre, FrostOre, DenseOre, PowerOre, EnergyOre, RemembranceOre, SerenityOre, TwilightOre, TranquilOre, BrightOre, DarkOre, LucidOre;
+	public static int SynthesisMini, KEHelm, KEChest, KELegs, KEBoots, Pouch, DarkOreN, DarkOreE, RemembranceOreN, PowerOreE, EnergyOreN, TwilightOreN, BlazingOreN, Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, ShinyCrystal, EternalFlames, HP, Munny, Potion, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OHelm, OChest, OLegs, OBoots, DarkLeather, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, KAHelm, KAChest, KALegs, KABoots, KTHelm, KTChest, KTLegs, KTBoots, KVHelm, KVChest, KVLegs, KVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, BlazingOre, LightningOre, FrostOre, DenseOre, PowerOre, EnergyOre, RemembranceOre, SerenityOre, TwilightOre, TranquilOre, BrightOre, DarkOre, LucidOre;
 
 	//Keyblades
     public static final int ETERNALFLAMES_DEFAULT = 29999;
@@ -268,7 +268,11 @@ public class IDs {
     public static final int DISC6_DEFAULT = 30355; 
     public static final int DISC7_DEFAULT = 30356; 
     public static final int DISC8_DEFAULT = 30357; 
-    public static final int DISC9_DEFAULT = 30358; 
+    public static final int DISC9_DEFAULT = 30358;
+    public static final int KEHELM_DEFAULT = 30359;
+    public static final int KECHEST_DEFAULT = 30360;
+    public static final int KELEGS_DEFAULT = 30361;
+    public static final int KEBOOTS_DEFAULT = 30362;
     
     //Synthesis Materials
     //Blazing
@@ -366,6 +370,8 @@ public class IDs {
     public static final int MUNNY4000_DEFAULT = 30474;  
     public static final int MUNNY5000_DEFAULT = 30475;  
     public static final int MUNNY6000_DEFAULT = 30476;  
+    
+    public static final int POUCH_DEFAULT = 30477;  
     //BLOCKS
     public static int NBlox, HBlox, MBlox, PBlox, RPBlox, BBlox, DBlox, BLBlox, Synthesis;
     
@@ -399,6 +405,7 @@ public class IDs {
     public static final int TWILIGHTOREN_DEFAULT = 2626;
     public static final int DARKOREE_DEFAULT = 2627;
     public static final int POWEROREE_DEFAULT = 2628;
+    public static final int SYNTHESISMINI_DEFAULT = 2629;
     
     //ENCHANTMENTS
     public static int HeartHarvest;

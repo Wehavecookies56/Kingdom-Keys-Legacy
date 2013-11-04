@@ -262,10 +262,10 @@
 	<entry key="item.Organization XIII.name">Music Disc</entry>
 	<entry key="item.No More Bugs -Bug Version-.name">Music Disc</entry>
 	<entry key="item.Sinister Sundown.name">Music Disc</entry>
-    <entry key="item.organizationHood.name">Hood Of The Organization</entry>
-    <entry key="item.organizationCoat.name">Coat Of The Organization</entry>
-    <entry key="item.organizationLegs.name">Leggings Of The Organization</entry>
-    <entry key="item.organizationBoots.name">Boots Of The Organization</entry>
+    <entry key="item.organizationHood.name">Dark Robe Hood</entry>
+    <entry key="item.organizationCoat.name">Dark Robe Coat</entry>
+    <entry key="item.organizationLegs.name">Dark Robe Leggings</entry>
+    <entry key="item.organizationBoots.name">Dark Robe Boots</entry>
     <entry key="item.hPOrb.name">HP Orb</entry>
     <entry key="item.1Munny.name">1 Munny</entry>
     <entry key="item.5Munny.name">5 Munny</entry>
@@ -299,6 +299,10 @@
     <entry key="item.keybladeVChest.name">Keyblade Armor Chestplate</entry>
     <entry key="item.keybladeVLegs.name">Keyblade Armor Leggings</entry>
     <entry key="item.keybladeVBoots.name">Keyblade Armor Boots</entry>
+    <entry key="item.keybladeEHelm.name">Armor Of The Master Helmet</entry>
+    <entry key="item.keybladeEChest.name">Armor Of The Master Chestplate</entry>
+    <entry key="item.keybladeELegs.name">Armor Of The Master Leggings</entry>
+    <entry key="item.keybladeEBoots.name">Armor Of The Master Boots</entry>
     <entry key="item.blazingShard.name">Blazing Shard</entry>
     <entry key="item.frostShard.name">Frost Shard</entry>
     <entry key="item.lightningShard.name">Lightning Shard</entry>
@@ -368,7 +372,8 @@
     <entry key="tile.dangerBlox.name">Danger Blox</entry>
     <entry key="tile.bounceBlox.name">Bounce Blox</entry>
 	<entry key="tile.blastBlox.name">Blast Blox</entry>
-    <entry key="tile.synthesiser.name">Synthesis Table</entry>
+    <entry key="tile.synthesiser.name">Synthesis Table Mk2</entry>
+    <entry key="tile.synthesiserMini.name">Synthesis Table Mk1</entry>
     <entry key="tile.blazingOre.name">Blazing Ore</entry>
     <entry key="tile.blazingOreN.name">Blazing Ore</entry>
     <entry key="tile.lightningOre.name">Lightning Ore</entry>
@@ -391,6 +396,7 @@
     <entry key="tile.lucidOre.name">Lucid Ore</entry>
     <!-- Creative Tab -->
     <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
+    <entry key="itemgroup.KKSMTAB">Kingdom Keys: Synthesis Materials</entry>
     <entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>
     <entry key="itemgroup.KHIITAB">Kingdom Keys: Kingdom Hearts II</entry>
     <entry key="itemgroup.KHCHITAB">Kingdom Keys: Kingdom Hearts Chi</entry>

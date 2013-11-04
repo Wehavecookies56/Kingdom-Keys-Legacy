@@ -2,10 +2,14 @@ package wehavecookies56.kk.client;
 
 import java.util.EnumSet;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.network.packet.Packet250CustomPayload;
+import wehavecookies56.kk.core.handlers.SummonEventHandler;
+//import wehavecookies56.kk.core.handlers.SummonEventHandler;
 import wehavecookies56.kk.item.keyblades.*;
 import wehavecookies56.kk.lib.Reference;
+import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler;
 import cpw.mods.fml.common.TickType;
 import cpw.mods.fml.common.network.PacketDispatcher;
@@ -252,7 +256,7 @@ public class KeyBind extends KeyHandler{
 	@Override
 	public void keyDown(EnumSet<TickType> types, KeyBinding kb, boolean tickEnd, boolean isRepeat)
 	{
-		PacketDispatcher.sendPacketToServer(new Packet250CustomPayload(Reference.CHANNEL_NAME, new byte[]{1}));
+		SummonEventHandler.sendPacket(Minecraft.getMinecraft().thePlayer);
 		keyHasBeenPressed = true;
 		keyHasBeenPressedK1 = true;
 		keyHasBeenPressedK2 = true;
@@ -486,6 +490,8 @@ public class KeyBind extends KeyHandler{
 	@Override
 	public void keyUp(EnumSet<TickType> types, KeyBinding kb, boolean tickEnd)
 	{
+		//PacketDispatcher.sendPacketToServer(new Packet250CustomPayload(Reference.CHANNEL_NAME, new byte[]{0}));
+		
 		if (keyHasBeenPressed) {
 			keyHasBeenPressed = false;
 			keyPressed = true;
@@ -1641,7 +1647,7 @@ public class KeyBind extends KeyHandler{
 	@Override
 	public String getLabel()
 	{
-		return null;
+		return "Keyblade summon Keyhandler";
 	}
 }
 

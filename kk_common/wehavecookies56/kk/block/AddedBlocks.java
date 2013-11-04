@@ -13,7 +13,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class AddedBlocks {
 
     public static Block
-    NormalBlox, HardBlox, MetalBlox, PrizeBlox, RarePrizeBlox, BounceBlox, DangerBlox, BlastBlox, Synthesiser, BlazingOre, BlazingOreN, LightningOre, FrostOre, DenseOre, PowerOre, PowerOreE, EnergyOre, EnergyOreN, RemembranceOre, RemembranceOreN, SerenityOre, TwilightOre, TwilightOreN, TranquilOre, BrightOre, DarkOre, DarkOreN, DarkOreE, LucidOre;
+    SynthesiserMini, NormalBlox, HardBlox, MetalBlox, PrizeBlox, RarePrizeBlox, BounceBlox, DangerBlox, BlastBlox, Synthesiser, BlazingOre, BlazingOreN, LightningOre, FrostOre, DenseOre, PowerOre, PowerOreE, EnergyOre, EnergyOreN, RemembranceOre, RemembranceOreN, SerenityOre, TwilightOre, TwilightOreN, TranquilOre, BrightOre, DarkOre, DarkOreN, DarkOreE, LucidOre;
 
     public static void preinit(){
     	//Bug Blox
@@ -25,7 +25,8 @@ public class AddedBlocks {
         BounceBlox = new BlockBounceBlox(IDs.BBlox, Material.iron); GameRegistry.registerBlock(BounceBlox, Strings.BBlox);
         DangerBlox = new BlockDangerBlox(IDs.DBlox, Material.iron); GameRegistry.registerBlock(DangerBlox, Strings.DBlox);
         BlastBlox = new BlockBlastBlox(IDs.BLBlox); GameRegistry.registerBlock(BlastBlox, Strings.BLBlox);
-        Synthesiser = new BlockSynthesis(IDs.Synthesis); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);        
+        Synthesiser = new BlockSynthesis(IDs.Synthesis); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);      
+        SynthesiserMini = new BlockSynthesisMini(IDs.SynthesisMini); GameRegistry.registerBlock(SynthesiserMini, Strings.SynthesiserMini);      
         //Synthesis ores
         BlazingOre = new BlockBlazingOre(IDs.BlazingOre, Material.rock); GameRegistry.registerBlock(BlazingOre, Strings.BlazingOre); MinecraftForge.setBlockHarvestLevel(BlazingOre, "pickaxe", 1);
         //BlazingOreN = new BlockBlazingOreN(IDs.BlazingOreN, Material.rock); GameRegistry.registerBlock(BlazingOreN, Strings.BlazingOreN); MinecraftForge.setBlockHarvestLevel(BlazingOreN, "pickaxe", 1);
@@ -49,48 +50,4 @@ public class AddedBlocks {
         LucidOre = new BlockLucidOre(IDs.LucidOre, Material.rock); GameRegistry.registerBlock(LucidOre, Strings.LucidOre); MinecraftForge.setBlockHarvestLevel(LucidOre, "pickaxe", 2);
     } 
     
-
-    public static void initBlockRecipes(){
-        //Blast blox recipe
-    	GameRegistry.addRecipe(new ItemStack(BlastBlox), new Object[]{
-        	"NLN",
-            "HTH",
-            "NHN",
-            'N', NormalBlox, 'L', Item.bucketLava , 'H', HardBlox, 'T', Block.tnt  
-    });
-    	//Bounce blox recipe
-    	GameRegistry.addRecipe(new ItemStack(BounceBlox), new Object[]{
-        	"MMM",
-            "HPH",
-            "NNN",
-            'N', NormalBlox, 'P', Block.pistonBase , 'H', HardBlox, 'M', MetalBlox  
-    });
-    	GameRegistry.addRecipe(new ItemStack(NormalBlox), new Object[]{
-        	"ED",
-            "DE",
-            'E', Block.whiteStone, 'D', Block.dirt
-    });
-    	GameRegistry.addRecipe(new ItemStack(HardBlox), new Object[]{
-        	"ES",
-            "SE",
-            'E', Block.whiteStone, 'S', Block.stone
-    });
-    	GameRegistry.addRecipe(new ItemStack(MetalBlox), new Object[]{
-        	"EI",
-            "IE",
-            'E', Block.whiteStone, 'I', Item.ingotIron
-    });
-    	GameRegistry.addRecipe(new ItemStack(NormalBlox), new Object[]{
-        	"ED",
-            "DE",
-            'E', Block.whiteStone, 'D', Block.dirt
-    });
-    	GameRegistry.addRecipe(new ItemStack(Synthesiser), new Object[]{
-        	"MCM",
-            "H5N",
-            "OHO",
-            'M', MetalBlox, 'C', Block.workbench, 'H', HardBlox, '5', AddedItems.Munny500, 'N', NormalBlox, 'O', AddedItems.HP
-    });
-    	
-    }
 }

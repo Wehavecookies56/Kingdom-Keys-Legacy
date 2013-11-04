@@ -290,6 +290,11 @@ public class Strings {
     public static final String KVChest = "keybladeVChest";
     public static final String KVLegs = "keybladeVLegs";
     public static final String KVBoots = "keybladeVBoots";
+    
+    public static final String KEHelm = "keybladeEHelm";
+    public static final String KEChest = "keybladeEChest";
+    public static final String KELegs = "keybladeELegs";
+    public static final String KEBoots = "keybladeEBoots";
     //Other
     public static final String DLeather = "leatherDarkness";
     public static final String HP = "hPOrb";
@@ -313,6 +318,7 @@ public class Strings {
     public static final String Munny6000 = "6000Munny";
     public static final String Potion = "potion";
     public static final String Synthesiser = "synthesiser";
+    public static final String SynthesiserMini = "synthesiserMini";
     //Synthesis Materials
     //Blazing
     public static final String BlazingShard = "blazingShard";
@@ -391,6 +397,8 @@ public class Strings {
     //Shiny
     public static final String ShinyCrystal = "shimmeringCrystal";
     
+    public static final String Pouch = "pouch";
+    
     //Synthesis Ores
     public static final String BlazingOre = "blazingOre";
     public static final String BlazingOreN = "blazingOreN";
@@ -414,6 +422,6 @@ public class Strings {
     public static final String LucidOre = "lucidOre";
     
     //SoundNames
-    public static final String Summon = "keyblade_summon";
+    public static final String Summon = "keybladesummon";
     
 }

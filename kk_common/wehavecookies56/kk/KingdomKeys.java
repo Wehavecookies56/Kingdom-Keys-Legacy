@@ -5,13 +5,15 @@ import java.util.logging.Level;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 import wehavecookies56.kk.block.AddedBlocks;
-import wehavecookies56.kk.client.audio.SoundManager;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
 import wehavecookies56.kk.core.handlers.GuiHandlerSynth;
+import wehavecookies56.kk.core.handlers.KeyTickHandler;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
-import wehavecookies56.kk.core.handlers.PacketHandler;
+import wehavecookies56.kk.core.handlers.SummonPacketHandler;
 import wehavecookies56.kk.core.helper.LogHelper;
 import wehavecookies56.kk.core.proxies.ClientProxy;
 import wehavecookies56.kk.core.proxies.CommonProxy;
@@ -26,8 +28,10 @@ import wehavecookies56.kk.creativetab.KKSMTAB;
 import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.enchantments.EnchantHeartHarvest;
 import wehavecookies56.kk.entities.EntityBlastBlox;
+import wehavecookies56.kk.entities.mob.EntityRedNocturne;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
+import wehavecookies56.kk.lib.Recipes;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.mob.DarkHeartDrops;
 import wehavecookies56.kk.mob.HeartDrops;
@@ -41,6 +45,8 @@ import wehavecookies56.kk.mob.Munny5Drops;
 import wehavecookies56.kk.mob.PureHeartDrops;
 import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -54,10 +60,13 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.common.registry.TickRegistry;
+import cpw.mods.fml.relauncher.Side;
+//import wehavecookies56.kk.core.handlers.MPTickHandler;
 
 @Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER) 
 
-@NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = (Reference.CHANNEL_NAME), packetHandler = PacketHandler.class)
+@NetworkMod(clientSideRequired=true, serverSideRequired=false, channels = ("summon"), packetHandler = SummonPacketHandler.class)
 
 
 
@@ -90,6 +99,9 @@ public class KingdomKeys {
     //Enchanment
     public static final Enchantment HarvestHearts = new EnchantHeartHarvest(52, 1);
     
+    //Mob
+    //public static int getUniqueEntityID
+    
     private GuiHandlerSynth guiHandlerSynth = new GuiHandlerSynth();
     
     //Pre initialisation
@@ -97,7 +109,7 @@ public class KingdomKeys {
     public void preInit(FMLPreInitializationEvent event) {
     	LogHelper.init();
         LogHelper.log(Level.INFO, "Preparing configuration file");
-        ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
+        ConfigurationHandler.preConfig(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_NAME + ".cfg"));
         LogHelper.log(Level.INFO, "Preparing keyblades");
         AddedItems.initKeyBlades();
         LogHelper.log(Level.INFO, "Preparing items");
@@ -110,7 +122,6 @@ public class KingdomKeys {
         AddedBlocks.preinit();
         LogHelper.log(Level.INFO, "Preparing language files");
         LocalizationHandler.loadLanguages();
-        AddedBlocks.initBlockRecipes();
         LanguageRegistry.instance().addStringLocalization("itemGroup.KKTAB", "en_US", "Kingdom Keys");
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHTAB", "en_US", "Kingdom Keys: Kingdom Hearts");
         LanguageRegistry.instance().addStringLocalization("itemGroup.KHIITAB", "en_US", "Kingdom Keys: Kingdom Hearts II");
@@ -131,15 +142,17 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new Munny20Drops());
         MinecraftForge.EVENT_BUS.register(new Munny50Drops());
         MinecraftForge.EVENT_BUS.register(new Munny1000Drops());
-        MinecraftForge.EVENT_BUS.register(new SoundManager());
-
+        //MinecraftForge.EVENT_BUS.register(new SoundManager());
     }
     
     //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
+    	 TickRegistry.registerTickHandler(new KeyTickHandler(), Side.SERVER);
+    	//MinecraftForge.EVENT_BUS.register(new MPTickHandler());
         LogHelper.log(Level.INFO, "Preparing recipes");
-        AddedItems.initItemrecipes();
+        Recipes.initShapedRecipes();
+        Recipes.initShapelessRecipes();
     	NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
         LogHelper.log(Level.INFO, "Preparing world generation");
         GameRegistry.registerWorldGenerator(worldGen);
@@ -151,6 +164,14 @@ public class KingdomKeys {
         if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
+        //ntityRegistry.registerGlobalEntityID(EntityRedNocturne.class, "Red Nocturne", 1);
+        //EntityRegistry.registerModEntity(EntityRedNocturne.class, "Red Nocturne", 2, this, 80, 3, true);
+        //EntityRegistry.addSpawn(EntityRedNocturne.class, 5, 2, 20, EnumCreatureType.creature, BiomeGenBase.desert);
+        //EntityRegistry.findGlobalUniqueEntityId();
+        //rengisterEntityEgg(EntityRedNocturne.class, 0xFF1000, 0xFFD51C);
+        //RenderingRegistry.registerEntityRenderingHandler(EntityRedNocturne.class, new RenderRedNocturne), new RedNocturne(),0.3)); 
+        LanguageRegistry.instance().addStringLocalization("entity..RedNocturne.name", "Red Nocturne");
+        final Side side = FMLCommonHandler.instance().getEffectiveSide();
         }
         
         

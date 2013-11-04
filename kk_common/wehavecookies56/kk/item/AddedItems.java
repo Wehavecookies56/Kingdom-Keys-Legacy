@@ -5,8 +5,6 @@ import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.nbt.NBTTagString;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.EnumHelper;
@@ -81,10 +79,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class AddedItems {
 
-	public static Item Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, MysteryGoo, ShinyCrystal, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, EternalFlames;
-	public static EnumArmorMaterial OrganizationArmourMaterial, KeybladeAArmourMaterial, KeybladeTArmourMaterial, KeybladeVArmourMaterial;
+	public static Item Pouch, Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, MysteryGoo, ShinyCrystal, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeEHelm, KeybladeEChest, KeybladeELegs, KeybladeEBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, EternalFlames;
+	public static EnumArmorMaterial OrganizationArmourMaterial, KeybladeAArmourMaterial, KeybladeTArmourMaterial, KeybladeVArmourMaterial, KeybladeEArmourMaterial;
 	public static EnumToolMaterial VulpeusMaterial, UrsusMaterial, UnicornisMaterial, K4m, K5m, K6m, K7m, K8m, K9m, K10m, K11m, K12m, K13m, K14m, K15m, K16m, K17m, K18m, K19m, K20m, K21m, K22m, K23m, K24m, K25m, K26m, K27m, K28m, K29m, K30m, K31m, K32m, K33m, K34m, K35m, K36m, K37m, K38m, K39m, K40m, K41m, K42m, K43m, K44m, K45m, K46m, K47m, K48m, K49m, K50m, K51m, K52m, K53m, K54m, K55m, K56m, K57m, K58m, K59m, K60m, K61m, K62m, K63m, K64m, K65m, K66m, K67m, K68m, K69m, K70m, K71m, K72m, K73m, K74m, K75m, K76m, K77m, K78m, K79m, K80m, K81m, K82m, K83m, K84m, K85m, K86m, K87m, K88m, K89m, K90m, K91m, K92m, K93m, K94m, K95m, K96m, K97m, K98m, K99m, K100m, K101m, K102m, K103m, K104m, K105m, K106m, K107m, K108m, K109m, K110m, K111m, K112m, K113m, K114m, EternalFlamesMaterial;
 
+	static int chainStackSize = 1;
+	
 	public static void initKeyBlades(){
 		//EternalFlamesMaterial = EnumHelper.addToolMaterial(Strings.EternalFlames, 3, -1, 6.0F, 16, 30); EternalFlames = new ItemEternalFlames(IDs.EternalFlames, EternalFlamesMaterial).setFull3D().setUnlocalizedName(Strings.EternalFlames);
 		VulpeusMaterial = EnumHelper.addToolMaterial(Strings.Vulpeus, 3, -1, 6.0F, 16, 30); Vulpeus = new ItemVulpeus(IDs.Vulpeus, VulpeusMaterial).setFull3D().setUnlocalizedName(Strings.Vulpeus);
@@ -201,120 +201,121 @@ public class AddedItems {
 		K108m = EnumHelper.addToolMaterial(Strings.Rainfell, 3, -1, 6.0F, 6, 30); K108 = new ItemRainFell(IDs.K108, K108m).setFull3D().setUnlocalizedName(Strings.Rainfell);
 		K107m = EnumHelper.addToolMaterial(Strings.Starlight, 3, -1, 6.0F, 6, 30); K107 = new ItemStarLight(IDs.K107, K107m).setFull3D().setUnlocalizedName(Strings.Starlight);
 		K106m = EnumHelper.addToolMaterial(Strings.Souleater, 3, -1, 6.0F, 12, 30); K106 = new ItemSoulEater(IDs.K106, K106m).setFull3D().setUnlocalizedName(Strings.Souleater);
-		K1c = new ItemVulpeusChain(IDs.K1c).setUnlocalizedName(Strings.VulpeusChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K2c = new ItemUrsusChain(IDs.K2c).setUnlocalizedName(Strings.UrsusChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K3c = new ItemUnicornisChain(IDs.K3c).setUnlocalizedName(Strings.UnicornisChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K4c = new ItemLeopardosChain(IDs.K4c).setUnlocalizedName(Strings.LeopardosChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K5c = new ItemAnguisChain(IDs.K5c).setUnlocalizedName(Strings.AnguisChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K6c = new ItemLeasKeybladeChain(IDs.K6c).setUnlocalizedName(Strings.LeaskeybladeChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K7c = new ItemYoungXehanortChain(IDs.K7c).setUnlocalizedName(Strings.YoungxehanortskeybladeChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K8c = new ItemOceanRageChain(IDs.K8c).setUnlocalizedName(Strings.OceanrageChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K9c = new ItemEndOfPainChain(IDs.K9c).setUnlocalizedName(Strings.EndofpainChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K10c = new ItemUnboundChain(IDs.K10c).setUnlocalizedName(Strings.UnboundChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K11c = new ItemSweetDreamsChain(IDs.K11c).setUnlocalizedName(Strings.SweetdreamsChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K12c = new ItemDiveWingChain(IDs.K12c).setUnlocalizedName(Strings.DivewingChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K13c = new ItemCounterPointChain(IDs.K13c).setUnlocalizedName(Strings.CounterpointChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K14c = new ItemAllForOneChain(IDs.K14c).setUnlocalizedName(Strings.AllforoneChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K15c = new ItemKnockoutPunchChain(IDs.K15c).setUnlocalizedName(Strings.KnockoutpunchChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K16c = new ItemFerrisGearChain(IDs.K16c).setUnlocalizedName(Strings.FerrisgearChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K17c = new ItemDualDiscChain(IDs.K17c).setUnlocalizedName(Strings.DualdiscChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K18c = new ItemGuardianBellChain(IDs.K18c).setUnlocalizedName(Strings.GuardianbellChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K19c = new ItemSkullNoiseChain(IDs.K19c).setUnlocalizedName(Strings.SkullnoiseChain).setCreativeTab(KingdomKeys.KHDDDTAB);
-		K20c = new ItemWoodenKeybladeChain(IDs.K20c).setUnlocalizedName(Strings.WoodenkeybladeChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K21c = new ItemKyeBladeBrokenChain(IDs.K21c).setUnlocalizedName(Strings.KyebladebrokenChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K22c = new ItemKyeBladeChain(IDs.K22c).setUnlocalizedName(Strings.KyebladeChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K23c = new ItemLightSeekerChain(IDs.K23c).setUnlocalizedName(Strings.LightseekerChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K24c = new ItemLostMemoryChain(IDs.K24c).setUnlocalizedName(Strings.LostmemoryChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K25c = new ItemFrolicFlameChain(IDs.K25c).setUnlocalizedName(Strings.FrolicflameChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K26c = new ItemMasterKeeperChain(IDs.K26c).setUnlocalizedName(Strings.MasterkeeperChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K27c = new ItemBrightCrestChain(IDs.K27c).setUnlocalizedName(Strings.BrigthcrestChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K28c = new ItemCrownUnlimitChain(IDs.K28c).setUnlocalizedName(Strings.CrownunlimitChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K29c = new ItemNoNameChain(IDs.K29c).setUnlocalizedName(Strings.NonameChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K30c = new ItemVoidGearChain(IDs.K30c).setUnlocalizedName(Strings.VoidgearChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K31c = new ItemSweetStackChain(IDs.K31c).setUnlocalizedName(Strings.SweetstackChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K32c = new ItemPixiePetalChain(IDs.K32c).setUnlocalizedName(Strings.PixiepetalChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K33c = new ItemHyperDriveChain(IDs.K33c).setUnlocalizedName(Strings.HyperdriveChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K34c = new ItemMarkOfAHeroChain(IDs.K34c).setUnlocalizedName(Strings.MarkofaheroChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K35c = new ItemVictoryLineChain(IDs.K35c).setUnlocalizedName(Strings.VictorylineChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K36c = new ItemFairyStarsChain(IDs.K36c).setUnlocalizedName(Strings.FairystarsChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K37c = new ItemStrokeOfMidnightChain(IDs.K37c).setUnlocalizedName(Strings.StrokeofmidnightChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K38c = new ItemChaosRipperChain(IDs.K38c).setUnlocalizedName(Strings.ChaosripperChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K39c = new ItemXehanortsKeybladeChain(IDs.K39c).setUnlocalizedName(Strings.XehanortskeybladeChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K40c = new ItemDarkGnawChain(IDs.K40c).setUnlocalizedName(Strings.DarkgnawChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K41c = new ItemZeroOneChain(IDs.K41c).setUnlocalizedName(Strings.ZerooneChain).setCreativeTab(KingdomKeys.KHRECODEDTAB);
-		K42c = new ItemDreamSwordChain(IDs.K42c).setUnlocalizedName(Strings.DreamswordChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K43c = new ItemAubadeChain(IDs.K43c).setUnlocalizedName(Strings.AubadeChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K44c = new ItemUmbrellaChain(IDs.K44c).setUnlocalizedName(Strings.UmbrellaChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K45c = new ItemOmegaWeaponChain(IDs.K45c).setUnlocalizedName(Strings.OmegaweaponChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K46c = new ItemTwilightBlazeChain(IDs.K46c).setUnlocalizedName(Strings.TwilightblazeChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K47c = new ItemMaverickFlareChain(IDs.K47c).setUnlocalizedName(Strings.MaverickflareChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K48c = new ItemAstralBlastChain(IDs.K48c).setUnlocalizedName(Strings.AstralblastChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K49c = new ItemDarkerThanDarkChain(IDs.K49c).setUnlocalizedName(Strings.DarkerthandarkChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K50c = new ItemLunarEclipseChain(IDs.K50c).setUnlocalizedName(Strings.LunareclipseChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K51c = new ItemSilentDirgeChain(IDs.K51c).setUnlocalizedName(Strings.SilentdirgeChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K52c = new ItemTotalEclipseChain(IDs.K52c).setUnlocalizedName(Strings.TotaleclipseChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K53c = new ItemGlimpseOfDarknessChain(IDs.K53c).setUnlocalizedName(Strings.GlimpseofdarknessChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K54c = new ItemMidnightRoarChain(IDs.K54c).setUnlocalizedName(Strings.MidnightroarChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K55c = new ItemRejectionOfFateChain(IDs.K55c).setUnlocalizedName(Strings.RejectionoffateChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K56c = new ItemTrueLightsFlightChain(IDs.K56c).setUnlocalizedName(Strings.TruelightsflightChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K57c = new ItemLeviathanChain(IDs.K57c).setUnlocalizedName(Strings.LeviathanChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K58c = new ItemAbyssalTideChain(IDs.K58c).setUnlocalizedName(Strings.AbyssaltideChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K59c = new ItemCrownOfGuiltChain(IDs.K59c).setUnlocalizedName(Strings.CrownofguiltChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K60c = new ItemSignOfInnocenceChain(IDs.K60c).setUnlocalizedName(Strings.SignofinnocenceChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K61c = new ItemPainOfSolitudeChain(IDs.K61c).setUnlocalizedName(Strings.PainofsolitudeChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K62c = new ItemAbaddonPlasmaChain(IDs.K62c).setUnlocalizedName(Strings.AbbadonplasmaChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K63c = new ItemOminousBlightChain(IDs.K63c).setUnlocalizedName(Strings.OminousblightChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K64c = new ItemMissingAcheChain(IDs.K64c).setUnlocalizedName(Strings.MissingacheChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K65c = new ItemWinnersProofChain(IDs.K65c).setUnlocalizedName(Strings.WinnersproofChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K66c = new ItemFatalCrestChain(IDs.K66c).setUnlocalizedName(Strings.FatalcrestChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K67c = new ItemTwoBecomeOneChain(IDs.K67c).setUnlocalizedName(Strings.TwobecomesoneChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K68c = new ItemBondOfFlameChain(IDs.K68c).setUnlocalizedName(Strings.BondofflameChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K69c = new ItemFenrirChain(IDs.K69c).setUnlocalizedName(Strings.FenrirChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K70c = new ItemSleepingLionChain(IDs.K70c).setUnlocalizedName(Strings.SleepinglionChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K71c = new ItemGuardianSoulChain(IDs.K71c).setUnlocalizedName(Strings.GuardiansoulChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K72c = new ItemGullWingChain(IDs.K72c).setUnlocalizedName(Strings.GullwingChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K73c = new ItemPhotonDebuggerChain(IDs.K73c).setUnlocalizedName(Strings.PhotondebuggerChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K74c = new ItemSweetMemoriesChain(IDs.K74c).setUnlocalizedName(Strings.SweetmemoriesChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K75c = new ItemCircleOfLifeChain(IDs.K75c).setUnlocalizedName(Strings.CircleoflifeChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K76c = new ItemDecisivePumpkinChain(IDs.K76c).setUnlocalizedName(Strings.DecisivepumpkinChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K77c = new ItemWishingLampChain(IDs.K77c).setUnlocalizedName(Strings.WishinglampChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K78c = new ItemFollowTheWindChain(IDs.K78c).setUnlocalizedName(Strings.FollowthewindChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K79c = new ItemMysteriousAbyssChain(IDs.K79c).setUnlocalizedName(Strings.MysteriousabyssChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K80c = new ItemMonochromeChain(IDs.K80c).setUnlocalizedName(Strings.MonochromeChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K81c = new ItemHerosCrestChain(IDs.K81c).setUnlocalizedName(Strings.HeroscrestChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K82c = new ItemRumblingRoseChain(IDs.K82c).setUnlocalizedName(Strings.RumblingroseChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K83c = new ItemHiddenDragonChain(IDs.K83c).setUnlocalizedName(Strings.HiddendragonChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K84c = new ItemEndsOfEarthChain(IDs.K84c).setUnlocalizedName(Strings.EndsofearthChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K85c = new ItemStormFallChain(IDs.K85c).setUnlocalizedName(Strings.StormfallChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K86c = new ItemDestinysEmbraceChain(IDs.K86c).setUnlocalizedName(Strings.DestinysembraceChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K87c = new ItemWayToTheDawnChain(IDs.K87c).setUnlocalizedName(Strings.WaytodawnChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K88c = new ItemOneWingedAngelChain(IDs.K88c).setUnlocalizedName(Strings.OnewingedangelChain).setCreativeTab(KingdomKeys.KHTAB);
-		K89c = new ItemDiamondDustChain(IDs.K89c).setUnlocalizedName(Strings.DiamonddustChain).setCreativeTab(KingdomKeys.KHTAB);
-		K90c = new ItemLionHeartChain(IDs.K90c).setUnlocalizedName(Strings.LionheartChain).setCreativeTab(KingdomKeys.KHTAB);
-		K91c = new ItemMetalChocoboChain(IDs.K91c).setUnlocalizedName(Strings.MetalchocoboChain).setCreativeTab(KingdomKeys.KHTAB);
-		K92c = new ItemSpellBinderChain(IDs.K92c).setUnlocalizedName(Strings.SpellbinderChain).setCreativeTab(KingdomKeys.KHTAB);
-		K93c = new ItemDivineRoseChain(IDs.K93c).setUnlocalizedName(Strings.DivineroseChain).setCreativeTab(KingdomKeys.KHTAB);
-		K94c = new ItemFairyHarpChain(IDs.K94c).setUnlocalizedName(Strings.FairyharpChain).setCreativeTab(KingdomKeys.KHTAB);
-		K95c = new ItemCrabClawChain(IDs.K95c).setUnlocalizedName(Strings.CrabclawChain).setCreativeTab(KingdomKeys.KHTAB);
-		K96c = new ItemWishingStarChain(IDs.K96c).setUnlocalizedName(Strings.WishingstarChain).setCreativeTab(KingdomKeys.KHTAB);
-		K97c = new ItemPumpkinHeadChain(IDs.K97c).setUnlocalizedName(Strings.PumpkinheadChain).setCreativeTab(KingdomKeys.KHTAB);
-		K98c = new ItemThreeWishesChain(IDs.K98c).setUnlocalizedName(Strings.ThreewishesChain).setCreativeTab(KingdomKeys.KHTAB);
-		K99c = new ItemJunglekingChain(IDs.K99c).setUnlocalizedName(Strings.JunglekingChain).setCreativeTab(KingdomKeys.KHTAB);
-		K100c = new ItemOlympiaChain(IDs.K100c).setUnlocalizedName(Strings.OlympiaChain).setCreativeTab(KingdomKeys.KHTAB);
-		K101c = new ItemLadyLuckChain(IDs.K101c).setUnlocalizedName(Strings.LadyluckChain).setCreativeTab(KingdomKeys.KHTAB);
-		K102c = new ItemPeoplesHeartsChain(IDs.K102c).setUnlocalizedName(Strings.PeoplesheartsChain).setCreativeTab(KingdomKeys.KHTAB);
-		K103c = new ItemUltimaWeaponChain(IDs.K103c).setUnlocalizedName(Strings.UltimaweaponChain).setCreativeTab(KingdomKeys.KHTAB);
-		K104c = new ItemTreasureTroveChain(IDs.K104c).setUnlocalizedName(Strings.TreasuretroveChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K105c = new ItemStarSeekerChain(IDs.K105c).setUnlocalizedName(Strings.StarseekerChain).setCreativeTab(KingdomKeys.KHIITAB);
-		K106c = new ItemSoulEaterChain(IDs.K106c).setUnlocalizedName(Strings.SouleaterChain).setCreativeTab(KingdomKeys.KHDAYSTAB);
-		K107c = new ItemStarlightChain(IDs.K107c).setUnlocalizedName(Strings.StarlightChain).setCreativeTab(KingdomKeys.KHCHITAB);
-		K111c = new ItemKingdomKeyChain(IDs.K111c).setUnlocalizedName(Strings.KingdomKeyChain).setCreativeTab(KingdomKeys.KHTAB);
-		K113c = new ItemKingdomKeyDChain(IDs.K113c).setUnlocalizedName(Strings.KingdomKeyDChain).setCreativeTab(KingdomKeys.KHTAB);
-		K112c = new ItemOathkeeperChain(IDs.K112c).setUnlocalizedName(Strings.OathkeeperChain).setCreativeTab(KingdomKeys.KHTAB);
-		K114c = new ItemOblivionChain(IDs.K114c).setUnlocalizedName(Strings.OblivionChain).setCreativeTab(KingdomKeys.KHTAB);
-		K110c = new ItemWaywardWindChain(IDs.K110c).setUnlocalizedName(Strings.WaywardwindChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K109c = new ItemEarthShakerChain(IDs.K109c).setUnlocalizedName(Strings.EarthshakerChain).setCreativeTab(KingdomKeys.KHBBSTAB);
-		K108c = new ItemRainFellChain(IDs.K108c).setUnlocalizedName(Strings.RainfellChain).setCreativeTab(KingdomKeys.KHBBSTAB);
+		K1c = new ItemVulpeusChain(IDs.K1c).setUnlocalizedName(Strings.VulpeusChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K2c = new ItemUrsusChain(IDs.K2c).setUnlocalizedName(Strings.UrsusChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K3c = new ItemUnicornisChain(IDs.K3c).setUnlocalizedName(Strings.UnicornisChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K4c = new ItemLeopardosChain(IDs.K4c).setUnlocalizedName(Strings.LeopardosChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K5c = new ItemAnguisChain(IDs.K5c).setUnlocalizedName(Strings.AnguisChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K6c = new ItemLeasKeybladeChain(IDs.K6c).setUnlocalizedName(Strings.LeaskeybladeChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K7c = new ItemYoungXehanortChain(IDs.K7c).setUnlocalizedName(Strings.YoungxehanortskeybladeChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K8c = new ItemOceanRageChain(IDs.K8c).setUnlocalizedName(Strings.OceanrageChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K9c = new ItemEndOfPainChain(IDs.K9c).setUnlocalizedName(Strings.EndofpainChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K10c = new ItemUnboundChain(IDs.K10c).setUnlocalizedName(Strings.UnboundChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K11c = new ItemSweetDreamsChain(IDs.K11c).setUnlocalizedName(Strings.SweetdreamsChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K12c = new ItemDiveWingChain(IDs.K12c).setUnlocalizedName(Strings.DivewingChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K13c = new ItemCounterPointChain(IDs.K13c).setUnlocalizedName(Strings.CounterpointChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K14c = new ItemAllForOneChain(IDs.K14c).setUnlocalizedName(Strings.AllforoneChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K15c = new ItemKnockoutPunchChain(IDs.K15c).setUnlocalizedName(Strings.KnockoutpunchChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K16c = new ItemFerrisGearChain(IDs.K16c).setUnlocalizedName(Strings.FerrisgearChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K17c = new ItemDualDiscChain(IDs.K17c).setUnlocalizedName(Strings.DualdiscChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K18c = new ItemGuardianBellChain(IDs.K18c).setUnlocalizedName(Strings.GuardianbellChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K19c = new ItemSkullNoiseChain(IDs.K19c).setUnlocalizedName(Strings.SkullnoiseChain).setCreativeTab(KingdomKeys.KHDDDTAB).setMaxStackSize(chainStackSize);
+		K20c = new ItemWoodenKeybladeChain(IDs.K20c).setUnlocalizedName(Strings.WoodenkeybladeChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K21c = new ItemKyeBladeBrokenChain(IDs.K21c).setUnlocalizedName(Strings.KyebladebrokenChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K22c = new ItemKyeBladeChain(IDs.K22c).setUnlocalizedName(Strings.KyebladeChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K23c = new ItemLightSeekerChain(IDs.K23c).setUnlocalizedName(Strings.LightseekerChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K24c = new ItemLostMemoryChain(IDs.K24c).setUnlocalizedName(Strings.LostmemoryChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K25c = new ItemFrolicFlameChain(IDs.K25c).setUnlocalizedName(Strings.FrolicflameChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K26c = new ItemMasterKeeperChain(IDs.K26c).setUnlocalizedName(Strings.MasterkeeperChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K27c = new ItemBrightCrestChain(IDs.K27c).setUnlocalizedName(Strings.BrigthcrestChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K28c = new ItemCrownUnlimitChain(IDs.K28c).setUnlocalizedName(Strings.CrownunlimitChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K29c = new ItemNoNameChain(IDs.K29c).setUnlocalizedName(Strings.NonameChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K30c = new ItemVoidGearChain(IDs.K30c).setUnlocalizedName(Strings.VoidgearChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K31c = new ItemSweetStackChain(IDs.K31c).setUnlocalizedName(Strings.SweetstackChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K32c = new ItemPixiePetalChain(IDs.K32c).setUnlocalizedName(Strings.PixiepetalChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K33c = new ItemHyperDriveChain(IDs.K33c).setUnlocalizedName(Strings.HyperdriveChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K34c = new ItemMarkOfAHeroChain(IDs.K34c).setUnlocalizedName(Strings.MarkofaheroChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K35c = new ItemVictoryLineChain(IDs.K35c).setUnlocalizedName(Strings.VictorylineChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K36c = new ItemFairyStarsChain(IDs.K36c).setUnlocalizedName(Strings.FairystarsChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K37c = new ItemStrokeOfMidnightChain(IDs.K37c).setUnlocalizedName(Strings.StrokeofmidnightChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K38c = new ItemChaosRipperChain(IDs.K38c).setUnlocalizedName(Strings.ChaosripperChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K39c = new ItemXehanortsKeybladeChain(IDs.K39c).setUnlocalizedName(Strings.XehanortskeybladeChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K40c = new ItemDarkGnawChain(IDs.K40c).setUnlocalizedName(Strings.DarkgnawChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K41c = new ItemZeroOneChain(IDs.K41c).setUnlocalizedName(Strings.ZerooneChain).setCreativeTab(KingdomKeys.KHRECODEDTAB).setMaxStackSize(chainStackSize);
+		K42c = new ItemDreamSwordChain(IDs.K42c).setUnlocalizedName(Strings.DreamswordChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K43c = new ItemAubadeChain(IDs.K43c).setUnlocalizedName(Strings.AubadeChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K44c = new ItemUmbrellaChain(IDs.K44c).setUnlocalizedName(Strings.UmbrellaChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K45c = new ItemOmegaWeaponChain(IDs.K45c).setUnlocalizedName(Strings.OmegaweaponChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K46c = new ItemTwilightBlazeChain(IDs.K46c).setUnlocalizedName(Strings.TwilightblazeChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K47c = new ItemMaverickFlareChain(IDs.K47c).setUnlocalizedName(Strings.MaverickflareChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K48c = new ItemAstralBlastChain(IDs.K48c).setUnlocalizedName(Strings.AstralblastChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K49c = new ItemDarkerThanDarkChain(IDs.K49c).setUnlocalizedName(Strings.DarkerthandarkChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K50c = new ItemLunarEclipseChain(IDs.K50c).setUnlocalizedName(Strings.LunareclipseChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K51c = new ItemSilentDirgeChain(IDs.K51c).setUnlocalizedName(Strings.SilentdirgeChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K52c = new ItemTotalEclipseChain(IDs.K52c).setUnlocalizedName(Strings.TotaleclipseChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K53c = new ItemGlimpseOfDarknessChain(IDs.K53c).setUnlocalizedName(Strings.GlimpseofdarknessChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K54c = new ItemMidnightRoarChain(IDs.K54c).setUnlocalizedName(Strings.MidnightroarChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K55c = new ItemRejectionOfFateChain(IDs.K55c).setUnlocalizedName(Strings.RejectionoffateChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K56c = new ItemTrueLightsFlightChain(IDs.K56c).setUnlocalizedName(Strings.TruelightsflightChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K57c = new ItemLeviathanChain(IDs.K57c).setUnlocalizedName(Strings.LeviathanChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K58c = new ItemAbyssalTideChain(IDs.K58c).setUnlocalizedName(Strings.AbyssaltideChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K59c = new ItemCrownOfGuiltChain(IDs.K59c).setUnlocalizedName(Strings.CrownofguiltChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K60c = new ItemSignOfInnocenceChain(IDs.K60c).setUnlocalizedName(Strings.SignofinnocenceChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K61c = new ItemPainOfSolitudeChain(IDs.K61c).setUnlocalizedName(Strings.PainofsolitudeChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K62c = new ItemAbaddonPlasmaChain(IDs.K62c).setUnlocalizedName(Strings.AbbadonplasmaChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K63c = new ItemOminousBlightChain(IDs.K63c).setUnlocalizedName(Strings.OminousblightChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K64c = new ItemMissingAcheChain(IDs.K64c).setUnlocalizedName(Strings.MissingacheChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K65c = new ItemWinnersProofChain(IDs.K65c).setUnlocalizedName(Strings.WinnersproofChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K66c = new ItemFatalCrestChain(IDs.K66c).setUnlocalizedName(Strings.FatalcrestChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K67c = new ItemTwoBecomeOneChain(IDs.K67c).setUnlocalizedName(Strings.TwobecomesoneChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K68c = new ItemBondOfFlameChain(IDs.K68c).setUnlocalizedName(Strings.BondofflameChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K69c = new ItemFenrirChain(IDs.K69c).setUnlocalizedName(Strings.FenrirChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K70c = new ItemSleepingLionChain(IDs.K70c).setUnlocalizedName(Strings.SleepinglionChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K71c = new ItemGuardianSoulChain(IDs.K71c).setUnlocalizedName(Strings.GuardiansoulChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K72c = new ItemGullWingChain(IDs.K72c).setUnlocalizedName(Strings.GullwingChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K73c = new ItemPhotonDebuggerChain(IDs.K73c).setUnlocalizedName(Strings.PhotondebuggerChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K74c = new ItemSweetMemoriesChain(IDs.K74c).setUnlocalizedName(Strings.SweetmemoriesChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K75c = new ItemCircleOfLifeChain(IDs.K75c).setUnlocalizedName(Strings.CircleoflifeChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K76c = new ItemDecisivePumpkinChain(IDs.K76c).setUnlocalizedName(Strings.DecisivepumpkinChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K77c = new ItemWishingLampChain(IDs.K77c).setUnlocalizedName(Strings.WishinglampChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K78c = new ItemFollowTheWindChain(IDs.K78c).setUnlocalizedName(Strings.FollowthewindChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K79c = new ItemMysteriousAbyssChain(IDs.K79c).setUnlocalizedName(Strings.MysteriousabyssChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K80c = new ItemMonochromeChain(IDs.K80c).setUnlocalizedName(Strings.MonochromeChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K81c = new ItemHerosCrestChain(IDs.K81c).setUnlocalizedName(Strings.HeroscrestChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K82c = new ItemRumblingRoseChain(IDs.K82c).setUnlocalizedName(Strings.RumblingroseChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K83c = new ItemHiddenDragonChain(IDs.K83c).setUnlocalizedName(Strings.HiddendragonChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K84c = new ItemEndsOfEarthChain(IDs.K84c).setUnlocalizedName(Strings.EndsofearthChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K85c = new ItemStormFallChain(IDs.K85c).setUnlocalizedName(Strings.StormfallChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K86c = new ItemDestinysEmbraceChain(IDs.K86c).setUnlocalizedName(Strings.DestinysembraceChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K87c = new ItemWayToTheDawnChain(IDs.K87c).setUnlocalizedName(Strings.WaytodawnChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K88c = new ItemOneWingedAngelChain(IDs.K88c).setUnlocalizedName(Strings.OnewingedangelChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K89c = new ItemDiamondDustChain(IDs.K89c).setUnlocalizedName(Strings.DiamonddustChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K90c = new ItemLionHeartChain(IDs.K90c).setUnlocalizedName(Strings.LionheartChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K91c = new ItemMetalChocoboChain(IDs.K91c).setUnlocalizedName(Strings.MetalchocoboChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K92c = new ItemSpellBinderChain(IDs.K92c).setUnlocalizedName(Strings.SpellbinderChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K93c = new ItemDivineRoseChain(IDs.K93c).setUnlocalizedName(Strings.DivineroseChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K94c = new ItemFairyHarpChain(IDs.K94c).setUnlocalizedName(Strings.FairyharpChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K95c = new ItemCrabClawChain(IDs.K95c).setUnlocalizedName(Strings.CrabclawChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K96c = new ItemWishingStarChain(IDs.K96c).setUnlocalizedName(Strings.WishingstarChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K97c = new ItemPumpkinHeadChain(IDs.K97c).setUnlocalizedName(Strings.PumpkinheadChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K98c = new ItemThreeWishesChain(IDs.K98c).setUnlocalizedName(Strings.ThreewishesChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K99c = new ItemJunglekingChain(IDs.K99c).setUnlocalizedName(Strings.JunglekingChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K100c = new ItemOlympiaChain(IDs.K100c).setUnlocalizedName(Strings.OlympiaChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K101c = new ItemLadyLuckChain(IDs.K101c).setUnlocalizedName(Strings.LadyluckChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K102c = new ItemPeoplesHeartsChain(IDs.K102c).setUnlocalizedName(Strings.PeoplesheartsChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K103c = new ItemUltimaWeaponChain(IDs.K103c).setUnlocalizedName(Strings.UltimaweaponChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K104c = new ItemTreasureTroveChain(IDs.K104c).setUnlocalizedName(Strings.TreasuretroveChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K105c = new ItemStarSeekerChain(IDs.K105c).setUnlocalizedName(Strings.StarseekerChain).setCreativeTab(KingdomKeys.KHIITAB).setMaxStackSize(chainStackSize);
+		K106c = new ItemSoulEaterChain(IDs.K106c).setUnlocalizedName(Strings.SouleaterChain).setCreativeTab(KingdomKeys.KHDAYSTAB).setMaxStackSize(chainStackSize);
+		K107c = new ItemStarlightChain(IDs.K107c).setUnlocalizedName(Strings.StarlightChain).setCreativeTab(KingdomKeys.KHCHITAB).setMaxStackSize(chainStackSize);
+		K111c = new ItemKingdomKeyChain(IDs.K111c).setUnlocalizedName(Strings.KingdomKeyChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K113c = new ItemKingdomKeyDChain(IDs.K113c).setUnlocalizedName(Strings.KingdomKeyDChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K112c = new ItemOathkeeperChain(IDs.K112c).setUnlocalizedName(Strings.OathkeeperChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K114c = new ItemOblivionChain(IDs.K114c).setUnlocalizedName(Strings.OblivionChain).setCreativeTab(KingdomKeys.KHTAB).setMaxStackSize(chainStackSize);
+		K110c = new ItemWaywardWindChain(IDs.K110c).setUnlocalizedName(Strings.WaywardwindChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K109c = new ItemEarthShakerChain(IDs.K109c).setUnlocalizedName(Strings.EarthshakerChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		K108c = new ItemRainFellChain(IDs.K108c).setUnlocalizedName(Strings.RainfellChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
+		//Pouch = new ItemPouch(IDs.Pouch).setUnlocalizedName(Strings.Pouch).setCreativeTab(KingdomKeys.KKTAB);
 	}
 	
 	public static void initBooks(){
@@ -323,30 +324,42 @@ public class AddedItems {
 
 	public static void intiArmour(){
 		//Organization
-		OrganizationArmourMaterial = EnumHelper.addArmorMaterial("ORGANIZATION", 20, new int[] { 4, 8, 6, 3 }, 30);
+		OrganizationArmourMaterial = EnumHelper.addArmorMaterial("ORGANIZATION", 28, new int[] { 4, 8, 6, 3 }, 30);
 		OrganizationHood = new OrganizationArmor(IDs.OHelm, OrganizationArmourMaterial , KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 0, "ORGANIZATION_1", Strings.OHood);
 		OrganizationCoat = new OrganizationArmor(IDs.OChest, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 1, "ORGANIZATION_1", Strings.OCoat);
 		OrganizationLegs = new OrganizationArmor(IDs.OLegs, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 2, "ORGANIZATION_2", Strings.OLegs);
 		OrganizationBoots = new OrganizationArmor(IDs.OBoots, OrganizationArmourMaterial, KingdomKeys.proxy.addArmor(OrganizationArmourMaterial.name()), 3, "ORGANIZATION_1", Strings.OBoots);
 		//Keyblade
 		//Aqua
-		KeybladeAArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADEA", 20, new int[] { 5, 8, 6, 4 }, 30);
+		KeybladeAArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADEA", 34, new int[] { 5, 8, 6, 4 }, 30);
 		KeybladeAHelm = new KeybladeAArmor(IDs.KAHelm, KeybladeAArmourMaterial , KingdomKeys.proxy.addArmor(KeybladeAArmourMaterial.name()), 0, "KEYBLADEA_1", Strings.KAHelm);
 		KeybladeAChest = new KeybladeAArmor(IDs.KAChest, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeAArmourMaterial.name()), 1, "KEYBLADEA_1", Strings.KAChest);
 		KeybladeALegs = new KeybladeAArmor(IDs.KALegs, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeAArmourMaterial.name()), 2, "KEYBLADEA_2", Strings.KALegs);
 		KeybladeABoots = new KeybladeAArmor(IDs.KABoots, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeAArmourMaterial.name()), 3, "KEYBLADEA_1", Strings.KABoots);
 		//Terra
-		KeybladeTArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADET", 20, new int[] { 6, 8, 7, 4 }, 30);
+		KeybladeTArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADET", 40, new int[] { 6, 8, 7, 4 }, 30);
 		KeybladeTHelm = new KeybladeTArmor(IDs.KTHelm, KeybladeTArmourMaterial , KingdomKeys.proxy.addArmor(KeybladeTArmourMaterial.name()), 0, "KEYBLADET_1", Strings.KTHelm);
 		KeybladeTChest = new KeybladeTArmor(IDs.KTChest, KeybladeTArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeTArmourMaterial.name()), 1, "KEYBLADET_1", Strings.KTChest);
 		KeybladeTLegs = new KeybladeTArmor(IDs.KTLegs, KeybladeTArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeTArmourMaterial.name()), 2, "KEYBLADET_2", Strings.KTLegs);
 		KeybladeTBoots = new KeybladeTArmor(IDs.KTBoots, KeybladeTArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeTArmourMaterial.name()), 3, "KEYBLADET_1", Strings.KTBoots);
 		//Ventus
-		KeybladeVArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADEV", 20, new int[] { 4, 8, 5, 4 }, 30);
+		KeybladeVArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADEV", 30, new int[] { 4, 8, 5, 4 }, 30);
 		KeybladeVHelm = new KeybladeVArmor(IDs.KVHelm, KeybladeAArmourMaterial , KingdomKeys.proxy.addArmor(KeybladeVArmourMaterial.name()), 0, "KEYBLADEV_1", Strings.KVHelm);
 		KeybladeVChest = new KeybladeVArmor(IDs.KVChest, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeVArmourMaterial.name()), 1, "KEYBLADEV_1", Strings.KVChest);
 		KeybladeVLegs = new KeybladeVArmor(IDs.KVLegs, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeVArmourMaterial.name()), 2, "KEYBLADEV_2", Strings.KVLegs);
 		KeybladeVBoots = new KeybladeVArmor(IDs.KVBoots, KeybladeAArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeVArmourMaterial.name()), 3, "KEYBLADEV_1", Strings.KVBoots);
+		//Eraqus
+		KeybladeEArmourMaterial = EnumHelper.addArmorMaterial("KEYBLADEE", 42, new int[] { 5, 7, 7, 5 }, 30);
+		KeybladeEHelm = new KeybladeEArmor(IDs.KEHelm, KeybladeEArmourMaterial , KingdomKeys.proxy.addArmor(KeybladeEArmourMaterial.name()), 0, "KEYBLADEE_1", Strings.KEHelm);
+		KeybladeEChest = new KeybladeEArmor(IDs.KEChest, KeybladeEArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeEArmourMaterial.name()), 1, "KEYBLADEE_1", Strings.KEChest);
+		KeybladeELegs = new KeybladeEArmor(IDs.KELegs, KeybladeEArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeEArmourMaterial.name()), 2, "KEYBLADEE_2", Strings.KELegs);
+		KeybladeEBoots = new KeybladeEArmor(IDs.KEBoots, KeybladeEArmourMaterial, KingdomKeys.proxy.addArmor(KeybladeEArmourMaterial.name()), 3, "KEYBLADEE_1", Strings.KEBoots);
+		
+		OrganizationArmourMaterial.customCraftingMaterial = DarkLeather;
+		KeybladeVArmourMaterial.customCraftingMaterial = OrichalcumPlus;
+		KeybladeTArmourMaterial.customCraftingMaterial = OrichalcumPlus;
+		KeybladeAArmourMaterial.customCraftingMaterial = OrichalcumPlus;
+		KeybladeEArmourMaterial.customCraftingMaterial = OrichalcumPlus;
 	}
 
 	public static void initHearts(){
@@ -533,192 +546,4 @@ public class AddedItems {
 		ShinyCrystal = new ItemShinyCrystal(IDs.ShinyCrystal).setUnlocalizedName(Strings.ShinyCrystal).setCreativeTab(KingdomKeys.KKSMTAB);
 	}
 
-	public static void initItemrecipes(){
-		/*ItemStack kkGuide = new ItemStack(Item.writableBook);
-		NBTTagList bookPages = new NBTTagList("pages");
-		bookPages.appendTag(new NBTTagString("1", "Insert text here."));
-		bookPages.appendTag(new NBTTagString("2", "Insert moar text here."));
-		kkGuide.setTagInfo("pages", bookPages);
-		kkGuide.setTagInfo("author", new NBTTagString("author", "Wehavecookies56"));
-		kkGuide.setTagInfo("title", new NBTTagString("title", "Kingdom Keys"));
-		kkGuide.itemID = Item.writtenBook.itemID;
-		*/
-		ItemStack greenDye = new ItemStack(Item.dyePowder, 1, 2);
-		ItemStack blueDye = new ItemStack(Item.dyePowder, 1, 4);
-		ItemStack blackDye = new ItemStack(Item.dyePowder, 1, 0);
-		ItemStack yellowDye = new ItemStack(Item.dyePowder, 1, 11);
-		if(ConfigBooleans.heartRecipe == false){
-			GameRegistry.addRecipe(new ItemStack(Heart), new Object[]{
-				" D ",
-				"DSD",
-				" D ",
-				'S', Block.slowSand, 'D', DarkHeart
-			});
-		}
-		if(ConfigBooleans.heartRecipe == true){
-			GameRegistry.addRecipe(new ItemStack(Heart), new Object[]{
-				"DDD",
-				"DSD",
-				"DDD",
-				'S', Block.slowSand, 'D', DarkHeart
-			});
-		}
-		if(ConfigBooleans.heartRecipe == false){
-			GameRegistry.addRecipe(new ItemStack(PureHeart), new Object[]{
-				" D ",
-				"DSD",
-				" D ",
-				'S', Block.slowSand, 'D', Heart
-			});
-		}
-		if(ConfigBooleans.heartRecipe == true){
-			GameRegistry.addRecipe(new ItemStack(PureHeart), new Object[]{
-				"DDD",
-				"DSD",
-				"DDD",
-				'S', Block.slowSand, 'D', Heart
-			});
-		}
-		if(ConfigBooleans.heartRecipe == false){
-			GameRegistry.addRecipe(new ItemStack(KingdomHearts), new Object[]{
-				" D ",
-				"DSD",
-				" D ",
-				'S', Block.slowSand, 'D', PureHeart
-			});
-		}
-		if(ConfigBooleans.heartRecipe == true){
-			GameRegistry.addRecipe(new ItemStack(KingdomHearts), new Object[]{
-				"DDD",
-				"DSD",
-				"DDD",
-				'S', Block.slowSand, 'D', PureHeart
-			});
-		}
-		GameRegistry.addRecipe(new ItemStack(DarkLeather), new Object[]{
-			"DDD",
-			"DLD",
-			"DDD",
-			'D', DarkHeart, 'L', Item.leather
-		});
-		GameRegistry.addRecipe(new ItemStack(OrganizationHood), new Object[]{
-			"LLL",
-			"LOL",
-			"SIS",
-			'O', Block.obsidian, 'L', DarkLeather, 'S', Item.silk, 'I', blackDye
-		});
-		GameRegistry.addRecipe(new ItemStack(OrganizationCoat), new Object[]{
-			"LIL",
-			"LOL",
-			"LLL",
-			'O', Block.obsidian, 'L', DarkLeather, 'I', blackDye
-		});
-		GameRegistry.addRecipe(new ItemStack(OrganizationLegs), new Object[]{
-			"LLL",
-			"LOL",
-			"LIL",
-			'O', Block.obsidian, 'L', DarkLeather, 'I', blackDye
-		});
-		GameRegistry.addRecipe(new ItemStack(OrganizationBoots), new Object[]{
-			"LOL",
-			"LIL",
-			'O', Block.obsidian, 'L', DarkLeather, 'I', blackDye
-		});
-		GameRegistry.addRecipe(new ItemStack(Potion), new Object[]{
-			"HHH",
-			"HHH",
-			"HPH",
-			'P', Item.glassBottle, 'H', HP
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeTHelm), new Object[]{
-			"DED",
-			"PKP",
-			'P', PureHeart, 'D', DarkHeart, 'K', KingdomHearts, 'E', K109
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeAHelm), new Object[]{
-			"HRH",
-			"PKP",
-			'P', PureHeart, 'H', Heart, 'K', KingdomHearts, 'R', K108
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeVHelm), new Object[]{
-			"PWP",
-			"PKP",
-			'P', PureHeart, 'K', KingdomHearts, 'W', K110
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeTChest), new Object[]{
-			"DED",
-			"PKP",
-			"PKP",
-			'P', PureHeart, 'D', DarkHeart, 'K', KingdomHearts, 'E', K109
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeAChest), new Object[]{
-			"HRH",
-			"PKP",
-			"PKP",
-			'P', PureHeart, 'H', Heart, 'K', KingdomHearts, 'R', K108
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeVChest), new Object[]{
-			"PWP",
-			"PKP",
-			"PKP",
-			'P', PureHeart, 'K', KingdomHearts, 'W', K110
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeTLegs), new Object[]{
-			"DED",
-			"PKP",
-			"PKP",
-			'P', PureHeart, 'D', DarkHeart, 'K', KingdomHearts, 'E', K109
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeALegs), new Object[]{
-			"HRH",
-			"PKP",
-			"P P",
-			'P', PureHeart, 'H', Heart, 'K', KingdomHearts, 'R', K108
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeVLegs), new Object[]{
-			"PWP",
-			"PKP",
-			"P P",
-			'P', PureHeart, 'K', KingdomHearts, 'W', K110
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeTBoots), new Object[]{
-			"DED",
-			"HKH",
-			'P', PureHeart, 'D', DarkHeart, 'K', KingdomHearts, 'E', K109, 'H', Heart
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeABoots), new Object[]{
-			"HWH",
-			"HKH",
-			'P', PureHeart, 'H', Heart, 'K', KingdomHearts, 'R', K108
-		});
-		GameRegistry.addRecipe(new ItemStack(KeybladeVBoots), new Object[]{
-			"PWP",
-			"HKH",
-			'P', PureHeart, 'K', KingdomHearts, 'W', K110, 'H', Heart
-		});
-		
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny5), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1), new ItemStack(Munny1));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny), new ItemStack(Munny5), new ItemStack(Munny5), new ItemStack(Munny5), new ItemStack(Munny5));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny50), new ItemStack(Munny10), new ItemStack(Munny10), new ItemStack(Munny10, 1), new ItemStack(Munny10, 1), new ItemStack(Munny10, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny10), new ItemStack(Munny5), new ItemStack(Munny5));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny100), new ItemStack(Munny50), new ItemStack(Munny50));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny100), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny), new ItemStack(Munny));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny200), new ItemStack(Munny100), new ItemStack(Munny100));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny500), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100), new ItemStack(Munny100));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny800), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny1000), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200), new ItemStack(Munny200));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny1200), new ItemStack(Munny1000), new ItemStack(Munny200));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny1500), new ItemStack(Munny1000), new ItemStack(Munny500));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny1800), new ItemStack(Munny1000), new ItemStack(Munny800));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny2000), new ItemStack(Munny2000), new ItemStack(Munny2000));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny3000), new ItemStack(Munny2000), new ItemStack(Munny1000));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny4000), new ItemStack(Munny3000), new ItemStack(Munny1000));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny5000), new ItemStack(Munny4000), new ItemStack(Munny1000));
-		GameRegistry.addShapelessRecipe(new ItemStack(Munny6000), new ItemStack(Munny5000), new ItemStack(Munny1000));
-		
-		//GameRegistry.addShapelessRecipe(kkGuide = new ItemStack(Item.writableBook), new ItemStack(Item.book, 1), new ItemStack(Heart, 1), new ItemStack(DarkHeart, 1));
-		//GameRegistry.addShapelessRecipe(new ItemStack(K114), new ItemStack(K114c, 1), new ItemStack(Item.swordIron, 1));
-		//GameRegistry.addSmelting(K111.itemID, new ItemStack(Disc1), 0.1f);
-
-	}
 }

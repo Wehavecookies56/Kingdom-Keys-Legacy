@@ -1,5 +1,7 @@
 package wehavecookies56.kk.block;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -23,6 +25,8 @@ public class BlockSynthesis extends Block{
 	         super(i, Material.iron);
 	         this.setCreativeTab(KingdomKeys.KKTAB);
 	         this.setUnlocalizedName(Strings.Synthesiser);
+	         this.setResistance(0.5F);
+	         this.setHardness(1.5F);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -53,6 +57,18 @@ public class BlockSynthesis extends Block{
 	}
 	}
 	
-	
+	 public int quantityDropped(Random par1Random)
+	    {
+	        return 1;
+	    }
+
+	    /**
+	     * Returns the ID of the items to drop on destruction.
+	     */
+	    public int idDropped(int par1, Random par2Random, int par3)
+	    {
+	        return this.blockID;
+	    }
+
 	
 }

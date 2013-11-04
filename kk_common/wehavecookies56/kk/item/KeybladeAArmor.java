@@ -25,19 +25,14 @@ public class KeybladeAArmor extends ItemArmor{
       this.name = name;
       this.setUnlocalizedName(this.name);
     }
+    
     @Override
-    @SideOnly(Side.CLIENT)
-    public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
-    	if (stack.toString().contains("leggings")) 
-			{
-    	return "kk:textures/armor/KEYBLADEA_2.png";
-			}
-    	if (stack.toString().contains("Leggings")) 
-    		{
-    	return "kk:textures/armor/KEYBLADEA_2.png";
-			}
-    	return "kk:textures/armor/KEYBLADEA_1.png";
-    }
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) 
+	{
+		if(slot == 2)return "kk:textures/armor/KEYBLADEA_2.png";
+		else return "kk:textures/armor/KEYBLADEA_1.png";
+	}
+
     
 
     @SideOnly(Side.CLIENT)

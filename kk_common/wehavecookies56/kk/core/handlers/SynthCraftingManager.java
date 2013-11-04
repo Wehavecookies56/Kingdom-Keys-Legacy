@@ -111,7 +111,7 @@ public class SynthCraftingManager {
 	this.addShapelessRecipe(new ItemStack(AddedItems.MythrilStone), denseStone, denseShard, denseShard, denseShard, twilightStone, twilightShard, twilightShard, twilightShard, serenityShard);
 	this.addShapelessRecipe(new ItemStack(AddedItems.MythrilGem), denseCrystal, denseGem, denseGem, denseGem, twilightGem, twilightGem, twilightGem, twilightCrystal);
 	this.addShapelessRecipe(new ItemStack(AddedItems.MythrilCrystal), denseCrystal, denseGem, denseGem, denseGem, twilightCrystal, twilightGem, twilightGem, twilightGem, serenityStone);
-	this.addShapelessRecipe(new ItemStack(AddedItems.SerenityCrystal), tranquilCrystal, remembranceCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal);
+	this.addShapelessRecipe(new ItemStack(AddedItems.ShinyCrystal), tranquilCrystal, remembranceCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal, brightCrystal);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K1c), orichalcum, serenityCrystal, mythrilGem, mythrilGem, energyStone, brightStone, blazingShard, blazingShard, blazingShard, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K2c), orichalcum, serenityCrystal, mythrilGem, mythrilGem, powerStone, brightStone, blazingShard, blazingShard, blazingShard, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K3c), orichalcum, serenityCrystal, mythrilGem, mythrilGem, twilightStone, brightStone, blazingShard, blazingShard, blazingShard, munny1000);
@@ -128,7 +128,7 @@ public class SynthCraftingManager {
 	this.addShapelessRecipe(new ItemStack(AddedItems.K14c), denseCrystal, mythrilShard, mythrilGem, mythrilGem, brightShard, brightStone, brightShard, frostShard, lightningShard, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K15c), powerShard, energyShard, mythrilCrystal, denseShard, denseStone, darkStone, lucidGem, denseCrystal, blazingShard, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K16c), powerCrystal, brightShard, brightShard, lucidGem, tranquilStone, tranquilGem, mythrilShard, munny1000);
-	this.addShapelessRecipe(new ItemStack(AddedItems.K17c), energyGem, powerGem, denseStone, denseShard, denseShard, brightStone, brightGem, energyCrystal,  munny1000);
+	this.addShapelessRecipe(new ItemStack(AddedItems.K17c), energyGem, powerGem, denseStone, denseShard, denseShard, brightStone, brightGem, energyCrystal, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K18c), darkCrystal, shimmeringCrystal, mythrilShard, mythrilShard, denseStone, brightStone, blazingShard, blazingShard, blazingShard, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K19c), orichalcum, darkMatter, lucidGem, mythrilGem, blazingShard, darkShard, darkShard, darkShard, blazingStone, darkStone, munny1000);
 	this.addShapelessRecipe(new ItemStack(AddedItems.K20c), tranquilGem, stick, plank, plank, denseShard, munny500);

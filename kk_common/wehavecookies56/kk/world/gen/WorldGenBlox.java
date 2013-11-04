@@ -8,6 +8,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.lib.ConfigBooleans;
+import wehavecookies56.kk.lib.ints;
 import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGenBlox implements IWorldGenerator
@@ -31,37 +32,37 @@ public class WorldGenBlox implements IWorldGenerator
 		public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
 			if(ConfigBooleans.enableOverworld){
 		    String s = world.getBiomeGenForCoords(chunkX + 8, chunkZ + 8).biomeName;
-			this.spawnOres(AddedBlocks.LucidOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 0, 70);
-			this.spawnOres(AddedBlocks.SerenityOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 15, 60, 128);
-			this.spawnOres(AddedBlocks.TranquilOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 50, 70, 128);
-			this.spawnOres(AddedBlocks.BrightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 20, 40, 128);
-			this.spawnOres(AddedBlocks.DarkOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, 30, 0, 12);
-			this.spawnOres(AddedBlocks.DenseOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 40, 0, 15);
-			this.spawnOres(AddedBlocks.LightningOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 40, 60);
-			this.spawnOres(AddedBlocks.BlazingOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 20);
-			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 50, 0, 80);
-			this.spawnOres(AddedBlocks.RarePrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 80);
+			this.spawnOres(AddedBlocks.LucidOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.LucidOreChance, 0, 70);
+			this.spawnOres(AddedBlocks.SerenityOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, ints.SerenityOreChance, 60, 128);
+			this.spawnOres(AddedBlocks.TranquilOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.TranquilOreChance, 70, 128);
+			this.spawnOres(AddedBlocks.BrightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, ints.BrightOreChance, 10, 128);
+			this.spawnOres(AddedBlocks.DarkOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, ints.DarkOreChance, 0, 12);
+			this.spawnOres(AddedBlocks.DenseOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, ints.DenseOreChance, 0, 15);
+			this.spawnOres(AddedBlocks.LightningOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, ints.LightningOreChance, 40, 60);
+			this.spawnOres(AddedBlocks.BlazingOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, ints.BlazingOreChance, 0, 20);
+			this.spawnOres(AddedBlocks.PrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, ints.PrizeBloxChance, 0, 80);
+			this.spawnOres(AddedBlocks.RarePrizeBlox, Block.dirt, world, random, chunkX, chunkZ, 16, 16, 3, ints.RarePrizeBloxChance, 0, 80);
 			if (s.startsWith("Taiga")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
 			if (s.startsWith("Ice Plains")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
 			if (s.startsWith("Ice Mountains")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
 			if (s.startsWith("Frozen Ocean")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
 			if (s.startsWith("Frozen River")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
 			if (s.startsWith("TaigaHills")){
-				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 40, 25, 40);
+				this.spawnOres(AddedBlocks.FrostOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.FrostOreChance, 25, 40);
 			}
-			this.spawnOres(AddedBlocks.EnergyOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, 30, 0, 128);
-			this.spawnOres(AddedBlocks.RemembranceOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, 30, 0, 128);
-			this.spawnOres(AddedBlocks.TwilightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 8, 30, 0, 128);
+			this.spawnOres(AddedBlocks.EnergyOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 6, ints.EnergyOreChance, 0, 128);
+			this.spawnOres(AddedBlocks.RemembranceOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 4, ints.RemembranceOreChance, 0, 128);
+			this.spawnOres(AddedBlocks.TwilightOre, Block.stone, world, random, chunkX, chunkZ, 16, 16, 8, ints.TwilightOreChance, 0, 128);
 			}
 		}
 
@@ -81,8 +82,8 @@ public class WorldGenBlox implements IWorldGenerator
 		//this.spawnOres(AddedBlocks.NormalBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 15, 89, 0, 128);
 		//this.spawnOres(AddedBlocks.HardBlox, Block.obsidian, world, random, chunkX, chunkZ, 16, 16, 30, 89, 0, 128);
 		this.spawnOres(AddedBlocks.RarePrizeBlox, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 3, 20, 0, 128);
-		this.spawnOres(AddedBlocks.DarkOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 6, 60, 0, 128);
-		this.spawnOres(AddedBlocks.PowerOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 7, 60, 0, 128);
+		this.spawnOres(AddedBlocks.DarkOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 6, ints.DarkOreEChance, 0, 128);
+		this.spawnOres(AddedBlocks.PowerOreE, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 7, ints.PowerOreEChance, 0, 128);
 		
 		}
 	}

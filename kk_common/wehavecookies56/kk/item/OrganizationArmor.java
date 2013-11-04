@@ -23,18 +23,11 @@ public class OrganizationArmor extends ItemArmor{
       this.setUnlocalizedName(this.name);
     }
     @Override
-    @SideOnly(Side.CLIENT)
-    public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
-    	if (stack.toString().contains("leggings")) 
-			{
-    	return "kk:textures/armor/ORGANIZATION_2.png";
-			}
-    	if (stack.toString().contains("Leggings")) 
-    		{
-    	return "kk:textures/armor/ORGANIZATION_2.png";
-			}
-    	return "kk:textures/armor/ORGANIZATION_1.png";
-    }
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) 
+	{
+		if(slot == 2)return "kk:textures/armor/ORGANIZATION_2.png";
+		else return "kk:textures/armor/ORGANIZATION_1.png";
+	}
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconReg) {

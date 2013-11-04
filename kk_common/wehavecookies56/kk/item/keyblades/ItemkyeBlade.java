@@ -60,7 +60,6 @@ public class ItemkyeBlade extends ItemSword implements IBattlegearWeapon{
 		this.keyPressed = false;
 		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K22.itemID)
 		{
-			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K22c));
 		}
 	}
     }

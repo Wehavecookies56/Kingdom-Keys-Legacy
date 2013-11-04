@@ -11,15 +11,12 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.network.packet.Packet250CustomPayload;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.lib.Strings;
-import cpw.mods.fml.common.network.PacketDispatcher;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

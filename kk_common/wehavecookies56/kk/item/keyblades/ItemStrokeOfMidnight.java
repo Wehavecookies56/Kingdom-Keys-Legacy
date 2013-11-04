@@ -60,7 +60,6 @@ public class ItemStrokeOfMidnight extends ItemSword implements IBattlegearWeapon
 		this.keyPressed = false;
 		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K37.itemID)
 		{
-			player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(AddedItems.K37c));
 		}
 	}
     }

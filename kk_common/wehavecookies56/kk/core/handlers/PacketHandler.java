@@ -9,7 +9,6 @@ import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
 import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
-import wehavecookies56.kk.item.keyblades.*;
 import cpw.mods.fml.common.network.IPacketHandler;
 import cpw.mods.fml.common.network.Player;
 
@@ -18,13 +17,17 @@ public class PacketHandler implements IPacketHandler
 	@Override
 	public void onPacketData(INetworkManager manager, Packet250CustomPayload packet, Player player) 
 	{
+		boolean keyPressed = false;
+		boolean keyHasBeenPressed = false;
 		if(packet.data != null && packet.data.length == 1 && packet.data[0] == 1)
 		{
+			keyPressed = true;
+			keyHasBeenPressed = true;
 			ArrayList<ItemStack> itemListToSend = new ArrayList<ItemStack>();
 			EntityPlayerMP thePlayer = (EntityPlayerMP)player;
-			if (KeyBind.keyPressedK62)
+			if (keyPressed)
 			{
-				KeyBind.keyPressedK62 = false;
+				keyPressed = false;
 				if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == AddedItems.K62.itemID)
 				{
 					thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(AddedItems.K62c, 1));
@@ -35,18 +38,22 @@ public class PacketHandler implements IPacketHandler
 					for (int i = 0; i < thePlayer.openContainer.inventorySlots.size(); ++i) 
 					{
 						itemListToSend.add(((Slot) thePlayer.openContainer.inventorySlots.get(i)).getStack());
-						KeyBind.keyPressedK62 = false;
+						keyPressed = false;
 					}
 
 					if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == AddedItems.K62c.itemID)
 					{
+						//Sounds.KEYBLADE_SUMMON.play(thePlayer.posX, thePlayer.posY, thePlayer.posZ, 1, 0);
 						thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(AddedItems.K62, 1));
 						thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 					}
 					else
 					{
-							KeyBind.keyPressedK62 = false;
+							keyPressed = false;
 					}
+					if (keyHasBeenPressed) {
+						keyHasBeenPressed = false;
+						keyPressed = true;
 				}
 
 			}
@@ -2888,7 +2895,7 @@ public class PacketHandler implements IPacketHandler
 			
 			if(KeyBind.keyPressedK107)
 			{
-				KeyBind.keyPressedK17 = false;
+				KeyBind.keyPressedK107 = false;
 				if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == AddedItems.K107.itemID)
 				{
 					thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(AddedItems.K107c, 1));
@@ -2955,7 +2962,7 @@ public class PacketHandler implements IPacketHandler
 						KeyBind.keyPressedK109 = false;
 					}
 
-					if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == AddedItems.K19c.itemID)
+					if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == AddedItems.K109c.itemID)
 					{
 						thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(AddedItems.K109, 1));
 						thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
@@ -3105,3 +3112,5 @@ public class PacketHandler implements IPacketHandler
 		}
 	}
 }
+}
+

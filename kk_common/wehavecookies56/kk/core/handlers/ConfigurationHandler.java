@@ -3,11 +3,13 @@ package wehavecookies56.kk.core.handlers;
 import java.io.File;
 import java.util.logging.Level;
 
+import net.minecraftforge.common.ConfigCategory;
 import net.minecraftforge.common.Configuration;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
+import wehavecookies56.kk.lib.ints;
 import cpw.mods.fml.common.FMLLog;
 
 public class ConfigurationHandler {
@@ -56,18 +58,27 @@ public class ConfigurationHandler {
             IDs.Disc8 = config.getItem(Strings.Disc8  + " ID", IDs.DISC8_DEFAULT).getInt(IDs.DISC8_DEFAULT);
             IDs.Disc9 = config.getItem(Strings.Disc9  + " ID", IDs.DISC9_DEFAULT).getInt(IDs.DISC9_DEFAULT);
             //Armour
-            IDs.KABoots = config.getItem(Strings.KABoots  + " ID", IDs.KABOOTS_DEFAULT).getInt(IDs.KABOOTS_DEFAULT);
-            IDs.KAHelm = config.getItem(Strings.KAHelm  + " ID", IDs.KAHELM_DEFAULT).getInt(IDs.KAHELM_DEFAULT);
-            IDs.KAChest = config.getItem(Strings.KAChest  + " ID", IDs.KACHEST_DEFAULT).getInt(IDs.KACHEST_DEFAULT);
-            IDs.KALegs = config.getItem(Strings.KALegs  + " ID", IDs.KALEGS_DEFAULT).getInt(IDs.KALEGS_DEFAULT);
+            //Aqua
+            IDs.KABoots = config.getItem(Strings.KABoots  + " ID", IDs.KABOOTS_DEFAULT).getInt(IDs.KEBOOTS_DEFAULT);
+            IDs.KAHelm = config.getItem(Strings.KAHelm  + " ID", IDs.KAHELM_DEFAULT).getInt(IDs.KEHELM_DEFAULT);
+            IDs.KAChest = config.getItem(Strings.KAChest  + " ID", IDs.KACHEST_DEFAULT).getInt(IDs.KECHEST_DEFAULT);
+            IDs.KALegs = config.getItem(Strings.KALegs  + " ID", IDs.KALEGS_DEFAULT).getInt(IDs.KELEGS_DEFAULT);
+            //Eraqus
+            IDs.KEBoots = config.getItem(Strings.KEBoots  + " ID", IDs.KEBOOTS_DEFAULT).getInt(IDs.KEBOOTS_DEFAULT);
+            IDs.KEHelm = config.getItem(Strings.KEHelm  + " ID", IDs.KEHELM_DEFAULT).getInt(IDs.KEHELM_DEFAULT);
+            IDs.KEChest = config.getItem(Strings.KEChest  + " ID", IDs.KECHEST_DEFAULT).getInt(IDs.KECHEST_DEFAULT);
+            IDs.KELegs = config.getItem(Strings.KELegs  + " ID", IDs.KELEGS_DEFAULT).getInt(IDs.KELEGS_DEFAULT);
+            //Terra
             IDs.KTBoots = config.getItem(Strings.KTBoots  + " ID", IDs.KTBOOTS_DEFAULT).getInt(IDs.KTBOOTS_DEFAULT);
             IDs.KTHelm = config.getItem(Strings.KTHelm  + " ID", IDs.KTHELM_DEFAULT).getInt(IDs.KTHELM_DEFAULT);
             IDs.KTChest = config.getItem(Strings.KTChest  + " ID", IDs.KTCHEST_DEFAULT).getInt(IDs.KTCHEST_DEFAULT);
             IDs.KTLegs = config.getItem(Strings.KTLegs  + " ID", IDs.KTLEGS_DEFAULT).getInt(IDs.KTLEGS_DEFAULT);
+            //Ventus
             IDs.KVBoots = config.getItem(Strings.KVBoots  + " ID", IDs.KVBOOTS_DEFAULT).getInt(IDs.KVBOOTS_DEFAULT);
             IDs.KVHelm = config.getItem(Strings.KVHelm  + " ID", IDs.KVHELM_DEFAULT).getInt(IDs.KVHELM_DEFAULT);
             IDs.KVChest = config.getItem(Strings.KVChest  + " ID", IDs.KVCHEST_DEFAULT).getInt(IDs.KVCHEST_DEFAULT);
             IDs.KVLegs = config.getItem(Strings.KVLegs  + " ID", IDs.KVLEGS_DEFAULT).getInt(IDs.KVLEGS_DEFAULT);
+            //Dark Robe
             IDs.OBoots = config.getItem(Strings.OBoots  + " ID", IDs.OBOOTS_DEFAULT).getInt(IDs.OBOOTS_DEFAULT);
             IDs.OHelm = config.getItem(Strings.OHood  + " ID", IDs.OHELM_DEFAULT).getInt(IDs.OHELM_DEFAULT);
             IDs.OChest = config.getItem(Strings.OCoat  + " ID", IDs.OCHEST_DEFAULT).getInt(IDs.OCHEST_DEFAULT);
@@ -388,6 +399,7 @@ public class ConfigurationHandler {
             IDs.DBlox = config.getBlock(Strings.DBlox  + " ID", IDs.DANGERBLOX_DEFAULT).getInt(IDs.DANGERBLOX_DEFAULT);
             IDs.BLBlox = config.getBlock(Strings.BLBlox  + " ID", IDs.BLBLOX_DEFAULT).getInt(IDs.BLBLOX_DEFAULT);
             IDs.Synthesis = config.getBlock(Strings.Synthesiser  + " ID", IDs.SYNTHESIS_DEFAULT).getInt(IDs.SYNTHESIS_DEFAULT);
+            IDs.SynthesisMini = config.getBlock(Strings.SynthesiserMini  + " ID", IDs.SYNTHESISMINI_DEFAULT).getInt(IDs.SYNTHESISMINI_DEFAULT);
             IDs.BlazingOre = config.getBlock(Strings.BlazingOre  + " ID", IDs.BLAZINGORE_DEFAULT).getInt(IDs.BLAZINGORE_DEFAULT);
             //IDs.BlazingOreN = config.getBlock(Strings.BlazingOreN  + " ID", IDs.BLAZINGOREN_DEFAULT).getInt(IDs.BLAZINGOREN_DEFAULT);
             IDs.LightningOre = config.getBlock(Strings.LightningOre  + " ID", IDs.LIGHTNINGORE_DEFAULT).getInt(IDs.LIGHTNINGORE_DEFAULT);
@@ -410,6 +422,9 @@ public class ConfigurationHandler {
             IDs.LucidOre = config.getBlock(Strings.LucidOre  + " ID", IDs.LUCIDORE_DEFAULT).getInt(IDs.LUCIDORE_DEFAULT);
 
             //BOOLEANS
+            final String WORLDGENERATION = ConfigCategory.getQualifiedName("World Generation", null);
+            final String OVERWORLD = WORLDGENERATION + config.CATEGORY_SPLITTER + "Overworld Spawn Chances";
+            final String END = WORLDGENERATION + config.CATEGORY_SPLITTER + "End Spawn Chances";
             final String GENERATE = config.CATEGORY_GENERAL + config.CATEGORY_SPLITTER + "World Generation";
             ConfigBooleans.enableGenerate = config.get(GENERATE, ConfigBooleans.enableGenerate_name, ConfigBooleans.enableGenerate_default).getBoolean(ConfigBooleans.enableGenerate_default);
             ConfigBooleans.enableOverworld = config.get(GENERATE, ConfigBooleans.enableOverworld_name, ConfigBooleans.enableOverworld_default).getBoolean(ConfigBooleans.enableOverworld_default);
@@ -421,6 +436,26 @@ public class ConfigurationHandler {
             final String RECIPE = config.CATEGORY_GENERAL + config.CATEGORY_SPLITTER + "Recipe Config";
             ConfigBooleans.heartRecipe = config.get(RECIPE, ConfigBooleans.heartRecipe_name, ConfigBooleans.heartRecipe_default).getBoolean(ConfigBooleans.heartRecipe_default);
             ConfigBooleans.bloxRecipe = config.get(RECIPE, ConfigBooleans.bloxRecipe_name, ConfigBooleans.bloxRecipe_default).getBoolean(ConfigBooleans.bloxRecipe_default);
+            
+            //OTHER
+            config.addCustomCategoryComment(END, "Higher number = higher spawn chance");
+            config.addCustomCategoryComment(OVERWORLD, "Higher number = higher spawn chance");
+            ints.LucidOreChance = config.get(OVERWORLD, "Lucid Ore Spawn Chance", ints.LUCIDORECHANCE_DEFAULT).getInt(ints.LUCIDORECHANCE_DEFAULT);
+            ints.SerenityOreChance = config.get(OVERWORLD, "Serenity Ore Spawn Chance", ints.SERENITYORECHANCE_DEFAULT).getInt(ints.SERENITYORECHANCE_DEFAULT);
+            ints.TranquilOreChance = config.get(OVERWORLD, "Tranquil Ore Spawn Chance", ints.TRANQUILORECHANCE_DEFAULT).getInt(ints.TRANQUILORECHANCE_DEFAULT);
+            ints.BrightOreChance = config.get(OVERWORLD, "Bright Ore Spawn Chance", ints.BRIGHTORECHANCE_DEFAULT).getInt(ints.BRIGHTORECHANCE_DEFAULT);
+            ints.DarkOreChance = config.get(OVERWORLD, "Dark Ore Spawn Chance", ints.DARKORECHANCE_DEFAULT).getInt(ints.DARKORECHANCE_DEFAULT);
+            ints.DenseOreChance = config.get(OVERWORLD, "Dense Ore Spawn Chance", ints.DENSEORECHANCE_DEFAULT).getInt(ints.DENSEORECHANCE_DEFAULT);
+            ints.LightningOreChance = config.get(OVERWORLD, "Lightning Ore Spawn Chance", ints.LIGHTNINGORECHANCE_DEFAULT).getInt(ints.LIGHTNINGORECHANCE_DEFAULT);
+            ints.BlazingOreChance = config.get(OVERWORLD, "Blazing Ore Spawn Chance", ints.BLAZINGORECHANCE_DEFAULT).getInt(ints.BLAZINGORECHANCE_DEFAULT);
+            ints.PrizeBloxChance = config.get(OVERWORLD, "Prize Blox Spawn Chance", ints.PRIZEBLOXCHANCE_DEFAULT).getInt(ints.PRIZEBLOXCHANCE_DEFAULT);
+            ints.RarePrizeBloxChance = config.get(OVERWORLD, "Rare Prize Blox Spawn Chance", ints.RAREPRIZEBLOXCHANCE_DEFAULT).getInt(ints.RAREPRIZEBLOXCHANCE_DEFAULT);
+            ints.FrostOreChance = config.get(OVERWORLD, "Frost Ore Spawn Chance", ints.FROSTORECHANCE_DEFAULT).getInt(ints.FROSTORECHANCE_DEFAULT);
+            ints.EnergyOreChance = config.get(OVERWORLD, "Energy Ore Spawn Chance", ints.ENERGYORECHANCE_DEFAULT).getInt(ints.ENERGYORECHANCE_DEFAULT);
+            ints.RemembranceOreChance = config.get(OVERWORLD, "Remembrance Ore Spawn Chance", ints.REMEMBRANCEORECHANCE_DEFAULT).getInt(ints.REMEMBRANCEORECHANCE_DEFAULT);
+            ints.TwilightOreChance = config.get(OVERWORLD, "Twilight Ore Spawn Chance", ints.TWILIGHTORECHANCE_DEFAULT).getInt(ints.TWILIGHTORECHANCE_DEFAULT);
+            ints.PowerOreEChance = config.get(END, "Power Ore Spawn Chance", ints.POWEROREECHANCE_DEFAULT).getInt(ints.POWEROREECHANCE_DEFAULT);
+            ints.DarkOreEChance = config.get(END, "Dark Ore Spawn Chance", ints.DARKOREECHANCE_DEFAULT).getInt(ints.DARKOREECHANCE_DEFAULT);
         }
         catch(Exception e){
             FMLLog.log(Level.SEVERE, e, Reference.MOD_ID + "Has a problem loading the config file");

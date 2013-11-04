@@ -2,18 +2,17 @@ package wehavecookies56.kk.item.keychains;
 
 import java.util.List;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wehavecookies56.kk.client.KeyBind;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.item.ItemKingdomKeys;
 import wehavecookies56.kk.item.keyblades.ItemBrightCrest;
 import wehavecookies56.kk.lib.Reference;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemBrightCrestChain extends ItemKingdomKeys{
 	
