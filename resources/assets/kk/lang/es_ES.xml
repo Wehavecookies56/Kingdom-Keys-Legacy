@@ -129,6 +129,26 @@
     <entry key="item.earthShakerChain.name">Llavero de Teluria</entry>
 	<entry key="item.soulEaterChain.name">Llavero de Devora Almas</entry>
 	<entry key="item.starLightChain.name">Llavero de Luz Estelar</entry>
+	<entry key="item.destinysEmbraceChain.name">Llavero de Abrazo del Destino</entry>
+	<entry key="item.waytotheDawnChain.name">Llavero de Camino al Alba</entry>
+	<entry key="item.oneWingedAngelChain.name">Llavero de Fulgor Sefárico</entry>
+	<entry key="item.diamondDustChain.name">Llavero de Polvo de Diamante</entry>
+	<entry key="item.lionheartChain.name">Llavero de Lionheart</entry>
+	<entry key="item.metalChocoboChain.name">Llavero de Acero Chocobo</entry>
+	<entry key="item.spellbinderChain.name">Llavero de Examinadora</entry>
+	<entry key="item.divineRoseChain.name">Llavero de La Rosa</entry>
+	<entry key="item.fairyHarpChain.name">Llavero de Harpa de Hada</entry>
+	<entry key="item.crabClawChain.name">Llavero de Joya del Mar</entry>
+	<entry key="item.wishingStarChain.name">Llavero de Estrella Fugaz</entry>
+	<entry key="item.pumpkinHeadChain.name">Llavero de Calabaza Macabra</entry>
+	<entry key="item.threeWishesChain.name">Llavero de Tres Deseos</entry>
+	<entry key="item.jungleKingChain.name">Llavero de Artesana</entry>
+	<entry key="item.olympiaChain.name">Llavero de Heroica</entry>
+	<entry key="item.ladyLuckChain.name">Llavero de Último Recurso</entry>
+	<entry key="item.keybladeofPeoplesHeartsChain.name">Llavero de la Llave de los Corazones</entry>
+	<entry key="item.ultimaWeaponChain.name">Llavero de Arma Artema</entry>
+	<entry key="item.treasureTroveChain.name">Llavero de Tesoro Oculto</entry>
+	<entry key="item.starSeekerChain.name">Llavero de Explorador Estelar</entry>
     <!-- Kingdom Hearts Chi -->
     <entry key="item.starLightChain.name">Starlight Chain</entry>
 	<entry key="item.vulpeusForetellersKeybladeChain.name">Llavero de Pronosticador Vulpeus</entry>
@@ -219,7 +239,6 @@
 	<entry key="item.herosCrestChain.name">Llavero de Emblema de Héroe</entry>
 	<entry key="item.rumblingRoseChain.name">Llavero de Rosa del Estruendo</entry>
 	<entry key="item.hiddenDragonChain.name">Llavero de Dragón Oculto</entry>
-
     <entry key="item.endsoftheEarthChain.name">Llavero de Postrimería</entry>
 	<entry key="item.stormfallChain.name">Llavero de Argavieso</entry>
 	<!-- Kingdom Hearts -->
@@ -243,16 +262,13 @@
 	<entry key="item.ultimaWeapon.name">Arma Artema</entry>
 	<entry key="item.treasureTrove.name">Tesoro Oculto</entry>
 	<entry key="item.starSeeker.name">Buscador Estelar</entry>
-	
 <!-- Org XIII -->
 	<entry key="item.eternalFlames.name">Eternal Flames</entry>
-	
 <!-- Corazones -->
     <entry key="item.pureHeart.name">Corazón Puro</entry>
     <entry key="item.darkHeart.name">Corazón Oscuro</entry>
     <entry key="item.heart.name">Corazón</entry>
     <entry key="item.kingdomHearts.name">Kingdom Hearts</entry>
-	
 <!-- Discos -->
 	<entry key="item.Sanctuary.name">Disco de Música</entry>
 	<entry key="item.Simple And Clean PLANITb Remix.name">Disco de Música</entry>
@@ -263,12 +279,11 @@
 	<entry key="item.Organization XIII.name">Disco de Música</entry>
 	<entry key="item.No More Bugs -Bug Version-.name">Disco de Música</entry>
 	<entry key="item.Sinister Sundown.name">Disco de Música</entry>
-	
 <!-- Armaduras -->
-    <entry key="item.organizationHood.name">Capucha de la Organización</entry>
-    <entry key="item.organizationCoat.name">Gabardina de la Organization</entry>
-    <entry key="item.organizationLegs.name">Pantalones de la Organización</entry>
-    <entry key="item.organizationBoots.name">Botas de la Organización</entry>
+    <entry key="item.organizationHood.name">Capucha Oscura</entry>
+    <entry key="item.organizationCoat.name">Gabardina Oscura</entry>
+    <entry key="item.organizationLegs.name">Pantalones Oscura</entry>
+    <entry key="item.organizationBoots.name">Botas Oscura</entry>
 		<!-- Aqua -->
 	<entry key="item.keybladeAHelm.name">Casco de Llave Espada</entry>
     <entry key="item.keybladeAChest.name">Pechera de Llave Espada</entry>
@@ -284,6 +299,11 @@
     <entry key="item.keybladeVChest.name">Pechera de Llave Espada</entry>
     <entry key="item.keybladeVLegs.name">Grebas de Llave Espada</entry>
     <entry key="item.keybladeVBoots.name">Botas de Llave Espada</entry>
+		<!-- Eraqus -->
+	<entry key="item.keybladeEHelm.name">Casco de Llave Espada</entry>
+    <entry key="item.keybladeEChest.name">Pechera de Llave Espada</entry>
+    <entry key="item.keybladeELegs.name">Grebas de Llave Espada</entry>
+    <entry key="item.keybladeEBoots.name">Botas de Llave Espada</entry>
 	
 <!-- Otros -->
     <entry key="item.hPOrb.name">Orbe de HP</entry>
@@ -307,7 +327,6 @@
     <entry key="item.6000Munny.name">¡6000 Platines!</entry>
     <entry key="item.potion.name">Poción</entry>
     <entry key="item.leatherDarkness.name">Cuero de la Oscuridad</entry>
-
 <!-- Bloques -->
     <entry key="tile.normalBlox.name">Bloque de Error</entry>
     <entry key="tile.hardBlox.name">Bloque de Error Duro</entry>
@@ -317,7 +336,8 @@
     <entry key="tile.dangerBlox.name">Bloque de Error Peligroso</entry>
     <entry key="tile.bounceBlox.name">Bloque de Error Blando</entry>
 	<entry key="tile.blastBlox.name">Bloque Bomba</entry>
-	<entry key="tile.synthesiser.name">Sintetizador</entry>
+	<entry key="tile.synthesiser.name">Sintetizador Avanzado</entry>
+    <entry key="tile.synthesiserMini.name">Sintetizador Básico</entry>
 	<!-- Ores -->
     <entry key="tile.blazingOre.name">Mena Ígnea</entry>
     <entry key="tile.blazingOreN.name">Mena Ígnea</entry>
@@ -336,9 +356,9 @@
     <entry key="tile.tranquilOre.name">Mena Serena</entry>
     <entry key="tile.brightOre.name">Mena Clara</entry>
     <entry key="tile.darkOre.name">Mena Oscura</entry>
-    <entry key="tile.darkOreN.name">Mena Oscura</entry>
-    <entry key="tile.darkOreE.name">Mena Oscura</entry>
-    <entry key="tile.lucidOre.name">Mena de Ocaso</entry>
+    <!-- Traduccion --><entry key="tile.darkOreN.name">Mena Oscura</entry>
+    <!-- Traduccion --><entry key="tile.darkOreE.name">Mena Oscura</entry>
+    <!-- Traduccion --><entry key="tile.lucidOre.name">Mena de Ocaso</entry>
 <!-- Materiales -->
 	<entry key="item.blazingShard.name">Guijarro Ígneo</entry>
     <entry key="item.frostShard.name">Guijarro Frío</entry>
@@ -400,8 +420,6 @@
     <entry key="item.orichalcum.name">Orichalcum</entry>
     <entry key="item.orichalcum+.name">Orichalcum+</entry>
     <entry key="item.darkMatter.name">Materia Negra</entry>
-  
-
 <!-- Creative Tab -->
 	<entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>
     <entry key="itemgroup.KHIITAB">Kingdom Keys: Kingdom Hearts II</entry>
@@ -411,5 +429,5 @@
     <entry key="itemgroup.KHDDDTAB">Kingdom Keys: Kingdom Hearts Dream Drop Distance</entry>
     <entry key="itemgroup.KHDAYSTAB">Kingdom Keys: Kingdom Hearts 358/2 Days</entry>
     <entry key="itemgroup.Kingdom Keys">Kingdom Keys</entry>
-    <entry key="itemgroup.KKSMTAB">Materiales de Síntesis</entry>
+    <entry key="itemgroup.KKSMTAB">Kingdom Keys: Materiales de Síntesis</entry>
 </properties>
