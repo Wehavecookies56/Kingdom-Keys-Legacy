@@ -8,3 +8,5 @@ kkdebug1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/DEBUG_
 kkdebug1=hiiiii
 kkmodel1=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/MODEL_CAPE.png
 kkmodel1=AxusSpark
+kkmodel2=https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes/MODEL_CAPE.png
+kkmodel2=revoblam
