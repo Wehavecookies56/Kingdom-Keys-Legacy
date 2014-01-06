@@ -282,8 +282,8 @@
 <!-- Armaduras -->
     <entry key="item.organizationHood.name">Capucha Oscura</entry>
     <entry key="item.organizationCoat.name">Gabardina Oscura</entry>
-    <entry key="item.organizationLegs.name">Pantalones Oscura</entry>
-    <entry key="item.organizationBoots.name">Botas Oscura</entry>
+    <entry key="item.organizationLegs.name">Pantalones Oscuros</entry>
+    <entry key="item.organizationBoots.name">Botas Oscuras</entry>
 		<!-- Aqua -->
 	<entry key="item.keybladeAHelm.name">Casco de Llave Espada</entry>
     <entry key="item.keybladeAChest.name">Pechera de Llave Espada</entry>
@@ -404,7 +404,7 @@
     <entry key="item.tranquilGem.name">Gema Calmada</entry>
     <entry key="item.blazingCrystal.name">Cristal Ígneo</entry>
     <entry key="item.frostCrystal.name">Cristal Frío</entry>
-    <entry key="item.lightningCrystal.name">Cristal Luminosa</entry>
+    <entry key="item.lightningCrystal.name">Cristal Luminoso</entry>
     <!-- Traduccion --><entry key="item.lucidCrystal.name">Cristal de Ocaso</entry>
     <entry key="item.powerCrystal.name">Cristal de Poder</entry>
     <entry key="item.darkCrystal.name">Cristal Oscuro</entry>
