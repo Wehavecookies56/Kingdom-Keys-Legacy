@@ -10,7 +10,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 import wehavecookies56.kk.block.AddedBlocks;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
-import wehavecookies56.kk.core.handlers.GuiHandlerSynth;
+import wehavecookies56.kk.core.handlers.GuiHandler;
 import wehavecookies56.kk.core.handlers.KeyTickHandler;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
 import wehavecookies56.kk.core.handlers.SummonPacketHandler;
@@ -45,7 +45,6 @@ import wehavecookies56.kk.mob.Munny5Drops;
 import wehavecookies56.kk.mob.PureHeartDrops;
 import wehavecookies56.kk.updater.Update;
 import wehavecookies56.kk.world.gen.WorldGenBlox;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -102,7 +101,7 @@ public class KingdomKeys {
     //Mob
     //public static int getUniqueEntityID
     
-    private GuiHandlerSynth guiHandlerSynth = new GuiHandlerSynth();
+    //private GuiHandlerSynth guiHandlerSynth = new GuiHandlerSynth();
     
     //Pre initialisation
     @EventHandler
@@ -115,6 +114,7 @@ public class KingdomKeys {
         LogHelper.log(Level.INFO, "Preparing items");
         AddedItems.initHearts();
         AddedItems.initOthers();
+        AddedItems.initBooks();
         AddedItems.intiArmour();
         LogHelper.log(Level.INFO, "Preparing dungeon loot");
         AddedItems.initLoot();
@@ -148,12 +148,13 @@ public class KingdomKeys {
     //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
+    	new GuiHandler();
     	 TickRegistry.registerTickHandler(new KeyTickHandler(), Side.SERVER);
     	//MinecraftForge.EVENT_BUS.register(new MPTickHandler());
         LogHelper.log(Level.INFO, "Preparing recipes");
         Recipes.initShapedRecipes();
         Recipes.initShapelessRecipes();
-    	NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
+    	//NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
         LogHelper.log(Level.INFO, "Preparing world generation");
         GameRegistry.registerWorldGenerator(worldGen);
         LogHelper.log(Level.INFO, "Preparing renders");
@@ -164,13 +165,15 @@ public class KingdomKeys {
         if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
-        //ntityRegistry.registerGlobalEntityID(EntityRedNocturne.class, "Red Nocturne", 1);
-        //EntityRegistry.registerModEntity(EntityRedNocturne.class, "Red Nocturne", 2, this, 80, 3, true);
-        //EntityRegistry.addSpawn(EntityRedNocturne.class, 5, 2, 20, EnumCreatureType.creature, BiomeGenBase.desert);
-        //EntityRegistry.findGlobalUniqueEntityId();
-        //rengisterEntityEgg(EntityRedNocturne.class, 0xFF1000, 0xFFD51C);
-        //RenderingRegistry.registerEntityRenderingHandler(EntityRedNocturne.class, new RenderRedNocturne), new RedNocturne(),0.3)); 
-        LanguageRegistry.instance().addStringLocalization("entity..RedNocturne.name", "Red Nocturne");
+        EntityRegistry.registerModEntity(EntityRedNocturne.class, "Red Nocturne", 1, this, 80, 3, true);
+        for (int i = 0; i < BiomeGenBase.biomeList.length; i++)
+        {
+        	if (BiomeGenBase.biomeList[i] != null)
+        	{
+        		EntityRegistry.addSpawn(EntityRedNocturne.class, 10, 1, 3, EnumCreatureType.monster, BiomeGenBase.biomeList[i]);
+        	}
+        }
+        LanguageRegistry.instance().addStringLocalization("entity.KingdomKeys.RedNocturne.name", "Red Nocturne");
         final Side side = FMLCommonHandler.instance().getEffectiveSide();
         }
         

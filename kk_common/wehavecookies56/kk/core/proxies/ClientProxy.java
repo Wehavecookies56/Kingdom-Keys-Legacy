@@ -24,12 +24,11 @@ import wehavecookies56.kk.client.render.ItemRenderTotalEclipse;
 import wehavecookies56.kk.client.render.ItemRenderWaywardWind;
 import wehavecookies56.kk.client.render.ItemRenderZeroOne;
 import wehavecookies56.kk.core.handlers.KeyTickHandler;
-//import wehavecookies56.kk.core.handlers.ServerTickHandler;
 import wehavecookies56.kk.entities.EntityBlastBlox;
 import wehavecookies56.kk.entities.mob.EntityRedNocturne;
 import wehavecookies56.kk.item.AddedItems;
 
-import com.jadarstudios.developercapes.DevCapesUtil;
+//import com.jadarstudios.developercapes.DevCapesUtil;
 
 import cpw.mods.fml.client.registry.KeyBindingRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -60,18 +59,17 @@ public class ClientProxy extends CommonProxy {
          //Entities
          RenderingRegistry.registerEntityRenderingHandler(EntityBlastBlox.class, new BlockRenderBlastBlox());
          RenderingRegistry.registerEntityRenderingHandler(EntityRedNocturne.class, new EntityRenderRedNocturne(new ModelRedNocturne(), 0.5F));
-         EntityRegistry.registerGlobalEntityID(EntityRedNocturne.class, "Red Nocturne", EntityRegistry.findGlobalUniqueEntityId(), 3515848, 12102);
+        // EntityRegistry.registerGlobalEntityID(EntityRedNocturne.class, "Red Nocturne", EntityRegistry.findGlobalUniqueEntityId(), 3515848, 12102);
          
          new SoundManager();
          
-       
          //Capes
-         DevCapesUtil.addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
+         //DevCapesUtil.addFileUrl("https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Capes.txt");
     
          KeyBinding[] key = {new KeyBinding("Summon Keyblade", Keyboard.KEY_G)};
          boolean[] repeat = {false};
          KeyBindingRegistry.registerKeyBinding(new KeyBind(key, repeat));
-         
+
 
 
 	}

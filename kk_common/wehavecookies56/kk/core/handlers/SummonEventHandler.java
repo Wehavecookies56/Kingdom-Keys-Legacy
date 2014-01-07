@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.util.ArrayList;
 
+import wehavecookies56.kk.client.gui.GuiSynthesis;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.UsefulArrays;
 
@@ -2989,5 +2990,13 @@ public class SummonEventHandler {
 			
 			event.KeyPressed114c = false;
 		}
+		if(GuiSynthesis.ButtonPressed == true && KeyTickHandler.HasKingdomKeyMats == true){
+			System.out.println("SYNTHESIZED");
+			EntityPlayerMP thePlayer = (EntityPlayerMP)player;
+			GuiSynthesis.ButtonPressed = false;
+			thePlayer.inventory.addItemStackToInventory(new ItemStack(AddedItems.K111c));
+			thePlayer.inventory.consumeInventoryItem(AddedItems.BlazingCrystal.itemID);
+		}
+
 	}
 }

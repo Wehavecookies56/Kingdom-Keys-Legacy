@@ -4,6 +4,7 @@ import java.util.List;
 
 import mods.battlegear2.api.weapons.IBattlegearWeapon;
 import mods.battlegear2.api.weapons.OffhandAttackEvent;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,6 +15,7 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.client.audio.Sounds;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Reference;
@@ -56,6 +58,7 @@ public class ItemAbaddonplasma extends ItemSword implements IBattlegearWeapon{
     	dataList.add("Kingdom Hearts 358/2 Days");
     }
 
+    @SideOnly(Side.SERVER)
     public void onUpdate(ItemStack itemstack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
     	if(itemstack.isItemEnchanted() == false)
@@ -65,10 +68,10 @@ public class ItemAbaddonplasma extends ItemSword implements IBattlegearWeapon{
     	EntityPlayer player = (EntityPlayer)par3Entity;
     	if (this.keyPressed)
     	{
+    		Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 0);
     		this.keyPressed = false;
     		if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K62.itemID)
     		{
-
     		}
     	}
 }

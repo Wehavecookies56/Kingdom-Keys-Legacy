@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import wehavecookies56.kk.entities.tileentities.TileEntitySynthesis;
 import wehavecookies56.kk.item.AddedItems;
 import wehavecookies56.kk.lib.IDs;
 import wehavecookies56.kk.lib.Strings;
@@ -48,6 +49,7 @@ public class AddedBlocks {
         //DarkOreN = new BlockDarkOreN(IDs.DarkOreN, Material.rock); GameRegistry.registerBlock(DarkOreN, Strings.DarkOreN); MinecraftForge.setBlockHarvestLevel(DarkOreN, "pickaxe", 3);
         DarkOreE = new BlockDarkOreE(IDs.DarkOreE, Material.rock); GameRegistry.registerBlock(DarkOreE, Strings.DarkOreE); MinecraftForge.setBlockHarvestLevel(DarkOreE, "pickaxe", 3);
         LucidOre = new BlockLucidOre(IDs.LucidOre, Material.rock); GameRegistry.registerBlock(LucidOre, Strings.LucidOre); MinecraftForge.setBlockHarvestLevel(LucidOre, "pickaxe", 2);
+        GameRegistry.registerTileEntity(TileEntitySynthesis.class, Strings.Synthesiser);
     } 
     
 }

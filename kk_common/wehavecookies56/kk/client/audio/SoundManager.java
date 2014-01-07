@@ -20,7 +20,6 @@ public class SoundManager {
     	for (Sounds sound : Sounds.values()) {
     		addSound(event, sound);
     	}
-		event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Summon + ".ogg");
 		event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc1 + ".ogg");
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc2 + ".ogg");
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc3 + ".ogg");
@@ -32,6 +31,6 @@ public class SoundManager {
         event.manager.soundPoolStreaming.addSound(Reference.MOD_ID + ":" + Strings.Disc9 + ".ogg");
 	}
     public void addSound(SoundLoadEvent event, Sounds sound){
-    	event.manager.soundPoolSounds.addSound(Sounds.SOUND_LOCATION + sound.getName() + ".ogg");
+    	event.manager.soundPoolSounds.addSound(Sounds.SOUND_LOCATION + ":" + sound.getName() + ".ogg");
     }
 }

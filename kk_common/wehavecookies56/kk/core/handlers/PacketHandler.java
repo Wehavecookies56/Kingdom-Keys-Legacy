@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
 import wehavecookies56.kk.client.KeyBind;
+import wehavecookies56.kk.client.gui.GuiSynthesis;
 import wehavecookies56.kk.item.AddedItems;
 import cpw.mods.fml.common.network.IPacketHandler;
 import cpw.mods.fml.common.network.Player;
@@ -3107,6 +3108,12 @@ public class PacketHandler implements IPacketHandler
 						KeyBind.keyPressedK114 = false;
 					}
 				}
+			}
+			if(GuiSynthesis.ButtonPressed == true && KeyTickHandler.HasKingdomKeyMats == true){
+				System.out.println("SYNTHESIZED");
+				GuiSynthesis.ButtonPressed = false;
+				thePlayer.inventory.addItemStackToInventory(new ItemStack(AddedItems.K111c));
+				thePlayer.inventory.consumeInventoryItem(AddedItems.BlazingCrystal.itemID);
 			}
 			
 		}

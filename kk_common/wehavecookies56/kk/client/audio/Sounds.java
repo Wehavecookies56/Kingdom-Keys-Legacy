@@ -5,9 +5,10 @@ import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 
 public enum Sounds {
-	KEYBLADE_SUMMON(Strings.Summon);
+	KEYBLADE_SUMMON("summon"),
+	KUPO("kupo");
 	
-	public static final String SOUND_LOCATION = Reference.MOD_ID;
+	public static final String SOUND_LOCATION = "kk";
 	public String name;
 	
 	Sounds(String name){

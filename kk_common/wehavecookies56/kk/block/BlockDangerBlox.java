@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
+import wehavecookies56.kk.KingdomKeys;
 import wehavecookies56.kk.lib.Reference;
 import wehavecookies56.kk.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
@@ -29,6 +30,7 @@ public class BlockDangerBlox extends BlockBlox {
     
     public void onBlockClicked(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer) {
         par5EntityPlayer.attackEntityFrom(DamageSource.magic, 3);
+        //par5EntityPlayer.openGui(KingdomKeys.instance, 2, par1World, (int)par5EntityPlayer.posX, (int)par5EntityPlayer.posY, (int)par5EntityPlayer.posZ);
     }
     
     public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)

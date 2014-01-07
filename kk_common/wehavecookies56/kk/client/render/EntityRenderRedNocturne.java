@@ -1,5 +1,7 @@
 package wehavecookies56.kk.client.render;
 
+import org.lwjgl.opengl.GL11;
+
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
@@ -21,11 +23,17 @@ public class EntityRenderRedNocturne extends RenderLiving{
 
 	public void renderRedNocturne(EntityRedNocturne par1Entity, double par2, double par4, double par6, float par8, float par9)
 	{
+		GL11.glPushMatrix();
+		GL11.glRotatef(90, 1F, 0F, 0F);
+		GL11.glPopMatrix();
 		super.doRenderLiving(par1Entity, par2, par4, par6, par8, par9);
 	}
 
 	public void doRenderLiving(EntityLiving par1EntityLiving, double par2, double par4, double par6, float par8, float par9)
 	{
+		GL11.glPushMatrix();
+		GL11.glRotatef(90, 1F, 0F, 0F);
+		GL11.glPopMatrix();
 		this.renderRedNocturne((EntityRedNocturne)par1EntityLiving, par2, par4, par6, par8, par9);
 	}
 
@@ -34,9 +42,12 @@ public class EntityRenderRedNocturne extends RenderLiving{
 	 * handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic
 	 * (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1,
 	 * double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
-	 */
+	**/
 	public void doRender(Entity par1Entity, double par2, double par4, double par6, float par8, float par9)
 	{
+		GL11.glPushMatrix();
+		GL11.glRotatef(90, 1F, 0F, 0F);
+		GL11.glPopMatrix();
 		this.renderRedNocturne((EntityRedNocturne)par1Entity, par2, par4, par6, par8, par9);
 	}
 	

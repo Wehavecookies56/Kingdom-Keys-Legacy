@@ -168,6 +168,9 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(AddedItems.KeybladeVChest), new ItemStack(AddedItems.KeybladeVChest), new ItemStack(AddedItems.OrichalcumPlus));
 		GameRegistry.addShapelessRecipe(new ItemStack(AddedItems.KeybladeVLegs), new ItemStack(AddedItems.KeybladeVLegs), new ItemStack(AddedItems.OrichalcumPlus));
 		GameRegistry.addShapelessRecipe(new ItemStack(AddedItems.KeybladeVBoots), new ItemStack(AddedItems.KeybladeVBoots), new ItemStack(AddedItems.OrichalcumPlus));
+		if(ConfigBooleans.munnyDrops){
+		GameRegistry.addShapelessRecipe(new ItemStack(AddedItems.Munny1), new ItemStack(Item.goldNugget));
+		}
 	}
 
 

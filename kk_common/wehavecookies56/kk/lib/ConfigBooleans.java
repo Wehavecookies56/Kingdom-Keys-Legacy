@@ -32,4 +32,8 @@ public class ConfigBooleans {
 	public static boolean bloxRecipe;
 	public static final boolean bloxRecipe_default = false;
 	public static final String bloxRecipe_name = "Enable recipes for all the bug blox";
+	
+	public static boolean munnyDrops;
+	public static final boolean munnyDrops_default = true;
+	public static final String munnyDrops_name = "Enable Munny drops from mobs";
 }

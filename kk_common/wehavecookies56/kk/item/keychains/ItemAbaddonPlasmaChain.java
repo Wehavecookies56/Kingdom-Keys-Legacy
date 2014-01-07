@@ -2,6 +2,7 @@ package wehavecookies56.kk.item.keychains;
 
 import java.util.List;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -27,14 +28,14 @@ public class ItemAbaddonPlasmaChain extends ItemKingdomKeys{
     }
 	public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
 	{
+	
 		EntityPlayer player = (EntityPlayer)par3Entity;
 		if (ItemAbaddonplasma.keyPressed)
 		{
 			ItemAbaddonplasma.keyPressed = false;
 			if (player.getHeldItem() != null && player.getHeldItem().itemID == AddedItems.K62c.itemID)
 			{
-				//par2World.playSoundAtEntity(player, "kk:keybladesummon", 1.0F, 1.0F);
-				//par2World.spawnParticle("largesmoke", player.posX, player.posY, player.posZ, 0.0D, 0.0D, 0.0D);
+				
 			}
 		}
 	}

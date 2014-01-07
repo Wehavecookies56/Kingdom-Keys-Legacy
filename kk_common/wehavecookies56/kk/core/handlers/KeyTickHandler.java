@@ -2,18 +2,14 @@ package wehavecookies56.kk.core.handlers;
 
 import java.util.EnumSet;
 
-import wehavecookies56.kk.client.KeyBind;
-import wehavecookies56.kk.lib.Reference;
-import wehavecookies56.kk.lib.UsefulArrays;
-
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.network.packet.Packet250CustomPayload;
-import cpw.mods.fml.client.FMLClientHandler;
+import net.minecraft.item.ItemStack;
+import wehavecookies56.kk.entities.tileentities.TileEntitySynthesis;
+import wehavecookies56.kk.item.AddedItems;
+import wehavecookies56.kk.lib.UsefulArrays;
 import cpw.mods.fml.common.ITickHandler;
 import cpw.mods.fml.common.TickType;
-import cpw.mods.fml.common.network.PacketDispatcher;
 
 public class KeyTickHandler implements ITickHandler {
 	
@@ -2643,7 +2639,18 @@ public class KeyTickHandler implements ITickHandler {
 				counter = 0F;
 			}
 		}
+		if (counter == 20F){
+			counter = 0F;
+		}
+		
+		TileEntitySynthesis synthesis = new TileEntitySynthesis();
+		
+		if(thePlayer.inventory.hasItemStack(new ItemStack(AddedItems.BlazingCrystal))){
+			HasKingdomKeyMats = true;
+		}
+
 	}
+
 	public static boolean KeyPressed1 = false;
 	public static boolean KeyPressed1c = false;
 	public static boolean KeyPressed2 = false;
@@ -2872,6 +2879,7 @@ public class KeyTickHandler implements ITickHandler {
 	public static boolean KeyPressed113c = false;
 	public static boolean KeyPressed114 = false;
 	public static boolean KeyPressed114c = false;
+	public static boolean HasKingdomKeyMats = false;
 	
 	@Override
 	public void tickStart(EnumSet<TickType> type, Object... tickData) {
