@@ -10,6 +10,7 @@ import wehavecookies56.kk.lib.UsefulArrays;
 
 import cpw.mods.fml.client.FMLClientHandler;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
@@ -34,7 +35,21 @@ public class SummonEventHandler {
 
 		FMLClientHandler.instance().sendPacket(packet);
 	}
+	
+	public static boolean item1 = false;
+	public static boolean item2 = false;
+	public static boolean item3 = false;
+	public static boolean item4 = false;
+	public static boolean item5 = false;
+	public static boolean item6 = false;
+	public static boolean item7 = false;
+	public static boolean item8 = false;
+	public static boolean item9 = false;
+	public static boolean item10 = false;
+	public static boolean item11 = false;
 
+
+	
 	public static void handlePacket(Packet250CustomPayload packet,
 			EntityPlayer player) {
 		if (event.KeyPressed1 == true) {
@@ -57,6 +72,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[1])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[1], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -83,6 +99,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[2])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[2], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -109,6 +126,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[3])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[3], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -135,6 +153,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[4])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[4], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -161,6 +180,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[5])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[5], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -187,6 +207,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[6])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[6], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -212,6 +233,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[7])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[7], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -238,6 +260,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[8])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[8], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -264,6 +287,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[9])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[9], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -290,6 +314,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[10])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[10], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -316,6 +341,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[11])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[11], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -342,6 +368,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[12])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[12], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -368,6 +395,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[13])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[13], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -394,6 +422,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[14])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[14], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -420,6 +449,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[15])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[15], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -444,6 +474,7 @@ public class SummonEventHandler {
 			ArrayList<ItemStack> itemListToSend = new ArrayList<ItemStack>();
 			EntityPlayerMP thePlayer = (EntityPlayerMP)player;
 			
+			Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[16])
 			{
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[16], 1));
@@ -471,6 +502,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[17])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[17], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -497,6 +529,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[18])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[18], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -523,6 +556,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[19])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[19], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -549,6 +583,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[20])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[20], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -575,6 +610,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[21])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[21], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -601,6 +637,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[22])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[22], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -627,6 +664,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[23])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[23], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -653,6 +691,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[24])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[24], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -679,6 +718,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[25])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[25], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -705,6 +745,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[26])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[26], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -730,6 +771,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[27])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[27], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -756,6 +798,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[28])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[28], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -782,6 +825,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[29])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[29], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -808,6 +852,7 @@ public class SummonEventHandler {
 			
 			if (thePlayer.getHeldItem() != null && thePlayer.getHeldItem().itemID == UsefulArrays.keychainid[30])
 			{
+				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
 				thePlayer.inventory.setInventorySlotContents(thePlayer.inventory.currentItem, new ItemStack(UsefulArrays.keyblade[30], 1));
 				thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 			}
@@ -2989,13 +3034,6 @@ public class SummonEventHandler {
 			}
 			
 			event.KeyPressed114c = false;
-		}
-		if(GuiSynthesis.ButtonPressed == true && KeyTickHandler.HasKingdomKeyMats == true){
-			System.out.println("SYNTHESIZED");
-			EntityPlayerMP thePlayer = (EntityPlayerMP)player;
-			GuiSynthesis.ButtonPressed = false;
-			thePlayer.inventory.addItemStackToInventory(new ItemStack(AddedItems.K111c));
-			thePlayer.inventory.consumeInventoryItem(AddedItems.BlazingCrystal.itemID);
 		}
 
 	}

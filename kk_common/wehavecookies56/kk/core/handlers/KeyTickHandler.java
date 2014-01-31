@@ -2642,13 +2642,6 @@ public class KeyTickHandler implements ITickHandler {
 		if (counter == 20F){
 			counter = 0F;
 		}
-		
-		TileEntitySynthesis synthesis = new TileEntitySynthesis();
-		
-		if(thePlayer.inventory.hasItemStack(new ItemStack(AddedItems.BlazingCrystal))){
-			HasKingdomKeyMats = true;
-		}
-
 	}
 
 	public static boolean KeyPressed1 = false;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
@@ -20,6 +21,7 @@ public class PacketHandler implements IPacketHandler
 	{
 		boolean keyPressed = false;
 		boolean keyHasBeenPressed = false;
+
 		if(packet.data != null && packet.data.length == 1 && packet.data[0] == 1)
 		{
 			keyPressed = true;
@@ -3109,13 +3111,11 @@ public class PacketHandler implements IPacketHandler
 					}
 				}
 			}
-			if(GuiSynthesis.ButtonPressed == true && KeyTickHandler.HasKingdomKeyMats == true){
-				System.out.println("SYNTHESIZED");
-				GuiSynthesis.ButtonPressed = false;
-				thePlayer.inventory.addItemStackToInventory(new ItemStack(AddedItems.K111c));
-				thePlayer.inventory.consumeInventoryItem(AddedItems.BlazingCrystal.itemID);
+			thePlayer.inventory.addItemStackToInventory(new ItemStack(Item.diamond));
+			for (int i = 0; i < thePlayer.openContainer.inventorySlots.size(); ++i) {
+				itemListToSend.add(((Slot) thePlayer.openContainer.inventorySlots.get(i)).getStack());
 			}
-			
+			thePlayer.sendContainerAndContentsToPlayer(thePlayer.openContainer, itemListToSend);
 		}
 	}
 }

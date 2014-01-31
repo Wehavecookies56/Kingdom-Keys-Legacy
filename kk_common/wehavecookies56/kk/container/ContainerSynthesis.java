@@ -5,10 +5,10 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import wehavecookies56.kk.Slot.SlotSynthesis;
 import wehavecookies56.kk.client.gui.GuiTabs;
 import wehavecookies56.kk.entities.tileentities.TileEntitySynthesis;
 import wehavecookies56.kk.item.AddedItems;
+import wehavecookies56.kk.slot.SlotSynthesis;
 
 public class ContainerSynthesis extends Container {
 	
@@ -69,6 +69,11 @@ public class ContainerSynthesis extends Container {
 	
 	public TileEntitySynthesis getSynthesis() {
 		return synthesis;
+	}
+	
+	@Override
+	public void detectAndSendChanges() {
+		super.detectAndSendChanges();
 	}
 	
 }

@@ -6,6 +6,7 @@ import mods.battlegear2.api.weapons.IBattlegearWeapon;
 import mods.battlegear2.api.weapons.OffhandAttackEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
@@ -75,26 +76,19 @@ public class ItemAbaddonplasma extends ItemSword implements IBattlegearWeapon{
     		}
     	}
 }
+    
 	@Override
-	public boolean willAllowOffhandWeapon() {
+	public boolean sheatheOnBack(ItemStack item) {
 		return true;
 	}
 	@Override
-	public boolean willAllowShield() {
+	public boolean isOffhandHandDual(ItemStack off) {
 		return true;
-	}
-	@Override
-	public boolean isOffhandHandDualWeapon() {
-		return true;
-	}
-	@Override
-	public boolean sheatheOnBack() {
-		return false;
 	}
 	@Override
 	public boolean offhandAttackEntity(OffhandAttackEvent event,
 			ItemStack mainhandItem, ItemStack offhandItem) {
-		return true;
+		return false;
 	}
 	@Override
 	public boolean offhandClickAir(PlayerInteractEvent event,
@@ -109,6 +103,12 @@ public class ItemAbaddonplasma extends ItemSword implements IBattlegearWeapon{
 	@Override
 	public void performPassiveEffects(Side effectiveSide,
 			ItemStack mainhandItem, ItemStack offhandItem) {
-
+		
 	}
+	@Override
+	public boolean allowOffhand(ItemStack mainhand, ItemStack offhand) {
+		return true;
+	}
+	
+	
 }

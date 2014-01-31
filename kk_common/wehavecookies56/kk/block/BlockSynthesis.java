@@ -76,11 +76,9 @@ public class BlockSynthesis extends BlockContainer{
 	
 	@Override
 	public void breakBlock(World world, int x, int y, int z, int id, int meta){
-		TileEntity te = world.getBlockTileEntity(x, y, z);
-		if(te != null && te instanceof IInventory){
-			IInventory inventory = (IInventory)te;
-			for(int i = 0; i < inventory.getSizeInventory(); i++){
-				ItemStack stack = inventory.getStackInSlotOnClosing(i);
+				TileEntitySynthesis synthesis = new TileEntitySynthesis();
+				ItemStack stack = synthesis.getStackInSlot(1);
+				System.out.println(stack);
 				if(stack != null){
 					float spawnX = x + world.rand.nextFloat();
 					float spawnY = y + world.rand.nextFloat();
@@ -91,8 +89,6 @@ public class BlockSynthesis extends BlockContainer{
 					droppedItem.motionY = 4 + world.rand.nextFloat() * mult;
 					droppedItem.motionZ = -0.5F + world.rand.nextFloat() * mult;
 				}
-			}
-		}
 		super.breakBlock(world, x, y, z, id, meta);
 	}
 

@@ -67,38 +67,35 @@ public class ItemEarthShaker extends ItemSword implements IBattlegearWeapon{
 	}
     }
 	@Override
-	public boolean willAllowOffhandWeapon() {
-		return true;	
+	public boolean sheatheOnBack(ItemStack item) {
+		return true;
 	}
 	@Override
-	public boolean willAllowShield() {
-		return true;	
-	}
-	@Override
-	public boolean isOffhandHandDualWeapon() {
-		return true;	
-	}
-	@Override
-	public boolean sheatheOnBack() {
-		return false;
+	public boolean isOffhandHandDual(ItemStack off) {
+		return true;
 	}
 	@Override
 	public boolean offhandAttackEntity(OffhandAttackEvent event,
 			ItemStack mainhandItem, ItemStack offhandItem) {
-		return true;	
+		return false;
 	}
 	@Override
 	public boolean offhandClickAir(PlayerInteractEvent event,
 			ItemStack mainhandItem, ItemStack offhandItem) {
-		return true;	
+		return true;
 	}
 	@Override
 	public boolean offhandClickBlock(PlayerInteractEvent event,
 			ItemStack mainhandItem, ItemStack offhandItem) {
-		return true;	
+		return true;
 	}
 	@Override
 	public void performPassiveEffects(Side effectiveSide,
 			ItemStack mainhandItem, ItemStack offhandItem) {
 	}
+	@Override
+	public boolean allowOffhand(ItemStack mainhand, ItemStack offhand) {
+		return true;
+	}
+	
 }
