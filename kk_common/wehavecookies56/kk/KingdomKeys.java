@@ -5,14 +5,20 @@ import java.util.logging.Level;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.EntityDamageSourceIndirect;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 import wehavecookies56.kk.block.AddedBlocks;
+import wehavecookies56.kk.client.TickerClient;
 import wehavecookies56.kk.core.handlers.ConfigurationHandler;
 import wehavecookies56.kk.core.handlers.GuiHandler;
 import wehavecookies56.kk.core.handlers.KeyTickHandler;
 import wehavecookies56.kk.core.handlers.LocalizationHandler;
+import wehavecookies56.kk.core.handlers.ParticleHandler;
 import wehavecookies56.kk.core.handlers.SummonPacketHandler;
 import wehavecookies56.kk.core.helper.LogHelper;
 import wehavecookies56.kk.core.proxies.ClientProxy;
@@ -28,8 +34,11 @@ import wehavecookies56.kk.creativetab.KKSMTAB;
 import wehavecookies56.kk.creativetab.KKTAB;
 import wehavecookies56.kk.enchantments.EnchantHeartHarvest;
 import wehavecookies56.kk.entities.EntityBlastBlox;
+import wehavecookies56.kk.entities.EntityEternalFlames;
+import wehavecookies56.kk.entities.EntitySharpshooterShot;
 import wehavecookies56.kk.entities.mob.EntityRedNocturne;
 import wehavecookies56.kk.item.AddedItems;
+import wehavecookies56.kk.item.ItemSharpShooter;
 import wehavecookies56.kk.lib.ConfigBooleans;
 import wehavecookies56.kk.lib.Recipes;
 import wehavecookies56.kk.lib.Reference;
@@ -71,6 +80,10 @@ import cpw.mods.fml.relauncher.Side;
 
 public class KingdomKeys {
 
+	public static DamageSource causeChakramDamage(EntityEternalFlames par0EntityArrow, Entity par1Entity) {
+        return (new EntityDamageSourceIndirect("chakram", par0EntityArrow, par1Entity)).setProjectile();
+    }
+	
 	//World gen
 	WorldGenBlox worldGen = new WorldGenBlox();
 	
@@ -136,44 +149,34 @@ public class KingdomKeys {
         MinecraftForge.EVENT_BUS.register(new PureHeartDrops());
         MinecraftForge.EVENT_BUS.register(new DarkHeartDrops());
         MinecraftForge.EVENT_BUS.register(new KingdomHeartsDrops());
-        MinecraftForge.EVENT_BUS.register(new Munny1Drops());
-        MinecraftForge.EVENT_BUS.register(new Munny5Drops());
-        MinecraftForge.EVENT_BUS.register(new Munny10Drops());
-        MinecraftForge.EVENT_BUS.register(new Munny20Drops());
-        MinecraftForge.EVENT_BUS.register(new Munny50Drops());
-        MinecraftForge.EVENT_BUS.register(new Munny1000Drops());
-        //MinecraftForge.EVENT_BUS.register(new SoundManager());
+        //MinecraftForge.EVENT_BUS.register(new Munny1Drops());
+        //MinecraftForge.EVENT_BUS.register(new Munny5Drops());
+        //MinecraftForge.EVENT_BUS.register(new Munny10Drops());
+        //MinecraftForge.EVENT_BUS.register(new Munny20Drops());
+        //MinecraftForge.EVENT_BUS.register(new Munny50Drops());
+        //MinecraftForge.EVENT_BUS.register(new Munny1000Drops());
+        int modEntityID = 0;
+        EntityRegistry.registerModEntity(EntitySharpshooterShot.class, "Sharpshooter Bullet", ++modEntityID, this, 64, 10, true);
+
     }
     
     //Initialisation
     @EventHandler
     public void init(FMLInitializationEvent event) {
     	new GuiHandler();
-    	 TickRegistry.registerTickHandler(new KeyTickHandler(), Side.SERVER);
-    	//MinecraftForge.EVENT_BUS.register(new MPTickHandler());
+    	TickRegistry.registerTickHandler(new KeyTickHandler(), Side.SERVER);
         LogHelper.log(Level.INFO, "Preparing recipes");
         Recipes.initShapedRecipes();
         Recipes.initShapelessRecipes();
-    	//NetworkRegistry.instance().registerGuiHandler(this, guiHandlerSynth);
         LogHelper.log(Level.INFO, "Preparing world generation");
         GameRegistry.registerWorldGenerator(worldGen);
         LogHelper.log(Level.INFO, "Preparing renders");
         proxy.registerRenderers();
         LogHelper.log(Level.INFO, "Preparing entities");
         EntityRegistry.registerModEntity(EntityBlastBlox.class, "BlastBlox", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
-        //EntityRegistry.registerModEntity(EntityEternalFlames.class, "EternalFlames", EntityRegistry.findGlobalUniqueEntityId(), this, 128, 1, true);
         if(ConfigBooleans.enableUpdateCheck){
         LogHelper.log(Level.INFO, "Checking for new version");
         NetworkRegistry.instance().registerConnectionHandler(new Update("Kingdom Keys", Reference.MOD_VER, "https://raw.github.com/Wehavecookies56/Kingdom-Keys/master/Version.txt"));
-        EntityRegistry.registerModEntity(EntityRedNocturne.class, "Red Nocturne", 1, this, 80, 3, true);
-        for (int i = 0; i < BiomeGenBase.biomeList.length; i++)
-        {
-        	if (BiomeGenBase.biomeList[i] != null)
-        	{
-        		EntityRegistry.addSpawn(EntityRedNocturne.class, 10, 1, 3, EnumCreatureType.monster, BiomeGenBase.biomeList[i]);
-        	}
-        }
-        LanguageRegistry.instance().addStringLocalization("entity.KingdomKeys.RedNocturne.name", "Red Nocturne");
         final Side side = FMLCommonHandler.instance().getEffectiveSide();
         }
         

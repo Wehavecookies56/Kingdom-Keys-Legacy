@@ -14,7 +14,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class AddedBlocks {
 
     public static Block
-    SynthesiserMini, NormalBlox, HardBlox, MetalBlox, PrizeBlox, RarePrizeBlox, BounceBlox, DangerBlox, BlastBlox, Synthesiser, BlazingOre, BlazingOreN, LightningOre, FrostOre, DenseOre, PowerOre, PowerOreE, EnergyOre, EnergyOreN, RemembranceOre, RemembranceOreN, SerenityOre, TwilightOre, TwilightOreN, TranquilOre, BrightOre, DarkOre, DarkOreN, DarkOreE, LucidOre;
+    NormalBlox, HardBlox, MetalBlox, PrizeBlox, RarePrizeBlox, BounceBlox, DangerBlox, BlastBlox, Synthesiser, BlazingOre, BlazingOreN, LightningOre, FrostOre, DenseOre, PowerOre, PowerOreE, EnergyOre, EnergyOreN, RemembranceOre, RemembranceOreN, SerenityOre, TwilightOre, TwilightOreN, TranquilOre, BrightOre, DarkOre, DarkOreN, DarkOreE, LucidOre;
 
     public static void preinit(){
     	//Bug Blox
@@ -27,7 +27,6 @@ public class AddedBlocks {
         DangerBlox = new BlockDangerBlox(IDs.DBlox, Material.iron); GameRegistry.registerBlock(DangerBlox, Strings.DBlox);
         BlastBlox = new BlockBlastBlox(IDs.BLBlox); GameRegistry.registerBlock(BlastBlox, Strings.BLBlox);
         Synthesiser = new BlockSynthesis(IDs.Synthesis); GameRegistry.registerBlock(Synthesiser, Strings.Synthesiser);      
-        SynthesiserMini = new BlockSynthesisMini(IDs.SynthesisMini); GameRegistry.registerBlock(SynthesiserMini, Strings.SynthesiserMini);      
         //Synthesis ores
         BlazingOre = new BlockBlazingOre(IDs.BlazingOre, Material.rock); GameRegistry.registerBlock(BlazingOre, Strings.BlazingOre); MinecraftForge.setBlockHarvestLevel(BlazingOre, "pickaxe", 1);
         //BlazingOreN = new BlockBlazingOreN(IDs.BlazingOreN, Material.rock); GameRegistry.registerBlock(BlazingOreN, Strings.BlazingOreN); MinecraftForge.setBlockHarvestLevel(BlazingOreN, "pickaxe", 1);

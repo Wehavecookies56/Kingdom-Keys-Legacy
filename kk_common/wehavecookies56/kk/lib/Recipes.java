@@ -131,13 +131,6 @@ public class Recipes {
 			"OHO",
 			'M', AddedBlocks.MetalBlox, 'C', Block.workbench, 'H', AddedBlocks.HardBlox, '5', AddedItems.Munny500, 'N', AddedBlocks.NormalBlox, 'O', AddedItems.HP
 		});
-		
-		GameRegistry.addRecipe(new ItemStack(AddedBlocks.SynthesiserMini), new Object[]{
-			"BCF",
-			"C5C",
-			"LCU",
-			'C', Block.workbench, '5', AddedItems.Munny500, 'B', AddedItems.BlazingCrystal, 'F', AddedItems.FrostCrystal, 'L', AddedItems.LightningCrystal, 'U', AddedItems.LucidCrystal
-		});
 	}
 	public static void initShapelessRecipes(){
 		GameRegistry.addShapelessRecipe(new ItemStack(AddedItems.Munny5), new ItemStack(AddedItems.Munny1), new ItemStack(AddedItems.Munny1), new ItemStack(AddedItems.Munny1), new ItemStack(AddedItems.Munny1), new ItemStack(AddedItems.Munny1));

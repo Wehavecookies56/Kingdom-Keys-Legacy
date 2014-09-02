@@ -4,7 +4,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import wehavecookies56.kk.KingdomKeys;
+import wehavecookies56.kk.client.gui.GuiGuide;
 import wehavecookies56.kk.client.gui.GuiSynthesis;
+import wehavecookies56.kk.container.ContainerGuide;
 import wehavecookies56.kk.container.ContainerSynthesis;
 import wehavecookies56.kk.entities.tileentities.TileEntitySynthesis;
 import cpw.mods.fml.common.network.IGuiHandler;
@@ -25,6 +27,8 @@ public class GuiHandler implements IGuiHandler {
 				return new ContainerSynthesis(player.inventory, (TileEntitySynthesis)te);
 			}
 			break;
+		case 1:
+			return new ContainerGuide(player);
 		}
 		return null;
 	}
@@ -38,6 +42,8 @@ public class GuiHandler implements IGuiHandler {
 				return new GuiSynthesis(player.inventory, (TileEntitySynthesis)te);
 			}
 			break;
+		case 1:
+			return new GuiGuide(player);
 		}
 		return null;
 	}

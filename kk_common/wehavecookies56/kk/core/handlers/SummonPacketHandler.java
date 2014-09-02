@@ -33,7 +33,7 @@ public class SummonPacketHandler implements IPacketHandler {
 	// Before adding it remember to add it also in chanels, in network mod
 	// attribute
 
-	public static Item result;
+	public static ItemStack result;
 	public static int item1;
 	public static int item2;
 	public static int item3;
@@ -69,7 +69,7 @@ public class SummonPacketHandler implements IPacketHandler {
 		if(packet.data != null && packet.data.length == 1 && packet.data[0] == 1){
 			EntityPlayerMP thePlayer = (EntityPlayerMP)player;
 			ArrayList<ItemStack> itemListToSend = new ArrayList<ItemStack>();
-			thePlayer.inventory.addItemStackToInventory(new ItemStack(result));
+			thePlayer.inventory.addItemStackToInventory(result);
 			for (int i = 0; i < thePlayer.openContainer.inventorySlots.size(); ++i) {
 				itemListToSend.add(((Slot) thePlayer.openContainer.inventorySlots.get(i)).getStack());
 			}

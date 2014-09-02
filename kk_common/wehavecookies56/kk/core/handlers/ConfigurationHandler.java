@@ -22,6 +22,7 @@ public class ConfigurationHandler {
             config.load();
             //ITEMS
             //IDs.EternalFlames = config.getItem(Strings.EternalFlames  + " ID", IDs.ETERNALFLAMES_DEFAULT).getInt(IDs.ETERNALFLAMES_DEFAULT);
+            IDs.Guide = config.getItem(Strings.Guide + " ID", IDs.GUIDE_DEFAULT).getInt(IDs.GUIDE_DEFAULT);
             IDs.DarkLeather = config.getItem(Strings.DLeather  + " ID", IDs.DARKLEATHER_DEFAULT).getInt(IDs.DARKLEATHER_DEFAULT);
             IDs.PureHeart = config.getItem(Strings.PHeart  + " ID", IDs.PUREHEART_DEFAULT).getInt(IDs.PUREHEART_DEFAULT);
             IDs.DarkHeart = config.getItem(Strings.DHeart  + " ID", IDs.DARKHEART_DEFAULT).getInt(IDs.DARKHEART_DEFAULT);
@@ -429,6 +430,19 @@ public class ConfigurationHandler {
             IDs.K113r = config.getItem(Strings.KingdomKeyDRecipe  + " ID", IDs.KINGDOMKEYDRECIPE_DEFAULT).getInt(IDs.KINGDOMKEYDRECIPE_DEFAULT);
             IDs.K114r = config.getItem(Strings.OblivionRecipe  + " ID", IDs.OBLIVIONRECIPE_DEFAULT).getInt(IDs.OBLIVIONRECIPE_DEFAULT);
             
+            IDs.BookofRetribution = config.getItem(Strings.BookOfRetribution  + " ID", IDs.BOOKOFRETRIBUTION_DEFAULT).getInt(IDs.BOOKOFRETRIBUTION_DEFAULT);
+            IDs.Interdiction = config.getItem(Strings.Interdiction  + " ID", IDs.INTERDICTION_DEFAULT).getInt(IDs.INTERDICTION_DEFAULT);
+            IDs.Sharpshooter = config.getItem(Strings.SharpShooter  + " ID", IDs.SHARPSHOOTER_DEFAULT).getInt(IDs.SHARPSHOOTER_DEFAULT);
+            IDs.Lindworm = config.getItem(Strings.LindWorm  + " ID", IDs.LINDWORM_DEFAULT).getInt(IDs.LINDWORM_DEFAULT);
+            IDs.Skysplitter = config.getItem(Strings.Skysplitter  + " ID", IDs.SKYSPLITTER_DEFAULT).getInt(IDs.SKYSPLITTER_DEFAULT);
+            IDs.Frozenpride = config.getItem(Strings.FrozenPride  + " ID", IDs.FROZENPRIDE_DEFAULT).getInt(IDs.FROZENPRIDE_DEFAULT);
+            IDs.Fairgame = config.getItem(Strings.FairGame  + " ID", IDs.FAIRGAME_DEFAULT).getInt(IDs.FAIRGAME_DEFAULT);
+            IDs.EternalFlames = config.getItem(Strings.EternalFlames  + " ID", IDs.ETERNALFLAMES_DEFAULT).getInt(IDs.ETERNALFLAMES_DEFAULT);
+            IDs.Foudre = config.getItem(Strings.Foudre  + " ID", IDs.FOUDRE_DEFAULT).getInt(IDs.FOUDRE_DEFAULT);
+            IDs.GracefulDahlia = config.getItem(Strings.GracefulDahlia  + " ID", IDs.GRACEFULDAHLIA_DEFAULT).getInt(IDs.GRACEFULDAHLIA_DEFAULT);
+            IDs.Lunatic = config.getItem(Strings.Lunatic  + " ID", IDs.LUNATIC_DEFAULT).getInt(IDs.LUNATIC_DEFAULT);
+            IDs.Appregio = config.getItem(Strings.Appregio  + " ID", IDs.APPREGIO_DEFAULT).getInt(IDs.APPREGIO_DEFAULT);
+            
             IDs.BlazingShard = config.getItem(Strings.BlazingShard  + " ID", IDs.BLAZINGSHARD_DEFAULT).getInt(IDs.BLAZINGSHARD_DEFAULT);
             IDs.BlazingStone = config.getItem(Strings.BlazingStone  + " ID", IDs.BLAZINGSTONE_DEFAULT).getInt(IDs.BLAZINGSTONE_DEFAULT);
             IDs.BlazingGem = config.getItem(Strings.BlazingGem  + " ID", IDs.BLAZINGGEM_DEFAULT).getInt(IDs.BLAZINGGEM_DEFAULT);
@@ -514,7 +528,6 @@ public class ConfigurationHandler {
             IDs.DBlox = config.getBlock(Strings.DBlox  + " ID", IDs.DANGERBLOX_DEFAULT).getInt(IDs.DANGERBLOX_DEFAULT);
             IDs.BLBlox = config.getBlock(Strings.BLBlox  + " ID", IDs.BLBLOX_DEFAULT).getInt(IDs.BLBLOX_DEFAULT);
             IDs.Synthesis = config.getBlock(Strings.Synthesiser  + " ID", IDs.SYNTHESIS_DEFAULT).getInt(IDs.SYNTHESIS_DEFAULT);
-            IDs.SynthesisMini = config.getBlock(Strings.SynthesiserMini  + " ID", IDs.SYNTHESISMINI_DEFAULT).getInt(IDs.SYNTHESISMINI_DEFAULT);
             IDs.BlazingOre = config.getBlock(Strings.BlazingOre  + " ID", IDs.BLAZINGORE_DEFAULT).getInt(IDs.BLAZINGORE_DEFAULT);
             //IDs.BlazingOreN = config.getBlock(Strings.BlazingOreN  + " ID", IDs.BLAZINGOREN_DEFAULT).getInt(IDs.BLAZINGOREN_DEFAULT);
             IDs.LightningOre = config.getBlock(Strings.LightningOre  + " ID", IDs.LIGHTNINGORE_DEFAULT).getInt(IDs.LIGHTNINGORE_DEFAULT);

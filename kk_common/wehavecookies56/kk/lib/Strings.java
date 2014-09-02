@@ -1,6 +1,8 @@
 package wehavecookies56.kk.lib;
 
 public class Strings {
+	
+	public static final String Guide = "guide";
     //Key Blades
 	public static final String Vulpeus = "vulpeusForetellersKeyblade";
 	public static final String Ursus = "ursusForetellersKeyblade";
@@ -318,7 +320,6 @@ public class Strings {
     public static final String Munny6000 = "6000Munny";
     public static final String Potion = "potion";
     public static final String Synthesiser = "synthesiser";
-    public static final String SynthesiserMini = "synthesiserMini";
     //Synthesis Materials
     //Blazing
     public static final String BlazingShard = "blazingShard";

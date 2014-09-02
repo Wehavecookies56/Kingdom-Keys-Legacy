@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
-    <comment>English (en_US) Localization File</comment>
+    <comment>English(US) (en_US) Localization File</comment>
+	
     <!-- Items -->
+	
     <entry key="item.kingdomKey.name">Kingdom Key</entry>
     <entry key="item.kingdomKeyD.name">Kingdom Key D</entry>
     <entry key="item.oathkeeper.name">Oathkeeper</entry>
@@ -67,7 +69,7 @@
 	<entry key="item.astralBlast.name">Astral Blast</entry>
 	<entry key="item.darkerThanDark.name">Darker Than Dark</entry>
 	<entry key="item.lunarEclipse.name">Lunar Eclipse</entry>
-	<entry key="item.silentDirge.name">SIlent Dirge</entry>
+	<entry key="item.silentDirge.name">Silent Dirge</entry>
 	<entry key="item.totalEclipse.name">Total Eclipse</entry>
 	<entry key="item.glimpseofDarkness.name">Glimpse Of Darkness</entry>
 	<entry key="item.midnightRoar.name">Midnight Roar</entry>
@@ -246,9 +248,24 @@
 	<entry key="item.ultimaWeaponChain.name">Ultima Weapon Chain</entry>
 	<entry key="item.treasureTroveChain.name">Treasure Trove Chain</entry>
 	<entry key="item.starSeekerChain.name">Star Seeker Chain</entry>
-	 <!-- Org XIII -->
+	
+	<!-- Org XIII -->
+	
 	<entry key="item.eternalFlames.name">Eternal Flames</entry>
+	<entry key="item.bookOfRetribution.name">Book Of Retribution</entry>
+	<entry key="item.interdiction.name">Interdiction</entry>
+	<entry key="item.sharpShooter.name">Sharpshooter</entry>
+	<entry key="item.lindWorm.name">Lind Worm</entry>
+	<entry key="item.frozenPride.name">Frozen Pride</entry>
+	<entry key="item.skysplitter.name">Skysplitter</entry>
+	<entry key="item.lunatic.name">Lunatic</entry>
+	<entry key="item.appregio.name">Appregio</entry>
+	<entry key="item.fairGame.name">Fair Game</entry>
+	<entry key="item.gracefulDahlia.name">Graceful Dahlia</entry>
+	<entry key="item.foudre.name">Foudre</entry>
+    
     <!-- Other -->
+	
     <entry key="item.pureHeart.name">Pure Heart</entry>
     <entry key="item.darkHeart.name">Dark Heart</entry>
     <entry key="item.heart.name">Heart</entry>
@@ -363,7 +380,9 @@
     <entry key="item.orichalcum.name">Orichalcum</entry>
     <entry key="item.orichalcum+.name">Orichalcum+</entry>
     <entry key="item.darkMatter.name">Dark Matter</entry>
+	
     <!-- Blocks -->
+	
     <entry key="tile.normalBlox.name">Normal Blox</entry>
     <entry key="tile.hardBlox.name">Hard Blox</entry>
     <entry key="tile.metalBlox.name">Metal Blox</entry>
@@ -394,7 +413,9 @@
     <entry key="tile.darkOreN.name">Dark Ore</entry>
     <entry key="tile.darkOreE.name">Dark Ore</entry>
     <entry key="tile.lucidOre.name">Lucid Ore</entry>
+	
     <!-- Creative Tab -->
+	
     <entry key="itemgroup.KKTAB">Kingdom Keys</entry>
     <entry key="itemgroup.KKSMTAB">Kingdom Keys: Synthesis Materials</entry>
     <entry key="itemgroup.KHTAB">Kingdom Keys: Kingdom Hearts</entry>
@@ -404,4 +425,128 @@
     <entry key="itemgroup.KHBBSTAB">Kingdom Keys: Kingdom Hearts Birth By Sleep</entry>
     <entry key="itemgroup.KHDDDTAB">Kingdom Keys: Kingdom Hearts Dream Drop Distance</entry>
     <entry key="itemgroup.KHDAYSTAB">Kingdom Keys: Kingdom Hearts 358/2 Days</entry>
+    
+	<!-- Recipes -->
+	
+    <entry key="item.kingdomKeyRecipe.name">Attack Recipe</entry>
+    <entry key="item.kingdomKeyDRecipe.name">Attack Recipe</entry>
+    <entry key="item.oathkeeperRecipe.name">Attack Recipe</entry>
+    <entry key="item.oblivionRecipe.name">Attack Recipe</entry>
+	<entry key="item.waywardWindRecipe.name">Attack Recipe</entry>
+	<entry key="item.rainFellRecipe.name">Attack Recipe</entry>
+    <entry key="item.earthShakerRecipe.name">Attack Recipe</entry>
+	<entry key="item.soulEaterRecipe.name">Attack Recipe</entry>
+    <!-- Kingdom Hearts Chi -->
+    <entry key="item.starLightRecipe.name">Attack Recipe</entry>
+	<entry key="item.vulpeusForetellersKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.ursusForetellersKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.unicornisForetellersKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.leopardosForetellersKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.anguisForetellersKeybladeRecipe.name">Attack Recipe</entry>
+    <!-- Kingdom Hearts Dream Drop Distance -->
+	<entry key="item.leasKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.youngXehanortsKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.oceanRageRecipe.name">Attack Recipe</entry>
+	<entry key="item.endofPainRecipe.name">Attack Recipe</entry>
+	<entry key="item.unboundRecipe.name">Attack Recipe</entry>
+	<entry key="item.sweetDreamsRecipe.name">Attack Recipe</entry>
+	<entry key="item.divewingRecipe.name">Attack Recipe</entry>
+	<entry key="item.counterpointRecipe.name">Attack Recipe</entry>
+	<entry key="item.allforOneRecipe.name">Attack Recipe</entry>
+	<entry key="item.knockoutPunchRecipe.name">Attack Recipe</entry>
+	<entry key="item.ferrisGearRecipe.name">Attack Recipe</entry>
+	<entry key="item.dualDiscRecipe.name">Attack Recipe</entry>
+	<entry key="item.guardianBellRecipe.name">Attack Recipe</entry>
+	<entry key="item.skullNoiseRecipe.name">Attack Recipe</entry>
+    <!-- Kingdom Hearts Birth By Sleep -->
+	<entry key="item.incompletekyebladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.kyebladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.lightSeekerRecipe.name">Attack Recipe</entry>
+	<entry key="item.lostMemoryRecipe.name">Attack Recipe</entry>
+	<entry key="item.frolicFlameRecipe.name">Attack Recipe</entry>
+	<entry key="item.masterKeeperRecipe.name">Attack Recipe</entry>
+	<entry key="item.brightcrestRecipe.name">Attack Recipe</entry>
+	<entry key="item.crownUnlimitRecipe.name">Attack Recipe</entry>
+	<entry key="item.noNameRecipe.name">Attack Recipe</entry>
+	<entry key="item.voidGearRecipe.name">Attack Recipe</entry>
+	<entry key="item.sweetstackRecipe.name">Attack Recipe</entry>
+	<entry key="item.pixiePetalRecipe.name">Attack Recipe</entry>
+	<entry key="item.hyperdriveRecipe.name">Attack Recipe</entry>
+	<entry key="item.markofaHeroRecipe.name">Attack Recipe</entry>
+	<entry key="item.victoryLineRecipe.name">Attack Recipe</entry>
+	<entry key="item.fairyStarsRecipe.name">Attack Recipe</entry>
+	<entry key="item.strokeofMidnightRecipe.name">Attack Recipe</entry>
+	<entry key="item.chaosRipperRecipe.name">Attack Recipe</entry>
+	<entry key="item.masterXehanortsKeybladeRecipe.name">Attack Recipe</entry>
+	<entry key="item.darkgnawRecipe.name">Attack Recipe</entry>
+    <entry key="item.woodenKeybladeRecipe.name">Attack Recipe</entry>
+    <!-- Kingdom Hearts Re: Coded -->
+	<entry key="item.zeroOneRecipe.name">Attack Recipe</entry>
+    <!-- Kingdom Hearts 358/2 Days -->
+	<entry key="item.dreamSwordRecipe.name">Attack Recipe</entry>
+    <entry key="item.aubadeRecipe.name">Attack Recipe</entry>
+	<entry key="item.umbrellaRecipe.name">Attack Recipe</entry>
+	<entry key="item.omegaWeaponRecipe.name">Attack Recipe</entry>
+	<entry key="item.twilightBlazeRecipe.name">Attack Recipe</entry>
+	<entry key="item.maverickFlareRecipe.name">Attack Recipe</entry>
+	<entry key="item.astralBlastRecipe.name">Attack Recipe</entry>
+	<entry key="item.darkerThanDarkRecipe.name">Attack Recipe</entry>
+	<entry key="item.lunarEclipseRecipe.name">Attack Recipe</entry>
+	<entry key="item.silentDirgeRecipe.name">Attack Recipe</entry>
+	<entry key="item.totalEclipseRecipe.name">Attack Recipe</entry>
+	<entry key="item.glimpseofDarknessRecipe.name">Attack Recipe</entry>
+	<entry key="item.midnightRoarRecipe.name">Attack Recipe</entry>
+	<entry key="item.rejectionofFateRecipe.name">Attack Recipe</entry>
+	<entry key="item.trueLightsFlightRecipe.name">Attack Recipe</entry>
+	<entry key="item.leviathanRecipe.name">Attack Recipe</entry>
+	<entry key="item.abyssalTideRecipe.name">Attack Recipe</entry>
+	<entry key="item.crownofGuiltRecipe.name">Attack Recipe</entry>
+	<entry key="item.signofInnocenceRecipe.name">Attack Recipe</entry>
+	<entry key="item.painofSolitudeRecipe.name">Attack Recipe</entry>
+	<entry key="item.abaddonPlasmaRecipe.name">Attack Recipe</entry>
+	<entry key="item.ominousBlightRecipe.name">Attack Recipe</entry>
+	<entry key="item.missingAcheRecipe.name">Attack Recipe</entry>
+	<!-- Kingdom Hearts II -->
+	<entry key="item.winnersProofRecipe.name">Attack Recipe</entry>
+	<entry key="item.fatalCrestRecipe.name">Attack Recipe</entry>
+	<entry key="item.twoBecomeOneRecipe.name">Attack Recipe</entry>
+	<entry key="item.bondofFlameRecipe.name">Attack Recipe</entry>
+	<entry key="item.fenrirRecipe.name">Attack Recipe</entry>
+	<entry key="item.sleepingLionRecipe.name">Attack Recipe</entry>
+	<entry key="item.guardianSoulRecipe.name">Attack Recipe</entry>
+	<entry key="item.gullWingRecipe.name">Attack Recipe</entry>
+	<entry key="item.photonDebuggerRecipe.name">Attack Recipe</entry>
+	<entry key="item.sweetMemoriesRecipe.name">Attack Recipe</entry>
+	<entry key="item.circleofLifeRecipe.name">Attack Recipe</entry>
+	<entry key="item.decisivePumpkinRecipe.name">Attack Recipe</entry>
+	<entry key="item.wishingLampRecipe.name">Attack Recipe</entry>
+	<entry key="item.followtheWindRecipe.name">Attack Recipe</entry>
+	<entry key="item.mysteriousAbyssRecipe.name">Attack Recipe</entry>
+	<entry key="item.monochromeRecipe.name">Attack Recipe</entry>
+	<entry key="item.herosCrestRecipe.name">Attack Recipe</entry>
+	<entry key="item.rumblingRoseRecipe.name">Attack Recipe</entry>
+	<entry key="item.hiddenDragonRecipe.name">Attack Recipe</entry>
+    <entry key="item.endsoftheEarthRecipe.name">Attack Recipe</entry>
+	<entry key="item.stormfallRecipe.name">Attack Recipe</entry>
+	<!-- Kingdom Hearts -->
+	<entry key="item.destinysEmbraceRecipe.name">Attack Recipe</entry>
+	<entry key="item.waytotheDawnRecipe.name">Attack Recipe</entry>
+	<entry key="item.oneWingedAngelRecipe.name">Attack Recipe</entry>
+	<entry key="item.diamondDustRecipe.name">Attack Recipe</entry>
+	<entry key="item.lionheartRecipe.name">Attack Recipe</entry>
+	<entry key="item.metalChocoboRecipe.name">Attack Recipe</entry>
+	<entry key="item.spellbinderRecipe.name">Attack Recipe</entry>
+	<entry key="item.divineRoseRecipe.name">Attack Recipe</entry>
+	<entry key="item.fairyHarpRecipe.name">Attack Recipe</entry>
+	<entry key="item.crabClawRecipe.name">Attack Recipe</entry>
+	<entry key="item.wishingStarRecipe.name">Attack Recipe</entry>
+	<entry key="item.pumpkinHeadRecipe.name">Attack Recipe</entry>
+	<entry key="item.threeWishesRecipe.name">Attack Recipe</entry>
+	<entry key="item.jungleKingRecipe.name">Attack Recipe</entry>
+	<entry key="item.olympiaRecipe.name">Attack Recipe</entry>
+	<entry key="item.ladyLuckRecipe.name">Attack Recipe</entry>
+	<entry key="item.keybladeofPeoplesHeartsRecipe.name">Attack Recipe</entry>
+	<entry key="item.ultimaWeaponRecipe.name">Attack Recipe</entry>
+	<entry key="item.treasureTroveRecipe.name">Attack Recipe</entry>
+	<entry key="item.starSeekerRecipe.name">Attack Recipe</entry>
 </properties>

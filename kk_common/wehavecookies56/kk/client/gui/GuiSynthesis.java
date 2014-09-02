@@ -1,6 +1,10 @@
 package wehavecookies56.kk.client.gui;
 
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -38,7 +42,6 @@ import cpw.mods.fml.common.network.PacketDispatcher;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
 public class GuiSynthesis extends GuiContainer {
 
 
@@ -51,6 +54,7 @@ public class GuiSynthesis extends GuiContainer {
 	int colour = 0xFF0000;
 
 
+	@SideOnly(Side.CLIENT)
 	public GuiSynthesis(InventoryPlayer invPlayer, TileEntitySynthesis synthesis) {
 		super(new ContainerSynthesis(invPlayer, synthesis));
 
@@ -64,6 +68,7 @@ public class GuiSynthesis extends GuiContainer {
 	private static final ResourceLocation texture = new ResourceLocation("kk", "textures/gui/Moogle.png");
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) {
 		GL11.glColor4f(1F, 1F, 1F, 1F);
 
@@ -120,6 +125,7 @@ public class GuiSynthesis extends GuiContainer {
 	int Tab3iconDimH = 12;
 		
 	@Override
+	@SideOnly(Side.CLIENT)
 	protected void drawGuiContainerForegroundLayer(int x, int y) {
 		
 		fontRenderer.drawString("Synthesis", 38, 14, 0x404040);
@@ -183,8 +189,8 @@ public class GuiSynthesis extends GuiContainer {
 		addSynthesisRecipe(AddedItems.K16r, AddedItems.K16c, LocalStrings.Ferrisgear, ItemFerrisgearRecipe.texture, AddedItems.K16m, true, AddedItems.PowerCrystal, AddedItems.BrightShard, AddedItems.LucidGem, AddedItems.TranquilStone, AddedItems.TranquilGem, AddedItems.MythrilShard, null, null, null, null, null);
 		addSynthesisRecipe(AddedItems.K17r, AddedItems.K17c, LocalStrings.Dualdisc, ItemDualDiscRecipe.texture, AddedItems.K17m, true, AddedItems.EnergyGem, AddedItems.PowerGem, AddedItems.DenseStone, AddedItems.DenseShard, AddedItems.BrightStone, AddedItems.BrightGem, AddedItems.EnergyCrystal, null, null, null, null);
 		addSynthesisRecipe(AddedItems.K18r, AddedItems.K18c, LocalStrings.Guardianbell, ItemGuardianBellRecipe.texture, AddedItems.K18m, true, AddedItems.DarkCrystal, AddedItems.ShinyCrystal, AddedItems.MythrilShard, AddedItems.DenseStone, AddedItems.BrightStone, AddedItems.BlazingShard, null, null, null, null, null);
-		addSynthesisRecipe(AddedItems.K19r, AddedItems.K19c, LocalStrings.Skullnoise, ItemSkullNoiseRecipe.texture, AddedItems.K19m, true, AddedItems.Orichalcum, AddedItems.DarkMatter, AddedItems.LucidGem, AddedItems.MythrilGem, AddedItems.BlazingShard, AddedItems.DarkShard, AddedItems.BlazingShard, AddedItems.DarkStone, null, null, null);
-		addSynthesisRecipe(AddedItems.K20r, AddedItems.K20c, LocalStrings.Woodenkeyblade, ItemWoodenKeybladeRecipe.texture, AddedItems.K20m, true, AddedItems.TranquilGem, AddedItems.SerenityShard, AddedItems.BrightShard, AddedItems.DenseStone, AddedItems.DenseStone, null, null, null, null, null, null);
+		addSynthesisRecipe(AddedItems.K19r, AddedItems.K19c, LocalStrings.Skullnoise, ItemSkullNoiseRecipe.texture, AddedItems.K19m, true, AddedItems.Orichalcum, AddedItems.DarkMatter, AddedItems.LucidGem, AddedItems.MythrilGem, AddedItems.BlazingStone, AddedItems.DarkShard, AddedItems.BlazingShard, AddedItems.DarkStone, null, null, null);
+		addSynthesisRecipe(AddedItems.K20r, AddedItems.K20c, LocalStrings.Woodenkeyblade, ItemWoodenKeybladeRecipe.texture, AddedItems.K20m, true, AddedItems.TranquilGem, AddedItems.SerenityShard, AddedItems.BrightShard, AddedItems.DenseStone, AddedItems.DenseShard, null, null, null, null, null, null);
 		addSynthesisRecipe(AddedItems.K21r, AddedItems.K21c, LocalStrings.Kyebladebroken, ItemIncompleteKyebladeRecipe.texture, AddedItems.K21m, true, AddedItems.OrichalcumPlus, AddedItems.Orichalcum, AddedItems.DarkMatter, AddedItems.DarkCrystal, AddedItems.DarkHeart, AddedItems.KingdomHearts, AddedItems.BrightCrystal, AddedItems.BrightGem, AddedItems.PureHeart, AddedItems.BrightStone, AddedItems.Heart);
 		addSynthesisRecipe(AddedItems.K22r, AddedItems.K22c, LocalStrings.Kyeblade, ItemKyebladeRecipe.texture, AddedItems.K22m, true, AddedItems.OrichalcumPlus, AddedItems.Orichalcum, AddedItems.DarkMatter, AddedItems.DarkCrystal, AddedItems.DarkHeart, AddedItems.KingdomHearts, AddedItems.BrightCrystal, AddedItems.BrightGem, AddedItems.PureHeart, AddedItems.K21, AddedItems.Heart);
 		addSynthesisRecipe(AddedItems.K23r, AddedItems.K23c, LocalStrings.Lightseeker, ItemLightSeekerRecipe.texture, AddedItems.K23m, true, AddedItems.SerenityCrystal, AddedItems.BrightCrystal, AddedItems.MythrilGem, AddedItems.DenseStone, AddedItems.BrightStone, AddedItems.BlazingShard, null, null, null, null, null);
@@ -265,8 +271,8 @@ public class GuiSynthesis extends GuiContainer {
 		addSynthesisRecipe(AddedItems.K98r, AddedItems.K98c, LocalStrings.Threewishes, ItemThreeWishesRecipe.texture, AddedItems.K98m, true, AddedItems.DenseCrystal, AddedItems.SerenityCrystal, AddedItems.MythrilCrystal, AddedItems.MythrilGem, AddedItems.DenseGem, AddedItems.SerenityGem, AddedItems.DenseStone, AddedItems.SerenityStone, AddedItems.MythrilShard, AddedItems.DenseShard, AddedItems.SerenityShard);
 		addSynthesisRecipe(AddedItems.K99r, AddedItems.K99c, LocalStrings.Jungleking, ItemJungleKingRecipe.texture, AddedItems.K99m, true, AddedItems.EnergyCrystal, AddedItems.EnergyStone, AddedItems.EnergyShard, AddedItems.PowerCrystal, AddedItems.PowerGem, AddedItems.EnergyCrystal, AddedItems.PowerShard, AddedItems.PowerStone, null, null, null);
 		addSynthesisRecipe(AddedItems.K100r, AddedItems.K100c, LocalStrings.Olympia, ItemOlympiaRecipe.texture, AddedItems.K100m, true, AddedItems.OrichalcumPlus, AddedItems.Orichalcum, AddedItems.MythrilGem, AddedItems.SerenityGem, AddedItems.SerenityShard, AddedItems.PowerCrystal, AddedItems.PowerGem, null, null, null, null);
-		//addSynthesisRecipe(AddedItems.K101r, AddedItems.K101c, LocalStrings.Ladyluck, ItemLadyLuckRecipe.texture, AddedItems.K101m, true, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
-		//addSynthesisRecipe(AddedItems.K102r, AddedItems.K102c, LocalStrings.Peopleshearts, ItemKeybladeOfPeoplesHeartsRecipe.texture, AddedItems.K102m, true, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
+		addSynthesisRecipe(AddedItems.K101r, AddedItems.K101c, LocalStrings.Ladyluck, ItemLadyLuckRecipe.texture, AddedItems.K101m, true, AddedItems.TranquilGem, AddedItems.SerenityGem, AddedItems.BrightCrystal, AddedItems.TranquilStone, AddedItems.SerenityShard, AddedItems.TranquilShard, AddedItems.BrightShard, null, null, null, null);
+		//addSynthesisRecipe(AddedItems.K102r, AddedItems.K102c, LocalStrings.Peopleshearts, ItemKeybladeOfPeoplesHeartsRecipe.texture, AddedItems.K102m, true, AddedItems.DarkMatter, AddedItems.DarkCrystal, AddedItems., item4, item5, item6, item7, item8, item9, item10, item11);
 		//addSynthesisRecipe(AddedItems.K103r, AddedItems.K103c, LocalStrings.Ultimaweapon, ItemUltimaWeaponRecipe.texture, AddedItems.K103m, true, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
 		//addSynthesisRecipe(AddedItems.K104r, AddedItems.K104c, LocalStrings.Treasuretrove, ItemTreasureTroveRecipe.texture, AddedItems.K104m, true, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
 		//addSynthesisRecipe(AddedItems.K105r, AddedItems.K105c, LocalStrings.Starseeker, ItemStarseekerRecipe.texture, AddedItems.K105m, true, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
@@ -313,6 +319,7 @@ public class GuiSynthesis extends GuiContainer {
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	public void initGui(){
 		super.initGui();
 		ButtonPressed = false;
@@ -320,8 +327,6 @@ public class GuiSynthesis extends GuiContainer {
 		Minecraft.getMinecraft().sndManager.playSoundFX("kk:kupo", 1, 1F);
 		GuiButton Synthesize = new GuiButton(0, guiLeft + 108, guiTop + 4, 60, 20, "Synthesize");
 		buttonList.add(Synthesize);
-		drawTexturedModelRectFromIcon(guiLeft, guiTop, AddedItems.K111.getIconFromDamage(0), 16, 16);
-
 	}
 	
 	public static boolean ButtonPressed = false;
@@ -907,42 +912,1332 @@ public class GuiSynthesis extends GuiContainer {
 		if(hasItems){
 			if(ButtonPressed){
 				Minecraft.getMinecraft().sndManager.playSoundFX("kk:summon", 1, 1F);
-				if(item1 != null){
-					SummonPacketHandler.item1 = item1.itemID;
+				ByteArrayOutputStream bt = new ByteArrayOutputStream();
+				DataOutputStream out = new DataOutputStream(bt);
+				try
+				{
+					if(synthesis.checkItems() == AddedItems.K1r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(1);
+					}else if(synthesis.checkItems() == AddedItems.K2r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(2);
+					}else if(synthesis.checkItems() == AddedItems.K3r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(3);
+					}else if(synthesis.checkItems() == AddedItems.K4r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(4);
+					}else if(synthesis.checkItems() == AddedItems.K5r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(5);
+					}else if(synthesis.checkItems() == AddedItems.K6r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(6);
+					}else if(synthesis.checkItems() == AddedItems.K7r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(7);
+					}else if(synthesis.checkItems() == AddedItems.K8r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(8);
+					}else if(synthesis.checkItems() == AddedItems.K9r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(9);
+					}else if(synthesis.checkItems() == AddedItems.K10r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(10);	
+					}else if(synthesis.checkItems() == AddedItems.K11r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(11);
+					}else if(synthesis.checkItems() == AddedItems.K12r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(12);
+					}else if(synthesis.checkItems() == AddedItems.K13r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(13);
+					}else if(synthesis.checkItems() == AddedItems.K14r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(14);
+					}else if(synthesis.checkItems() == AddedItems.K15r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(15);
+					}else if(synthesis.checkItems() == AddedItems.K16r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(16);
+					}else if(synthesis.checkItems() == AddedItems.K17r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(17);
+					}else if(synthesis.checkItems() == AddedItems.K18r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(18);
+					}else if(synthesis.checkItems() == AddedItems.K19r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(19);
+					}else if(synthesis.checkItems() == AddedItems.K20r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(20);
+					}else if(synthesis.checkItems() == AddedItems.K21r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(item10.itemID);
+						out.writeInt(item11.itemID);
+						out.writeInt(21);
+					}else if(synthesis.checkItems() == AddedItems.K22r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(item10.itemID);
+						out.writeInt(item11.itemID);
+						out.writeInt(22);
+					}else if(synthesis.checkItems() == AddedItems.K23r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(23);
+					}else if(synthesis.checkItems() == AddedItems.K24r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(24);
+					}else if(synthesis.checkItems() == AddedItems.K25r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(25);
+					}else if(synthesis.checkItems() == AddedItems.K26r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(26);
+					}else if(synthesis.checkItems() == AddedItems.K27r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(27);
+					}else if(synthesis.checkItems() == AddedItems.K28r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(28);
+					}else if(synthesis.checkItems() == AddedItems.K29r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(29);
+					}else if(synthesis.checkItems() == AddedItems.K30r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(30);
+					}else if(synthesis.checkItems() == AddedItems.K31r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(31);
+					}else if(synthesis.checkItems() == AddedItems.K32r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(32);
+					}else if(synthesis.checkItems() == AddedItems.K33r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(33);
+					}else if(synthesis.checkItems() == AddedItems.K34r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(34);
+					}else if(synthesis.checkItems() == AddedItems.K35r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(35);
+					}else if(synthesis.checkItems() == AddedItems.K36r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(36);
+					}else if(synthesis.checkItems() == AddedItems.K37r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(37);
+					}else if(synthesis.checkItems() == AddedItems.K38r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(38);
+					}else if(synthesis.checkItems() == AddedItems.K39r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(39);
+					}else if(synthesis.checkItems() == AddedItems.K40r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(40);
+					}else if(synthesis.checkItems() == AddedItems.K41r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(41);
+					}else if(synthesis.checkItems() == AddedItems.K42r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(42);
+					}else if(synthesis.checkItems() == AddedItems.K43r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(item10.itemID);
+						out.writeInt(item11.itemID);
+						out.writeInt(43);
+					}else if(synthesis.checkItems() == AddedItems.K44r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(44);
+					}else if(synthesis.checkItems() == AddedItems.K45r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(item9.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(45);
+					}else if(synthesis.checkItems() == AddedItems.K46r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(46);
+					}else if(synthesis.checkItems() == AddedItems.K47r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(47);
+					}else if(synthesis.checkItems() == AddedItems.K48r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(48);
+					}else if(synthesis.checkItems() == AddedItems.K49r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(49);
+					}else if(synthesis.checkItems() == AddedItems.K50r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(50);
+					}else if(synthesis.checkItems() == AddedItems.K51r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(51);
+					}else if(synthesis.checkItems() == AddedItems.K52r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(52);
+					}else if(synthesis.checkItems() == AddedItems.K53r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(53);
+					}else if(synthesis.checkItems() == AddedItems.K54r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(54);
+					}else if(synthesis.checkItems() == AddedItems.K55r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(55);
+					}else if(synthesis.checkItems() == AddedItems.K56r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(56);
+					}else if(synthesis.checkItems() == AddedItems.K57r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(57);
+					}else if(synthesis.checkItems() == AddedItems.K58r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(58);
+					}else if(synthesis.checkItems() == AddedItems.K59r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(59);
+					}else if(synthesis.checkItems() == AddedItems.K60r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(60);
+					}else if(synthesis.checkItems() == AddedItems.K61r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(61);
+					}else if(synthesis.checkItems() == AddedItems.K62r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(62);
+					}else if(synthesis.checkItems() == AddedItems.K63r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(63);
+					}else if(synthesis.checkItems() == AddedItems.K64r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(64);
+					}else if(synthesis.checkItems() == AddedItems.K65r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(65);
+					}else if(synthesis.checkItems() == AddedItems.K66r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(66);
+					}else if(synthesis.checkItems() == AddedItems.K67r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(67);
+					}else if(synthesis.checkItems() == AddedItems.K68r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(68);
+					}else if(synthesis.checkItems() == AddedItems.K69r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(69);
+					}else if(synthesis.checkItems() == AddedItems.K70r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(70);
+					}else if(synthesis.checkItems() == AddedItems.K71r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(71);
+					}else if(synthesis.checkItems() == AddedItems.K72r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(72);
+					}else if(synthesis.checkItems() == AddedItems.K73r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(73);
+					}else if(synthesis.checkItems() == AddedItems.K74r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(74);
+					}else if(synthesis.checkItems() == AddedItems.K75r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(75);
+					}else if(synthesis.checkItems() == AddedItems.K76r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(76);
+					}else if(synthesis.checkItems() == AddedItems.K77r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(77);
+					}else if(synthesis.checkItems() == AddedItems.K78r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(78);
+					}else if(synthesis.checkItems() == AddedItems.K79r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(79);
+					}else if(synthesis.checkItems() == AddedItems.K80r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(80);
+					}else if(synthesis.checkItems() == AddedItems.K81r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(81);
+					}else if(synthesis.checkItems() == AddedItems.K82r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(82);
+					}else if(synthesis.checkItems() == AddedItems.K83r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(83);
+					}else if(synthesis.checkItems() == AddedItems.K84r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(84);
+					}else if(synthesis.checkItems() == AddedItems.K85r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(85);
+					}else if(synthesis.checkItems() == AddedItems.K86r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(86);
+					}else if(synthesis.checkItems() == AddedItems.K87r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(87);
+					}else if(synthesis.checkItems() == AddedItems.K88r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(88);
+					}else if(synthesis.checkItems() == AddedItems.K89r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(89);
+					}else if(synthesis.checkItems() == AddedItems.K90r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(90);
+					}else if(synthesis.checkItems() == AddedItems.K91r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(item8.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(91);
+					}else if(synthesis.checkItems() == AddedItems.K92r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(92);
+					}else if(synthesis.checkItems() == AddedItems.K93r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(93);
+					}else if(synthesis.checkItems() == AddedItems.K94r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(94);
+					}else if(synthesis.checkItems() == AddedItems.K95r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(95);
+					}else if(synthesis.checkItems() == AddedItems.K96r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(96);
+					}else if(synthesis.checkItems() == AddedItems.K97r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(97);
+					}else if(synthesis.checkItems() == AddedItems.K98r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(98);
+					}else if(synthesis.checkItems() == AddedItems.K99r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(99);
+					}else if(synthesis.checkItems() == AddedItems.K100r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(100);
+					}else if(synthesis.checkItems() == AddedItems.K101r.itemID){
+						out.writeInt(item1.itemID);
+						out.writeInt(item2.itemID);
+						out.writeInt(item3.itemID);
+						out.writeInt(item4.itemID);
+						out.writeInt(item5.itemID);
+						out.writeInt(item6.itemID);
+						out.writeInt(item7.itemID);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(0);
+						out.writeInt(101);
+					}
+					Packet250CustomPayload packet = new Packet250CustomPayload("summon", bt.toByteArray());
+					PacketDispatcher.sendPacketToServer(packet);
 				}
-				if(item2 != null){
-					SummonPacketHandler.item2 = item2.itemID;
-				}
-				if(item3 != null){
-					SummonPacketHandler.item3 = item3.itemID;
-				}
-				if(item4 != null){
-					SummonPacketHandler.item4 = item4.itemID;
-				}
-				if(item5 != null){
-					SummonPacketHandler.item5 = item5.itemID;
-				}
-				if(item6 != null){
-					SummonPacketHandler.item6 = item6.itemID;
-				}
-				if(item7 != null){
-					SummonPacketHandler.item7 = item7.itemID;
-				}
-				if(item8 != null){
-					SummonPacketHandler.item8 = item8.itemID;
-				}
-				if(item9 != null){
-					SummonPacketHandler.item9 = item9.itemID;
-				}
-				if(item10 != null){
-					SummonPacketHandler.item10 = item10.itemID;
-				}
-				if(item11 != null){
-					SummonPacketHandler.item11 = item11.itemID;
+				catch (IOException ex)
+				{
+					System.out.println("Couldn't send int packet!");
 				}
 				ButtonPressed = false;
-				PacketDispatcher.sendPacketToServer(new Packet250CustomPayload("summon", new byte[]{1}));
-				SummonPacketHandler.result = result;
 			}
 		}
 	}

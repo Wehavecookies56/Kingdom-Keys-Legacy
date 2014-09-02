@@ -78,9 +78,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class AddedItems {
 
-	public static Item Pouch, Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, MysteryGoo, ShinyCrystal, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeEHelm, KeybladeEChest, KeybladeELegs, KeybladeEBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, EternalFlames, K1r, K2r, K3r, K4r, K5r, K6r, K7r, K8r, K9r, K10r, K11r, K12r, K13r, K14r, K15r, K16r, K17r, K18r, K19r, K20r, K21r, K22r, K23r, K24r, K25r, K26r, K27r, K28r, K29r, K30r, K31r, K32r, K33r, K34r, K35r, K36r, K37r, K38r, K39r, K40r, K41r, K42r, K43r, K44r, K45r, K46r, K47r, K48r, K49r, K50r, K51r, K52r, K53r, K54r, K55r, K56r, K57r, K58r, K59r, K60r, K61r, K62r, K63r, K64r, K65r, K66r, K67r, K68r, K69r, K70r, K71r, K72r, K73r, K74r, K75r, K76r, K77r, K78r, K79r, K80r, K81r, K82r, K83r, K84r, K85r, K86r, K87r, K88r, K89r, K90r, K91r, K92r, K93r, K94r, K95r, K96r, K97r, K98r, K99r, K100r, K101r, K102r, K103r, K104r, K105r, K106r, K107r, K108r, K109r, K110r, K111r, K112r, K113r, K114r;
+	public static Item Guide, Interdiction, SharpShooter, LindWorm, FrozenPride, SkySplitter, BookOfRetribution, Lunatic, Appregio, FairGame, GracefulDahlia, Foudre, Pouch, Munny1, Munny5, Munny10, Munny20, Munny50, Munny100, Munny200, Munny500, Munny800, Munny1000, Munny1200, Munny1500, Munny1800, Munny2000, Munny3000, Munny4000, Munny5000, Munny6000, BlazingShard, BlazingStone, BlazingGem, BlazingCrystal, FrostShard, FrostStone, FrostGem, FrostCrystal, LightningShard, LightningStone, LightningGem, LightningCrystal, LucidShard, LucidStone, LucidGem, LucidCrystal, PowerShard, PowerStone, PowerGem, PowerCrystal, DarkShard, DarkStone, DarkGem, DarkCrystal, DarkMatter, DenseShard, DenseStone, DenseGem, DenseCrystal, TwilightShard, TwilightStone, TwilightGem, TwilightCrystal, MythrilShard, MythrilStone, MythrilGem, MythrilCrystal, BrightShard, BrightStone, BrightGem, BrightCrystal, EnergyShard, EnergyStone, EnergyGem, EnergyCrystal, SerenityShard, SerenityStone, SerenityGem, SerenityCrystal, Orichalcum, OrichalcumPlus, RemembranceShard, RemembranceStone, RemembranceGem, RemembranceCrystal, TranquilShard, TranquilStone, TranquilGem, TranquilCrystal, MysteryGoo, ShinyCrystal, Disc1, Disc2, PureHeart, DarkHeart, Heart, KingdomHearts, OrganizationHood, OrganizationCoat, OrganizationLegs, OrganizationBoots, DarkLeather, HP, Munny, Potion, Disc3, Disc4, Disc5, Disc6, Disc7, Disc8, Disc9, WaywardWindChain, KeybladeAHelm, KeybladeAChest, KeybladeALegs, KeybladeABoots, KeybladeTHelm, KeybladeTChest, KeybladeTLegs, KeybladeTBoots, KeybladeEHelm, KeybladeEChest, KeybladeELegs, KeybladeEBoots, KeybladeVHelm, KeybladeVChest, KeybladeVLegs, KeybladeVBoots, Vulpeus, Ursus, Unicornis, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K50, K51, K52, K53, K54, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K70, K71, K72, K73, K74, K75, K76, K77, K78, K79, K80, K81, K82, K83, K84, K85, K86, K87, K88, K89, K90, K91, K92, K93, K94, K95, K96, K97, K98, K99, K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K1c, K2c, K3c, K4c, K5c, K6c, K7c, K8c, K9c, K10c, K11c, K12c, K13c, K14c, K15c, K16c, K17c, K18c, K19c, K20c, K21c, K22c, K23c, K24c, K25c, K26c, K27c, K28c, K29c, K30c, K31c, K32c, K33c, K34c, K35c, K36c, K37c, K38c, K39c, K40c, K41c, K42c, K43c, K44c, K45c, K46c, K47c, K48c, K49c, K50c, K51c, K52c, K53c, K54c, K55c, K56c, K57c, K58c, K59c, K60c, K61c, K62c, K63c, K64c, K65c, K66c, K67c, K68c, K69c, K70c, K71c, K72c, K73c, K74c, K75c, K76c, K77c, K78c, K79c, K80c, K81c, K82c, K83c, K84c, K85c, K86c, K87c, K88c, K89c, K90c, K91c, K92c, K93c, K94c, K95c, K96c, K97c, K98c, K99c, K100c, K101c, K102c, K103c, K104c, K105c, K106c, K107c, K108c, K109c, K110c, K111c, K112c, K113c, K114c, EternalFlames, K1r, K2r, K3r, K4r, K5r, K6r, K7r, K8r, K9r, K10r, K11r, K12r, K13r, K14r, K15r, K16r, K17r, K18r, K19r, K20r, K21r, K22r, K23r, K24r, K25r, K26r, K27r, K28r, K29r, K30r, K31r, K32r, K33r, K34r, K35r, K36r, K37r, K38r, K39r, K40r, K41r, K42r, K43r, K44r, K45r, K46r, K47r, K48r, K49r, K50r, K51r, K52r, K53r, K54r, K55r, K56r, K57r, K58r, K59r, K60r, K61r, K62r, K63r, K64r, K65r, K66r, K67r, K68r, K69r, K70r, K71r, K72r, K73r, K74r, K75r, K76r, K77r, K78r, K79r, K80r, K81r, K82r, K83r, K84r, K85r, K86r, K87r, K88r, K89r, K90r, K91r, K92r, K93r, K94r, K95r, K96r, K97r, K98r, K99r, K100r, K101r, K102r, K103r, K104r, K105r, K106r, K107r, K108r, K109r, K110r, K111r, K112r, K113r, K114r;
 	public static EnumArmorMaterial OrganizationArmourMaterial, KeybladeAArmourMaterial, KeybladeTArmourMaterial, KeybladeVArmourMaterial, KeybladeEArmourMaterial;
-	public static EnumToolMaterial VulpeusMaterial, UrsusMaterial, UnicornisMaterial, K4m, K5m, K6m, K7m, K8m, K9m, K10m, K11m, K12m, K13m, K14m, K15m, K16m, K17m, K18m, K19m, K20m, K21m, K22m, K23m, K24m, K25m, K26m, K27m, K28m, K29m, K30m, K31m, K32m, K33m, K34m, K35m, K36m, K37m, K38m, K39m, K40m, K41m, K42m, K43m, K44m, K45m, K46m, K47m, K48m, K49m, K50m, K51m, K52m, K53m, K54m, K55m, K56m, K57m, K58m, K59m, K60m, K61m, K62m, K63m, K64m, K65m, K66m, K67m, K68m, K69m, K70m, K71m, K72m, K73m, K74m, K75m, K76m, K77m, K78m, K79m, K80m, K81m, K82m, K83m, K84m, K85m, K86m, K87m, K88m, K89m, K90m, K91m, K92m, K93m, K94m, K95m, K96m, K97m, K98m, K99m, K100m, K101m, K102m, K103m, K104m, K105m, K106m, K107m, K108m, K109m, K110m, K111m, K112m, K113m, K114m, EternalFlamesMaterial;
+	public static EnumToolMaterial SharpShooterMaterial, LindWormMaterial, FrozenPrideMaterial, SkySplitterMaterial, LunaticMaterial, AppregioMaterial, FairGameMaterial, GracefulDahliaMaterial, FoudreMaterial, InterdictionMaterial, BookOfRetributionMaterial, VulpeusMaterial, UrsusMaterial, UnicornisMaterial, K4m, K5m, K6m, K7m, K8m, K9m, K10m, K11m, K12m, K13m, K14m, K15m, K16m, K17m, K18m, K19m, K20m, K21m, K22m, K23m, K24m, K25m, K26m, K27m, K28m, K29m, K30m, K31m, K32m, K33m, K34m, K35m, K36m, K37m, K38m, K39m, K40m, K41m, K42m, K43m, K44m, K45m, K46m, K47m, K48m, K49m, K50m, K51m, K52m, K53m, K54m, K55m, K56m, K57m, K58m, K59m, K60m, K61m, K62m, K63m, K64m, K65m, K66m, K67m, K68m, K69m, K70m, K71m, K72m, K73m, K74m, K75m, K76m, K77m, K78m, K79m, K80m, K81m, K82m, K83m, K84m, K85m, K86m, K87m, K88m, K89m, K90m, K91m, K92m, K93m, K94m, K95m, K96m, K97m, K98m, K99m, K100m, K101m, K102m, K103m, K104m, K105m, K106m, K107m, K108m, K109m, K110m, K111m, K112m, K113m, K114m, EternalFlamesMaterial;
 
 	static int chainStackSize = 1;
 	
@@ -133,10 +133,10 @@ public class AddedItems {
 		K45m = EnumHelper.addToolMaterial(Strings.Omegaweapon, 3, -1, 6.0F, 13, 30); K45 = new ItemOmegaWeapon(IDs.K45, K45m).setFull3D().setUnlocalizedName(Strings.Omegaweapon); GameRegistry.registerItem(K45, Strings.Omegaweapon);
 		K46m = EnumHelper.addToolMaterial(Strings.Twilightblaze, 3, -1, 6.0F, 11, 30); K46 = new ItemTwilightBlaze(IDs.K46, K46m).setFull3D().setUnlocalizedName(Strings.Twilightblaze); GameRegistry.registerItem(K46, Strings.Twilightblaze);
 		K47m = EnumHelper.addToolMaterial(Strings.Maverickflare, 3, -1, 6.0F, 9, 30); K47 = new ItemMaverickFlare(IDs.K47, K47m).setFull3D().setUnlocalizedName(Strings.Maverickflare); GameRegistry.registerItem(K47, Strings.Maverickflare);
-		K48m = EnumHelper.addToolMaterial(Strings.Astralblast, 3, -1, 6.0F, 9, 30); K48 = new ItemAstralBlast(IDs.K48, K48m).setFull3D().setUnlocalizedName(Strings.Astralblast);
-		K49m = EnumHelper.addToolMaterial(Strings.Darkerthandark, 3, -1, 6.0F, 8, 30); K49 = new ItemDarkerThanDark(IDs.K49, K49m).setFull3D().setUnlocalizedName(Strings.Darkerthandark);
-		K50m = EnumHelper.addToolMaterial(Strings.Lunareclipse, 3, -1, 6.0F, 6, 30); K50 = new ItemLunarEclipse(IDs.K50, K50m).setFull3D().setUnlocalizedName(Strings.Lunareclipse);
-		K51m = EnumHelper.addToolMaterial(Strings.Silentdirge, 3, -1, 6.0F, 7, 30); K51 = new ItemSilentDirge(IDs.K51, K51m).setFull3D().setUnlocalizedName(Strings.Silentdirge);
+		K48m = EnumHelper.addToolMaterial(Strings.Astralblast, 3, -1, 6.0F, 9, 30); K48 = new ItemAstralBlast(IDs.K48, K48m).setFull3D().setUnlocalizedName(Strings.Astralblast); GameRegistry.registerItem(K48, Strings.Astralblast);
+		K49m = EnumHelper.addToolMaterial(Strings.Darkerthandark, 3, -1, 6.0F, 8, 30); K49 = new ItemDarkerThanDark(IDs.K49, K49m).setFull3D().setUnlocalizedName(Strings.Darkerthandark); GameRegistry.registerItem(K49, Strings.Darkerthandark);
+		K50m = EnumHelper.addToolMaterial(Strings.Lunareclipse, 3, -1, 6.0F, 6, 30); K50 = new ItemLunarEclipse(IDs.K50, K50m).setFull3D().setUnlocalizedName(Strings.Lunareclipse); GameRegistry.registerItem(K50, Strings.Lunareclipse);
+		K51m = EnumHelper.addToolMaterial(Strings.Silentdirge, 3, -1, 6.0F, 7, 30); K51 = new ItemSilentDirge(IDs.K51, K51m).setFull3D().setUnlocalizedName(Strings.Silentdirge); GameRegistry.registerItem(K51, Strings.Silentdirge);
 		K52m = EnumHelper.addToolMaterial(Strings.Totaleclipse, 3, -1, 6.0F, 9, 30); K52 = new ItemTotalEclipse(IDs.K52, K52m).setFull3D().setUnlocalizedName(Strings.Totaleclipse);
 		K53m = EnumHelper.addToolMaterial(Strings.Glimpseofdarkness, 3, -1, 6.0F, 6, 30); K53 = new ItemGlimpseOfDarkness(IDs.K53, K53m).setFull3D().setUnlocalizedName(Strings.Glimpseofdarkness);
 		K54m = EnumHelper.addToolMaterial(Strings.Midnightroar, 3, -1, 6.0F, 6, 30); K54 = new ItemMidnightRoar(IDs.K54, K54m).setFull3D().setUnlocalizedName(Strings.Midnightroar);
@@ -315,6 +315,20 @@ public class AddedItems {
 		K109c = new ItemEarthShakerChain(IDs.K109c).setUnlocalizedName(Strings.EarthshakerChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
 		K108c = new ItemRainFellChain(IDs.K108c).setUnlocalizedName(Strings.RainfellChain).setCreativeTab(KingdomKeys.KHBBSTAB).setMaxStackSize(chainStackSize);
 		//Pouch = new ItemPouch(IDs.Pouch).setUnlocalizedName(Strings.Pouch).setCreativeTab(KingdomKeys.KKTAB);
+		
+		//Org XIII Weapons
+		EternalFlamesMaterial = EnumHelper.addToolMaterial(Strings.EternalFlames, 3, -1, 6.0F, 17, 30); EternalFlames = new ItemEternalFlames(IDs.EternalFlames, EternalFlamesMaterial).setFull3D().setUnlocalizedName(Strings.EternalFlames); GameRegistry.registerItem(EternalFlames, Strings.EternalFlames);
+		BookOfRetributionMaterial = EnumHelper.addToolMaterial(Strings.BookOfRetribution, 3, -1, 6.0F, 17, 30); BookOfRetribution = new ItemBookOfRetribution(IDs.BookofRetribution, BookOfRetributionMaterial).setFull3D().setUnlocalizedName(Strings.BookOfRetribution); GameRegistry.registerItem(BookOfRetribution, Strings.BookOfRetribution);
+		InterdictionMaterial = EnumHelper.addToolMaterial(Strings.Interdiction, 3, -1, 6.0F, 17, 30); Interdiction = new ItemInterdiction(IDs.Interdiction, InterdictionMaterial).setFull3D().setUnlocalizedName(Strings.Interdiction); GameRegistry.registerItem(Interdiction, Strings.Interdiction);
+		SharpShooterMaterial = EnumHelper.addToolMaterial(Strings.SharpShooter, 3, -1, 6.0F, 17, 30); SharpShooter = new ItemSharpShooter(IDs.Sharpshooter, SharpShooterMaterial).setFull3D().setUnlocalizedName(Strings.SharpShooter); GameRegistry.registerItem(SharpShooter, Strings.SharpShooter);
+		LindWormMaterial = EnumHelper.addToolMaterial(Strings.LindWorm, 3, -1, 6.0F, 17, 30); LindWorm = new ItemLindWorm(IDs.Lindworm, LindWormMaterial).setFull3D().setUnlocalizedName(Strings.LindWorm); GameRegistry.registerItem(LindWorm, Strings.LindWorm);
+		FrozenPrideMaterial = EnumHelper.addToolMaterial(Strings.FrozenPride, 3, -1, 6.0F, 17, 30); FrozenPride = new ItemFrozenPride(IDs.Frozenpride, FrozenPrideMaterial).setFull3D().setUnlocalizedName(Strings.FrozenPride); GameRegistry.registerItem(FrozenPride, Strings.FrozenPride);
+		SkySplitterMaterial = EnumHelper.addToolMaterial(Strings.Skysplitter, 3, -1, 6.0F, 17, 30); SkySplitter = new ItemSkySplitter(IDs.Skysplitter, SkySplitterMaterial).setFull3D().setUnlocalizedName(Strings.Skysplitter); GameRegistry.registerItem(SkySplitter, Strings.Skysplitter);
+		LunaticMaterial = EnumHelper.addToolMaterial(Strings.Lunatic, 3, -1, 6.0F, 17, 30); Lunatic = new ItemLunatic(IDs.Lunatic, LunaticMaterial).setFull3D().setUnlocalizedName(Strings.Lunatic); GameRegistry.registerItem(Lunatic, Strings.Lunatic);
+		AppregioMaterial = EnumHelper.addToolMaterial(Strings.Appregio, 3, -1, 6.0F, 17, 30); Appregio = new ItemLindWorm(IDs.Appregio, AppregioMaterial).setFull3D().setUnlocalizedName(Strings.Appregio); GameRegistry.registerItem(Appregio, Strings.Appregio);
+		FairGameMaterial = EnumHelper.addToolMaterial(Strings.FairGame, 3, -1, 6.0F, 17, 30); FairGame = new ItemLindWorm(IDs.Fairgame, FairGameMaterial).setFull3D().setUnlocalizedName(Strings.FairGame); GameRegistry.registerItem(FairGame, Strings.FairGame);
+		GracefulDahliaMaterial = EnumHelper.addToolMaterial(Strings.GracefulDahlia, 3, -1, 6.0F, 17, 30); GracefulDahlia = new ItemLindWorm(IDs.GracefulDahlia, GracefulDahliaMaterial).setFull3D().setUnlocalizedName(Strings.GracefulDahlia); GameRegistry.registerItem(GracefulDahlia, Strings.GracefulDahlia);
+		FoudreMaterial = EnumHelper.addToolMaterial(Strings.Foudre, 3, -1, 6.0F, 17, 30); Foudre = new ItemFoudre(IDs.Foudre, FoudreMaterial).setFull3D().setUnlocalizedName(Strings.Foudre); GameRegistry.registerItem(Foudre, Strings.Foudre);
 	}
 	
 	public static void initBooks(){
@@ -479,6 +493,7 @@ public class AddedItems {
 		DarkHeart = new ItemDarkHeart(IDs.DarkHeart);
 		Heart = new ItemHeart(IDs.Heart);
 		KingdomHearts = new ItemKingdomHearts(IDs.KingdomHearts);
+		Guide = new ItemGuide(IDs.Guide);
 	}
 
 	public static void initLoot(){
@@ -545,6 +560,288 @@ public class AddedItems {
 		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(Disc9),0,1,15));
 		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(Disc9),0,1,5));
 		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Disc9),0,1,5));
+		//Keyblade Recipes chest generation
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K2r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K3r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K4r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K5r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K6r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K7r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K8r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K9r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K10r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K11r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K1r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K12r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K13r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K14r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K15r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K16r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K17r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K18r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K19r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K20r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K21r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K22r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K23r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K24r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K25r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K26r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K27r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K28r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K29r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K30r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K31r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K32r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K33r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K34r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K35r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K36r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K37r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K38r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K39r),0,1,1));
+		
+		ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(K40r),0,1,1));
+		
+		
 	}
 
 	public static void initOthers(){

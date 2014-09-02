@@ -4,6 +4,7 @@ import java.util.List;
 
 import mods.battlegear2.api.weapons.IBattlegearWeapon;
 import mods.battlegear2.api.weapons.OffhandAttackEvent;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
